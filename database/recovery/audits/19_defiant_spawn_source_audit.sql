@@ -1,49 +1,75 @@
--- MSR Recovery Slice v15
--- Audit where Defiant-named items can still enter the world.
--- Read-only. Does not mutate database state.
+-- 19_defiant_spawn_source_audit.sql
+-- MSR Recovery Slice v15.1
+-- Purpose:
+--   Audit Defiant item spawn/source paths without assuming newer EQEmu
+--   lootdrop_entries columns such as minlevel/maxlevel/multiplier.
+--
+-- Safety:
+--   Read-only audit. No UPDATE/DELETE/INSERT statements.
 
 SELECT
-  'audit' AS section,
-  '19_defiant_spawn_source' AS audit_name,
-  NOW() AS audited_at;
+  'defiant_audit_note' AS section,
+  'This audit intentionally uses conservative schema columns so it works on the restored MSR baseline.' AS note;
 
--- Overall item count for Defiant-named rows.
 SELECT
-  'defiant_item_inventory' AS section,
-  COUNT(*) AS defiant_item_count
+  'lootdrop_entries_columns' AS section,
+  COLUMN_NAME,
+  COLUMN_TYPE,
+  IS_NULLABLE,
+  COLUMN_DEFAULT
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+  AND TABLE_NAME = 'lootdrop_entries'
+ORDER BY ORDINAL_POSITION;
+
+SELECT
+  'loottable_entries_columns' AS section,
+  COLUMN_NAME,
+  COLUMN_TYPE,
+  IS_NULLABLE,
+  COLUMN_DEFAULT
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+  AND TABLE_NAME = 'loottable_entries'
+ORDER BY ORDINAL_POSITION;
+
+SELECT
+  'merchantlist_columns' AS section,
+  COLUMN_NAME,
+  COLUMN_TYPE,
+  IS_NULLABLE,
+  COLUMN_DEFAULT
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+  AND TABLE_NAME = 'merchantlist'
+ORDER BY ORDINAL_POSITION;
+
+SELECT
+  'defiant_item_count' AS section,
+  COUNT(*) AS count_value
 FROM items
 WHERE Name LIKE '%Defiant%';
 
--- Defiant package/container-ish entries are especially suspicious because they can unpack into gear.
 SELECT
-  'defiant_package_candidates' AS section,
+  'defiant_items_sample' AS section,
   id,
   Name,
-  itemclass,
-  bagslots,
-  bagtype,
-  price,
-  nodrop,
-  attuneable,
+  itemtype,
+  classes,
+  races,
+  slots,
   reqlevel,
-  reclevel
+  reclevel,
+  nodrop,
+  norent
 FROM items
 WHERE Name LIKE '%Defiant%'
-  AND (
-    Name LIKE '%Package%'
-    OR Name LIKE '%Bundle%'
-    OR itemclass <> 0
-    OR bagslots > 0
-  )
 ORDER BY id
-LIMIT 200;
+LIMIT 300;
 
--- Defiant items directly referenced by lootdrop entries.
 SELECT
-  'defiant_lootdrop_summary' AS section,
-  COUNT(*) AS lootdrop_entry_rows,
-  COUNT(DISTINCT lde.lootdrop_id) AS lootdrop_ids,
-  COUNT(DISTINCT lde.item_id) AS distinct_defiant_items
+  'defiant_lootdrop_entry_count' AS section,
+  COUNT(*) AS count_value
 FROM lootdrop_entries lde
 JOIN items i ON i.id = lde.item_id
 WHERE i.Name LIKE '%Defiant%';
@@ -56,56 +82,62 @@ SELECT
   lde.item_charges,
   lde.equip_item,
   lde.chance,
-  lde.disabled_chance,
-  lde.minlevel,
-  lde.maxlevel,
-  lde.multiplier
+  lde.disabled_chance
 FROM lootdrop_entries lde
 JOIN items i ON i.id = lde.item_id
 WHERE i.Name LIKE '%Defiant%'
 ORDER BY lde.lootdrop_id, lde.item_id
 LIMIT 300;
 
--- Trace Defiant lootdrop entries through loottables into NPCs.
 SELECT
-  'defiant_npc_loot_sources_summary' AS section,
-  COUNT(*) AS npc_source_rows,
-  COUNT(DISTINCT nt.id) AS npc_type_count,
-  COUNT(DISTINCT nt.loottable_id) AS loottable_count,
-  COUNT(DISTINCT lte.lootdrop_id) AS lootdrop_count
-FROM lootdrop_entries lde
+  'defiant_loottable_link_count' AS section,
+  COUNT(*) AS count_value
+FROM loottable_entries lte
+JOIN lootdrop_entries lde ON lde.lootdrop_id = lte.lootdrop_id
 JOIN items i ON i.id = lde.item_id
-JOIN loottable_entries lte ON lte.lootdrop_id = lde.lootdrop_id
-JOIN npc_types nt ON nt.loottable_id = lte.loottable_id
 WHERE i.Name LIKE '%Defiant%';
 
 SELECT
-  'defiant_npc_loot_sources' AS section,
+  'defiant_loottable_links' AS section,
+  lte.loottable_id,
+  lte.lootdrop_id,
+  lde.item_id,
+  i.Name
+FROM loottable_entries lte
+JOIN lootdrop_entries lde ON lde.lootdrop_id = lte.lootdrop_id
+JOIN items i ON i.id = lde.item_id
+WHERE i.Name LIKE '%Defiant%'
+ORDER BY lte.loottable_id, lte.lootdrop_id, lde.item_id
+LIMIT 300;
+
+SELECT
+  'defiant_npc_source_count' AS section,
+  COUNT(DISTINCT nt.id) AS count_value
+FROM npc_types nt
+JOIN loottable_entries lte ON lte.loottable_id = nt.loottable_id
+JOIN lootdrop_entries lde ON lde.lootdrop_id = lte.lootdrop_id
+JOIN items i ON i.id = lde.item_id
+WHERE i.Name LIKE '%Defiant%';
+
+SELECT
+  'defiant_npc_sources_sample' AS section,
   nt.id AS npc_type_id,
   nt.name AS npc_name,
-  nt.level AS npc_level,
   nt.loottable_id,
   lte.lootdrop_id,
   lde.item_id,
-  i.Name AS item_name,
-  lde.chance,
-  lde.disabled_chance,
-  lde.minlevel,
-  lde.maxlevel
-FROM lootdrop_entries lde
+  i.Name AS item_name
+FROM npc_types nt
+JOIN loottable_entries lte ON lte.loottable_id = nt.loottable_id
+JOIN lootdrop_entries lde ON lde.lootdrop_id = lte.lootdrop_id
 JOIN items i ON i.id = lde.item_id
-JOIN loottable_entries lte ON lte.lootdrop_id = lde.lootdrop_id
-JOIN npc_types nt ON nt.loottable_id = lte.loottable_id
 WHERE i.Name LIKE '%Defiant%'
-ORDER BY nt.level, nt.id, lte.lootdrop_id, lde.item_id
-LIMIT 500;
+ORDER BY nt.id, lte.lootdrop_id, lde.item_id
+LIMIT 300;
 
--- Defiant items sold by merchants.
 SELECT
-  'defiant_merchant_summary' AS section,
-  COUNT(*) AS merchant_rows,
-  COUNT(DISTINCT ml.merchantid) AS merchant_count,
-  COUNT(DISTINCT ml.item) AS distinct_defiant_items
+  'defiant_merchant_entry_count' AS section,
+  COUNT(*) AS count_value
 FROM merchantlist ml
 JOIN items i ON i.id = ml.item
 WHERE i.Name LIKE '%Defiant%';
@@ -115,49 +147,9 @@ SELECT
   ml.merchantid,
   ml.slot,
   ml.item,
-  i.Name,
-  ml.faction_required,
-  ml.level_required,
-  ml.min_expansion,
-  ml.max_expansion,
-  ml.classes_required,
-  ml.probability
+  i.Name
 FROM merchantlist ml
 JOIN items i ON i.id = ml.item
 WHERE i.Name LIKE '%Defiant%'
 ORDER BY ml.merchantid, ml.slot, ml.item
 LIMIT 300;
-
--- Optional-table existence hints for later manual follow-up.
-SELECT
-  'optional_defiant_source_table_presence' AS section,
-  t.TABLE_NAME,
-  t.TABLE_ROWS,
-  t.ENGINE
-FROM information_schema.TABLES t
-WHERE t.TABLE_SCHEMA = DATABASE()
-  AND t.TABLE_NAME IN (
-    'tradeskill_recipe_entries',
-    'ground_spawns',
-    'forage',
-    'fishing',
-    'starting_items',
-    'object_contents',
-    'npc_spells_entries'
-  )
-ORDER BY t.TABLE_NAME;
-
--- If the core source tables are already clean, this should report 0/0/0.
-SELECT
-  'defiant_spawn_source_recovery_preconditions' AS section,
-  (SELECT COUNT(*)
-   FROM lootdrop_entries lde
-   JOIN items i ON i.id = lde.item_id
-   WHERE i.Name LIKE '%Defiant%') AS lootdrop_rows_to_review,
-  (SELECT COUNT(*)
-   FROM merchantlist ml
-   JOIN items i ON i.id = ml.item
-   WHERE i.Name LIKE '%Defiant%') AS merchant_rows_to_review,
-  (SELECT COUNT(*)
-   FROM items i
-   WHERE i.Name LIKE '%Defiant%') AS defiant_items_retained_for_reference;

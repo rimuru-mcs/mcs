@@ -1,20 +1,23 @@
--- MSR Recovery Slice v15 pending review
--- DO NOT APPLY BLINDLY.
+-- MSR Recovery Slice v16 review note
 --
--- Goal from lost update notes:
---   "Fixed an issue that was allowing defiant gear to spawn in game"
+-- v15/v15.1 audit findings on the restored MSR baseline:
+--   * Defiant item rows exist and are preserved.
+--   * Defiant merchant rows: 0
+--   * Defiant NPC direct source rows: 0
+--   * Defiant lootdrop_entries rows: 372 active before v16
+--   * Defiant loottable links: 372 before v16
 --
--- Recovery posture:
---   Keep Defiant item rows for reference/client compatibility unless we prove the server
---   requires deletion. First remove/disable Defiant item sources from loot/merchant/etc.
+-- Promoted safe migration:
+--   database/recovery/migrations_safe/080_disable_defiant_lootdrop_spawn_sources.sql
 --
--- Candidate safe direction after audit:
---   1. Remove or disable lootdrop_entries rows where item_id points to items.Name LIKE '%Defiant%'.
---   2. Remove merchantlist rows where item points to Defiant items, unless audit reveals a
---      deliberate GM/test-only merchant.
---   3. Leave items rows intact unless a later audit proves item rows themselves cause runtime issues.
+-- This disables Defiant lootdrop spawning by moving active lootdrop_entries.chance
+-- to disabled_chance when needed and setting chance to 0. It intentionally does
+-- not delete item rows, lootdrop rows, or loottable links.
 --
--- Exact migration must be promoted only after reviewing:
---   database/recovery/audit_output/19_defiant_spawn_source_audit.txt
---
--- Placeholder only. No SQL mutations in this file on purpose.
+-- Reversal, if needed during dev testing:
+--   UPDATE lootdrop_entries lde
+--   JOIN items i ON i.id = lde.item_id
+--   SET lde.chance = lde.disabled_chance, lde.disabled_chance = 0
+--   WHERE i.Name LIKE '%Defiant%'
+--     AND lde.chance = 0
+--     AND lde.disabled_chance > 0;
