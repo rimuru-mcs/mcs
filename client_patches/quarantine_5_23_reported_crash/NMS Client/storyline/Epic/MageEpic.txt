@@ -1,0 +1,61 @@
+Magician Epic 
+<br>
+<c "#ffd700">Orb of Mastery – Epic 1.0 Quest Guide</c><br>
+<c "#aaaaaa">Harness all four elements and forge your legendary focus item.</c><br><br>
+
+<c "#FFD700">Words of Magi'Kot</c><br>
+Optional: Talk to <c "#00bfff">Rykas</c> in Lake Rathetear. Say: “I wish to learn of the tale of Magi'kot” to receive <c "#ADD8E6">Token of Mastery</c>.<br>
+Optional: Give <c "#ADD8E6">Token of Mastery</c> to <c "#00bfff">Jahsohn Aksot</c> in West Commons for lore.<br>
+Kill a dread wolf in Kithicor for <c "#ADD8E6">Page 1</c>.<br>
+Kill Tentacle Terrors in Unrest for <c "#ADD8E6">Page 2</c>.<br>
+Kill a bloodthirsty ghoul in Lower Guk for <c "#ADD8E6">Page 3</c>.<br>
+Turn all three pages into <c "#00bfff">Jahsohn Aksot</c> to receive <c "#90ee90">Words of Magi'Kot</c>.<br><br>
+
+<c "#FFD700">Power of the Elements</c><br>
+Kill Gypsy Dancer in Mistmoore for <c "#ADD8E6">Power of Wind</c>.<br>
+Kill Lava Elementals in Solusek's Eye for <c "#ADD8E6">Power of Fire</c>.<br>
+Kill Raveners in Kaesora for <c "#ADD8E6">Power of Water</c>.<br>
+Kill Fairy Guards in Greater Faydark or Lesser Faydark for <c "#ADD8E6">Power of Earth</c>.<br>
+Give all four items to <c "#00bfff">Walnan</c> in Butcherblock to receive <c "#90ee90">Power of the Elements</c>.<br><br>
+
+<c "#FFD700">Words of Mastery</c><br>
+Collect the following pages:<br>
+  • <c "#ADD8E6">Earth</c><br>
+  • <c "#ADD8E6">Fire</c><br>
+  • <c "#ADD8E6">Water</c><br>
+  • <c "#ADD8E6">Wind</c><br>
+Give all four pages to <c "#00bfff">Akksstaff</c> in Najena to receive <c "#90ee90">Words of Mastery</c>.<br><br>
+
+<c "#FFD700">Power of the Orb</c><br>
+Give <c "#90ee90">Words of Magi'Kot</c>, <c "#90ee90">Power of the Elements</c>, and <c "#90ee90">Words of Mastery</c> to <c "#00bfff">Rykas</c> to receive <c "#90ee90">Power of the Orb</c>.<br><br>
+
+<c "#FFD700">Element of Fire</c><br>
+Kill <c "#00bfff">Black Reaver</c> in City of Mist to spawn Neh'Ashiir. Loot <c "#ADD8E6">Torch of the Elements</c>.<br>
+Kill dragons in Burning Woods for <c "#ADD8E6">Burning Embers</c>.<br>
+Kill <c "#00bfff">Undertow</c> in Kedge Keep for <c "#ADD8E6">Blazing Wand</c>.<br>
+Give all three items <c "#AAAAAA">plus Power of the Orb</c> to <c "#00bfff">Jennus Lyklobar</c> in Skyfire Mountains to receive <c "#90ee90">Element of Fire</c>.<br><br>
+
+<c "#FFD700">Element of Earth</c><br>
+Kill <c "#00bfff">Magi P'Tasa</c> in Plane of Hate for <c "#ADD8E6">Staff of Elemental Mastery: Earth</c>.<br>
+Kill <c "#00bfff">Slixin Klex</c> in Burning Wood for <c "#ADD8E6">Dirt of Underfoot</c>.<br>
+Get <c "#AAAAAA">Shovel</c> and <c "#AAAAAA">Broom</c> via turn-ins at <c "#00bfff">Vira</c> in Temple of Solusek Ro.<br>
+Turn all items in to <c "#00bfff">Tiblner Milnik</c> in Firiona Vie for <c "#90ee90">Element of Earth</c>.<br><br>
+
+<c "#FFD700">Element of Water</c><br>
+Kill <c "#00bfff">Phinigel Autropos</c> in Kedge Keep for <c "#ADD8E6">Staff of Elemental Mastery: Water</c>.<br>
+Kill <c "#00bfff">Captain Rottgrime</c> in Overthere for <c "#ADD8E6">Tears of Erollisi</c>.<br>
+Kill <c "#00bfff">Tarbul Earthstrider</c> in East Karana for <c "#ADD8E6">Rain of Karana</c>.<br>
+Give all three items to <c "#00bfff">Jinalis Andir</c> in Dagnor's Cauldron to receive <c "#90ee90">Element of Water</c>.<br><br>
+
+<c "#FFD700">Element of Wind</c><br>
+Kill mobs on Plane of Sky Island 7 for <c "#ADD8E6">Crown of Elemental Mastery</c>.<br>
+Kill mobs in The Hole for <c "#ADD8E6">Elemental Binder</c>.<br>
+Kill <c "#00bfff">Quillmane</c> in South Karana for <c "#ADD8E6">Pegasus Feather Cloak</c>.<br>
+Turn all three items into <c "#00bfff">Kihun Solstin</c> to receive <c "#90ee90">Element of Wind</c>.<br><br>
+
+<c "#FFD700">Spell: Summon Orb</c><br>
+Give the four <c "#AAAAAA">Elements</c> to the <c "#00bfff">Master of Elements</c> to receive <c "#90ee90">The Orb of Mastery</c>.<br>
+If he isn't spawned, hail <c "#00bfff">Kihun Solstin</c> and say “I want to see the master.”<br><br>
+<c "#FF69B4">Congratulations! :) </c><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

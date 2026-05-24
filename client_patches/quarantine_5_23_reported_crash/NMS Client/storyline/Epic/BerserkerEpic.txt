@@ -1,0 +1,52 @@
+Berserker Epic 
+<br>
+<c "#35db24">Kerasian Axe of Ire: Quest Guide</c><br><br>
+
+<c "#ffd700">Step 1</c><br>
+<c "#dc7633">Lake of Ill Omen</c>: talk to <c "#ffd700">Keras McArik</c> → say <c "#dc7633">“great stride”</c> ⇒ <c "#dc7633">Medal of Blood</c> + <c "#dc7633">Throwing Axe of the Spirit</c>.<br><br>
+
+<c "#ffd700">Step 2</c><br>
+Hand the <c "#dc7633">Spirit Axe</c> to <c "#ffd700">Lingering Axefall</c> (<c "#dc7633">+84,+2500</c>) ⇒ <c "#dc7633">Bore Axes</c>.<br>
+Ranged-attack <c "#dc7633">Impervious Bloodbeast</c> with the Bore Axes, kill, loot <c "#dc7633">Bloodbeast Tooth</c>.<br><br>
+
+<c "#ffd700">Step 3</c><br>
+Give <c "#dc7633">Medal of Blood</c> + <c "#dc7633">Bloodbeast Tooth</c> → <c "#ffd700">Keras</c> ⇒ <c "#dc7633">McArik-Crafted Bandage</c> + <c "#dc7633">Medal of Mirages</c>.<br>
+Say <c "#dc7633">“ready for this challenge”</c> ⇒ <c "#dc7633">Sealed Note for Mardic</c>.<br><br>
+
+<c "#ffd700">Step 4</c><br>
+<c "#dc7633">Field of Bone</c>: give note to <c "#ffd700">Mardic Crimsonsteel</c> (<c "#dc7633">+2100,+3600</c>) ⇒ teleported to solo arena.<br>
+Kill <c "#dc7633">Berserker’s Image</c>, loot <c "#dc7633">Axe of Lost Souls</c>; say <c "#dc7633">“return”</c> to exit, hail <c "#ffd700">Mardic</c> ⇒ <c "#dc7633">Image Essence</c>.<br><br>
+
+<c "#ffd700">Step 5</c><br>
+Back to <c "#ffd700">Keras</c>: turn in <c "#dc7633">Medal of Mirages</c> + <c "#dc7633">Image Essence</c> ⇒ <c "#dc7633">Medal of Strategy</c>.<br>
+Say <c "#dc7633">“strategize in battle”</c> ⇒ <c "#dc7633">Note for Treanik</c>.<br><br>
+
+<c "#ffd700">Step 6</c><br>
+<c "#dc7633">Dagnor’s Cauldron</c>: give note to <c "#ffd700">Treanik Ireblade</c> (<c "#dc7633">-1600,+200</c>), follow RP to spawn <c "#dc7633">Praklion of the Cauldron</c>.<br>
+Loot <c "#dc7633">Treanik’s Tarnished Axe</c>, return it to Treanik ⇒ <c "#dc7633">Bone Trinket</c>.<br><br>
+
+<c "#ffd700">Step 7</c><br>
+<c "#ffd700">Keras</c>: give <c "#dc7633">Medal of Strategy</c> + <c "#dc7633">Bone Trinket</c> ⇒ <c "#dc7633">Medal of Fervid Rage</c>.<br><br>
+
+<c "#ffd700">Step 8</c><br>
+<c "#dc7633">Plane of Fear</c>: kill <c "#dc7633">scarling mobs</c> → spawn <c "#dc7633">Enraged Imp</c> → kill → <c "#dc7633">Ireblind Imp</c> → loot <c "#dc7633">Burning Essence of Rage</c>.<br><br>
+
+<c "#ffd700">Step 9</c><br>
+<c "#ffd700">Keras</c>: turn in <c "#dc7633">Essence of Rage</c> + <c "#dc7633">Medal of Fervid Rage</c> ⇒ <c "#dc7633">Medal of Hunting</c>.<br>
+Say <c "#dc7633">“must do”</c> ⇒ <c "#dc7633">McArik Reagent Satchel (4-slot)</c>.<br><br>
+
+<c "#ffd700">Step 10</c><br>
+Collect <c "#dc7633">Decaying Liver</c>, <c "#dc7633">Gnashing Kobold Paw</c>, <c "#dc7633">Scent Gland</c>, <c "#dc7633">Philter of Major Translocation</c>;<br>
+Combine in Satchel ⇒ <c "#dc7633">Bag of Image Essence Dust</c>.<br><br>
+
+<c "#ffd700">Step 11</c><br>
+<c "#ffd700">Keras</c>: give <c "#dc7633">dust</c> + <c "#dc7633">Medal of Hunting</c> ⇒ <c "#dc7633">Medal of Mastery</c>.<br><br>
+
+<c "#ffd700">Step 12</c><br>
+<c "#dc7633">Warsliks Woods</c> (<c "#dc7633">night 11 p.m.–7 a.m.</c>): hand <c "#dc7633">Medal</c> to <c "#ffd700">Lurking Hopeful</c>, she returns it; give her <c "#dc7633">1000 pp</c>.<br>
+Follow to <c "#dc7633">Raving Goblinmaster</c>, say <c "#dc7633">“I am a berserker and I am ready”</c>, clear four pulls, kill him, loot <c "#dc7633">Maniac’s Garbled Tome</c>.<br><br>
+
+<c "#ffd700">Step 13 — Final Turn-in</c><br>
+<c "#ffd700">Keras</c>: give <c "#dc7633">Tome</c> + <c "#dc7633">Medal of Mastery</c> ⇒ <c "#dc7633">Kerasian Axe of Ire</c> — your <c "#ffd700">Berserker Epic 1.0!</c><br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

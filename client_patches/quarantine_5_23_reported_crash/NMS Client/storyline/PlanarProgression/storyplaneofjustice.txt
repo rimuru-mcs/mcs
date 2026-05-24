@@ -1,0 +1,23 @@
+<c "#ff0000">PLANE OF JUSTICE</c>
+<br><br>
+
+Locate <c "#dc7633">Mavuin</c> in the basement of the <c "#35db24">Plane of Justice</c>. <c "#ffff00">Hail</c> him and and follow his dialog.<br>
+<c "#dada99">You receive a character flag!</c>
+<br><br>
+Now head to the <c "#35db24">Trial</c> area and say, to any <c "#dc7633">The Tribunal</c>, <c "#ffff00">Hail</c> one and follow the dialog to start the trial. After completeing any of the trial return and tell <c "#dc7633">The Tribunal</c> '<c "#ffff00">I have come to plead the case of Mavuin.</c>'
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+Go back to <c "#dc7633">Mavuin</c> and <c "#ffff00">Hail</c> him.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br>
+Now talk to <c "#dc7633">Gram Dunnar</c>. <c "#ffff00">Hail</c> him and follow his dialog.
+<br><br>
+You should now have access to: <c "#35db24">Plane of Storms</c> & <c "#35db24">Plane of Valor</c>.
+<br><br>
+>>>NEXT STEP<<<
+<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofinnovation.txt">Plane of Innovation</a>
+<br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

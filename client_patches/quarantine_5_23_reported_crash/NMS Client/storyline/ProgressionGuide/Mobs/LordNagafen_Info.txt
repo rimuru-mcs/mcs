@@ -1,0 +1,16 @@
+<c "#35db24">Lord Nagafen</c><br> 
+<br>
+<c "#ffd700">Information</c>:<br>
+Fire breathing boss of EverQuest (classic). Icon of the game. Appeared on the original box art and featured in the original promotional artwork.<br>
+The fire dragon Nagafen lives in exile from all dragonkind due to a plot with Lady Vox to create another prismatic dragon similar to Kerafyrm.<br>
+Lord Nagafen, along with Lady Vox and Phinigel Autropos, is one of EverQuest's original three raid bosses. He resides in the very rear of <c "#dc7633">Nagafen's Lair</c>, guarded by the fire giants.<br>
+<br>
+<c "#ffd700">Strategy</c>:<br>
+
+The key to defeating him is avoiding the two special attacks he has: an Area Effect fire spell and an Area Effect fear spell. Fire and Magic Resists mean everything with this fellow.
+
+Characters who are over level 52 cannot directly engage Nagafen in combat, as he will banish them from his lair upon gaining aggro.<br>
+*(implemented in the June 25th 2011 patch on P1999, and ~3 months after the release of Kunark on live). 
+<br><br><br>
+<a href="file:///storyline/storyProgressionGuide.txt">Go Back</a>
+<br><br><br>

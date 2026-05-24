@@ -3,19 +3,14 @@
 
 #include <string>
 
-#include "../strings.h"
-
-#include <cstdio>
-
-#if _WIN32
-#define popen _popen
-#define pclose _pclose
-#endif
-
+// Small cross-platform command execution helper used by crash handling,
+// database dump tooling, embedded Perl syntax checks, and sidecar helpers.
+//
+// This intentionally replaces the deleted legacy common/process.* files and
+// the orphaned common/eqemu_process.* pair with a single Process declaration.
 class Process {
 public:
-	static std::string execute(const std::string &cmd);
+	static std::string execute(const std::string &cmd, bool return_result = true);
 };
 
-
-#endif //EQEMU_PROCESS_H
+#endif // EQEMU_PROCESS_HELPER_H

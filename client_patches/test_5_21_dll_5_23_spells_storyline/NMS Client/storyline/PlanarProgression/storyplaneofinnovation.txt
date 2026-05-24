@@ -1,0 +1,31 @@
+<c "#ff0000">PLANE OF INNOVATION</c>
+<br><br>
+
+<c "#35db24"> Pre-Flag - Factory Key</c><br><br>
+Kill trash until you find three items<br>
+    <c "#ffd700">Copper Node</c><br>
+    <c "#ffd700">Bundle of Super Conductive Wires</c><br>
+    <c "#ffd700">Intact Power Cell</c><br>
+Give these three items to <c "#dc7633">Nitram Anizok</c><br>
+Follow him thru the zone (yes, the whole zone), where he will eventually take you to <c "#ff0000">Xanamech Nezmirthafen</c> who you will need to kill.<br>
+**Note** Stand behind <c "#ff0000">Xanamech Nezmirthafen</c> before he activates so that his <c "#ff0000">Cone</c> attack doesn't kill <c "#dc7633">Nitram Anizok</c> and fail the event **Note**<br>
+<c "#ffff00">Hail</c>, <c "#dc7633">Nitram Anizok</c>
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+Then head to the factory, to finalize your Factory Key, open the door
+<br>
+<br>
+<c "#35db24"> Manaetic Behemoth Event</c><br>
+<br>
+Just inside, you should find a gnome named <c "#dc7633">Giwin Mirakon</c>. <c "#ffff00">Hail</c> him and follow his diaglog.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+Head into the Factory to find <c "#ff0000">Manaetic Behemoth</c> (/waypoint -0.85, 1140), who is in a room that has a door on either side. A clockwork device will come in from both doors. Kill <c "#ff0000">a clockwork device</c> keeping them out of the main room until <c "#ff0000">Manaetic Behemoth</c> activates (Approx 5 minutes), then kill <c "#ff0000">Manaetic Behemoth</c>. afterwards go back to <c "#dc7633">Giwin Mirakon</c>, and <c "#ffff00">Hail</c> him.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneofnightmares.txt">Plane of Nightmares</a>
+<br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

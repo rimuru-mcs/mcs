@@ -1,0 +1,51 @@
+Paladin Epic 
+<br>
+<c "#ff0000">WARNING</c>: Fiery Avenger is required to complete this quest.<br>
+<a href="file:///storyline/Epic/Palprereq1.txt>Part 1 – SoulFire</a><br>
+<a href="file:///storyline/Epic/Palprereq2.txt>Part 2 – Ghoulbane</a><br>
+<a href="file:///storyline/Epic/Palprereq3.txt>Part 3 – Fiery Avenger</a><br>
+<br><br>
+<c "#35db24">Fiery Defender: Quest Guide</c><br>
+<br>
+<c "#ffd700">The Fiery Defender quest</c> requires the hero to purify three tainted artifacts — a <c "#dc7633">Darksteel Sword</c> from <c "#ffd700">The Hole</c>, a <c "#dc7633">Shield</c> from <c "#ffd700">Nektulos Forest</c>, and a <c "#dc7633">Breastplate</c> from the <c "#ffd700">Plane of Hate</c> — through acts of <c "#35db24">sacrifice</c>, <c "#35db24">compassion</c>, and <c "#35db24">purification</c>.<br>
+Deliver them to <c "#ffd700">Reklon Gnallen</c> in <c "#ffd700">Erudin</c> to receive the <c "#dc7633">Mark of Atonement</c>. Present that along with the <c "#dc7633">Fiery Avenger</c> to the tortured spirit of <c "#ffd700">Irak Altil</c> in the <c "#ffd700">Plane of Fear</c> to redeem his honor and earn the legendary <c "#dc7633">Fiery Defender</c>.<br>
+<br><br>
+<c "#35db24">A Tainted Shield</c><br>
+The first of <c "#ffd700">Irak Altil's</c> tainted armaments is the <c "#dc7633">Tainted Darksteel Shield</c>, carried by <c "#ffd700">Kirak Vil</c> in <c "#ffd700">Nektulos Forest</c>.<br>
+Kill him, retrieve the shield, and head to <c "#ffd700">The Hole</c>.<br>
+<br>
+<c "#35db24">An Ancient Blade</c><br>
+Irak spoke of “hands of a twisted brother no longer living.”<br>
+Find the <c "#ffd700">Keeper of the Tombs</c> in <c "#ffd700">The Hole</c>, defeat it and nearby mobs, and loot the <c "#dc7633">Tainted Darksteel Sword</c>.<br>
+<br>
+<c "#35db24">A Tainted Guard</c><br>
+Seek the vile temptress responsible for Irak's fall.<br>
+Track down the <c "#ffd700">Thought Destroyer</c> in the <c "#ffd700">Plane of Hate</c>, defeat her, and obtain the <c "#dc7633">Tainted Darksteel Breastplate</c>.<br>
+<br>
+<c "#35db24">Cleansing the Taint</c><br>
+With all three tainted items recovered, gather the following to purify them:<br>
+<br>
+<c "#ffd700">Pure Crystal – North Kaladim</c>:<br>
+Say <c "#dc7633">"I will get your dinner"</c> to <c "#ffd700">Jark</c> to spawn <c "#ffd700">Nella Stonebraids</c>.<br>
+Ask <c "#ffd700">Nella</c> <c "#dc7633">"Do you have Jark's dinner?"</c> to receive a <c "#dc7633">Cold Plate of Beef and Bread</c>.<br>
+Return it to <c "#ffd700">Jark</c> to receive the <c "#dc7633">Pure Crystal</c>.<br>
+<br>
+<c "#ffd700">Gleaming Crested Shield – Northern Felwithe</c>:<br>
+Give the <c "#dc7633">Tainted Darksteel Shield</c> to <c "#ffd700">Elia the Pure</c>.<br>
+<br>
+<c "#ffd700">Bucket of Pure Water – West Freeport</c>:<br>
+Speak to a <c "#ffd700">Peasant Woman</c>:<br>
+Say <c "#dc7633">"What water?"</c> then <c "#dc7633">"I will take it to Joshua."</c><br>
+Give the <c "#dc7633">Bucket of Water</c> to <c "#ffd700">Joshua</c> to receive the <c "#dc7633">Purified Bucket</c>.<br>
+<br><br>
+<c "#35db24">Redemption of Irak Altil</c><br>
+In <c "#ffd700">Erudin</c>, hand <c "#ffd700">Reklon Gnallen</c>:<br>
+<br>
+<c "#dc7633">Bucket of Pure Water</c> + <c "#dc7633">Tainted Darksteel Sword</c> → <c "#dc7633">Gleaming Crested Sword</c><br>
+<c "#dc7633">Pure Crystal</c> + <c "#dc7633">Tainted Darksteel Breastplate</c> → <c "#dc7633">Gleaming Crested Breastplate</c><br>
+<c "#dc7633">Sword</c> + <c "#dc7633">Breastplate</c> + <c "#dc7633">Gleaming Crested Shield</c> → <c "#dc7633">Mark of Atonement</c><br>
+<br>
+Return to the <c "#ffd700">Plane of Fear</c>, give the <c "#dc7633">Mark of Atonement</c> and your <c "#dc7633">Fiery Avenger</c> to <c "#ffd700">Irak Altil</c> to receive the <c "#dc7633">Fiery Defender</c>!<br>
+<br><br>
+<c "#ffd700">NOTE:</c> There is a click effect! The blade can be toggled between <c "#35db24">one-handed</c> and <c "#35db24">two-handed</c> mode.<br>
+<br><br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

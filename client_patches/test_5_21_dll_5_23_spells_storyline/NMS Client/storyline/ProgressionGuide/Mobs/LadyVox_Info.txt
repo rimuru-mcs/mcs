@@ -1,0 +1,15 @@
+<c "#35db24">Lady Vox</c><br> 
+<br>
+<c "#ffd700">Information</c>:<br>
+Vox, the frost dragon, was banished from the Claws of Veeshan for plotting with Lord Nagafen to breed another prismatic dragon like Kerafyrm.
+Lady Vox, along with Lord Nagafen and Phinigel Autropos, is one of EverQuest's original three raid bosses. She resides deep within <c "#dc7633">Permafrost</c>, guarded by ice giants.<br>
+<c "#dc7633">Casts</c>: Dragon Roar (AoE Fear), Frost Breath (PB AoE 500 Cold Damage + Cancel Magic), Complete Heal.<br>
+Blindable
+<br><br>
+<c "#ffd700">Strategy</c>:<br>
+Those who would challenge the ice dragon would be advised to increase their Magic and Cold resists to counter her Fear and Ice AEs, respectively. She is also a cleric, and, as such, possesses the ability to cast Complete Heal on herself. You should try to prevent this.
+Characters who are over level 52 cannot directly engage Vox in combat, as she will banish them from her lair upon gaining aggro. <br>
+*(Implemented in the June 13th 2011 patch on P1999, although it wasn't mentioned in the patch notes until the following June 25th 2011 patch. On live it was implemented ~3 months after the release of Kunark). 
+<br><br><br>
+<a href="file:///storyline/storyProgressionGuide.txt">Go Back</a>
+<br><br><br>

@@ -1,0 +1,30 @@
+Progression 3 
+<br>
+<c "#35db24">Velious</c><br>
+<br>
+<c "#ffd700">Information</c>:<br>
+Velious introduces the second expansion ever released to EverQuest. In <c "#ffd700">New Multiclass Server</c>, here's a list of things worth noting about Velious that are unique to other servers:<br>
+• <c "#dc7633">No new AAs</c> are introduced in Velious<br>
+• <c "#dc7633">Sleeper's Key</c> is required in order to access Sleeper's Tomb via the quest given by <c "#dc7633">Jaled Dar's Shade</c><br>
+• <c "#dc7633">Plane of Mischief</c> is closer to the 2.0 version where <c "#dc7633">Bristlebane</c> and other creatures are a significant threat and drop noteworthy loot<br>
+<br><br>
+
+<c "#35db24">Notable Bosses</c><br>
+<c "#8080ff">Kill the following bosses to progress:</c><br>
+<c "#dc7633">Wuoshi</c><br>
+•This lady dragon guards the Dragon Portal in the <c "#dc7633">Wakening Lands</c>.<br>
+•Casts: <c "#ffd700">Ceticious Cloud</c> ((poison) 600 PB AE DD and 8-second stun), <c "#ffd700">Dragon Roar</c> ((magic) PB AE 18-second fear).<br>
+<c "#dc7633">Zlandicar</c><br>
+•Zlandicar is one of the final members of the first brood. He has been banished to the <c "#dc7633">Dragon Necropolis</c>.<br>
+<c "#dc7633">Klandicar</c><br>
+•Another one of the few remaining first brood dragons. He resides in the <c "#dc7633">Western Wastes</c> and serves as the sentinel keeping his banished cousin contained.<br>
+<c "#dc7633">Kelorek`Dar</c><br>
+•Located in <c "#dc7633">Cobalt Scar</c>.<br>
+<c "#dc7633">Dozekar the Cursed</c><br>
+•Located in <c "#dc7633">Temple of Veeshan</c>.<br>
+
+<br><br><br>
+
+<a href="file:///storyline/storyProgressionGuide.txt">Go Back</a>
+<br><br><br>
+	

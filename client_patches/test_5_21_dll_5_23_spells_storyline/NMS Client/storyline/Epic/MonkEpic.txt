@@ -1,0 +1,41 @@
+Monk Epic 
+<br>
+<c "#35db24">Celestial Fists: Quest Guide</c><br>
+<br>
+<c "#ffd700">Overview</c>:<br>
+The Celestial Fists quest challenges the monk to confront and defeat the four elemental masters—beginning with <c "#dc7633">Eejag of Fire</c> in <c "#dc7633">Lavastorm</c>'s molten pits, then summoning <c "#dc7633">Gwan of Air</c> in the <c "#dc7633">Plane of Sky</c>, followed by <c "#dc7633">Trunt of Earth</c> in <c "#dc7633">Nurga</c>'s shadowed depths, and finally facing <c "#dc7633">Xenevorash of Water</c> in the <c "#dc7633">Lake of Ill Omen</c>—each battle proving the monk's mastery over the elements through martial discipline and spiritual fortitude.<br>
+After collecting the elemental tokens, the monk must seek out <c "#dc7633">Kaiaren</c>'s dual aspects in <c "#dc7633">Trakanon's Teeth</c> and present the mystical <c "#dc7633">Book of Celestial Fists</c> alongside the <c "#dc7633">Demon Fangs</c>, ultimately earning the legendary handwraps that embody the perfect union of physical prowess and enlightened wisdom.
+<br><br>
+
+<c "#35db24">A Test of Patience</c><br>
+Collect the following items:<br>
+    <c "#dc7633">Robe of the Lost Circle</c><br>
+        - Either complete the <c "#ffd700">Monks of the Whistling Fist</c> quests and tailor the robe (trivial 36),<br>
+        - or hunt <c "#ffd700">Brother Qwinn</c> (30%) in <c "#dc7633">South Karana</c> or <c "#ffd700">Brother Zephyl</c> (23%) in <c "#dc7633">Rathe Mountains</c>.<br>
+    <c "#dc7633">Metal Pipe (Zan)</c> – from a <c "#ffd700">drolvarg pawbuster</c> in <c "#dc7633">Karnor's Castle</c><br>
+    <c "#dc7633">Metal Pipe (Fi)</c> – from an <c "#ffd700">iksar betrayer</c> in <c "#dc7633">Chardok</c><br>
+Turn all three in to <c "#ffd700">Brother Balatin</c> in <c "#dc7633">Dreadlands</c> → <c "#dc7633">Robe of the Whistling Fists</c>.<br>
+<br>
+
+<c "#35db24">In Defiance of a Demon</c><br>
+<c "#dc7633">Lavastorm</c>: say “I challenge eejag” to a <c "#ffd700">fire sprite</c> → kill <c "#ffd700">Eejag</c> → loot <c "#dc7633">Charred Scale</c>.<br>
+<c "#dc7633">Plane of Sky</c>: buy <c "#dc7633">Key of Swords</c>, hand the scale to <c "#ffd700">a presence</c> on Island 1.5 → kill <c "#ffd700">Gwan</c> → loot <c "#dc7633">Breath of Gwan</c>.<br>
+<c "#dc7633">The Hole (Nurga)</c>: give Breath to a <c "#ffd700">sleeping ogre</c> → kill <c "#ffd700">Trunt</c> → loot his <c "#dc7633">head</c><br>
+→ hand to <c "#ffd700">Deep</c> in <c "#dc7633">Lake Rathe</c> → hand <c "#dc7633">turned head</c> to <c "#ffd700">Astral Projection</c> in <c "#dc7633">Overthere</c> → <c "#dc7633">Eye of Kaiaren</c>.<br>
+<c "#dc7633">Lake of Ill Omen</c>: give the eye to the <c "#ffd700">Astral Projection</c> on the platform → kill <c "#ffd700">Vorash</c> / then <c "#ffd700">Xenevorash</c> → loot <c "#dc7633">Demon Fangs</c>.<br>
+<br>
+
+<c "#35db24">The Lost Tome</c><br>
+<c "#dc7633">Skyfire</c>: repeat either the <c "#ffd700">Skyfire Named Cycle</c> (<c "#dc7633">Black Scar</c>) or the <c "#ffd700">Eldrig Cycle</c> until <c "#dc7633">Immortals</c> drops.<br>
+<c "#dc7633">Erudin Library</c>: give <c "#dc7633">Immortals</c> to <c "#ffd700">Tomekeeper Danl</c> → <c "#dc7633">Danl's Reference</c>.<br>
+Give <c "#dc7633">Danl's Reference</c> + <c "#dc7633">Robe of the Whistling Fists</c> to <c "#ffd700">Lheao</c> in <c "#dc7633">Timorous Deep</c> → <c "#dc7633">Celestial Fists</c> (book only, not epic).<br>
+<br>
+
+<c "#35db24">Kaiaren's Crazy!</c><br>
+<c "#dc7633">Trakanon's Teeth</c>: give the book to <c "#ffd700">Kaiaren</c> at the ruins → get it back after he flips out.<br>
+Give the same book to the <c "#ffd700">“real” Kaiaren</c> in the hut by the lake → <c "#dc7633">Book of Celestial Fists</c>.<br>
+Hand <c "#dc7633">Book of Celestial Fists</c> + <c "#dc7633">Demon Fangs</c> to him → <c "#dc7633">Celestial Fists</c>!<br>
+<br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>
+

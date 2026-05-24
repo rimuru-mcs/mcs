@@ -1,0 +1,66 @@
+<c "#35db24">SoulFire: Quest Guide</c><br><br> 
+
+<c "#ffd700">Obtaining the first piece of the Paladin Epic 1.0</c> is quite the adventure, taking you from the depths of a vampires castle, to fighting the leader of a free city. Steel your soul, keep the faith and maintain your path and you, too, will earn the right to wield the flame of <c "#ffd700">SoulFire</c>! 
+<br><br>
+
+<c "#35db24">Obtain faction with Priests of Life</c><br>
+Purchase a few stacks of <c "#dc7633">Bone Chips</c> from the components vendor in the Bazaar.<br>
+Speak to <c "#ffd700">Tearel</c> and ask him to port you to <c "#dc7633">North Qeynos</c>.<br>
+Find <c "#ffd700">Lashun Novashine</c>. He can usually be found between where you port into Qeynos and out in the newbie yard beyond the gates.<br>
+Hand Lashun the Bone Chips. This will increase your <c "#ffd700">Priests of Life</c> faction slightly. These can be turned in a stack at a time if you would like. Repeat these steps until at least <c "#dc7633">high Kindly</c>.<br><br>
+
+<c "#35db24">Obtain Glowing Sword Hilt -- Castle Mistmoore</c><br>
+Travel to <c "#dc7633">Castle Mistmoore</c> in Faydwer, start a respawning DZ and make your way into the castle. In the basement you'll look for <c "#ffd700">Xicotl</c>.<br>
+Kill her and loot the <c "#ffd700">Glowing Sword Hilt</c>.<br>
+If Xicotl is not up, a <c "#dc7633">Mistmoore guard</c> is her placeholder and is on a 10m 40s respawn timer.<br><br>
+
+<c "#35db24">Gathering Components</c><br>
+Travel across numerous zones and collect the following components for use later:<br>
+    <c "#dc7633">Spider Venom Sac</c> - Spiders around the world. Tarantulas in the Deserts of Ro are a good option.<br>
+    <c "#dc7633">Token of Generosity</c> - Give <c "#ffd700">Altunic Jartin</c> in <c "#dc7633">East Commonlands</c> a <c "#dc7633">Cloth Shirt</c>, which you can purchase from <c "#ffd700">Germe Threadspinner</c> in <c "#dc7633">West Commonlands</c> on NMS.<br>
+    Requires at least <c "#dc7633">Amiable</c> faction. Kill Freeport guards if you need to raise this.<br>
+    <c "#dc7633">Rat Ears</c> - Purchase from the Components vendor in The Bazaar.<br>
+    <c "#dc7633">fire beetle eye</c> - <c "#dc7633">North Qeynos</c> newbie yard. Exterminate the beetles and extract an intact eye.<br>
+    <c "#dc7633">Snake Scales</c> - Purchase from the Components vendor in the Bazaar.<br>
+    <c "#dc7633">Water Flask</c> - Purchase from vendors.<br>
+    <c "#dc7633">Bottle</c> - Purchase from vendors.<br><br>
+
+<c "#35db24">Craft Bog Juice & Edible Goo</c><br>
+You're going to need to find a <c "#dc7633">brew barrel</c>. You should be able to find these in pretty much any starting city. When you find one, click on it and search for <c "#ffd700">Bog Juice</c>.<br>
+If you get a result from your search, select it in the list, then craft it. Place it in your inventory behind other drinks so that you don't accidentally consume it.<br>
+If you don't end up with results, click <c "#ffd700">Experiment</c> and place a <c "#dc7633">Bottle</c>, <c "#dc7633">Snake Scale</c>, and <c "#dc7633">Water Flask</c> in the window, then click Combine. The combine may take multiple tries initially. Becomes trivial at skill 21.<br><br>
+
+Now find an <c "#dc7633">oven</c>. Again, most beginner cities should have one somewhere. Once you find it, click on it and create <c "#ffd700">Edible Goo</c>.<br>
+If you get a result from your search, select it in the list, then craft it. Place it in your inventory behind other food so that you don't accidentally consume it.<br>
+If you don't end up with results, click <c "#ffd700">Experiment</c> and place a <c "#dc7633">fire beetle eye</c> and <c "#dc7633">rat ear</c> in the window, then click Combine. The combine may take multiple tries initially. Becomes trivial at skill 21.<br><br>
+
+<c "#35db24">Obtain Testimony</c><br>
+Travel to <c "#dc7633">North Freeport</c> and make your way to the <c "#dc7633">Halls of Truth</c>. Find <c "#ffd700">Merko Quetalis</c> and hand him the <c "#dc7633">Spider Venom Sac</c> you collected previously. Receive a <c "#ffd700">Token of Bravery</c>.<br>
+Hand the Token of Bravery back to Merko Quetalis along with the <c "#dc7633">Token of Generosity</c>.<br>
+Head down into the basement and find <c "#ffd700">Guard Willia</c>. Kill him and loot <c "#ffd700">Token of Truth</c>.<br>
+Take the Token of Truth back to Merko Quetalis and turn it in. Receive <c "#ffd700">Testimony</c>.<br><br>
+
+<c "#35db24">Renlin Loves His Champagne</c><br>
+Travel to <c "#dc7633">East Freeport</c> and make your way down to the docks. In one of the buildings is <c "#ffd700">Gregor Nasin</c>. He sells <c "#ffd700">Drom's Champagne</c>. Buy 4 of these.<br>
+You might find that Gregor won't sell to you due to faction. If this happens, roll an evil-aligned character, pass some money through shared bank and purchase the champagne that way. Otherwise, Gregor is on the <c "#dc7633">Coalition of Tradesfolk Underground</c> faction.<br>
+Hang out in the bar and wait for <c "#ffd700">Tykar Renlin</c> to spawn. He has many placeholders. This can take a while.<br>
+When Tykar Renlin spawns, hand him the four Drom's Champagne. Receive <c "#ffd700">Bunker Cell #1</c>.<br><br>
+
+<c "#35db24">Obtain H. K. 102</c><br>
+Travel to <c "#dc7633">West Freeport</c> and head to the <c "#dc7633">arena</c>. Head into the holding cells underneath and look for <c "#ffd700">a prisoner</c>.<br>
+Hand him the <c "#dc7633">Bog Juice</c>, <c "#dc7633">Edible Goo</c> and <c "#dc7633">Bunker Cell #1</c>. Receive <c "#ffd700">H. K. 102</c>.<br><br>
+
+<c "#35db24">The Death of an Overlord</c><br>
+In <c "#dc7633">West Freeport</c>, enter the <c "#dc7633">Freeport Militia house</c> and head upstairs. Find <c "#ffd700">Sir Lucan D`Lere</c>. Kill him and his friends in the room.<br>
+When Lucan dies, <c "#ffd700">Sir Lucan D`Lere</c> (a Skeleton version) will spawn. Kill this one, as well.<br>
+Loot <c "#ffd700">Testimony of Truth</c> from the skeleton D`Lere.<br><br>
+
+<c "#35db24">Obtain SoulFire</c><br>
+Take the <c "#dc7633">Testimony of Truth</c> you just looted and return to the <c "#dc7633">Hall of Truth</c> in <c "#dc7633">North Freeport</c>. Find <c "#ffd700">Valeron Dushire</c> and hand him the Testimony of Truth. Receive <c "#ffd700">Brilliant Sword of Faith</c>.<br>
+Travel to <c "#dc7633">High Keep</c>. Look for <c "#ffd700">Assistant Kiolna</c> down at the bank. Hand her the <c "#dc7633">H. K. 102</c> you received from a prisoner earlier. Receive a <c "#ffd700">Sealed Note</c>.<br>
+Finally, make your way to <c "#dc7633">The Lair of the Splitpaw</c>. Find <c "#ffd700">Brother Hayle</c> and hand him the Sealed Note you received in High Keep. Receive a <c "#ffd700">Note</c>.<br>
+Return the Note to Brother Hayle along with the <c "#dc7633">Brilliant Sword of Faith</c>, <c "#dc7633">Testimony</c> and <c "#dc7633">Glowing Sword Hilt</c>. Receive <c "#ffd700">SoulFire</c>!<br><br>
+
+<c "#35db24">Congratulations</c> on completing the first step towards the <c "#ffd700">Paladin epic</c>! Take your new weapon forward and use its holy flame to purge evil from this world.<br>
+<br><br><br><a href="file:///storyline/Epic/PaladinEpic.txt>Go Back</a><br><br><br>
+

@@ -1,0 +1,29 @@
+Progression 1 - Classic 
+<br>(Stuck at level 50?)<br><br><br>
+In order to progress from one expansion to the next on New Multiclass Server, you must do one of two things. <br>
+Either be a <c "#ffd700">Hero</c>, and slay specific bosses, or take the path of the <c "#ffd700">Explorer</c> who gathers specific items (<c "#ffd700">must be of Legendary quality</c>) to progress to the next expansion.
+<br><br>
+Progression is account wide, you only have to complete these tasks once per account for all characters to have access.
+<br>
+You can check with the NPC's in the Bazaar to see your status on all of your expansion progression.<br>
+For this progression specifically, you would need to speak with "<c "#ffd700">A Lost Iksar(Kunark Flag)</c>" in the southern end of the Bazaar.<br>
+<br><br>
+<c "#35db24">Hero Route</c><br>
+<c "#8080ff">Kill the following bosses to progress:</c><br>
+<a href="file:///storyline/ProgressionGuide/Mobs/LordNagafen_Info.txt>Lord Nagafen</a> - 
+• Found in <c "#ffd700">Soluseks Eye</c>, this is a Dragon that will challenge you with his Fire Breath attack.<br>
+<a href="file:///storyline/ProgressionGuide/Mobs/LadyVox_Info.txt>Lady Vox</a> - 
+• Found in <c "#ffd700">Permafrost</c>, Lady Vox is a challenging dragon fight to not only get to, but also compete with her Complete Heal.
+<br><br>
+<c "#35db24">Explorer Route</c><br>
+Gather the following items:<br>
+<c "#dc7633">Elemental Binder (Legendary)</c><br>
+<c "#dc7633">Djarn's Amethyst Ring (Legendary)</c><br>
+<c "#dc7633">Crown of the Froglok Kings (Legendary)</c><br>
+<c "#dc7633">Scalp of the Ghoul Lord (Legendary)</c><br>
+Once you have gathered all of the items. Hand them to the NPC in the Bazaar.
+<br><br><br>
+<a href="file:///storyline/storyProgressionGuide.txt">Go Back</a>
+<br><br><br>
+ 
+	

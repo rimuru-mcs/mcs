@@ -1,0 +1,76 @@
+Enchanter Epic 
+<br>
+Staff of the Serpent: Quest Guide<br><br>
+
+Obtaining an <c "#ffd700">enchanter epic 1.0</c> requires obtaining <c "#ffd700">Jeb's Seal</c>, which is used to receive containers that combine 4 components into a bag. This bag is given to an NPC who then gives one of the four pieces of the staff. These four pieces of staff combine into a bundle of staffs that once turned in returns the enchanter epic 1.0.<br><br>
+
+<c "#35db24">Obtain Jeb's Seal</c><br><br>
+
+Purchase a Quill and a Piece of Parchment from merchants.<br>
+Say “find your own supply” to <c "#ffd700">Reania Jukle</c> in Qeynos Catacombs to receive Empty Ink Vial. (Faction Bloodsabers: not KOS; minimum level 50)<br>
+Charm a ghoul scribe and turn in Empty Ink Vial to receive Ink of the Dark. (Faction Frogloks of Guk: not KOS, charm works). Respawning DZ recommended as the mob is a rare spawn.<br>
+Kill Yender Starpyre or the ghoul arch magus and loot Shining Metallic Robes.<br>
+Give Shining Metallic Robes to <c "#ffd700">Rilgor Plegnog</c> in Ak’Anon to receive a Mechanical Pen.<br>
+Give Quill and a Piece of Parchment to <c "#ffd700">Chrislin Baker</c> in The Western Plains of Karana to receive Bandit Sash (not needed) and spawn Thrackin Griften at -11570,878 (Faction Guards of Qeynos: not KOS).<br>
+    Kill Thrackin Griften and loot a white paper.<br>
+Give white paper, Mechanical Pen, Ink of the Dark to <c "#ffd700">Stofo Olan</c> in Erudin to receive Copy of Notes (Faction Truespirit: not KOS).<br>
+Give Copy of Notes to a sarnak imitator to receive Jeb's Seal (Faction Deepwater Knights: not KOS).<br><br>
+
+<c "#35db24">Obtain 1st Piece of Staff -- Test of Illusion</c><br><br>
+
+Kill Vessel Drozlin in Cabilis East and loot the Xolion Rod.<br>
+Kill Verina Tomb in Neriak - 3rd gate and loot Innoruuk's Word.<br>
+Obtain the Chalice of Kings:<br>
+    Kill Prince Selrach Di'zok in Chardok and loot the Head of a Prince.<br>
+    Give the Head of a Prince to <c "#ffd700">Joren Nobleheart</c> in Felwithe to get the Chalice of Kings. (Faction Deepwater Knights: not KOS)<br>
+Obtain Snow Blossoms in Oggok:<br>
+    Pick up Large Muddy Sandals from the ground at 216.0, 387.0.<br>
+    Give Large Muddy Sandals to Bozlum Blossom to get Scribbled Parchment.<br>
+    Give Scribbled Parchment to Brokk Boxtripper to get a Gift to Bozlum.<br>
+    Give the Gift to Bozlum to Bozlum Blossom to get Snow Blossoms.<br>
+Give Jeb's Seal to <c "#ffd700">Modani QuLoni</c> to receive an Enchanters Sack and Jeb's Seal back (Faction Deepwater Knights: not KOS).<br> Combine the Chalice of Kings, Xolion Rod, Snow Blossoms and Innoruuk's Word in an Enchanters Sack to produce Sack For Modani.<br> Give the combined Sack For Modani to Modani QuLoni in The Overthere to get the 1st Piece of Staff.<br><br>
+
+<c "#35db24">Obtain 2nd Piece of Staff -- Test of Enlightenment</c><br><br>
+
+Kill Cazel in Oasis of Marr and loot a Spoon.<br>
+Pick up ground spawn The One Key in the Overthere at -194.0, -384.0.<br>
+Pick up ground spawn the Lost Scroll in the crypt of Dalnir at -17.33, 54.02.<br>
+Pick up ground spawn Charm and Sacrifice in Plane of Sky from the quest island at 1297.0, 560.0.<br>
+Give Jeb's Seal to <c "#ffd700">Clockwork VIIX</c> in Ak'Anon to receive an Enchanters Sack and Jeb's Seal back (Faction Dark Reflection: not KOS).<br>
+Combine the Spoon, The One Key, Lost Scroll and Charm and Sacrifice in an Enchanters Sack to receive Sack For Mizzle.<br>
+Give Sack For Mizzle to Clockwork VIIX in Ak'Anon to get the 2nd Piece of Staff. (Faction Dark Reflection: not KOS)<br><br>
+
+<c "#35db24">Obtain 3rd Piece of Staff -- Test of Charm</c><br><br>
+
+Say "i need a sack" to <c "#ffd700">Nadia Starfeast</c> in Firiona Vie to receive Enchanters Sack.<br>
+    Say "diamond" to Nadia Starfeast in Firiona Vie to receive Dull Diamond.<br>
+    Say "Sapphire" to Nadia Starfeast in Firiona Vie to receive Dull Sapphire.<br>
+    Say "Ruby" to Nadia Starfeast in Firiona Vie to receive Dull Ruby.<br>
+    Say "Emerald" to Nadia Starfeast in Firiona Vie to receive Dull Emerald.<br>
+Charm a Spectral librarian in Kaesora. Give him the Dull Diamond to receive the Enchanted Diamond (respawning recommended as it has placeholder mobs).<br>
+Give <c "#ffd700">Felia Goldenwing</c> in Skyfire the Dull Sapphire to get the Enchanted Sapphire. (Faction Deepwater Knights: not KOS) (respawning recommended as it has placeholder mobs).<br>
+Charm the Wraith of Jaxion in the City of Mist. Give him the Dull Ruby to get the Enchanted Ruby. (respawning recommended as it has placeholder mobs).<br>
+Charm Impaler Tzilug in the Overthere. Give him the Dull Emerald to get the Enchanted Emerald. (Faction Venril Sathir: not KOS).<br>
+Combine the Enchanted Diamond, Enchanted Sapphire, Enchanted Ruby and Enchanted Emerald in an Enchanters Sack to receive Sack For Nadia.<br>
+Give the Sack For Nadia to Nadia Starfeast in Firiona Vie to get the 3rd Piece of Staff.<br><br>
+
+<c "#35db24">Obtain 4th Piece of Staff -- Test of the Phantasm</c><br><br>
+
+Kill the Wraith of a Shissir in the Plane of Fear and loot Head of the Serpent.<br>
+Kill a forsaken revenant in the Plane of Hate and loot the Essence of a Vampire.<br>
+Kill The Tangrin in the Field of Bone and loot the Sands of the Mystics.<br>
+Give Jeb's Seal to <c "#ffd700">Polzin Mrid</c> in Ak'Anon to receive an Enchanters Sack and Jeb's Seal back (Faction Dark Reflection: not KOS).<br>
+Kill the Ghost of Kindle in The Hole and loot the Essence of a Ghost.<br>
+Combine the Head of the Serpent, Essence of a Ghost, Essence of a Vampire and Sands of the Mystics in an Enchanters Sack to receive Sack For Polzin.<br>
+Give Sack For Polzin to Polzin Mrid in The Hole to get the 4th Piece of Staff.<br>
+Give Jeb's Seal to Polzin Mrid in The Hole to receive an Enchanters Sack and Jeb's Seal back (Faction Dark Reflection: not KOS).<br><br>
+
+<c "#ffd700">NOTE</c>: The Hole: Any Elemental illusion + Collab will make you Dubious (I started apprehensive with this combo) with everything besides rats/undead if you haven't hunted there before.<br><br>
+
+<c "#35db24">Obtain Staff of the Serpent</c><br><br>
+
+Combine 1st Piece of Staff, 2nd Piece of Staff, 3rd Piece of Staff, 4th Piece of Staff in an Enchanters Sack to create a Bundle of Staves.<br>
+Give the Bundle of Staves to a sarnak imitator (<c "#ffd700">Jeb Lumsed</c>) in Burning Woods to receive the Staff of the Serpent!<br><br>
+
+ Enchant the minds of Norrath with your Staff of the Serpent <br>
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

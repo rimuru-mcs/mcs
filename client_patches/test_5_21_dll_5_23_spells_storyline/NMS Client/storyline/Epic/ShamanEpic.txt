@@ -1,0 +1,26 @@
+Shaman Epic 
+<br>
+<c "#ffd700">Spear of Fate: Quest Guide</c><br>
+<br>
+<c "#35db24">Truespirit for Lazy Shamans</c><br>
+Kill <c "#ffd700">Peg Leg</c> in Butcherblock to spawn a lesser spirit.<br>
+Hail a lesser spirit (<c "#ffd700">Faction Truespirit: Not KOS</c>) and follow the dialogue to receive a <c "#dc7633">Tiny Gem</c>.<br>
+Repeat this 20 times to receive 20 Tiny Gems.<br><br>
+Say "yes"<br>
+Say "threatened my life"<br>
+Say "what are you"<br>
+Say "know more"<br><br>
+Give <c "#dc7633">Tiny Gem</c> to <c "#ffd700">Bondl Felligan</c> in Freeport.<br>
+Repeat this 20x. This increases your Truespirit Faction to a level that all subsequent steps are possible.<br><br>
+<c "#35db24">The only other step</c><br>
+Kill <c "#ffd700">Terror</c>, <c "#ffd700">Freight</c>, or <c "#ffd700">Dread</c> in Plane of Fear (non-respawning) to spawn an Iksar Broodling.<br>
+Kill an Iksar Broodling and loot a <c "#dc7633">Child's Tear</c>.<br><br>
+In City of Mist (non-respawning), use <c "#dc7633">Pick Lock</c> or <c "#dc7633">Key of Torsis</c> to take the elevator up to the Black Reaver on the second floor.<br>
+Kill until <c "#ffd700">Lord Rak`Ashiir</c> spawns.<br>
+Give him a <c "#dc7633">Child's Tear</c> and he will attack.<br>
+Kill and loot <c "#dc7633">Iksar Scale</c>.<br><br>
+Turn in <c "#dc7633">Iksar Scale</c> to <c "#ffd700">Spirit Sentinel</c> and receive <c "#dc7633">Spear of Fate (Legendary)</c>!<br>
+This will also reduce your Truespirit Faction, so subsequent shaman epics will require repeating the Peg Leg step.<br>
+<br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

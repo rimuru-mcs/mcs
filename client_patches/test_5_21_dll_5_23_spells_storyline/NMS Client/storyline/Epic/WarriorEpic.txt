@@ -1,0 +1,64 @@
+Warrior Epic 
+<br>
+<c "#ffd700">Jagged Blade of War: Quest Guide (Blade of Tactics & Strategy)</c><br>
+<br>
+<c "#ffd700">Part 1 – Red Scabbard</c><br>
+<br>
+Head to <c "#dc7633">East Freeport</c> and find <c "#ffd700">Kargek Redblade</c>. Say “what favor” to receive <c "#dc7633">Wax Sealed Note</c>.<br>
+Head to <c "#dc7633">Feerrott</c>, give <c "#ffd700">Oknoggin Stonesmacker</c> your Wax Sealed Note to receive <c "#dc7633">Tiny Lute</c>.<br>
+Return to East Freeport, give Kargek the Tiny Lute to receive <c "#dc7633">Redblade's Legacy</c>.<br>
+<c "#ffd700">Permafrost Keep</c>: kill a goblin wizard and loot a <c "#dc7633">Heart of Frost</c>.<br>
+OPTIONAL: grab a <c "#dc7633">Block of Permafrost</c> from ice giants / Lady Vox.<br>
+<c "#dc7633">East Karana</c>: give <c "#ffd700">Tenal Redblade</c> the Redblade's Legacy → <c "#dc7633">Totem of the Freezing War</c>.<br>
+Give Tenal the Totem of the Freezing War + Heart of Frost → <c "#dc7633">Totem of Fiery War</c>.<br>
+Collect four raid drops:<br>
+    <c "#dc7633">Green Dragon Scales</c> – Severilous / Hoshkar<br>
+    <c "#dc7633">Red Dragon Scales</c> – Lord Nagafen, Melalafen, Talendor<br>
+    <c "#dc7633">Hand of the Maestro</c> – Hand of the Maestro, Plane of Hate<br>
+    <c "#dc7633">Spiroc Wingblade</c> – The Spiroc Lord, Plane of Sky (Island 5)<br>
+Back to Tenal:<br>
+    Give Green Scales + Red Scales + Totem of Fiery War → <c "#dc7633">Mark of the Sword</c>.<br>
+    Give Mark of the Sword + Hand of the Maestro → Tenal’s note to Kargek.<br>
+East Freeport: give Kargek the Spiroc Wingblade + Tenal’s note → <c "#dc7633">Red Scabbard</c>.<br>
+<br>
+<c "#ffd700">Part 2 – Ancient Sword Blade (2 options)</c><br>
+<br>
+Option 1: Kill <c "#ffd700">Denken Strongpick</c> in Ocean of Tears → <c "#dc7633">Ancient Sword Blade</c>.<br>
+Option 2: (full alternative if you aren't a dwarf murdering psychopath.)<br>
+Have a tinkerer craft 2 × <c "#dc7633">Rebreather</c> (Tinkering 175).<br>
+Gather <c "#dc7633">Block of Permafrost</c> + <c "#dc7633">Keg of Vox Tail Ale</c>.<br>
+Give Denken the 2 Rebreathers, Block of Permafrost, and Keg of Ale → Ancient Sword Blade.<br>
+<br>
+<c "#ffd700">Part 3 – Finely Crafted Dragon Head Hilt</c><br>
+<br>
+Collect:<br>
+    <c "#dc7633">Severely Damaged Dragon Head Hilt</c> – ground spawn, Timorous Deep (chessboard).<br>
+    <c "#dc7633">Giant Sized Monocle</c> – mountain giant patriarch, Dreadlands.<br>
+    Give monocle to <c "#ffd700">Mentrax Mountainbone</c> → <c "#dc7633">Rejesiam Ore</c>.<br>
+    <c "#dc7633">Ball of Everliving Golem</c> – Fear golems (Dread/Fright/Terror).<br>
+East Freeport: give <c "#ffd700">Wenden Blackhammer</c> the Damaged Hilt + Rejesiam Ore + Ball of Golem → <c "#dc7633">Finely Crafted Dragon Head Hilt</c>.<br>
+<br>
+<c "#ffd700">Part 4 – Jeweled Dragon Head Hilt</c><br>
+<br>
+Collect:<br>
+    <c "#dc7633">Unjeweled Dragon Head Hilt</c> – ground spawn, Lake Rathetear (loc +2512 +924 -198).<br>
+    <c "#dc7633">Diamond</c><br>
+    <c "#dc7633">Black Sapphire</c><br>
+    <c "#dc7633">Jacinth</c><br>
+Give all four to Wenden Blackhammer → <c "#dc7633">Jeweled Dragon Head Hilt</c>.<br>
+<br>
+<c "#ffd700">Part 5 – Ancient Blade</c><br>
+<br>
+<c "#dc7633">Chardok</c>: kill <c "#ffd700">Queen Velazul Dizok</c> → Ancient Blade.<br>
+<br>
+<c "#ffd700">Part 6 – Final Turn-in: Jagged Blade of War</c><br>
+<br>
+In the Red Scabbard combine:<br>
+    Ancient Sword Blade<br>
+    Finely Crafted Dragon Head Hilt<br>
+    Jeweled Dragon Head Hilt<br>
+    Ancient Blade<br>
+→ <c "#dc7633">Jagged Blade of War</c><br>
+Combine JBoW by itself in the scabbard to split into <c "#dc7633">Blade of Strategy</c> + <c "#dc7633">Blade of Tactics</c>; combine the two to reform JBoW.<br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

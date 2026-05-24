@@ -1,0 +1,40 @@
+<c "#35db24">Ghoulbane: Quest Guide</c><br> 
+<br>
+<c "#ffd700">The second step towards completing the Paladin Epic 1.0</c> is obtaining the legendary sword, <c "#dc7633">Ghoulbane</c>.<br>
+For this step, you have three options—you can choose to <c "#dc7633">kill a fellow Paladin</c> for his blade, <c "#dc7633">hunt a Froglok</c> who has gained possession of the sword, or <c "#dc7633">uphold justice</c>, confront betrayal, and vanquish darkness to forge the <c "#dc7633">Sword of Nobility</c>.<br>
+<br><br>
+
+<c "#35db24">The Murder of a Fellow</c><br>
+Your first option is a guaranteed one – <c "#dc7633">Joren Nobleheart</c>.<br>
+He is a level 60 Paladin found in <c "#dc7633">South Felwithe</c>, and always carries Ghoulbane.<br>
+He isn't a particularly difficult fight, and provides no negative faction hits.<br>
+<br><br>
+
+<c "#35db24">An Amphibious Lord</c><br>
+If you're not keen on slaying a fellow Paladin, or perhaps just want an easier fight, you can try your luck against the <c "#dc7633">Froglok Shin Lord</c> in <c "#dc7633">Upper Guk</c>.<br>
+This is a level 30 NPC, but has only a <c "#ffd700">25% chance</c> to drop the sword.<br>
+<br><br>
+
+<c "#35db24">The Sword of Nobility</c><br>
+If you're feeling adventurous, head to <c "#dc7633">West Karana</c> and look for <c "#dc7633">Ryshon Hunsti</c>.<br>
+Hail him, follow the dialogue and you'll receive a <c "#dc7633">Note to Kanthuk</c>.<br>
+<br>
+Travel to <c "#dc7633">Butcherblock</c> and head to the docks.<br>
+Near the water, find <c "#dc7633">Kanthuk Ogrebane</c>.<br>
+Hand him the note and follow his dialogue to receive a <c "#dc7633">Pendant</c>.<br>
+<br>
+Locate <c "#dc7633">Llara</c> on a rock outside <c "#dc7633">The Estate of Unrest</c>.<br>
+Give her the pendant and follow her dialogue to obtain a <c "#dc7633">Note to Ruathey</c>.<br>
+<br>
+Find <c "#dc7633">Ruathey</c> near the <c "#dc7633">Nektulos Forest</c> zoneline in <c "#dc7633">Lavastorm</c>.<br>
+Hand her the note, ask <c "#ffd700">"What bag?"</c> and receive a <c "#dc7633">Nobleman's Bag</c>.<br>
+<br>
+<c "#ffd700">Collect the following items:</c><br>
+    <c "#dc7633">Amstaf's Scroll</c> – Goblins, High Keep<br>
+    <c "#dc7633">Ghoul's Heart</c> – Ghouls, The Estate of Unrest<br>
+    <c "#dc7633">Blade of Nobility</c> – Goblins, Butcherblock Mountains<br>
+    <c "#dc7633">Hilt of the Nobleman</c> – Skeletons, Najena<br>
+<br>
+Combine the four items in the <c "#dc7633">Nobleman's Bag</c> to receive <c "#dc7633">Ghoulbane</c>.<br>
+<br><br><br><a href="file:///storyline/Epic/PaladinEpic.txt>Go Back</a><br><br><br>
+

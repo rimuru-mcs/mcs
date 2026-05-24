@@ -1,18 +1,36 @@
-#include <string>
-#include <memory>
 #include "process_helper.h"
 
-std::string Process::execute(const std::string &cmd)
+#include <array>
+#include <cstdio>
+#include <cstdlib>
+#include <memory>
+#include <string>
+
+#if defined(_WIN32)
+#define EQEMU_POPEN _popen
+#define EQEMU_PCLOSE _pclose
+#else
+#define EQEMU_POPEN popen
+#define EQEMU_PCLOSE pclose
+#endif
+
+std::string Process::execute(const std::string &cmd, bool return_result)
 {
-	std::string           command = fmt::format("{} 2>&1", cmd);
-	std::shared_ptr<FILE> pipe(popen(command.c_str(), "r"), pclose);
-	if (!pipe) { return "ERROR"; }
-	char        buffer[128];
+	if (!return_result) {
+		std::system(cmd.c_str());
+		return {};
+	}
+
+	const std::string command = cmd + " 2>&1";
+	std::shared_ptr<FILE> pipe(EQEMU_POPEN(command.c_str(), "r"), EQEMU_PCLOSE);
+	if (!pipe) {
+		return "ERROR";
+	}
+
+	std::array<char, 256> buffer{};
 	std::string result;
-	while (!feof(pipe.get())) {
-		if (fgets(buffer, 128, pipe.get()) != nullptr) {
-			result += buffer;
-		}
+	while (fgets(buffer.data(), static_cast<int>(buffer.size()), pipe.get()) != nullptr) {
+		result += buffer.data();
 	}
 
 	return result;

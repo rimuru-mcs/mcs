@@ -1,0 +1,59 @@
+Progression Guides 
+<br>
+All information comes from the official New Multiclass Server Wiki. Compiled and organized by Sarij/Uqmoon. <br><br><br>
+New Multiclass Server allows you to progress by choosing either the "Hero" route, or the "Explorer" route. This guide will cover the "Hero" route first, and possibly add info on the "Explorer" route in the future.<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///storyline/ProgressionGuide/Progression1.txt>Progression 1 - Classic</a><br>
+<br>                                        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///storyline/ProgressionGuide/Progression2.txt>Progression 2 - Kunark / Legacy of Ykesha</a><br>
+<br>                                       
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///storyline/ProgressionGuide/Progression3.txt>Progression 3 - Velious</a><br>
+<br>                                     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///storyline/ProgressionGuide/Progression4.txt>Progression 4 - Luclin</a><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///storyline/storyplanarprogression.txt>Progression 5 - Planes of Power</a><br>
+<br><br>                                     
+<br>------------<br>
+<c "#ffd700">Progression Overview</c><br>------------<br>
+<c "#35db24">Progression 1 - Classic EverQuest:</c><br>
+
+The foundation of the game—featuring Antonica, Faydwer, and Odus, and the legendary starting cities and dungeons that shaped the world.<br>
+
+• Over 80 zones including Nagafen’s Lair, Guk, and Permafrost.<br>
+• Classic epic quests, faction-based conflicts, and the original <c "#dc7633">max level cap of 50.</c><br>
+• The beginnings of multiclassing and personal progression in New Multiclass Server.<br>
+<br><br>
+<c "#35db24">Progression 2 - The Ruins of Kunark:</c><br>
+
+The first expansion, introducing the vast continent of Kunark, new zones, and the powerful Iksar race.<br>
+
+• Over 25 new zones, including Sebilis, Chardok, and Karnor’s Castle.<br>
+• <c "#dc7633">Level cap raised to 60</c> with new class-defining abilities.<br>
+• The introduction of high-tier raid encounters, including Trakanon and Venril Sathir.<br>
+<br><br>
+<c "#35db24">Progression 3 - The Scars of Velious:</c><br>
+
+A land of frozen wastelands, giants, and dragons, Velious brought larger-scale raids and faction wars.<br>
+
+• The faction struggle between Coldain, Claws of Veeshan, and Kromzek.<br>
+• New high-level raids: Temple of Veeshan, Sleeper’s Tomb, and Kael Drakkel.<br>
+• Armor quests and new raid progression tiers.<br>
+<br><br>
+<c "#35db24">Progression 4 - The Shadows of Luclin:</c><br>
+
+The moon of Norrath, bringing alien landscapes, new technologies, and the Vah Shir race.<br>
+
+• New zones including The Nexus, Akheva Ruins, and Vex Thal.<br>
+• Alternate Advancement (AA) system introduced, expanding character progression.<br>
+• Mounts, Bazaar trading, and the Plane of Shadows.<br>
+<c "#dc7633">Level cap increased to 65.</c><br>
+<br><br>
+<c "#35db24">Progression 5 - Planes of Power:</c><br>
+
+The Planes of the Gods, introducing high-level raid content, planar progression, and a hub-based teleportation system.<br>
+
+• New planar zones: Plane of Time, Plane of Valor, and Plane of Innovation.<br>
+• Raid encounters against powerful deities.<br>
+• The Plane of Knowledge, serving as a central hub for players.<br>
+<br><br><br><br>

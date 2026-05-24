@@ -1,0 +1,46 @@
+Cleric Epic 
+<br>
+<c "#35db24">Water Sprinkler of Nem Ankh: Quest Guide</c><br><br>
+
+<c "#ffd700">Orb of Frozen Water</c><br><br>
+
+<c "#dc7633">•</c> Loot <c "#ffd700">Lord Bergurgle's Crown</c> from <c "#ffd700">Lord Bergurgle</c> in <c "#ffd700">Lake Rathetear</c><br>
+<c "#dc7633">•</c> Give Crown to <c "#ffd700">Shmendrik Lavawalker</c> in Lake Rathetear to spawn <c "#ffd700">Natasha Whitewater</c> nearby – receive <c "#ffd700">Oil of Fennin Ro</c><br>
+<c "#dc7633">•</c> Kill <c "#ffd700">Shmendrik Lavawalker</c> to spawn <c "#ffd700">A Spirit of Flame</c><br>
+<c "#dc7633">•</c> Loot <c "#ffd700">Damaged Goblin Crown</c> from A Spirit of Flame <c "#dc7633">(Do not let Natasha Whitewater get the last hit or the corpse will disappear)</c><br>
+<c "#dc7633">•</c> Give Damaged Goblin Crown to <c "#ffd700">Natasha Whitewater</c> – receive <c "#ffd700">Ornate Sea Shell</c><br>
+<c "#dc7633">•</c> Give Ornate Sea Shell to <c "#ffd700">Omat Vastsea</c> in <c "#ffd700">Timorous Deep</c> – receive <c "#ffd700">Coral Statue of Tarew</c><br>
+<c "#dc7633">•</c> Give the Coral Statue of Tarew to <c "#ffd700">A Seeker</c> in <c "#ffd700">The Temple of Solusek Ro</c>, causing them to become <c "#ffd700">A Plasmatic Priest</c><br>
+<c "#dc7633">•</c> Kill A Plasmatic Priest and loot <c "#ffd700">Blood Soaked Plasmatic Priest Robe</c><br>
+<c "#dc7633">•</c> Give the Robe to Omat Vastsea – receive <c "#35db24">Orb of Frozen Water</c><br>
+<c "#dc7633">* This step spawns Natasha inside the hut; it's suggested you wait to turn in until you have Lord Gimblox's Signet Ring.</c><br><br>
+
+<c "#ffd700">Orb of Clear Water</c><br><br>
+
+<c "#dc7633">•</c> Loot <c "#ffd700">Lord Gimblox's Signet Ring</c> from <c "#ffd700">Lord Gimblox</c> in <c "#ffd700">Solusek's Eye</c><br>
+<c "#dc7633">•</c> Give Ring to <c "#ffd700">Natasha Whitewater</c> in <c "#ffd700">Timorous Deep</c> – receive <c "#ffd700">Ornate Sea Shell (no 2)</c> <c "#dc7633">(This despawns Natasha)</c><br>
+<c "#dc7633">•</c> Give Ornate Sea Shell (no 2) to <c "#ffd700">Naxot Deepwater</c> in <c "#ffd700">Burning Woods</c> – receive <c "#ffd700">Message to Natasha</c> <c "#dc7633">(This spawns Ixiblat Fer)</c><br>
+<c "#dc7633">•</c> Loot <c "#ffd700">Sceptre of Ixiblat Fer</c> from <c "#ffd700">Ixiblat Fer</c><br>
+<c "#dc7633">•</c> Loot <c "#ffd700">Singed Scroll</c> from <c "#ffd700">Overking Bathezid</c> in <c "#ffd700">Chardok</c><br>
+<c "#dc7633">•</c> Give both items to <c "#ffd700">Omat Vastsea</c> – receive <c "#35db24">Orb of Clear Water</c><br>
+<c "#dc7633">* This step spawns Natasha inside the hut.</c><br><br>
+
+<c "#ffd700">Orb of Vapor</c><br><br>
+
+<c "#dc7633">•</c> Give <c "#ffd700">Message to Natasha</c> to <c "#ffd700">Natasha Whitewater</c> in Timorous Deep – receive <c "#ffd700">Shimmering Pearl</c> <c "#dc7633">(Natasha does not despawn)</c><br>
+<c "#dc7633">•</c> Give Shimmering Pearl to <c "#ffd700">Zordak Ragefire</c> in <c "#ffd700">Nagafen's Lair</c> – receive <c "#ffd700">Zordak's Box of Bindings</c> and <c "#ffd700">Swirling Pearl</c><br>
+<c "#dc7633">•</c> Farm <c "#ffd700">Pearlescent Fragment</c> x4 in <c "#ffd700">Skyfire Mountains</c><br>
+<c "#dc7633">•</c> Combine 4 Fragments in Zordak's Box of Bindings to create <c "#ffd700">Assembled Pearlescent Shard</c><br>
+<c "#dc7633">•</c> Give the Shard to <c "#ffd700">Warder Cecilia</c> (NE side of Skyfire) – receive <c "#ffd700">Pearlescent Seal</c> and spawn <c "#ffd700">Zordak Ragefire</c><br>
+<c "#dc7633">•</c> Kill Zordak Ragefire (human), which spawns <c "#ffd700">Zordakalicus Ragefire</c>; kill him and loot <c "#ffd700">Impure Heart of Zordak Ragefire</c><br>
+<c "#dc7633">•</c> Combine <c "#ffd700">Pearlescent Seal</c> and <c "#ffd700">Swirling Pearl</c> into the Impure Heart container – receive <c "#ffd700">Zordak Ragefire’s Heart</c><br>
+<c "#dc7633">•</c> Give Heart to <c "#ffd700">Omat Vastsea</c> – receive <c "#35db24">Orb of Vapor</c><br>
+<c "#dc7633">* Do NOT do this until you're ready to turn in all orbs to Jhassad, as this step spawns him.</c><br><br>
+
+<c "#ffd700">Water Sprinkler of Nem Ankh</c><br><br>
+
+<c "#dc7633">•</c> Give <c "#ffd700">Orbs of Clear Water, Frozen Water, and Vapor</c> to <c "#ffd700">Jhassad Oceanson</c> in <c "#ffd700">Timorous Deep</c> – receive <c "#ffd700">Orb of Triumvirate</c><br>
+<c "#dc7633">* This step spawns the <c "#ffd700">Avatar of Water</c> in the lake.</c><br>
+<c "#dc7633">•</c> Give <c "#ffd700">Orb of Triumvirate</c> to <c "#ffd700">Avatar of Water</c> – receive <c "#35db24">Water Sprinkler of Nem Ankh</c><br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

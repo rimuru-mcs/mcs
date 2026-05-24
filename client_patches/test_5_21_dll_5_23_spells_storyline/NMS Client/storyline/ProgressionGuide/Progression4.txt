@@ -1,0 +1,83 @@
+Progression 4 
+<br><c "#35db24">Luclin</c><br>
+<br>
+<c "#ffd700">Luclin</c> introduces the third expansion ever released to EverQuest.<br>
+In <c "#ffd700">New Multiclass Server</c>, here's a list of things worth noting about Luclin that are unique to other servers:<br>
+<br>
+
+<c "#ffd700">How do I get there</c><br>
+• Accept a port from another player.<br>
+• Use the map with <c "#dc7633">Tearel</c> to teleport directly to a Luclin zone.<br>
+• Leave the bazaar to enter the <c "#dc7633">Nexus</c>.<br>
+<br><br>
+
+<c "#ffd700">Notable Factions</c><br>
+• <c "#dc7633">The Shissar</c><br>
+• <c "#dc7633">The Akheva</c><br>
+• <c "#dc7633">The Combine Empire</c><br>
+• <c "#dc7633">The Vah Shir</c><br>
+<br><br>
+
+<c "#35db24">Hero Route</c><br>
+<c "#8080ff">Kill the following bosses to progress:</c><br>
+<c "#dc7633">Thought Horror Overfiend</c> – <c "#ffd700">The Deep</c><br>
+<c "#dc7633">Grieg Veneficus</c> – <c "#ffd700">Grieg's End</c><br>
+<c "#dc7633">Insanity Crawler</c> – <c "#ffd700">Akheva Ruins</c><br>
+<c "#dc7633">Xerkizh The Creator</c> – <c "#ffd700">Ssraeshza Temple</c><br>
+<c "#dc7633">Emperor Ssraeshza</c> – <c "#ffd700">Ssraeshza Temple</c><br>
+<br><br>
+
+<c "#35db24">General Raid Bosses</c><br>
+
+<c "#ffd700">Grieg’s End</c><br>
+• <c "#dc7633">Grieg Veneficus</c><br>
+• <c "#dc7633">Servitor of Luclin</c><br>
+<br>
+
+<c "#ffd700">Katta Castellum</c><br>
+• <c "#dc7633">Lcea Katta</c><br>
+<br>
+
+<c "#ffd700">Sanctus Seru</c><br>
+• <c "#dc7633">Lord Inquisitor Seru</c><br>
+<br>
+
+<c "#ffd700">Ssraeshza Temple</c><br>
+• <c "#dc7633">Blood of Ssraeshza</c><br>
+• <c "#dc7633">Emperor Ssraeshza</c><br>
+• <c "#dc7633">High Priest of Ssraeshza</c><br>
+• <c "#dc7633">Xerkizh the Creator</c><br>
+<br>
+
+<c "#ffd700">The Acrylia Caverns</c><br>
+• <c "#dc7633">An Evolved Burrower</c><br>
+• <c "#dc7633">Khati Sha the Twisted</c><br>
+• <c "#dc7633">Warder of Death</c><br>
+• <c "#dc7633">Warder of Life</c><br>
+<br>
+
+<c "#ffd700">The Akheva Ruins</c><br>
+• <c "#dc7633">The Insanity Crawler</c><br>
+• <c "#dc7633">The Itraer Vius</c><br>
+• <c "#dc7633">The Va’Dyn</c><br>
+<br>
+
+<c "#ffd700">The Deep</c><br>
+• <c "#dc7633">Thought Horror Overfiend</c><br>
+<br>
+
+<c "#ffd700">Vex Thal</c><br>
+• <c "#dc7633">Diabo Xi Va</c><br>
+• <c "#dc7633">Diabo Xi Va Tamariel</c><br>
+• <c "#dc7633">Diabo Xi Xin</c><br>
+• <c "#dc7633">Diabo Xi Xin Thall</c><br>
+• <c "#dc7633">Kaas Thox Xi Ans Dyek</c><br>
+• <c "#dc7633">Kaas Thox Xi Aten Ha Ra</c><br>
+• <c "#dc7633">Thall Va Kelun</c><br>
+• <c "#dc7633">Thall Va Xakra</c><br>
+• <c "#dc7633">Thall Xunraux Diabo</c><br>
+• <c "#dc7633">Va Xi Aten Ha Ra</c><br>
+<br><br><br>
+<a href="file:///storyline/storyProgressionGuide.txt">Go Back</a>
+<br><br><br>
+	

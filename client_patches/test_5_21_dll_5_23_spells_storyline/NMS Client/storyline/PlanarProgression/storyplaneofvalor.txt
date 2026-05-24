@@ -1,0 +1,41 @@
+<c "#ff0000">PLANE OF VALOR</c>
+<br><br>
+
+<c "#35db24"> Part One - Key to Aerin'Dar's Lair</c>
+<br><br>
+Head to the <c "#35db24">Plane of Valor</c>.<br>You need to kill <c "#ff0000">A Planarian Larvae</c> (towards river to the east) until you get a <c "#ffd700">A Planarian Larvae's Heart</c><br> 
+kill <c "#ff0000">A Razorfiend Subduer</c> (found at the river to the west of the zone in) until you get a <c "#ffd700">A Razorfiend's Heart</c><br> kill <c "#ff0000">A Crystalline Arachnae</c> (up on the other side of the castle area) until you get <c "#ffd700">A Crystalline Spider's Heart</c><br><br> kill <c "#ff0000>A Luminii Crawler</c> (same area) until you get <c "#ffd700">A Piece of the Crystalline Globe</c><br> kill <c "#ff0000>An Undead Vassal</c> (lower forested area) until you get <c "#ffd700>A Piece of the Crystalline Globe</c><br>kill <c "#ff0000>A Gamite Frog</c> (near the river banks) until you get another <c "#ffd700>A Piece of the Crystalline Globe</c>. **Note: Rare Drop**
+<br><br>
+Heave over to tent encampment and find <c "#dc7633">Paralin Notion</c>, Hail him and follow along ('<c "#00ffff">brave</c>')
+<br><br>
+Next goto <c "#dc7633">Master Sergeant Aaramis Darylin</c> (in the back section of the <c "#35db24">North Bridge House</c>). Say to him, '<c "#ffff00">I am here to aid the cause.</c>' then follow the dialog.
+<br><br>
+Now go back to <c "#dc7633">Paralin Notion</c>. <c "#ffff00">Hail</c> him, and follow the dialog.<br>
+Then give him <c "#ffd700">A Crystalline Spider's Heart</c>, <c "#ffd700">A Planarian Larvae's Heart</c> and <c "#ffd700">A Razorfiend's Heart</c>.
+<br><br>
+Head back to <c "#dc7633">Master Sergeant Aaramis Darylin</c>. <c "#ffff00>Hail</c> him, and follow the dialog.
+<br><br>
+Head back to the <c "#35db24">Tent encampment</c>, and find <c "#dc7633">Captain Ryglot Cupperhide</c>, <c "#ffff00>Hail</c> him, and follow the dialog.<br>
+Turn in all three <c "#ffd700">A Piece of the Crystalline Globe</c>. 
+<br>
+You will get <c "#ffd700">A Crystalline Globe</c>(key to <c "#ff0000">Aerin'Dar</c>)!<br>Go up the the upper area and <c "#ffff00">Click</c> the <c "#ffff00">Lever</c>, then <c "#ffff00">Click</c> the center tunnel, walk in and click the <c "#ffd700">Crystal Ball</c> to port into the cave where <c "#ff0000">Aerin'Dar</c> is.
+<br><br>
+Once down, kill <c "#ff0000">Aerin'Dar</c>! There will also be a number of adds  <c "#ff0000">Mindless Minions</c> and <c "#ff0000">Rahlgon</c> that attack. Kill them all. Once <c "#ff0000">Aerin'Dar</c> dies.<br>
+<c "#dcdc99">You receive a character flag!</c>
+<br><br>
+<c "#dc7633">A Planar Projection</c> will spawn, you don't need to Hail it.
+<br><br>
+<c "#ffff00">Click</c> the trap door, and follow the path and zone into <c "#35db24">Halls of Honor</c>.
+<br><c "#dcdc99">You receive a character flag!</c>
+<br><br>
+
+
+<c "#35db24"> Post-Flag - Plane of Knowledge</c>
+<br><br>
+Now talk to <c "#dc7633">Gram Dunnar</c>, <c "#ffff00">Hail</c> him, and select <c "#ffff00">stories</c>.
+<br><br>
+
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storybastionofthunder.txt">Bastion of Thunder</a>
+<br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home</a>

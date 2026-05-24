@@ -1,0 +1,57 @@
+Shadowknight Epic 
+<br>
+<c "#ffd700">Innoruuk’s Curse: Quest Guide</c><br><br>
+
+The Innoruuk’s Curse quest demands the shadow knight to corrupt sacred artifacts—obtaining the pure <c "#dc7633">Ghoulbane</c> from Upper Guk, claiming the <c "#dc7633">Soul Leech</c> from Cazic-Thule’s realm, and acquiring the <c "#dc7633">Blade of Abrogation</c> from the celestial plane—through acts of deception, malice, and desecration.<br>
+After creating the <c "#dc7633">Corrupted Ghoulbane</c>, you must gather the <c "#dc7633">Heart of the Innocent</c>, <c "#dc7633">Head of the Valiant</c>, and <c "#dc7633">Will of Innoruuk</c> before confronting the spectral <c "#35db24">Lhranc</c> in the mist-shrouded city, where you’ll battle this ancient entity to claim the legendary weapon that embodies the Prince of Hate’s malevolent power.<br><br>
+
+<c "#ffd700">Truespirit Faction</c><br><br>
+
+Max Truespirit faction first (simple Shaman-epic trick):<br><br>
+
+Butcherblock: kill Peg Leg → a lesser spirit spawns.<br>
+Say "Wish to know more" to the spirit → Tiny Gem. Fill a bag.<br>
+North Freeport: hand all Tiny Gems to Bondl Felligan to cap faction.<br><br>
+
+<c "#ffd700">Corrupting Ghoulbane</c><br><br>
+
+Collect four items:<br><br>
+
+<c "#dc7633">Blade of Abrogation</c> – Plane of Sky<br>
+<c "#dc7633">Ghoulbane</c> – froglok shin lord (25%) in Upper Guk or Joren Nobleheart (100%) in Felwithe B<br>
+<c "#dc7633">Soul Leech, Dark Sword of Blood</c> – from Terror, Fright, or Dread in Plane of Fear<br>
+<c "#dc7633">Decrepit Sheath</c> – quest:<br>
+  Drake Spine – Rharza, Rathe Mts<br>
+  Decrepit Hide – ashenbone drake, Plane of Hate<br>
+  Enchanted Platinum Bar – have an enchanter enchant one<br>
+  Turn the three items in to Teydar → sheath<br><br>
+
+Turn sheath + Ghoulbane + Blade of Abrogation + Soul Leech in to Duriek Bloodpool → <c "#dc7633">Corrupted Ghoulbane</c>.<br><br>
+
+<c "#ffd700">Death to the Innocent</c><br><br>
+
+Toxxulia: ask Knarthenne Skurl about "heart of an innocent" → Soulcase.<br>
+The Hole: farm a chest until Cell Key drops.<br>
+Give key to Caradon (shared 10 m 40 s PH with an elemental). Kill Caradon & Kyrenna → loot Heart of Kyrenna & Blood of Kyrenna.<br>
+Toxxulia: give Kyrenna’s Blood to Marl Kastane → Dark Shroud.<br>
+Combine Heart of Kyrenna in the Soulcase → <c "#dc7633">Heart of the Innocent</c>.<br><br>
+
+<c "#ffd700">Glohnor’s Dead... Again</c><br><br>
+
+The Hole: give Dark Shroud to Ghost of Glohnor → spawns Mummy of Glohnor. Kill → loot Head of Glohnor and Glohnor Wrappings.<br>
+Give Glohnor’s Head to Gerot Kastane → <c "#dc7633">Head of the Valiant</c>.<br>
+Give Glohnor Wrappings to Marl Kastane → <c "#dc7633">Will of Innoruuk</c>.<br><br>
+
+<c "#ffd700">Innoruuk’s Curse</c><br><br>
+
+City of Mist: give Lhranc:<br>
+  Corrupted Ghoulbane<br>
+  Heart of the Innocent<br>
+  Head of the Valiant<br>
+  Will of Innoruuk<br>
+Lhranc returns Lhranc’s Token and spawns human form. Kill him.<br>
+Marl Kastane spawns; give him Lhranc’s Token → <c "#ffd700">Innoruuk’s Curse!</c><br><br>
+
+<c "#dc7633">NOTE:</c> Click-effect blade—toggles one-handed / two-handed.<br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

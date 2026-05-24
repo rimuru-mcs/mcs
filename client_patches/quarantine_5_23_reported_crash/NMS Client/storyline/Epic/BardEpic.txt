@@ -1,0 +1,69 @@
+Bard Epic 
+<br>
+<c "#35db24">Maestro's Symphony Page 24 Top</c><br><br>
+
+Talk to <c "#ffd700">Konia Swiftfoot</c> in Western Karana, receive a <c "#dc7633">Torch of Misty</c>.<br>
+Give the torch to <c "#ffd700">Fajio Knejo</c> in Misty Thicket, receive <c "#dc7633">Torch of Ro</c>.<br>
+Give the torch to <c "#ffd700">Andad Filla</c> in South Ro, receive <c "#dc7633">Torch of Rathe</c>.<br>
+Give the torch to <c "#ffd700">Misty Tekcihta</c> in Lake Rathetear, receive ring <c "#dc7633">Proof of Speed</c>.<br>
+Give the ring to <c "#ffd700">Konia Swiftfoot</c> in West Karana, receive <c "#dc7633">Maestro's Symphony Page 24 Top</c>.<br><br>
+
+<c "#35db24">Maestro's Symphony Page 24 Bottom</c><br><br>
+
+Ask <c "#ffd700">Baenar Swiftsong</c> in South Karana, “what doll,” receive <c "#dc7633">Solusek Mining Company Invoice</c>.<br>
+Note: <c "#dc7633">Marfen Binkdirple</c> is affiliated with the Solusek Mining Co. and is KOS to some players. Use alliance or sneak.<br>
+Take the invoice to <c "#ffd700">Marfen Binkdirple</c> in Solusek's Eye, receive <c "#dc7633">Mechanical Doll</c>.<br>
+Give the doll to <c "#ffd700">Serra</c> in Unrest, receive a <c "#dc7633">Ripped Qeynos Bards Guild Flyer</c> and Note for Baenar.<br>
+Give the note to <c "#ffd700">Baenar Swiftsong</c>, receive a <c "#dc7633">Note to Maligar</c>.<br>
+Note: <c "#dc7633">Maligar</c> is affiliated with the Bloodsabers and may be KOS. Use alliance or sneak.<br>
+Give the note to <c "#ffd700">Maligar</c> in Western Plains of Karana.<br>
+Kill <c "#ffd700">Maligar's Enraged Doppleganger</c>, loot his head.<br>
+Give the head to <c "#ffd700">Baenar Swiftsong</c>, receive <c "#dc7633">Mahlin's Mystical Bongos</c>.<br>
+Give Mahlin's Mystical Bongos to <c "#ffd700">Konia Swiftfoot</c>, receive <c "#dc7633">Maestro's Symphony Page 24 Bottom</c>.<br><br>
+
+<c "#35db24">Maestro's Symphony Page 25</c><br><br>
+
+Kill <c "#ffd700">Blackwing</c> in Rathe Mountains, loot <c "#dc7633">Onyx Drake Gut</c>.<br>
+Kill <c "#ffd700">Nezekezena</c> or <c "#ffd700">Phurzikon</c> in Burning Woods, loot <c "#dc7633">Red Wurm Gut</c>.<br>
+Kill <c "#ffd700">Eldrig the Old</c> in Skyfire Mountains, loot <c "#dc7633">Chromodrac Gut</c>.<br>
+Give all three guts to <c "#ffd700">Kelkim Menkia</c> in South Karana, receive <c "#dc7633">Maestro's Symphony Page 25</c>.<br><br>
+
+<c "#35db24">Mystical Lute Head</c><br><br>
+
+OPTIONAL – Kill <c "#ffd700">Quag Maelstrom</c> in Ocean of Tears, loot <c "#dc7633">Alluring Horn</c>.<br>
+OPTIONAL – Give Alluring Horn to <c "#ffd700">Vedico Windwisper</c> in Butcherblock Mountains, receive a <c "#dc7633">Note to Forpar Fizfla</c>.<br>
+OPTIONAL – Give Note to <c "#ffd700">Forpar Fizfla</c> in Steamfont Mountains.<br>
+Note: <c "#dc7633">Forpar Fizfla</c> is affiliated with the Gem Choppers and may be KOS. Use alliance or sneak.<br>
+Say “What Components” to Forpar Fizfla, receive <c "#dc7633">Forpar's Note to Himself</c>.<br>
+Kill <c "#ffd700">Phinigel Autropos</c> in Kedge Keep, loot <c "#dc7633">Kedge Backbone</c>.<br>
+Kill an <c "#ffd700">Amygdalan warrior</c> in Plane of Fear, loot <c "#dc7633">Amygdalan Tendril</c>.<br>
+Kill a <c "#ffd700">Drolvarg warlord</c> in Karnor's Castle, loot <c "#dc7633">Petrified Werewolf Skull</c>.<br>
+Give Forpar's Note, Kedge Backbone, Amygdalan Tendril, and Petrified Werewolf Skull to Forpar to receive <c "#dc7633">Mystical Lute Head</c>.<br><br>
+
+<c "#35db24">Mystical Lute Body</c><br><br>
+
+Kill a red dragon – <c "#ffd700">Lord Nagafen</c>, <c "#ffd700">Zordakalicus Ragefire</c>, <c "#ffd700">Talendor</c>, or <c "#ffd700">Nortlav the Scalekeeper</c> – and loot <c "#dc7633">Red Dragon Scales</c>.<br>
+Kill a white dragon – <c "#ffd700">Lady Vox</c> or <c "#ffd700">Gorenaire</c> – loot <c "#dc7633">White Dragon Scales</c>.<br>
+Give 1 metal bits (smithed), Red Dragon Scales, and White Dragon Scales to Forpar to receive <c "#dc7633">Mystical Lute Body</c>.<br><br>
+
+<c "#35db24">Undead Dragongut Strings</c><br><br>
+
+This is a <c "#ffd700">RESPAWNING instance only</c>! Give An Undead Bard your Mystical Lute Body.<br>
+Kill An Undead Bard; upon death he spawns <c "#ffd700">Trakanon (triggered)</c>.<br>
+Kill Trakanon (triggered) and loot <c "#dc7633">Undead Dragongut Strings</c>.<br><br>
+
+<c "#35db24">Mystical Lute</c><br><br>
+
+Give Mystical Lute Head, Mystical Lute Body, and Undead Dragongut Strings to Forpar to receive the <c "#dc7633">Mystical Lute</c>.<br><br>
+
+<c "#35db24">Singing Short Sword!</c><br><br>
+
+Give the following to <c "#ffd700">Baldric Slezaf</c>:<br><br>
+
+<c "#dc7633">Maestro's Symphony Page 24 Top</c><br>
+<c "#dc7633">Maestro's Symphony Page 24 Bottom</c><br>
+<c "#dc7633">Maestro's Symphony Page 25</c><br>
+<c "#dc7633">Mystical Lute</c><br><br>
+
+Receive the <c "#ffd700">Singing Short Sword</c> <br>
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

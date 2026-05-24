@@ -1,0 +1,51 @@
+Rogue Epic 
+<br>
+<c "#35db24">Ragebringer: Quest Guide</c><br><br>
+
+This walkthrough follows the <c "#ffd700">“lucky” route</c> (good faction, drops cooperate) and then covers every fallback the file outlines for <c "#ffd700">poor faction</c> or <c "#ffd700">unlucky loot</c>. Use whichever branch fits your situation.
+<br><br>
+
+<c "#35db24">Step 1 – Renux Herkanor</c><br>
+Go to <c "#dc7633">Western Plains of Karana</c> and find <c "#ffd700">Renux Herkanor</c> (<c "#dc7633">-2990.59, 13400.64, 36.69</c>). Kill her and loot a <c "#dc7633">Translated Parchment</c>. If you’re lucky, she also drops a <c "#dc7633">Jagged Diamond Dagger</c> — keep it if so.
+<br><br>
+
+<c "#35db24">Step 2 – Stanos & the Sealed Box</c><br>
+<c "#dc7633">Highpass Hold</c>: Find <c "#ffd700">Anson McBale</c> (<c "#dc7633">5.26, 325.48, 45.10</c>). If he isn’t up, a "<c "#ffd700">Smuggler</c>" placeholder or DZ versions can be used. Target Anson and <c "#dc7633">/say I need to see Stanos</c> (<c "#ffd700">Requires at least indifferent faction</c>).<br>
+→ This spawns <c "#ffd700">Stanos Herkanor</c> (<c "#dc7633">9.48, 336.05, 45.10</c>).<br>
+Give Stanos the <c "#dc7633">Translated Parchment</c>. He returns a <c "#dc7633">Sealed Box</c>.
+<br><br>
+
+<c "#35db24">Step 3 – General V`ghera</c><br>
+<c "#dc7633">Kithicor Forest</c>: Go to the <c "#ffd700">Dark Elf camp</c> (<c "#dc7633">803.89, 2300.51, 272.34</c>). At least one Dark Elf must remain alive.<br>
+Sneak/hide behind the surviving Dark Elf and hand in the <c "#dc7633">Sealed Box</c>.<br>
+→ <c "#ffd700">General V`ghera</c> (<c "#dc7633">798.21, 2315.99, 274.95</c>) spawns and likely attacks with the remaining elf. Kill him and loot a <c "#dc7633">General’s Pouch</c>. If he drops a <c "#dc7633">Cazic Quill</c>, keep it.
+<br><br>
+
+<c "#35db24">Step 4 – Final Turn-in for Ragebringer</c><br>
+Return to <c "#dc7633">Highpass Hold</c>. Target <c "#ffd700">Anson McBale</c> and <c "#dc7633">/say I need to see Stanos</c> to spawn Stanos again.<br>
+Hand Stanos the <c "#dc7633">General’s Pouch</c>, plus your <c "#dc7633">Jagged Diamond Dagger</c> and <c "#dc7633">Cazic Quill</c>.<br>
+→ <c "#ffd700">Ragebringer</c> is yours!
+<br><br>
+
+<c "#35db24">Step 5 – Bad-Faction / Unlucky Routes</c><br>
+
+<c "#ffd700">Spawning Stanos on bad faction</c><br>
+<c "#dc7633">Qeynos Aqueducts</c>: Find <c "#ffd700">Malka Rale</c> (<c "#dc7633">365.36, -203.74, -80.84</c>) after 10 PM Norrath time. Target and <c "#dc7633">/say I can help</c> → <c "#dc7633">Stanos’ Pouch</c>.<br>
+Sneak (not hide) behind <c "#ffd700">Anson McBale</c> in Highpass, trade <c "#dc7633">Stanos’ Pouch</c> → Stanos spawns.
+<br><br>
+
+<c "#ffd700">If the Jagged Diamond Dagger didn’t drop</c><br>
+Farm <c "#ffd700">Renux Herkanor</c> in <c "#dc7633">Qeynos Rogue guild area</c>; she always drops the <c "#dc7633">Translated Parchment</c> and has a decent dagger chance.<br>
+Or do the long quest via <c "#ffd700">Vilnius the Small</c> in <c "#dc7633">West Karana</c>:<br>
+<c "#dc7633">Fleshripper</c> (Sol B king), <c "#dc7633">Painbringer</c> (Sol B champion), <c "#dc7633">Mithril 2HS</c> (LGuk king), <c "#dc7633">Gigantic Zweihander</c> (Karg Icebear) → trade all four to Vilnius → <c "#dc7633">Jagged Diamond Dagger</c>.
+<br><br>
+
+<c "#ffd700">If the Cazic Quill didn’t drop</c><br>
+Farm <c "#ffd700">General V`ghera</c> repeatedly (<c "#ffd700">Renux</c> → <c "#dc7633">Parchments</c> → <c "#dc7633">Boxes</c> → <c "#ffd700">General</c>).<br>
+OR complete Vilnius’s robe turn-ins (<c "#dc7633">Robe of the Kedge</c>, <c "#dc7633">Ishva</c>, <c "#dc7633">SMR</c>, <c "#dc7633">Oracle</c>) for the <c "#dc7633">Cazic Quill</c>.
+<br><br>
+
+Shadows lengthen behind you, assassin — your <c "#ffd700">Ragebringer</c> gleams with every deed that bought its edge. Wield it well.
+<br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

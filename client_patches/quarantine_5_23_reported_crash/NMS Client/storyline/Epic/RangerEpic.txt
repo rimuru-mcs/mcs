@@ -1,0 +1,75 @@
+Ranger Epic 
+<br>
+<c "#35db24">Earthcaller & Swiftwind: Quest Guide</c><br>
+<br>
+<c "#ffd700">Pre-farmable Steps</c><br><br>
+
+<c "#dc7633">Forage</c><br>
+    Chilled Tundra Root – <c "#ffd700">Everfrost</c><br>
+    Ripened Heartfruit – <c "#ffd700">Greater Faydark</c><br>
+    Speckeled Molded Mushroom – <c "#ffd700">Innothule Swamp</c><br>
+    Sweetened Mudrot – <c "#ffd700">Misty Thicket</c><br>
+    Forage Rose of Firiona – <c "#ffd700">Firiona Vie</c><br><br>
+
+<c "#dc7633">Loot</c><br>
+    Jade Reaver from a <c "#ffd700">black reaver</c> in <c "#ffd700">City of Mist</c><br>
+    Pulsing Green Stone from the triggered <c "#ffd700">Venril Sathir</c><br>
+    Swirling Sphere of Color from an <c "#ffd700">essence tamer</c> on Island 4 (<c "#ffd700">Plane of Sky</c>)<br>
+    Shattered Emerald of Corruption from <c "#ffd700">named mobs</c> in <c "#ffd700">Plane of Hate</c><br><br>
+
+<c "#ffd700">Factioning</c><br><br>
+
+<c "#dc7633">Keeper of the Art</c><br>
+    Buy <c "#ffd700">3,000 Batwings</c> from any merchant (e.g. <c "#ffd700">Darius Gandril</c> in <c "#ffd700">PoK</c>) and hand them (stacked) to <c "#ffd700">Niola Impholder</c> in <c "#ffd700">South Felwithe</c>.<br><br>
+
+<c "#dc7633">Clerics of Tunare</c><br>
+    Purchase <c "#ffd700">muffins</c> and give them to <c "#ffd700">Pandos</c> in <c "#ffd700">Freeport</c> if <c "#ffd700">Telin</c> will not respond.<br><br>
+
+<c "#ffd700">Obtain Softly Glowing Stone</c><br><br>
+
+<c "#dc7633">Shiny Tin Bowl</c><br>
+    Say “<c "#35db24">action</c>” to <c "#ffd700">Telin Darkforest</c> in <c "#ffd700">Burning Wood</c> → <c "#ffd700">Worn Note</c><br>
+    Give the note to <c "#ffd700">Faelin Bloodbriar</c> in <c "#ffd700">Greater Faydark</c> → <c "#ffd700">Faelin’s Ring</c><br>
+    Give the ring to <c "#ffd700">Giz X’Tin</c> in <c "#ffd700">Kithicor</c> → <c "#ffd700">Dark Metal Coin</c> (spawns <c "#ffd700">Teir`Dal Reaver</c>)<br>
+    Give the coin back to Telin Darkforest → <c "#ffd700">Worn Dark Metal Coin</c><br>
+    Give the Worn Coin to <c "#ffd700">Althele</c> in <c "#ffd700">East Karana</c> → <c "#ffd700">Braided Grass Amulet</c> (spawns <c "#ffd700">Sionae / Nuien / Teloa</c> chain, kill <c "#ffd700">corruptor</c>, loot <c "#ffd700">Fleshbound Tome</c>)<br>
+    Turn the tome in to Althele → <c "#ffd700">Earth Stained Note</c><br>
+    Give the note to <c "#ffd700">Ella Foodcrafter</c> in <c "#ffd700">Misty Thicket</c> → <c "#ffd700">Shiny Tin Bowl</c><br><br>
+
+<c "#dc7633">Hardened Clay Mixture</c><br>
+    Forage the four roots/fruit/etc. (Everfrost, GFay, Innothule, Misty).<br>
+    Combine them in the <c "#ffd700">Shiny Tin Bowl</c> → <c "#ffd700">Hardened Mixture</c> (keep the bowl).<br><br>
+
+<c "#dc7633">Ancient Pattern</c><br>
+    Say “<c "#35db24">I will take the artifact</c>” to <c "#ffd700">Alrik Farsight</c> (<c "#ffd700">Timorous Deep</c>) → <c "#ffd700">Crushed Pot</c><br>
+    Turn-in chain through <c "#ffd700">Farios</c> → <c "#ffd700">Merchant Nora</c> → Farios → Alrik → <c "#ffd700">Ancient Pattern</c><br><br>
+
+<c "#dc7633">Enchanted Clay</c><br>
+    Forage <c "#ffd700">Rose of Firiona</c> → give to <c "#ffd700">Merdan</c> → <c "#ffd700">Wood Painting</c> → <c "#ffd700">human skeleton</c> → <c "#ffd700">Silver Chained Locket</c> → <c "#ffd700">Niera Farbreeze</c> → <c "#ffd700">Platinum Speckled Powder</c><br>
+    Turn <c "#ffd700">Jade Reaver</c> in to <c "#ffd700">Kinlo Strongarm</c> → <c "#ffd700">Enchanted Clay</c><br><br>
+
+    Combine <c "#ffd700">Ancient Pattern</c> + <c "#ffd700">Powder</c> + <c "#ffd700">Enchanted Clay</c> in a pottery wheel → <c "#ffd700">Runecrested Bowl</c><br>
+    Turn <c "#ffd700">Runecrested Bowl</c> + <c "#ffd700">Hardened Mixture</c> in to <c "#ffd700">Ella Foodcrafter</c> → <c "#ffd700">Softly Glowing Stone</c><br><br>
+
+<c "#ffd700">Obtain Warmly Glowing Stone</c><br><br>
+
+    In <c "#ffd700">Karnor’s Castle</c>, spawn the <c "#ffd700">Spirit of Venril Sathir</c> (<c "#ffd700">Firefly Globe</c> + <c "#ffd700">Resurrection scroll</c>), kill VS and loot <c "#ffd700">Pulsing Green Stone</c><br>
+    Give <c "#ffd700">Pulsing Green Stone</c> + <c "#ffd700">Softly Glowing Stone</c> to <c "#ffd700">Foloal Stormforest</c> in <c "#ffd700">Firiona Vie</c> → <c "#ffd700">Warmly Glowing Stone</c><br><br>
+
+<c "#ffd700">Forge Earthcaller & Swiftwind</c><br><br>
+
+    Give <c "#ffd700">Warmly Glowing Stone</c> to <c "#ffd700">Telin Darkforest</c> → <c "#ffd700">Ancient Longsword</c><br>
+    In <c "#ffd700">The Hole</c> give <c "#ffd700">Shiny Tin Bowl</c> to <c "#ffd700">Jaeil the Wretched</c>, kill <c "#ffd700">Jaeil the Insane</c>, loot <c "#ffd700">Soulbound Hammer</c><br>
+    Island 4 (<c "#ffd700">PoS</c>) – kill <c "#ffd700">essence tamer</c> for <c "#ffd700">Swirling Sphere of Color</c><br>
+    In <c "#ffd700">Erudin</c>, give <c "#ffd700">Soulbound Hammer</c> to <c "#ffd700">Mairee Silentone</c> → <c "#ffd700">Dwarven Smith’s Hammer</c>; then <c "#ffd700">Hammer</c> + <c "#ffd700">Sphere</c> → <c "#ffd700">Hammer of the Ancients</c><br>
+    <c "#ffd700">North Kaladim</c>: give <c "#ffd700">Hammer of the Ancients</c> to <c "#ffd700">Kinlo Strongarm</c> → <c "#ffd700">Small Bit of Mithril Ore</c> (spawns <c "#ffd700">Usbak the Old</c>)<br>
+    Give <c "#ffd700">Ancient Longsword</c> to <c "#ffd700">Usbak</c> → <c "#ffd700">Refined Ancient Sword</c><br>
+    Give <c "#ffd700">Mithril Ore</c> to <c "#ffd700">Kinlo Strongarm</c> → <c "#ffd700">Refined Mithril Blade</c><br><br>
+
+<c "#dc7633">Swiftwind</c><br>
+    Give <c "#ffd700">Refined Ancient Sword</c> to <c "#ffd700">Telin Darkforest</c>, then to <c "#ffd700">Faelin Bloodbriar</c> → <c "#ffd700">Swiftwind!</c><br><br>
+
+<c "#dc7633">Earthcaller</c><br>
+    Loot <c "#ffd700">Shattered Emerald of Corruption</c> in <c "#ffd700">Hate</c>; give it + <c "#ffd700">Refined Mithril Blade</c> to <c "#ffd700">Xanuusus</c> in <c "#ffd700">North Karana</c> → <c "#ffd700">Earthcaller!</c><br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

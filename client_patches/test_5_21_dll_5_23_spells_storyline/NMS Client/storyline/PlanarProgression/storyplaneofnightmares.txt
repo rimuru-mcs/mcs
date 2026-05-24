@@ -1,0 +1,43 @@
+<c "#ff0000">PLANE OF NIGHTMARES</c>
+<br><br>
+<c "#35db24"> Pre-Flag - Plane of Tranquility</c><br>
+Head to the <c "#35db24">Sick Bay</c> (loc: -253, -1415, -906). find <c "#dc7633">Adroha Jezith</c>, <c "#ffff00">Hail</c> her and follow the dialog.
+<br><c "#dcdc99">You receive a character flag!</c>
+<br><br>
+
+<c "#35db24"> Part One- Hedge Maze Event</c><br>
+Head into the <c "#35db24">Plane of Nightmare</c> and go to the far northeast (across the water) to find some hedges, to talk to <c "#dc7633">Thelin Poxbourne</c> and <c "#ffff00">Hail</c> him, tell him '<c "#ffff00">ready</c>'
+ to teleport inside the hedge maze.
+
+<br><br>
+Once inside the hedge maze, you will encounter<c "#ff0000">A Construct of Nightmares</c> infront of you. You must <c "#00ff00">Kill</c> it!
+<br><br>
+Once you have finished off <c "#ff0000">A Construct of Nightmares</c>, loot the <c "#ffd700">Dagger Blade Shard</c>, and <c "#ffff00">Hail</c> <c "#dc7633">Thelin Poxbourne</c>.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+ Hand the <c "#ffd700">Dagger Blade Shard</c> to him and recieve <c "#ffd700">Thelin's Dagger</c>. After you are done, <c "#ffff00">Hail</c> him and say <c "#ffff00">return</c>.<br><br>
+
+Head to the gate to <c "#ff0000">Terris Thule's</c> lair.<br>
+Click the Gate to zone in.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+<c "#35db24"> Part Two - Terris Thule</c><br>
+<br>
+Fight your way into where <c "#ff0000">Terris Thule</c> is located (at the end of the path, in a building).
+<br><br>
+Attack and kill <c "#ff0000">Terris Thule</c>
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+A Planar Projection will appear. you don't have to <c "#ffff00">Hail</c> it.
+<br><br>
+Head back to <c "#35db24">Plane of Tranquility</c> and goto the <c "#35db24">Sick Bay</c> (loc: -253, -1415, -906). find <c "#dc7633">Elder Poxbourne</c> and <c "#ffff00">Hail</c> him.
+<br><c "#dada99">You receive a character flag!</c>
+<br><br>
+
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyruinsoflxanvom.txt">Crypt of Decay (Ruins of Lxanvom></a>
+<br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

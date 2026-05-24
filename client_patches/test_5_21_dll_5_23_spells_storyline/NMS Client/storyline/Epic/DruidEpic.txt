@@ -1,0 +1,122 @@
+Druid Epic 
+<br>
+<c "#35db24">Nature Walker’s Scimitar: Quest Guide</c><br><br>
+
+<c "#ffd700">Pre-farmable Steps</c><br><br>
+
+<c "#dc7633">Forage</c>:<br>
+    <c "#ffd700">Chilled Tundra Root</c> – Everfrost<br>
+    <c "#ffd700">Ripened Heartfruit</c> – Greater Faydark<br>
+    <c "#ffd700">Speckeled Molded Mushroom</c> – Innothule Swamp<br>
+    <c "#ffd700">Sweetened Mudrot</c> – Misty Thicket<br>
+    <c "#ffd700">Rose of Firiona</c> – Firiona Vie<br><br>
+
+<c "#dc7633">Loot</c>:<br>
+    <c "#ffd700">Jade Reaver</c> – Black Reaver, City of Mist<br>
+    <c "#ffd700">Pulsing Green Stone</c> – Triggered Venril Sathir<br>
+    <c "#ffd700">Swirling Sphere of Color</c> – Essence Tamer, Plane of Sky Island 4<br>
+    <c "#ffd700">Shattered Emerald of Corruption</c> – Named, Plane of Hate<br><br>
+
+<c "#dc7633">Corrupted Mobs</c>:<br>
+    Kill <c "#ffd700">corrupted aquagoblin</c>, Lake Rathetear → <c "#ffd700">Clean Lakewater</c><br>
+    Kill <c "#ffd700">corrupted hill giant</c> → <c "#ffd700">Ancient Rock</c><br>
+    Kill <c "#ffd700">corrupted wooly mammoth</c> → <c "#ffd700">Chunk of Tundra</c><br>
+    Kill <c "#ffd700">corrupted seafury cyclops</c>, OOT → <c "#ffd700">Ocean of Tears Seavines</c><br>
+    Kill <c "#ffd700">corrupted seahorse</c>, Kedge Keep → <c "#ffd700">Kedge Cave Crystals</c><br>
+    Kill <c "#ffd700">corrupted brownie</c> → <c "#ffd700">Green Heartwood Branch</c><br>
+    Kill <c "#ffd700">corrupted gorilla</c>, Emerald Jungle → <c "#ffd700">Green Tree Bark</c><br>
+    Kill <c "#ffd700">corrupted barracuda</c>, LOIO → <c "#ffd700">Pure Lakewater</c><br>
+    Kill <c "#ffd700">Ulump Pujluk</c>, Swamp of No Hope → <c "#ffd700">Froglok Essence</c><br><br>
+
+---
+
+<c "#ffd700">Factioning</c><br><br>
+
+<c "#dc7633">Keeper of the Art</c>:<br>
+    Buy 3,000 batwings and hand them (stacked) to <c "#ffd700">Niola Impholder</c> in South Felwithe.<br><br>
+
+<c "#dc7633">Clerics of Tunare</c>:<br>
+    Hand muffins to <c "#ffd700">Pandos</c> in Freeport if <c "#ffd700">Telin</c> won’t respond.<br><br>
+
+---
+
+<c "#ffd700">Obtain Softly Glowing Stone</c><br><br>
+
+<c "#dc7633">Shiny Tin Bowl</c>:<br>
+    Say <c "#ffd700">"action"</c> to <c "#ffd700">Telin Darkforest</c> (Burning Wood) → <c "#ffd700">Worn Note</c><br>
+    Give note to <c "#ffd700">Faelin Bloodbriar</c> (GFay) → <c "#ffd700">Faelin’s Ring</c><br>
+    Give ring to <c "#ffd700">Giz X’Tin</c> (Kithicor) → <c "#ffd700">Dark Metal Coin</c> (spawns Teir`Dal Reaver)<br>
+    Return coin to Telin → <c "#ffd700">Worn Dark Metal Coin</c><br>
+    Do the East Karana chain (Althele → Sionae → Nuien → Teloa) to spawn <c "#ffd700">Dark Elf Corruptor</c>, loot <c "#ffd700">Fleshbound Tome</c><br>
+    Turn in tome to Althele → <c "#ffd700">Earth Stained Note</c><br>
+    Give note to <c "#ffd700">Ella Foodcrafter</c> (Misty) → <c "#ffd700">Shiny Tin Bowl</c><br><br>
+
+<c "#dc7633">Hardened Clay Mixture</c>:<br>
+    Combine the four foraged items in the bowl → <c "#ffd700">Hardened Mixture</c><br><br>
+
+<c "#dc7633">Ancient Pattern</c>:<br>
+    Say <c "#ffd700">"I will take the artifact"</c> to <c "#ffd700">Alrik Farsight</c> (Timorous Deep) → <c "#ffd700">Crushed Pot</c><br>
+    Run errands between <c "#ffd700">Farios</c> and <c "#ffd700">Merchant Nora</c> → Bag → Receipt → back to Alrik → <c "#ffd700">Ancient Pattern</c><br><br>
+
+<c "#dc7633">Enchanted Clay</c>:<br>
+    Rose of Firiona → <c "#ffd700">Merdan</c> → <c "#ffd700">Wood Painting</c> → Human Skeleton → <c "#ffd700">Silver Locket</c> → <c "#ffd700">Niera</c> → <c "#ffd700">Platinum Powder</c><br>
+    Jade Reaver → <c "#ffd700">Kinlo</c> → <c "#ffd700">Enchanted Clay</c><br><br>
+
+Combine <c "#ffd700">Ancient Pattern + Powder + Enchanted Clay</c> → <c "#ffd700">Runecrested Bowl</c><br>
+Give <c "#ffd700">Runecrested Bowl + Hardened Mixture</c> to <c "#ffd700">Ella Foodcrafter</c> → <c "#ffd700">Softly Glowing Stone</c><br><br>
+
+---
+
+<c "#ffd700">Obtain Warmly Glowing Stone</c><br><br>
+
+Karnor’s Castle:<br>
+    Give <c "#ffd700">Firefly Globe</c> to <c "#ffd700">Venril Remains</c> → <c "#ffd700">Spirit</c><br>
+    Give <c "#ffd700">Resurrection Scroll</c> to Spirit → <c "#ffd700">Venril Sathir</c>; kill him → <c "#ffd700">Pulsing Green Stone</c><br><br>
+
+Firiona Vie:<br>
+    Give <c "#ffd700">Pulsing Green Stone + Softly Glowing Stone</c> to <c "#ffd700">Foloal Stormforest</c> → <c "#ffd700">Warmly Glowing Stone</c><br><br>
+
+---
+
+<c "#35db24">Cleansed Spirit of Antonica</c><br><br>
+
+    Lake Rathetear: <c "#ffd700">Clean Lakewater</c><br>
+    Rathe Mountains: <c "#ffd700">Ancient Rock</c><br>
+    Everfrost: <c "#ffd700">Chunk of Tundra</c><br><br>
+    North Karana: Give the 3 items to <c "#ffd700">Withered Treant</c> → <c "#ffd700">Warm Pulsing Heart</c><br>
+    South Karana: Give heart to <c "#ffd700">Yeka Las</c> → <c "#ffd700">Cleansed Spirit of Antonica</c><br><br>
+
+---
+
+<c "#35db24">Cleansed Spirit of Faydwer</c><br><br>
+
+    OOT: <c "#ffd700">Ocean of Tears Seavines</c><br>
+    Kedge Keep: <c "#ffd700">Kedge Cave Crystals</c><br>
+    Lesser Faydark: <c "#ffd700">Green Heartwood Branch</c><br><br>
+    Give all 3 to <c "#ffd700">A Pained Unicorn</c> → <c "#ffd700">Gleaming Unicorn Horn</c><br>
+    Ak’Anon: Give horn to <c "#ffd700">Silox Azrix</c> → <c "#ffd700">Cleansed Spirit of Faydwer</c><br><br>
+
+---
+
+<c "#35db24">Cleansed Spirit of Kunark</c><br><br>
+
+    Emerald Jungle: <c "#ffd700">Green Tree Bark</c><br>
+    LOIO: <c "#ffd700">Pure Lakewater</c><br>
+    Swamp of No Hope: <c "#ffd700">Froglok Essence</c><br><br>
+    Timorous Deep: Give Essence to <c "#ffd700">Dolgin Codslayer</c> → spawns <c "#ffd700">Weak Faydedar</c>; kill → <c "#ffd700">Pod of Seawater</c><br>
+    Overthere: Give Bark, Lakewater, Essence, Pod to <c "#ffd700">Nekexin Virulence</c> → <c "#ffd700">Cleansed Spirit of Kunark</c><br><br>
+
+---
+
+<c "#35db24">Nature Walker’s Scimitar</c><br><br>
+
+    Give <c "#ffd700">Warmly Glowing Stone</c> to <c "#ffd700">Ella Foodcrafter</c> → <c "#ffd700">Elaborate Scimitar</c><br><br>
+    North Karana – Give <c "#ffd700">Xanuusus</c>:<br>
+        <c "#ffd700">Cleansed Spirit of Antonica</c><br>
+        <c "#ffd700">Cleansed Spirit of Faydwer</c><br>
+        <c "#ffd700">Cleansed Spirit of Kunark</c><br>
+        <c "#ffd700">Elaborate Scimitar</c><br><br>
+
+→ <c "#ffd700">Nature Walker’s Scimitar!</c><br><br><br>
+
+<br><br><a href="file:///storyline/storyEpicsGuide.txt>Go Back</a><br><br><br>

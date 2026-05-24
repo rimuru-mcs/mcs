@@ -1,0 +1,61 @@
+<c "#35db24">Fiery Avenger: Quest Guide</c><br> 
+<br>
+<c "#ffd700">The Fiery Avenger</c> represents the culmination of a Paladin's noble journey, requiring the acquisition of legendary blades <c "#dc7633">Soulfire</c> and <c "#dc7633">Ghoulbane</c>, along with <c "#dc7633">Miragul's Head</c> and <c "#dc7633">Miragul's Robe</c> as symbols of nobility and sacrifice.<br>
+This quest challenges Paladins to venture across Norrath—from the depths of dungeons to the lairs of dragons—proving their worth through combat prowess and dedication to forge one of the most iconic weapons a holy warrior can wield.<br>
+<br><br>
+
+<c "#35db24">An Ally to the Knights</c><br>
+To get started, the first step you'll want to complete is to achieve <c "#ffd700">high faction</c> (recommended to achieve <c "#ffd700">Ally</c>) with the <c "#dc7633">Deepwater Knights</c>.<br>
+You have three options to achieve this:<br>
+<br>
+    - Travel to <c "#dc7633">Paineel</c> and find <c "#dc7633">Atdehim Sqonci</c> in the northeast corner of the zone, inside the cleric guild.<br>
+      Killing him awards +1000 faction with the Deepwater Knights. He respawns every 10m 40s. Camp him until you've reached the required faction.<br>
+    - Also in Paineel, you can kill <c "#dc7633">skeletal guards</c>. Each gives +10 faction. Slower, but may be safer than cleric guild NPCs.<br>
+    - Hunt <c "#dc7633">Kobolds in The Warrens</c>, collect <c "#dc7633">Kobold Molars</c>, and turn them in to <c "#dc7633">Tiam Khonsir</c> in <c "#dc7633">Erudin</c>.<br>
+      Each molar provides a small faction boost per turn-in.<br>
+<br><br>
+
+<c "#35db24">Dragons and Books and Liches, Oh My!</c><br>
+Once you've achieved the necessary faction, you'll need to find and collect:<br>
+    - <c "#dc7633">Torn, Frost-Covered Book</c><br>
+    - <c "#dc7633">Torn, Burnt Book</c><br>
+<br>
+<c "#ffd700">Torn, Frost-Covered Book</c> drops from:<br>
+    <c "#dc7633">Gorenaire</c> (Dreadlands)<br>
+    <c "#dc7633">Lady Vox</c> (Permafrost)<br>
+    <c "#dc7633">Faydedar</c> (Timorous Deep)<br>
+<br>
+<c "#ffd700">Torn, Burnt Book</c> drops from:<br>
+    <c "#dc7633">Lord Nagafen</c> (Nagafen's Lair)<br>
+    <c "#dc7633">Talendor</c> (Skyfire Mountains)<br>
+    <c "#dc7633">Severilous</c> (Emerald Jungle)<br>
+    <c "#dc7633">Melalafen</c> (Western Wastes)<br>
+<br>
+Hand both books plus <c "#dc7633">1000pp</c> to <c "#dc7633">Rineval Talyas</c> in <c "#dc7633">North Qeynos</c> to receive a <c "#dc7633">Book of Scale</c>.<br>
+Take the book to <c "#dc7633">Oracle of K'Arnon</c> in <c "#dc7633">Ocean of Tears</c>; hand it in to receive <c "#dc7633">Miragul's Phylactery</c>.<br>
+<br><br>
+
+<c "#35db24">The Death of a Lich</c><br>
+With the phylactery in hand, head to <c "#dc7633">Everfrost</c>, jump through the ice hole north of the river fork, and locate the <c "#dc7633">Lich of Miragul</c>.<br>
+If he's not up, kill the lone placeholder that paths in this location.<br>
+Approach carefully (use charm, IVU, or calm) and hand him <c "#dc7633">Miragul's Phylactery</c>.<br>
+He will despawn and <c "#dc7633">Miragul</c> spawns in his place. Kill him and loot both his <c "#dc7633">Robe</c> and <c "#dc7633">Head</c>.<br>
+<br><br>
+
+<c "#35db24">Blessings of Inte Akera</c><br>
+Take the following items to the <c "#dc7633">Plane of Sky</c>:<br>
+    - <c "#dc7633">Soulfire</c><br>
+    - <c "#dc7633">Ghoulbane</c><br>
+    - <c "#dc7633">Miragul's Robe</c><br>
+    - <c "#dc7633">Miragul's Head</c><br>
+    - <c "#dc7633">500pp</c><br>
+<br>
+In the quest room, tell <c "#dc7633">Dason Goldblade</c> "<c "#ffd700">I wish to be tested by Dirkog</c>".<br>
+Give him the scroll he hands back to spawn <c "#dc7633">Dirkog Steelhand</c>; pay Dirkog <c "#dc7633">500pp</c> to spawn <c "#dc7633">Inte Akera</c> on island 4.<br>
+<br>
+On island 4, hand in the following to Inte Akera:<br>
+    - <c "#dc7633">Soulfire</c> → <c "#dc7633">Inte's First Blessing</c><br>
+    - <c "#dc7633">Ghoulbane</c> → <c "#dc7633">Inte's Second Blessing</c><br>
+    - <c "#dc7633">First Blessing</c>, <c "#dc7633">Second Blessing</c>, <c "#dc7633">Miragul's Robe</c>, <c "#dc7633">Miragul's Head</c> → <c "#ffd700">Fiery Avenger!</c><br>
+<br><br><br><a href="file:///storyline/Epic/PaladinEpic.txt>Go Back</a><br><br><br>
+

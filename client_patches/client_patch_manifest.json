@@ -1,0 +1,1253 @@
+{
+  "stable_5_21_base": [
+    {
+      "path": "NMS Client/Resources/spells_us.txt",
+      "size": 28147650,
+      "sha256": "2dbdcbfbeeab7eff0fa922ab28f8a8fe00863eb6fbccc2df84f71922159416ee"
+    },
+    {
+      "path": "NMS Client/dinput8.dll",
+      "size": 1633792,
+      "sha256": "7ae2f184e5f12971104635a5880167a603ee02061e41d8bb12088b78e9354156"
+    },
+    {
+      "path": "NMS Client/spells_us.txt",
+      "size": 28147650,
+      "sha256": "2dbdcbfbeeab7eff0fa922ab28f8a8fe00863eb6fbccc2df84f71922159416ee"
+    }
+  ],
+  "test_5_21_dll_5_23_spells_storyline": [
+    {
+      "path": "NMS Client/Resources/spells_us.txt",
+      "size": 28147586,
+      "sha256": "5539ff4078c853696f323658d6871900a7a6a7a47265155ced59bd5ad92db505"
+    },
+    {
+      "path": "NMS Client/dinput8.dll",
+      "size": 1633792,
+      "sha256": "7ae2f184e5f12971104635a5880167a603ee02061e41d8bb12088b78e9354156"
+    },
+    {
+      "path": "NMS Client/spells_us.txt",
+      "size": 28147586,
+      "sha256": "5539ff4078c853696f323658d6871900a7a6a7a47265155ced59bd5ad92db505"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BardEpic.txt",
+      "size": 4948,
+      "sha256": "3a948e9e6fede39cff7a8b40259f1ece0297894bf1a257008f44cab9b689342e"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BeasterlordEpic.txt",
+      "size": 5637,
+      "sha256": "da5b5e5ddffc3670823fcc41e7b687baa4e88ac3c07088a541fa6fc05e08fd96"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BeastlordEpic.txt",
+      "size": 6187,
+      "sha256": "39cd1867493b23422240b3188253dafa8a6c89bef313ab716201a946b0d11b69"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BerserkerEpic.txt",
+      "size": 3807,
+      "sha256": "61f2dcde2cad9840477c7b1785b4413599a39f9a1b360c836f76324ed49acb32"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/ClericEpic.txt",
+      "size": 4769,
+      "sha256": "a01bf8848ab8c569019e0bef30577d4f9c934edbbc905a4cd2e1f92a09a67ba0"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/DruidEpic.txt",
+      "size": 6666,
+      "sha256": "1be90c86f42ec37c373c87ce71b7374954fccfc3e2bc46e47b8d74b1aadf466b"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/EnchanterEpic.txt",
+      "size": 6626,
+      "sha256": "a9864a80a44a3341ab81e55e873e33feb6209f7d9bffc55ff68773bacd665177"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/MageEpic.txt",
+      "size": 4129,
+      "sha256": "08ec12f50547f388a5a32125db5dde4a37bec26d4ae5b3a28a34bf65c01e2db1"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/MonkEpic.txt",
+      "size": 4000,
+      "sha256": "20f286fe065641b7605495bd7e7178bb5afdb9d9d0f36a15c1a5ad2bb7eda039"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/NecroEpic.txt",
+      "size": 4494,
+      "sha256": "6e16502e7b5a71f3da90592a59e5788dc6885fd3924f2a7f430b463ff488fc96"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/PaladinEpic.txt",
+      "size": 4081,
+      "sha256": "4a1f957e7edb001f57bb97a25445ecbf80bb71e4eff7dd3d7d8db2abaa2092a5"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/Palprereq1.txt",
+      "size": 7255,
+      "sha256": "881e560f35b9914add53d0b6cb4c3659a1205650fb3dd4bc0edbc1d47f7e5d48"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/Palprereq2.txt",
+      "size": 2617,
+      "sha256": "ce62a3c065970d023de025fc23da11c37d53f58995c9adac331c7cfa0d5aa354"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/Palprereq3.txt",
+      "size": 4315,
+      "sha256": "913e79d40e55d564cc236bca6798ecfdabb3af8bee478acef98cdbdd9b272e34"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/RangerEpic.txt",
+      "size": 6177,
+      "sha256": "0b5ef31c328d51b246f6063f1c55f45747c70bac7f76def6f7341c5b0546eaa7"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/RogueEpic.txt",
+      "size": 3982,
+      "sha256": "540ddf735345b3db2994951273df9645d33135b0ce86107c712bb5a83478378b"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/ShadowknightEpic.txt",
+      "size": 3343,
+      "sha256": "38e6fab4a51be3537dfd1bf04a83417bf6685f8cb002e50e2d050eb7560bab2e"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/ShamanEpic.txt",
+      "size": 1650,
+      "sha256": "d91124e69045e4d95fbfe2b2301be0d2154e831ad2c6df611f11e190c01c1e47"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/WarriorEpic.txt",
+      "size": 3908,
+      "sha256": "3a559c72ec865d1b3d781be7d5dfa761e2b495589c70d1bae5d082c46ebdc802"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/WizardEpic.txt",
+      "size": 3049,
+      "sha256": "6dea2fb771c2a2b78c59af942fb5c0f4b151e9c5ab1d5bb3a91512970aa587f2"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyAbysmal.txt",
+      "size": 7627,
+      "sha256": "99ca9a85d66aad827a8cef4ab52ecd21e633fef4a752ce8c129b139199f7e864"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyAgreement.txt",
+      "size": 3718,
+      "sha256": "9afeaa8998a7f3799b035527b4877577406cf329c2ab75abcd4cc4d03af016ab"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyAmulet.txt",
+      "size": 6483,
+      "sha256": "62468f3d3084db0827b37228cccb44800650b05418920b19d5f9a611976f22f0"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyBuild.txt",
+      "size": 5993,
+      "sha256": "2f7acdf86ff497afef56ac860aaad522389546e13bd93c61e9ede056364a2f05"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyChosen.txt",
+      "size": 8056,
+      "sha256": "1239bb57977220b4fd211bead379a08f1975a4dcf38bd3b1b38786b3ed4ff196"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyCourse.txt",
+      "size": 5493,
+      "sha256": "4b4338eaeff5a839a838fe3ba983194c4cc1ec2ca0b174ce8f62dbc94c5d5c90"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyCurrents.txt",
+      "size": 5341,
+      "sha256": "9fc2fa75e6bcd8deaef6bac35daa09b075a8ae309bc48c40a31b42f568d62081"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyDarkhollow.txt",
+      "size": 10563,
+      "sha256": "9312e6ad1a619a525caa978edcff4dccde3bd758212d5768f743c34ad23de462"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyDaughter.txt",
+      "size": 7111,
+      "sha256": "9e265400fc7c53fcc1d1c5cd0dce900a4cf25ac22c36c6dc88142b35d08b968f"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyDawn.txt",
+      "size": 2903,
+      "sha256": "00f0e63be0588a1f08d5f3b0bde2efd0b7bb750e340644b46e64c352d8ee2835"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyExile.txt",
+      "size": 2801,
+      "sha256": "30e445bc2e145c83e99b414548d4bfa3b76e7c35dc0177bd092f3a4d5cd8ad88"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyFelwithe.txt",
+      "size": 4987,
+      "sha256": "ab3df32c071499ed6a7b9bb84b939fe0299e54c2546f4ea8940df157a55b97ac"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyFires.txt",
+      "size": 2480,
+      "sha256": "ae1f60d709890ff4355dc805451780ecc9bb9660e0572e2105484af1b58aadbb"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyGate.txt",
+      "size": 7670,
+      "sha256": "30f65b4ff0fbad5b7cfa8e6244ba4eea729b64aaefbd4ce1f5c688209caa3671"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyGrobb.txt",
+      "size": 3281,
+      "sha256": "f3cf3bd1f88f0718412a63b85a9ff5ebb43907dc036b19414a4ecc466c38e974"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyJourney.txt",
+      "size": 6924,
+      "sha256": "d0ae0ddfb8043dab835b6180524851d1d2c1c3242b17656fdcc2e6b6d673c55a"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyLanys.txt",
+      "size": 8159,
+      "sha256": "82cee4633a456348d3cd66dd50d9fecb03d29e4b631a6406bbb6d9a2beaf2b67"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMadman.txt",
+      "size": 3334,
+      "sha256": "4d66e510e67d73c424781f9abb6ac6dfba2d2e35e37e9553cd5738fe34dbf688"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMagic.txt",
+      "size": 10164,
+      "sha256": "e5eba7dd3c3d76981fc6854812c36f0a9df4d98cca27641218d240f573b9f62e"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMessenger.txt",
+      "size": 8835,
+      "sha256": "e65d98e2cc4d0761c423bed3091aee3763526e0709bc119815b7ca04ab0eadd8"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMinds.txt",
+      "size": 5352,
+      "sha256": "a55941d21e34c5333fb89ea9592066f47000b5af7efd7b3cab32b3441d92b77f"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMines.txt",
+      "size": 1549,
+      "sha256": "dde33bc754e974f036c4377e34152c09790edde43f816020a979e5e260b5e0d5"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMithaniel.txt",
+      "size": 4413,
+      "sha256": "3e77c7d4725c14ccd8118a4d8456ef95d3aa3afb6b455071e19e760971c63633"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMountains.txt",
+      "size": 5510,
+      "sha256": "5698f228eecdbc3f93316b70b58563b5d49dcf8072f7c02a80e037a238ed48d0"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyNektulos.txt",
+      "size": 13724,
+      "sha256": "2446ae77b6dc03369c30376836c74113e98b7f3bc5ed002ce24b95d0c56a716f"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyNest.txt",
+      "size": 2562,
+      "sha256": "7b985b7a9353f2ca4964cc1e49a9c86a92dd8760e7d728ff1608fb5ef5c9c074"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPantheon.txt",
+      "size": 4705,
+      "sha256": "1fada5e6fa528a6c7fda2e8d8f33e779799ee0aaf24f006f888db5c98b70e567"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPassage.txt",
+      "size": 2509,
+      "sha256": "ab2608cfd139b1ffff509907a436898a9026434e5ef4085eec5d29636f74cab6"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPath.txt",
+      "size": 1964,
+      "sha256": "7cb0560d6bd887f8d015313e17403c2aef4737f491d25e64caed8d1482088a66"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPlea.txt",
+      "size": 7440,
+      "sha256": "8b303c4f97dd25695944e451436cafabeecc42b56b5fab9ffff2bbcb27c87057"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPromise.txt",
+      "size": 6481,
+      "sha256": "52689d1b22837fd0b44efadda866d0cb3e2b5fdf7942ce7817abacf34f425565"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyProphecy.txt",
+      "size": 6496,
+      "sha256": "43d21318ea2e041983e435673bfa1aca44522691981fe8edf29023ef75ebd71d"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPursuit.txt",
+      "size": 3915,
+      "sha256": "d9a0ef1ae99d746b1d95bc9d6e2ecc78d15801a020e90fe844dcd50c319309b7"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyReunion.txt",
+      "size": 4405,
+      "sha256": "058bc480d5bdda9c50a10cb9e3c318c13e010f6f1f124dafdef123475666c059"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyRevelation.txt",
+      "size": 9329,
+      "sha256": "a556523c29c13d211361731486fcda75b7b5edc6946e2635ff7c8d649d7d1293"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyRiches.txt",
+      "size": 3096,
+      "sha256": "db720b914b79c0cd2f41f202155603b86676ccaa143eee400ba14fadeddffe92"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyRumor.txt",
+      "size": 2491,
+      "sha256": "52f1c931aa924e1fc27a6885c01f8b0635dbcc40ef66c7b2d5abf4b58581b8ae"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyScholar.txt",
+      "size": 4176,
+      "sha256": "833ea38330c312e9e41f791d9287167b26c8c1dbb6a7d0191deaa9f56337fbbc"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySea.txt",
+      "size": 5858,
+      "sha256": "811ceb024c2129506cacf93550f09522facb806d55031792f9504df1ee096e67"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySearch.txt",
+      "size": 3002,
+      "sha256": "c99e355050e716df33e828609ea88e744ad7fefc913ff5d5bcab85b5430a2072"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySecrets.txt",
+      "size": 2389,
+      "sha256": "149ffd18082ecfe3d6cd4a706ce1a25033da9aa1d69d5615853b816016b6e5fc"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySeeking.txt",
+      "size": 3387,
+      "sha256": "d27502a41dc2c423aeb7b1427ce3828be57a069498eeb9212bbaaed806e49b0c"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySerpents.txt",
+      "size": 8185,
+      "sha256": "b43f19d71be91f3c50d27570b214049fe9f68795b86f39e385741acffe8e2426"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyShadow.txt",
+      "size": 3743,
+      "sha256": "186f444cc02c4fc1f3d8e6033b35d1dc6daf7ae0d4edb9c9bc5c33d8c48ed3e9"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyStone.txt",
+      "size": 4447,
+      "sha256": "ba8f6a5184ae2d99a89d3708125ca5da5dbe8b43cb2c8cfae79b35085f65eee0"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyTreachery.txt",
+      "size": 2395,
+      "sha256": "717218b691e7fd900ef3bbd3f54b496a588a77d94846a184c6f0851e120b2c5e"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyTroubled.txt",
+      "size": 7005,
+      "sha256": "ed2f717ef67d28d12f85a0de7069bf0319cb6fe6edd7c20e09c1981eaf72cc3d"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyUnturned.txt",
+      "size": 5018,
+      "sha256": "5250dc67c6296bc7bd74b4d0d82ce8f7d48d172014a6069caae76962c3047d82"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyVisions.txt",
+      "size": 4003,
+      "sha256": "564e2c2e9e7dab0eeae12bf523ee4555717d53d6e235b2527b2ac18cd1327094"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyWhispers.txt",
+      "size": 1363,
+      "sha256": "566c9cc6804111ee6ee0a1f03388818a94f0ae1bc6956f7dc69a75602da35807"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storybastionofthunder.txt",
+      "size": 3135,
+      "sha256": "c132ca90754b8328f19dbd612108499ac748e4951a0b7fd98b21b6b1e3a78c93"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyflagfixplanprog.txt",
+      "size": 11699,
+      "sha256": "21e3e1f8811aca2cf7b39e41fca434a859828f7a4f49a85103eb8aa2367b2f34"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyhallsofhonor.txt",
+      "size": 2090,
+      "sha256": "add004eb5808e30ec8323b2fddd54e66133a7f5dcc33bfc3a1feff990f929f68"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofair.txt",
+      "size": 4194,
+      "sha256": "38b2146a43e7aebd77a4ee63b2d33969b363838e8a77fd2e06411386f324eb02"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofdisease.txt",
+      "size": 1433,
+      "sha256": "b8dae1e3b4a6d8b6770263f7d7621732665dcaeb33a3133c2820ffa9f67fa48d"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofeartha.txt",
+      "size": 3919,
+      "sha256": "2a0290807e9839bdfa8ab4b4008e67f423d14001e723c2b738e8e1c4e64d4452"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofearthb.txt",
+      "size": 1813,
+      "sha256": "5dae28e92c952027e8565f42e1637613e257a6156efa18a9a2628f3298f57d88"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoffire.txt",
+      "size": 1717,
+      "sha256": "959153113978a5e04ec0f3b9eef152dba0dee2e852256a6a80e41b560815aef3"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofinnovation.txt",
+      "size": 1873,
+      "sha256": "5eb3a9cacb854fd809a29282033d50e777361c409eab01ad1e1cd1c73832d514"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofjustice.txt",
+      "size": 1211,
+      "sha256": "a481ddd3e9b340c92cef13025d6ea6a200beee91cf38a4c2c657c019257f6a6a"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofnightmares.txt",
+      "size": 2213,
+      "sha256": "46fe5ba1c9d2eefe721839558de2e686421cea1d1c6fa72c5c624bd8629c7905"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofstorms.txt",
+      "size": 2267,
+      "sha256": "e81347a80973083c39265d8477d690c2c1adecd644c09c7f8b3399cc2f08ec37"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftactics.txt",
+      "size": 2338,
+      "sha256": "618c100140d5043ec603f04eccbc40c1209ceba040fcf3bc0f94fe53cda93664"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftimea.txt",
+      "size": 4531,
+      "sha256": "b9940f266b8a9bf2f36ac3261e03e994507b53e0acb51bb69725a23095b56d50"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftimeb.txt",
+      "size": 679,
+      "sha256": "35d9c1ae860c84d54212045d044c8cfb16b8eaaff9d9ada4de54ca27e27c2101"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftorment.txt",
+      "size": 4139,
+      "sha256": "bfc5a749a14dc4575f8e5be7648683ed559c96f497a06777bda4479b6b2b0ebc"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofvalor.txt",
+      "size": 3237,
+      "sha256": "4c6badaf27d18edfae0ec8116de30d107c8fe662fe8775961983bb570d015c23"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofwater.txt",
+      "size": 2447,
+      "sha256": "7997ebb10ec632bfaed4d581aae0cb395bbf7f7c8dbea131b16b8dbcf3d3ad65"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyruinsoflxanvom.txt",
+      "size": 2375,
+      "sha256": "6240cb3fa17b2b8098a6a39f20d521bd0364a4ab856efeba2e654ff10fe8f4fb"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storytempleofmarr.txt",
+      "size": 773,
+      "sha256": "efc3b6bfdaf258ab5b506fc73869a1b4572525a5cb42d88d07672adaf5852f9c"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storytowerofsolro.txt",
+      "size": 1793,
+      "sha256": "6a14cffcb5a5b6a17622565437433a441acad170b0dfd33f4ce1c880e6eec808"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storybardspells.txt",
+      "size": 1062,
+      "sha256": "21020a23b9fa5d4694ab1276fea36762195c0d3c173baea474f7835e158d33be"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storybeastlordspells.txt",
+      "size": 851,
+      "sha256": "80b6fc87871fce677c6bc01012b37bdacbdabb34d39825053cc01f368f664977"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyclericspells.txt",
+      "size": 1293,
+      "sha256": "42eff7bac699eb7916b7e939cb63d7823dd4d9e5e9e90202d12495db24eebc49"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storydruidspells.txt",
+      "size": 1342,
+      "sha256": "6a15ab4f521e47bb256b9a7450b3ab8253c542b207ef7dd28a5b0b02f8e3c457"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyenchanterspells.txt",
+      "size": 1107,
+      "sha256": "d47c66515579d1ab754fac4519bc006702ba762096d0a17f37b9f266d18813f5"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storymagicianspells.txt",
+      "size": 1399,
+      "sha256": "8b2e9d973443ed452608eb7c1195c335469d3beb8fb55c05f622a26a4e857ed4"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storynecromancerspells.txt",
+      "size": 1285,
+      "sha256": "32e03ce754645c9d7f4a36562c9df652883a28763d543c064f8a4d45a9f5faa1"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storypaladinspells.txt",
+      "size": 919,
+      "sha256": "4a09bca2a7e6dba91b0498bd7259aa0900ccaa4c69757209459c9867b4800694"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyrangerspells.txt",
+      "size": 919,
+      "sha256": "935d68cf40091e3de5f3cbfc68ad72c1e83b36a26704f3eb947eca27d3b1b32f"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyshadowknightspells.txt",
+      "size": 932,
+      "sha256": "b581b921e10308d337b971304625e17ec52186a6752265ba9dd69013749c1f91"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyshamanspells.txt",
+      "size": 1345,
+      "sha256": "fe790f6ada4cd5ae11e027a166adcd8fff3e8011d12d6c884515f6891d226e2d"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storywizardspells.txt",
+      "size": 1097,
+      "sha256": "91c2ecb5dc45f5457ef8b145bc01c72197fb3c55c71556962bc2956417eb9535"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Gorenaire_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/LadyVox_Info.txt",
+      "size": 1289,
+      "sha256": "8a3b6d69b9b4db103bbf273441462767755716c9cb9426a9de2ee20d303e69ef"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/LordNagafen_Info.txt",
+      "size": 1141,
+      "sha256": "43d5fb2ad7b94c42528a1f3b967f971e3473b0472aeaa42b01975ac8ac82b969"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Severilous_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Talendor_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Trakanon_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression1.txt",
+      "size": 1814,
+      "sha256": "8efe2e679194046849d3961bd1e085d7a823ad934e887701969b5ee310861959"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression2.txt",
+      "size": 2156,
+      "sha256": "2bae30633b83c3b0e0de5022f192c8e35cbad800e308808c1fda2487571b546d"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression3.txt",
+      "size": 1711,
+      "sha256": "54e1441f3693b90082dbc6e62ee32b4a5a12466e44db8cd672813c835203b439"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression4.txt",
+      "size": 2865,
+      "sha256": "9ca0a8e39029d0678b1fb06851b1cf0ad83ff619b5385f4a5f0fb893e01dfa86"
+    },
+    {
+      "path": "NMS Client/storyline/storyEpicsGuide.txt",
+      "size": 2261,
+      "sha256": "2099c0a222d64ea54af5c9092164a4d326b661f78ac5d98aa8f59f06697471d4"
+    },
+    {
+      "path": "NMS Client/storyline/storyMines.txt",
+      "size": 1389,
+      "sha256": "ff0655f17449f7a92eb643d1748a5bb6e5df5ce121833e3e95f36bcc69dfe79f"
+    },
+    {
+      "path": "NMS Client/storyline/storyOriginalStories.txt",
+      "size": 4179,
+      "sha256": "9fc93d6909347cb518de21d48bf1d028be0e464a6c5b7a31f58d629d899a83fe"
+    },
+    {
+      "path": "NMS Client/storyline/storyProgressionGuide.txt",
+      "size": 3445,
+      "sha256": "ef64c6572385f857d921f192513099ce5f5b2c6a640356197b04d697beb4c09a"
+    },
+    {
+      "path": "NMS Client/storyline/storyTreachery.txt",
+      "size": 2235,
+      "sha256": "ed04f4dae2a727df9f3f7ca3af893442404e9fe8876460f32d96c04cd92a7f17"
+    },
+    {
+      "path": "NMS Client/storyline/storyplanarprogression.txt",
+      "size": 3422,
+      "sha256": "24053f36dad15ec02b25433a467cf87c807f4c4ea1ffb8dcd35ad41f83e5a36d"
+    },
+    {
+      "path": "NMS Client/storyline/storypopspells.txt",
+      "size": 2397,
+      "sha256": "be7c49020663ffb1b538c81d895a0842cbf9b7f9bc6d896c840585485c19e0ee"
+    }
+  ],
+  "quarantine_5_23_reported_crash": [
+    {
+      "path": "NMS Client/Resources/spells_us.txt",
+      "size": 28147586,
+      "sha256": "5539ff4078c853696f323658d6871900a7a6a7a47265155ced59bd5ad92db505"
+    },
+    {
+      "path": "NMS Client/dinput8.dll",
+      "size": 1665536,
+      "sha256": "4da3b3424e18a026cd6392757a7dac64ea76312c4c5db07b7ad693d0e1f21835"
+    },
+    {
+      "path": "NMS Client/spells_us.txt",
+      "size": 28147586,
+      "sha256": "5539ff4078c853696f323658d6871900a7a6a7a47265155ced59bd5ad92db505"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BardEpic.txt",
+      "size": 4948,
+      "sha256": "3a948e9e6fede39cff7a8b40259f1ece0297894bf1a257008f44cab9b689342e"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BeasterlordEpic.txt",
+      "size": 5637,
+      "sha256": "da5b5e5ddffc3670823fcc41e7b687baa4e88ac3c07088a541fa6fc05e08fd96"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BeastlordEpic.txt",
+      "size": 6187,
+      "sha256": "39cd1867493b23422240b3188253dafa8a6c89bef313ab716201a946b0d11b69"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/BerserkerEpic.txt",
+      "size": 3807,
+      "sha256": "61f2dcde2cad9840477c7b1785b4413599a39f9a1b360c836f76324ed49acb32"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/ClericEpic.txt",
+      "size": 4769,
+      "sha256": "a01bf8848ab8c569019e0bef30577d4f9c934edbbc905a4cd2e1f92a09a67ba0"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/DruidEpic.txt",
+      "size": 6666,
+      "sha256": "1be90c86f42ec37c373c87ce71b7374954fccfc3e2bc46e47b8d74b1aadf466b"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/EnchanterEpic.txt",
+      "size": 6626,
+      "sha256": "a9864a80a44a3341ab81e55e873e33feb6209f7d9bffc55ff68773bacd665177"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/MageEpic.txt",
+      "size": 4129,
+      "sha256": "08ec12f50547f388a5a32125db5dde4a37bec26d4ae5b3a28a34bf65c01e2db1"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/MonkEpic.txt",
+      "size": 4000,
+      "sha256": "20f286fe065641b7605495bd7e7178bb5afdb9d9d0f36a15c1a5ad2bb7eda039"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/NecroEpic.txt",
+      "size": 4494,
+      "sha256": "6e16502e7b5a71f3da90592a59e5788dc6885fd3924f2a7f430b463ff488fc96"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/PaladinEpic.txt",
+      "size": 4081,
+      "sha256": "4a1f957e7edb001f57bb97a25445ecbf80bb71e4eff7dd3d7d8db2abaa2092a5"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/Palprereq1.txt",
+      "size": 7255,
+      "sha256": "881e560f35b9914add53d0b6cb4c3659a1205650fb3dd4bc0edbc1d47f7e5d48"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/Palprereq2.txt",
+      "size": 2617,
+      "sha256": "ce62a3c065970d023de025fc23da11c37d53f58995c9adac331c7cfa0d5aa354"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/Palprereq3.txt",
+      "size": 4315,
+      "sha256": "913e79d40e55d564cc236bca6798ecfdabb3af8bee478acef98cdbdd9b272e34"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/RangerEpic.txt",
+      "size": 6177,
+      "sha256": "0b5ef31c328d51b246f6063f1c55f45747c70bac7f76def6f7341c5b0546eaa7"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/RogueEpic.txt",
+      "size": 3982,
+      "sha256": "540ddf735345b3db2994951273df9645d33135b0ce86107c712bb5a83478378b"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/ShadowknightEpic.txt",
+      "size": 3343,
+      "sha256": "38e6fab4a51be3537dfd1bf04a83417bf6685f8cb002e50e2d050eb7560bab2e"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/ShamanEpic.txt",
+      "size": 1650,
+      "sha256": "d91124e69045e4d95fbfe2b2301be0d2154e831ad2c6df611f11e190c01c1e47"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/WarriorEpic.txt",
+      "size": 3908,
+      "sha256": "3a559c72ec865d1b3d781be7d5dfa761e2b495589c70d1bae5d082c46ebdc802"
+    },
+    {
+      "path": "NMS Client/storyline/Epic/WizardEpic.txt",
+      "size": 3049,
+      "sha256": "6dea2fb771c2a2b78c59af942fb5c0f4b151e9c5ab1d5bb3a91512970aa587f2"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyAbysmal.txt",
+      "size": 7627,
+      "sha256": "99ca9a85d66aad827a8cef4ab52ecd21e633fef4a752ce8c129b139199f7e864"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyAgreement.txt",
+      "size": 3718,
+      "sha256": "9afeaa8998a7f3799b035527b4877577406cf329c2ab75abcd4cc4d03af016ab"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyAmulet.txt",
+      "size": 6483,
+      "sha256": "62468f3d3084db0827b37228cccb44800650b05418920b19d5f9a611976f22f0"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyBuild.txt",
+      "size": 5993,
+      "sha256": "2f7acdf86ff497afef56ac860aaad522389546e13bd93c61e9ede056364a2f05"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyChosen.txt",
+      "size": 8056,
+      "sha256": "1239bb57977220b4fd211bead379a08f1975a4dcf38bd3b1b38786b3ed4ff196"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyCourse.txt",
+      "size": 5493,
+      "sha256": "4b4338eaeff5a839a838fe3ba983194c4cc1ec2ca0b174ce8f62dbc94c5d5c90"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyCurrents.txt",
+      "size": 5341,
+      "sha256": "9fc2fa75e6bcd8deaef6bac35daa09b075a8ae309bc48c40a31b42f568d62081"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyDarkhollow.txt",
+      "size": 10563,
+      "sha256": "9312e6ad1a619a525caa978edcff4dccde3bd758212d5768f743c34ad23de462"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyDaughter.txt",
+      "size": 7111,
+      "sha256": "9e265400fc7c53fcc1d1c5cd0dce900a4cf25ac22c36c6dc88142b35d08b968f"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyDawn.txt",
+      "size": 2903,
+      "sha256": "00f0e63be0588a1f08d5f3b0bde2efd0b7bb750e340644b46e64c352d8ee2835"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyExile.txt",
+      "size": 2801,
+      "sha256": "30e445bc2e145c83e99b414548d4bfa3b76e7c35dc0177bd092f3a4d5cd8ad88"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyFelwithe.txt",
+      "size": 4987,
+      "sha256": "ab3df32c071499ed6a7b9bb84b939fe0299e54c2546f4ea8940df157a55b97ac"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyFires.txt",
+      "size": 2480,
+      "sha256": "ae1f60d709890ff4355dc805451780ecc9bb9660e0572e2105484af1b58aadbb"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyGate.txt",
+      "size": 7670,
+      "sha256": "30f65b4ff0fbad5b7cfa8e6244ba4eea729b64aaefbd4ce1f5c688209caa3671"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyGrobb.txt",
+      "size": 3281,
+      "sha256": "f3cf3bd1f88f0718412a63b85a9ff5ebb43907dc036b19414a4ecc466c38e974"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyJourney.txt",
+      "size": 6924,
+      "sha256": "d0ae0ddfb8043dab835b6180524851d1d2c1c3242b17656fdcc2e6b6d673c55a"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyLanys.txt",
+      "size": 8159,
+      "sha256": "82cee4633a456348d3cd66dd50d9fecb03d29e4b631a6406bbb6d9a2beaf2b67"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMadman.txt",
+      "size": 3334,
+      "sha256": "4d66e510e67d73c424781f9abb6ac6dfba2d2e35e37e9553cd5738fe34dbf688"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMagic.txt",
+      "size": 10164,
+      "sha256": "e5eba7dd3c3d76981fc6854812c36f0a9df4d98cca27641218d240f573b9f62e"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMessenger.txt",
+      "size": 8835,
+      "sha256": "e65d98e2cc4d0761c423bed3091aee3763526e0709bc119815b7ca04ab0eadd8"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMinds.txt",
+      "size": 5352,
+      "sha256": "a55941d21e34c5333fb89ea9592066f47000b5af7efd7b3cab32b3441d92b77f"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMines.txt",
+      "size": 1549,
+      "sha256": "dde33bc754e974f036c4377e34152c09790edde43f816020a979e5e260b5e0d5"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMithaniel.txt",
+      "size": 4413,
+      "sha256": "3e77c7d4725c14ccd8118a4d8456ef95d3aa3afb6b455071e19e760971c63633"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyMountains.txt",
+      "size": 5510,
+      "sha256": "5698f228eecdbc3f93316b70b58563b5d49dcf8072f7c02a80e037a238ed48d0"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyNektulos.txt",
+      "size": 13724,
+      "sha256": "2446ae77b6dc03369c30376836c74113e98b7f3bc5ed002ce24b95d0c56a716f"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyNest.txt",
+      "size": 2562,
+      "sha256": "7b985b7a9353f2ca4964cc1e49a9c86a92dd8760e7d728ff1608fb5ef5c9c074"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPantheon.txt",
+      "size": 4705,
+      "sha256": "1fada5e6fa528a6c7fda2e8d8f33e779799ee0aaf24f006f888db5c98b70e567"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPassage.txt",
+      "size": 2509,
+      "sha256": "ab2608cfd139b1ffff509907a436898a9026434e5ef4085eec5d29636f74cab6"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPath.txt",
+      "size": 1964,
+      "sha256": "7cb0560d6bd887f8d015313e17403c2aef4737f491d25e64caed8d1482088a66"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPlea.txt",
+      "size": 7440,
+      "sha256": "8b303c4f97dd25695944e451436cafabeecc42b56b5fab9ffff2bbcb27c87057"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPromise.txt",
+      "size": 6481,
+      "sha256": "52689d1b22837fd0b44efadda866d0cb3e2b5fdf7942ce7817abacf34f425565"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyProphecy.txt",
+      "size": 6496,
+      "sha256": "43d21318ea2e041983e435673bfa1aca44522691981fe8edf29023ef75ebd71d"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyPursuit.txt",
+      "size": 3915,
+      "sha256": "d9a0ef1ae99d746b1d95bc9d6e2ecc78d15801a020e90fe844dcd50c319309b7"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyReunion.txt",
+      "size": 4405,
+      "sha256": "058bc480d5bdda9c50a10cb9e3c318c13e010f6f1f124dafdef123475666c059"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyRevelation.txt",
+      "size": 9329,
+      "sha256": "a556523c29c13d211361731486fcda75b7b5edc6946e2635ff7c8d649d7d1293"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyRiches.txt",
+      "size": 3096,
+      "sha256": "db720b914b79c0cd2f41f202155603b86676ccaa143eee400ba14fadeddffe92"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyRumor.txt",
+      "size": 2491,
+      "sha256": "52f1c931aa924e1fc27a6885c01f8b0635dbcc40ef66c7b2d5abf4b58581b8ae"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyScholar.txt",
+      "size": 4176,
+      "sha256": "833ea38330c312e9e41f791d9287167b26c8c1dbb6a7d0191deaa9f56337fbbc"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySea.txt",
+      "size": 5858,
+      "sha256": "811ceb024c2129506cacf93550f09522facb806d55031792f9504df1ee096e67"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySearch.txt",
+      "size": 3002,
+      "sha256": "c99e355050e716df33e828609ea88e744ad7fefc913ff5d5bcab85b5430a2072"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySecrets.txt",
+      "size": 2389,
+      "sha256": "149ffd18082ecfe3d6cd4a706ce1a25033da9aa1d69d5615853b816016b6e5fc"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySeeking.txt",
+      "size": 3387,
+      "sha256": "d27502a41dc2c423aeb7b1427ce3828be57a069498eeb9212bbaaed806e49b0c"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storySerpents.txt",
+      "size": 8185,
+      "sha256": "b43f19d71be91f3c50d27570b214049fe9f68795b86f39e385741acffe8e2426"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyShadow.txt",
+      "size": 3743,
+      "sha256": "186f444cc02c4fc1f3d8e6033b35d1dc6daf7ae0d4edb9c9bc5c33d8c48ed3e9"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyStone.txt",
+      "size": 4447,
+      "sha256": "ba8f6a5184ae2d99a89d3708125ca5da5dbe8b43cb2c8cfae79b35085f65eee0"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyTreachery.txt",
+      "size": 2395,
+      "sha256": "717218b691e7fd900ef3bbd3f54b496a588a77d94846a184c6f0851e120b2c5e"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyTroubled.txt",
+      "size": 7005,
+      "sha256": "ed2f717ef67d28d12f85a0de7069bf0319cb6fe6edd7c20e09c1981eaf72cc3d"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyUnturned.txt",
+      "size": 5018,
+      "sha256": "5250dc67c6296bc7bd74b4d0d82ce8f7d48d172014a6069caae76962c3047d82"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyVisions.txt",
+      "size": 4003,
+      "sha256": "564e2c2e9e7dab0eeae12bf523ee4555717d53d6e235b2527b2ac18cd1327094"
+    },
+    {
+      "path": "NMS Client/storyline/Original/storyWhispers.txt",
+      "size": 1363,
+      "sha256": "566c9cc6804111ee6ee0a1f03388818a94f0ae1bc6956f7dc69a75602da35807"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storybastionofthunder.txt",
+      "size": 3135,
+      "sha256": "c132ca90754b8328f19dbd612108499ac748e4951a0b7fd98b21b6b1e3a78c93"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyflagfixplanprog.txt",
+      "size": 11699,
+      "sha256": "21e3e1f8811aca2cf7b39e41fca434a859828f7a4f49a85103eb8aa2367b2f34"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyhallsofhonor.txt",
+      "size": 2090,
+      "sha256": "add004eb5808e30ec8323b2fddd54e66133a7f5dcc33bfc3a1feff990f929f68"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofair.txt",
+      "size": 4194,
+      "sha256": "38b2146a43e7aebd77a4ee63b2d33969b363838e8a77fd2e06411386f324eb02"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofdisease.txt",
+      "size": 1433,
+      "sha256": "b8dae1e3b4a6d8b6770263f7d7621732665dcaeb33a3133c2820ffa9f67fa48d"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofeartha.txt",
+      "size": 3919,
+      "sha256": "2a0290807e9839bdfa8ab4b4008e67f423d14001e723c2b738e8e1c4e64d4452"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofearthb.txt",
+      "size": 1813,
+      "sha256": "5dae28e92c952027e8565f42e1637613e257a6156efa18a9a2628f3298f57d88"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoffire.txt",
+      "size": 1717,
+      "sha256": "959153113978a5e04ec0f3b9eef152dba0dee2e852256a6a80e41b560815aef3"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofinnovation.txt",
+      "size": 1873,
+      "sha256": "5eb3a9cacb854fd809a29282033d50e777361c409eab01ad1e1cd1c73832d514"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofjustice.txt",
+      "size": 1211,
+      "sha256": "a481ddd3e9b340c92cef13025d6ea6a200beee91cf38a4c2c657c019257f6a6a"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofnightmares.txt",
+      "size": 2213,
+      "sha256": "46fe5ba1c9d2eefe721839558de2e686421cea1d1c6fa72c5c624bd8629c7905"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofstorms.txt",
+      "size": 2267,
+      "sha256": "e81347a80973083c39265d8477d690c2c1adecd644c09c7f8b3399cc2f08ec37"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftactics.txt",
+      "size": 2338,
+      "sha256": "618c100140d5043ec603f04eccbc40c1209ceba040fcf3bc0f94fe53cda93664"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftimea.txt",
+      "size": 4531,
+      "sha256": "b9940f266b8a9bf2f36ac3261e03e994507b53e0acb51bb69725a23095b56d50"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftimeb.txt",
+      "size": 679,
+      "sha256": "35d9c1ae860c84d54212045d044c8cfb16b8eaaff9d9ada4de54ca27e27c2101"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneoftorment.txt",
+      "size": 4139,
+      "sha256": "bfc5a749a14dc4575f8e5be7648683ed559c96f497a06777bda4479b6b2b0ebc"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofvalor.txt",
+      "size": 3237,
+      "sha256": "4c6badaf27d18edfae0ec8116de30d107c8fe662fe8775961983bb570d015c23"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyplaneofwater.txt",
+      "size": 2447,
+      "sha256": "7997ebb10ec632bfaed4d581aae0cb395bbf7f7c8dbea131b16b8dbcf3d3ad65"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storyruinsoflxanvom.txt",
+      "size": 2375,
+      "sha256": "6240cb3fa17b2b8098a6a39f20d521bd0364a4ab856efeba2e654ff10fe8f4fb"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storytempleofmarr.txt",
+      "size": 773,
+      "sha256": "efc3b6bfdaf258ab5b506fc73869a1b4572525a5cb42d88d07672adaf5852f9c"
+    },
+    {
+      "path": "NMS Client/storyline/PlanarProgression/storytowerofsolro.txt",
+      "size": 1793,
+      "sha256": "6a14cffcb5a5b6a17622565437433a441acad170b0dfd33f4ce1c880e6eec808"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storybardspells.txt",
+      "size": 1062,
+      "sha256": "21020a23b9fa5d4694ab1276fea36762195c0d3c173baea474f7835e158d33be"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storybeastlordspells.txt",
+      "size": 851,
+      "sha256": "80b6fc87871fce677c6bc01012b37bdacbdabb34d39825053cc01f368f664977"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyclericspells.txt",
+      "size": 1293,
+      "sha256": "42eff7bac699eb7916b7e939cb63d7823dd4d9e5e9e90202d12495db24eebc49"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storydruidspells.txt",
+      "size": 1342,
+      "sha256": "6a15ab4f521e47bb256b9a7450b3ab8253c542b207ef7dd28a5b0b02f8e3c457"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyenchanterspells.txt",
+      "size": 1107,
+      "sha256": "d47c66515579d1ab754fac4519bc006702ba762096d0a17f37b9f266d18813f5"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storymagicianspells.txt",
+      "size": 1399,
+      "sha256": "8b2e9d973443ed452608eb7c1195c335469d3beb8fb55c05f622a26a4e857ed4"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storynecromancerspells.txt",
+      "size": 1285,
+      "sha256": "32e03ce754645c9d7f4a36562c9df652883a28763d543c064f8a4d45a9f5faa1"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storypaladinspells.txt",
+      "size": 919,
+      "sha256": "4a09bca2a7e6dba91b0498bd7259aa0900ccaa4c69757209459c9867b4800694"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyrangerspells.txt",
+      "size": 919,
+      "sha256": "935d68cf40091e3de5f3cbfc68ad72c1e83b36a26704f3eb947eca27d3b1b32f"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyshadowknightspells.txt",
+      "size": 932,
+      "sha256": "b581b921e10308d337b971304625e17ec52186a6752265ba9dd69013749c1f91"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storyshamanspells.txt",
+      "size": 1345,
+      "sha256": "fe790f6ada4cd5ae11e027a166adcd8fff3e8011d12d6c884515f6891d226e2d"
+    },
+    {
+      "path": "NMS Client/storyline/PoPSpellGuide/storywizardspells.txt",
+      "size": 1097,
+      "sha256": "91c2ecb5dc45f5457ef8b145bc01c72197fb3c55c71556962bc2956417eb9535"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Gorenaire_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/LadyVox_Info.txt",
+      "size": 1289,
+      "sha256": "8a3b6d69b9b4db103bbf273441462767755716c9cb9426a9de2ee20d303e69ef"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/LordNagafen_Info.txt",
+      "size": 1141,
+      "sha256": "43d5fb2ad7b94c42528a1f3b967f971e3473b0472aeaa42b01975ac8ac82b969"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Severilous_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Talendor_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Mobs/Trakanon_Info.txt",
+      "size": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression1.txt",
+      "size": 1814,
+      "sha256": "8efe2e679194046849d3961bd1e085d7a823ad934e887701969b5ee310861959"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression2.txt",
+      "size": 2156,
+      "sha256": "2bae30633b83c3b0e0de5022f192c8e35cbad800e308808c1fda2487571b546d"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression3.txt",
+      "size": 1711,
+      "sha256": "54e1441f3693b90082dbc6e62ee32b4a5a12466e44db8cd672813c835203b439"
+    },
+    {
+      "path": "NMS Client/storyline/ProgressionGuide/Progression4.txt",
+      "size": 2865,
+      "sha256": "9ca0a8e39029d0678b1fb06851b1cf0ad83ff619b5385f4a5f0fb893e01dfa86"
+    },
+    {
+      "path": "NMS Client/storyline/storyEpicsGuide.txt",
+      "size": 2261,
+      "sha256": "2099c0a222d64ea54af5c9092164a4d326b661f78ac5d98aa8f59f06697471d4"
+    },
+    {
+      "path": "NMS Client/storyline/storyMines.txt",
+      "size": 1389,
+      "sha256": "ff0655f17449f7a92eb643d1748a5bb6e5df5ce121833e3e95f36bcc69dfe79f"
+    },
+    {
+      "path": "NMS Client/storyline/storyOriginalStories.txt",
+      "size": 4179,
+      "sha256": "9fc93d6909347cb518de21d48bf1d028be0e464a6c5b7a31f58d629d899a83fe"
+    },
+    {
+      "path": "NMS Client/storyline/storyProgressionGuide.txt",
+      "size": 3445,
+      "sha256": "ef64c6572385f857d921f192513099ce5f5b2c6a640356197b04d697beb4c09a"
+    },
+    {
+      "path": "NMS Client/storyline/storyTreachery.txt",
+      "size": 2235,
+      "sha256": "ed04f4dae2a727df9f3f7ca3af893442404e9fe8876460f32d96c04cd92a7f17"
+    },
+    {
+      "path": "NMS Client/storyline/storyplanarprogression.txt",
+      "size": 3422,
+      "sha256": "24053f36dad15ec02b25433a467cf87c807f4c4ea1ffb8dcd35ad41f83e5a36d"
+    },
+    {
+      "path": "NMS Client/storyline/storypopspells.txt",
+      "size": 2397,
+      "sha256": "be7c49020663ffb1b538c81d895a0842cbf9b7f9bc6d896c840585485c19e0ee"
+    }
+  ]
+}

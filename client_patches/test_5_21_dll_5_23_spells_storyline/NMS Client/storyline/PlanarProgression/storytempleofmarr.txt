@@ -1,0 +1,15 @@
+<c "#ff0000">TEMPLE OF MARR</c>
+<br><br>
+
+<c "#35db24"> Part 1 - Ralthazor, Champion of Marr</c><br>
+Make you way thru the zone to the room with <c "#ff0000">Ralthazor, Champion of Marr</c> , kill him to make 
+<c "#ff0000">Lord Mithaniel Marr</c> targetable.<br><br>
+<c "#35db24"> Part 2 - Lord Mithaniel Marr</c><br>
+Clear the adds around <c "#ff0000">Lord Mithaniel Marr</c> , and then kill him. Once he is dead.<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+A Planar Projection will spawn. You don't need to Hail him..<br><br>
+
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneoftactics.txt">Drunder, Fortress of Zek (Plane of Tactics)</a>
+<br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

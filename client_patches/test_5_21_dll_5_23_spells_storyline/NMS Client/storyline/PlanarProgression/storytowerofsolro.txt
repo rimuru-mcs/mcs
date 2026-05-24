@@ -1,0 +1,36 @@
+<c "#ff0000">TOWER OF SOLUSEK RO</c>
+<br><br>
+
+
+<c "#35db24">Zone Information</c><br><br>
+This zone is fairly straight forward. There are 5 wings that each contain a boss at the end. After you kill each mini boss and get your flag there will be a firepot that teleports you to the base of each wing.<br><br>
+
+
+<c "#35db24"> Part One - Mini Boss</c><br><br>
+Kill the following mini bosses:<br><c "#ff0000">Xuzl<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+Arlyxir<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+Jiva<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+Rizlona<br>
+<c "#dada99">You receive a character flag!</c><br><br>
+The Protector of Dresolik</c><br>
+<c "#dada99">You receive a character flag!</c><br><br>
+A Planar Projection will spawn after each death, you don't need to Hail them.<br><br>
+<c "#35db24"> Part Two - Solusek Ro</c><br><br>
+Click the port up in the middle of the main room to get to <c "#ff0000">Solusek Ro</c>'s area.<br>
+Kill <c "#ff0000">Solusek Ro</c><br>
+<c "#dada99">You receive a character flag!</c><br><br>
+
+A Planar Projection</c> will spawn, you don't have to Hail it.<br><br>
+Open the door on the floor, and jump into the <c "#35db24">Lava Pit</c>, and swim down into <c "#35db24">Plane of Fire</c>!<br><br>
+You know have access to the <c "#35db24">Elemental Planes!</c><br><br>
+ 
+<c "#35db24"> Post-Flag - Plane of Knowledge</c><br><br>
+Now talk to <c "#dc7633">Gram Dunnar</c>, <c "#00ff00">Hail</c> him, and follow his dialog [<c "#00ff00">stories</c>].
+<br><br>
+>>>NEXT STEP<<<<br>
+<a href="file:///storyline/PlanarProgression/storyplaneoffire.txt">Doomfire, the Burning Land (Plane of Fire)</a>
+<br><br><br><br>
+<a href="file:///storyline/storyplanarprogression.txt">Back Home

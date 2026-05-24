@@ -39,6 +39,28 @@ PROJECTS = [
     {"name": "DetourTileCache", "type": "StaticLibrary", "dir": "submodules/recastnavigation/DetourTileCache", "guid": "{E0F32B73-A0CB-3040-B573-1177C38A841E}", "category": "ThirdParty"},
 ]
 
+def normalize_guid(value, with_braces=True):
+    """Return a valid uppercase Visual Studio GUID string."""
+    raw = str(value).strip().strip("{}").upper()
+    parsed = uuid.UUID(raw)
+    text = str(parsed).upper()
+    return f"{{{text}}}" if with_braces else text
+
+def project_exists(project):
+    return os.path.isdir(project.get("dir", ""))
+
+def active_projects():
+    active = []
+    for project in PROJECTS:
+        if project_exists(project):
+            active.append(project)
+        else:
+            print(f"Skipping {project['name']}: missing directory {project['dir']}")
+    return active
+
+def all_static_library_projects(projects):
+    return [p for p in projects if p.get("type", "Application") == "StaticLibrary"]
+
 def to_rel(path):
     if not path: return ""
     path = path.replace("\\", "/")
@@ -151,8 +173,12 @@ def generate_vcxproj(project):
     name = project['name']
     proj_type = project['type']
     directory = project['dir']
-    guid = project['guid']
+    guid = normalize_guid(project['guid'])
     target_name = project.get('target_name', name)
+
+    if not os.path.isdir(directory):
+        print(f"Skipping {name}: missing directory {directory}")
+        return
     
     output_dir_base = "..\\\\server\\\\bin\\\\" if proj_type == "Application" else "bin\\\\"
     
@@ -410,42 +436,45 @@ def generate_solution():
 VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 '''
-    # Categories
     CATS = {
         "Apps": "{B1C38865-8F33-4F8A-9A8E-9877E9A3E7D1}",
-        "Libs": "{C2D49976-9A44-5G9B-0B9F-0988F0B4F8E2}",
-        "Utils": "{D3E5AA87-0B55-6H0C-1C0G-1099G1C5G9F3}",
-        "Tests": "{E4F6BB98-1C66-7I1D-2D1H-2100H2D6H0G4}",
-        "ThirdParty": "{F5G7CC09-2D77-8J2E-3E2I-3211I3E7I1H5}"
+        "Libs": "{C2D49976-9A44-4F9B-AB9F-0988F0B4F8E2}",
+        "Utils": "{D3E5AA87-0B55-4A0C-AC0F-1099A1C5A9F3}",
+        "Tests": "{E4F6BB98-1C66-4A1D-AD1A-2100A2D6A0F4}",
+        "ThirdParty": "{F5A7CC09-2D77-482E-AE2A-3211A3E7A1F5}",
     }
 
-    # Project entries
+    projects = active_projects()
+
     for cat_name, cat_guid in CATS.items():
         sln += f'Project("{{2150E333-8FDC-42A3-9474-1A3956D46DE8}}") = "{cat_name}", "{cat_name}", "{cat_guid}"\nEndProject\n'
 
-    for proj in PROJECTS:
+    third_party_libs = ["fmt", "uv_a", "zlib-ng", "cppunit", "perlbind", "luabind", "Detour", "Recast", "DebugUtils", "DetourCrowd", "DetourTileCache"]
+
+    for proj in projects:
         proj_name = proj["name"]
-        proj_guid = proj["guid"]
+        proj_guid = normalize_guid(proj["guid"])
+        proj_guid_raw = normalize_guid(proj["guid"], with_braces=False)
         proj_type = proj.get("type", "Application")
 
-        sln += 'Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "' + proj_name + '", "' + proj_name + '.vcxproj", "{' + proj_guid + '}"\n'
-        
-        deps = []
-        third_party_libs = ["fmt", "uv_a", "zlib-ng", "cppunit", "perlbind", "luabind", "Detour", "Recast", "DebugUtils", "DetourCrowd", "DetourTileCache"]
+        sln += f'Project("{{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}}") = "{proj_name}", "{proj_name}.vcxproj", "{proj_guid}"\n'
 
+        deps = []
         if proj_type == "Application":
-            deps = [p for p in PROJECTS if p.get("type", "Application") == "StaticLibrary"]
+            deps = all_static_library_projects(projects)
         elif proj_type == "StaticLibrary" and proj_name not in third_party_libs:
-            deps = [p for p in PROJECTS if p.get("type", "Application") == "StaticLibrary" and p["name"] in third_party_libs]
-            
+            deps = [p for p in all_static_library_projects(projects) if p["name"] in third_party_libs]
+
         if deps:
             sln += '\tProjectSection(ProjectDependencies) = postProject\n'
             for dep in deps:
-                if dep["guid"] != proj_guid:
-                    sln += '\t\t{' + dep["guid"] + '} = {' + dep["guid"] + '}\n'
+                dep_guid = normalize_guid(dep["guid"])
+                dep_guid_raw = normalize_guid(dep["guid"], with_braces=False)
+                if dep_guid_raw != proj_guid_raw:
+                    sln += f'\t\t{dep_guid} = {dep_guid}\n'
             sln += '\tEndProjectSection\n'
         sln += 'EndProject\n'
-    
+
     sln += '''Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -453,33 +482,34 @@ MinimumVisualStudioVersion = 10.0.40219.1
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 '''
-    for p in PROJECTS:
-        guid = '{' + p['guid'] + '}'
-        sln += f'		{guid}.Debug|x64.ActiveCfg = Debug|x64\n'
-        sln += f'		{guid}.Debug|x64.Build.0 = Debug|x64\n'
-        sln += f'		{guid}.Release|x64.ActiveCfg = Release|x64\n'
-        sln += f'		{guid}.Release|x64.Build.0 = Release|x64\n'
-    
+    for project in projects:
+        guid = normalize_guid(project["guid"])
+        sln += f'\t\t{guid}.Debug|x64.ActiveCfg = Debug|x64\n'
+        sln += f'\t\t{guid}.Debug|x64.Build.0 = Debug|x64\n'
+        sln += f'\t\t{guid}.Release|x64.ActiveCfg = Release|x64\n'
+        sln += f'\t\t{guid}.Release|x64.Build.0 = Release|x64\n'
+
     sln += '''	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 '''
-    for p in PROJECTS:
-        cat_guid = CATS.get(p['category'])
+    for project in projects:
+        cat_guid = CATS.get(project["category"])
         if cat_guid:
-            sln += '		{' + p["guid"] + '} = ' + cat_guid + '\n'
-    
+            sln += f'\t\t{normalize_guid(project["guid"])} = {cat_guid}\n'
+
     sln += '''	EndGlobalSection
 EndGlobal
 '''
-    with open("code/EQEmu.sln", 'w', encoding='utf-8-sig') as f:
+    with open("code/EQEmu.sln", "w", encoding="utf-8-sig") as f:
         f.write(sln)
 
 if __name__ == "__main__":
-    if not os.path.exists("code"): os.makedirs("code")
-    for p in PROJECTS:
+    if not os.path.exists("code"):
+        os.makedirs("code")
+    for p in active_projects():
         print(f"Generating {p['name']}...")
         generate_vcxproj(p)
     generate_solution()
