@@ -12582,10 +12582,26 @@ uint32 Client::GetClassesBits() const
 	}
 }
 
+namespace {
+
+int CountEnabledClassBits(uint32 classes_bits)
+{
+	int class_count = 0;
+
+	while (classes_bits != 0) {
+		classes_bits &= (classes_bits - 1);
+		++class_count;
+	}
+
+	return class_count;
+}
+
+} // anonymous namespace
+
 bool Client::AddExtraClass(int class_id) {
     if (RuleB(Custom, MulticlassingEnabled) && class_id >= Class::Warrior && class_id <= Class::Berserker) {
-        int classes_bits = GetClassesBits();
-		int class_count = __popcnt(classes_bits);
+        uint32 classes_bits = GetClassesBits();
+		int class_count = CountEnabledClassBits(classes_bits);
         int n_class_bit = GetPlayerClassBit(class_id);
 
         if (class_count > 2 || (classes_bits & n_class_bit)) {
