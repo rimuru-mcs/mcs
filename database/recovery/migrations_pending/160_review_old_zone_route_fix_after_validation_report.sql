@@ -1,0 +1,15 @@
+-- Recovery Slice v21 pending review
+-- Do not promote this into migrations_safe until old_nektulos_lavastorm_route_validation.tsv is filled in.
+--
+-- Expected future migration shape:
+-- 1. Back up touched doors rows into msr_recovery_old_zone_doors_backup.
+-- 2. Back up touched zone_points rows into msr_recovery_old_zone_points_backup.
+-- 3. Preserve classic target rows that were proven safe by client /loc testing.
+-- 4. Disable, expansion-gate, or retarget normal-travel rows that send players to nektulos/lavastorm version 1.
+-- 5. Keep revamped version rows in the database for future review; do not delete them.
+--
+-- Current known problem families from v20:
+-- - PoKnowledge -> nektulos dest_instance/target_instance 1.
+-- - commonlands/ecommons/neriaka -> nektulos target_instance 1.
+-- - corathus -> nektulos dest_instance/target_instance 1.
+-- - mixed lavastorm/nektulos route rows across version 0 and 1.
