@@ -1,0 +1,31 @@
+-- MSR Recovery Slice v10 pending notes
+-- This pending file intentionally does NOT modify data.
+--
+-- Lost update notes mention:
+--   - 5/21 global buffs at spell IDs 44000-44007:
+--       44000 Echo of Experience
+--       44001 Echo of Armor
+--       44002 Echo of Statistics
+--       44003 Echo of Speed
+--       44004 Echo of Mana
+--       44005 Echo of Haste
+--       44006 Echo of Health
+--       44007 Echo of Luck
+--   - 5/23 reduced/combined global buffs, including Echo of Power.
+--   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled.
+--
+-- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only.
+-- Do NOT enable it until the spell rows and server code path are confirmed.
+--
+-- Promotion rules:
+--   1. Prefer reconstructing spell rows from the last known stable client data
+--      and the 5/23 client spell file only after comparing both versions.
+--   2. Do not insert spell rows into spells_new until the DB column mapping is
+--      confirmed from the live schema audit.
+--   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration
+--      that inserts/reconstructs the spells. Keep enabling as a separate,
+--      rollback-friendly switch.
+--   4. Keep the 5/23 crashy dinput8.dll quarantined. Spell data may be tested
+--      with the 5/21 DLL first.
+--   5. If server code expects 44000-44007 but 5/23 consolidated buffs, recover
+--      compatibility intentionally rather than deleting IDs.
