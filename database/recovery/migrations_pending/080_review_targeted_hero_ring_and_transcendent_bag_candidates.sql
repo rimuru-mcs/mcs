@@ -1,0 +1,19 @@
+-- MSR Recovery Slice v9 pending notes
+-- This pending file intentionally does NOT modify data.
+--
+-- Lost 5/23 notes mention:
+--   - Added Sympathetic Strike I on Simple Ring of the Hero
+--   - Readded the 21 slot bag again
+--   - Transcendent Mage's Syncrosatchels sold by the bag merchant for 50k platinum
+--
+-- Before promoting a safe migration, run:
+--   database/recovery/audits/13_targeted_item_recovery_candidates_audit.sql
+--
+-- Promotion rules:
+--   1. Do not alter Simple Ring of the Hero unless the exact item row and exact
+--      intended Sympathetic Strike I spell row are confirmed by audit.
+--   2. Do not insert/update Bag Merchant Tunk inventory unless the exact
+--      Transcendent Mage's Syncrosatchel item row is confirmed by audit.
+--   3. Item prices are copper-based in EQEmu DB conventions:
+--        50,000 platinum = 50,000,000 copper.
+--   4. Keep this as a separate reviewed migration from broad global buff work.
