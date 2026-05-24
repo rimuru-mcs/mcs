@@ -1,0 +1,141 @@
+# MSR recovery root ignore
+# Keeps generated build output, local IDE state, dependency caches, and logs out of Git.
+
+# -----------------------------------------------------------------------------
+# Build directories and generated project output
+# -----------------------------------------------------------------------------
+/build/
+/build*/
+/cmake-build-*/
+/out/
+/bin/
+/obj/
+/code/
+
+# -----------------------------------------------------------------------------
+# CMake-generated files
+# -----------------------------------------------------------------------------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+CPackConfig.cmake
+CPackSourceConfig.cmake
+DartConfiguration.tcl
+ALL_BUILD.*
+ZERO_CHECK.*
+INSTALL.*
+*.dir/
+
+# -----------------------------------------------------------------------------
+# Visual Studio / MSVC local and generated files
+# -----------------------------------------------------------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+*.ncb
+*.ipch
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.log
+*.obj
+*.pch
+*.idb
+*.ilk
+*.res
+*.exp
+
+# -----------------------------------------------------------------------------
+# VS Code local state
+# Keep shared workspace files committable if we add them later.
+# -----------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# -----------------------------------------------------------------------------
+# Python cache files
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# -----------------------------------------------------------------------------
+# Local dependency/download caches and extracted toolchains
+# Root-level only; does not ignore source libraries under /libs.
+# -----------------------------------------------------------------------------
+/downloads/
+/dependency_cache/
+/vendor_cache/
+/vcpkg_installed/
+/vcpkg-export-*.zip
+/vcpkg/
+/strawberry-perl-*-portable.zip
+/perl/
+/perl*/
+
+# -----------------------------------------------------------------------------
+# Generated/configured dependency files
+# -----------------------------------------------------------------------------
+*.included
+
+# -----------------------------------------------------------------------------
+# Local runtime/config/secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.local
+/eqemu_config.json
+/eqemu_config.xml
+/login.ini
+/database.ini
+/db.ini
+
+# -----------------------------------------------------------------------------
+# Runtime output, dumps, and temporary files
+# -----------------------------------------------------------------------------
+/logs/
+/crash/
+/crashes/
+/dumps/
+*.dmp
+*.mdmp
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+Thumbs.db
+.DS_Store
+
+# -----------------------------------------------------------------------------
+# Local build/test logs
+# -----------------------------------------------------------------------------
+/build_release_log.txt
+/build*_log.txt
+/*_build_log.txt
+
+# -----------------------------------------------------------------------------
+# Large generated package artifacts
+# Do not globally ignore .zip/.rar because some recovery/client artifacts may be intentional.
+# Add specific names here when a generated package should not be committed.
+# -----------------------------------------------------------------------------
+/MSR_recovery_slice_*.zip
+/MSR_recovery_slice_*.tar.gz
+/MSR_gitignore_cleanup_slice_*.zip
+/MSR_gitignore_cleanup_slice_*.tar.gz
