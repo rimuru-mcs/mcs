@@ -1,0 +1,11 @@
+-- MSR Recovery Pending Review 100
+-- Global buff runtime activation remains intentionally pending.
+--
+-- Slice v11 reconstructs spell rows 44000-44007 only.
+-- Do NOT set Custom:PermanentServerBuffsEnabled=true until:
+--   1. the server code path that casts/applies permanent server buffs is located,
+--   2. that code path is verified against spell IDs 44000-44007,
+--   3. the 5/23 client DLL remains quarantined or is replaced,
+--   4. runtime testing confirms Echo of Power / Echo of Luck behavior is safe.
+--
+-- This pending file is documentation only and should not be applied by the safe migration runner.
