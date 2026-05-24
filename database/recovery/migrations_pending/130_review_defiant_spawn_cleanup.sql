@@ -1,0 +1,20 @@
+-- MSR Recovery Slice v15 pending review
+-- DO NOT APPLY BLINDLY.
+--
+-- Goal from lost update notes:
+--   "Fixed an issue that was allowing defiant gear to spawn in game"
+--
+-- Recovery posture:
+--   Keep Defiant item rows for reference/client compatibility unless we prove the server
+--   requires deletion. First remove/disable Defiant item sources from loot/merchant/etc.
+--
+-- Candidate safe direction after audit:
+--   1. Remove or disable lootdrop_entries rows where item_id points to items.Name LIKE '%Defiant%'.
+--   2. Remove merchantlist rows where item points to Defiant items, unless audit reveals a
+--      deliberate GM/test-only merchant.
+--   3. Leave items rows intact unless a later audit proves item rows themselves cause runtime issues.
+--
+-- Exact migration must be promoted only after reviewing:
+--   database/recovery/audit_output/19_defiant_spawn_source_audit.txt
+--
+-- Placeholder only. No SQL mutations in this file on purpose.
