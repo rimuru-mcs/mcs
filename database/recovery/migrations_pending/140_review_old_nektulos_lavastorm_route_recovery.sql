@@ -1,0 +1,26 @@
+-- MSR Recovery Slice v19 pending review file
+--
+-- DO NOT APPLY YET.
+--
+-- MSR uses the older/classic versions of Nektulos Forest and Lavastorm Mountains.
+-- The lost hotfix reportedly repaired wrong-version loading, zone lines, PoK stone routing,
+-- and safe areas. The v18 audit confirmed both classic/version-0 and newer/version-1 rows
+-- exist for both zones, with many routes gated by expansion ranges and/or target instances.
+--
+-- Before promoting a real migration, review:
+--   database/recovery/audit_output/22_nektulos_lavastorm_version_audit.txt
+--   database/recovery/audit_output/23_old_nektulos_lavastorm_route_reference_audit.txt
+--
+-- Candidate recovery themes, pending validation:
+--   1. Keep ordinary player routing on version 0 for nektulos/lavastorm.
+--   2. Ensure PoK/Nektulos doors target dest_instance 0 and old safe coordinates when MSR is using old zones.
+--   3. Ensure zone_points between Nektulos, Lavastorm, Neriak, Commonlands, Najena, SolA/SolB/SolTemple target old coordinates.
+--   4. Ensure wizard/druid port spell destination rows match the old zone files, not the remodeled zones.
+--   5. Ensure zone safe_x/safe_y/safe_z are old-zone-safe and do not place players underworld/lava.
+--
+-- Safety requirements for any promoted migration:
+--   * Make backup tables first.
+--   * Patch Nektulos and Lavastorm separately.
+--   * Do not delete version-1 rows; just stop normal routing from selecting them.
+--   * Do not overwrite spell coordinates until confirmed by source or in-client /loc testing.
+--   * Re-run audits and smoke-test every zone line/port after applying.
