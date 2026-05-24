@@ -1,0 +1,24 @@
+-- MSR Recovery Slice v18 pending review file
+--
+-- DO NOT APPLY YET.
+--
+-- Lost update notes say:
+--   * Nektulos Forest loaded the wrong NPC version; versions, zone lines, PoK stone, and safe areas were fixed.
+--   * Lavastorm Mountains loaded the wrong NPC version; versions, zone lines, and safe areas were fixed.
+--
+-- Before promoting any migration, review:
+--   database/recovery/audit_output/22_nektulos_lavastorm_version_audit.txt
+--
+-- Candidate recovery themes to confirm from audit:
+--   1. Which zone.version row should be active under the server's current expansion rules.
+--   2. Whether min_expansion/max_expansion cause the wrong version row to be selected.
+--   3. Whether zone_points or PoK doors/stones route players to an unintended version.
+--   4. Whether safe_x/safe_y/safe_z differ between the intended and unintended version rows.
+--   5. Whether spawn2 rows exist in multiple versions and line up with the intended classic/recovery version.
+--
+-- Safety requirements for the future promoted migration:
+--   * Create backup tables for affected zone, zone_points, doors, and spawn2 rows.
+--   * Patch Nektulos and Lavastorm independently, not with broad global UPDATEs.
+--   * Avoid deleting spawn rows.
+--   * Avoid altering unrelated expansion-gated zones.
+--   * Re-run the v18 audit after applying.
