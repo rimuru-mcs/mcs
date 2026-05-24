@@ -1019,6 +1019,8 @@ public:
 		bool allow_bots = false
 	);
 
+	void ApplyPermanentServerBuffs();
+
 	//old AA methods that we still use
 	void ResetAA();
 	void RefundAA();

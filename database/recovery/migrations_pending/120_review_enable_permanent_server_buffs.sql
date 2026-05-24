@@ -1,0 +1,18 @@
+-- MSR Recovery Pending Migration 120: enable permanent server buffs
+-- DO NOT promote this until:
+--   1. Recovery Slice v13 compiles on Windows/VS2022 or Linux.
+--   2. A dev client can zone in without crash using the safe 5/21 dinput8.dll baseline.
+--   3. The audit confirms spell rows 44000, 44001, 44003, and 44007 are present.
+--
+-- The v13 runtime applies the final 5/23 four-buff set:
+--   44000 Echo of Experience
+--   44001 Echo of Power
+--   44003 Echo of Speed
+--   44007 Echo of Luck
+--
+-- Promotion candidate after runtime smoke test:
+-- UPDATE `rule_values`
+-- SET
+--   `rule_value` = 'true',
+--   `notes` = CONCAT(COALESCE(`notes`, ''), ' | Enabled after MSR Recovery Slice v13 runtime compile/smoke verification.')
+-- WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';

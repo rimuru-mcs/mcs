@@ -76,6 +76,12 @@ extern volatile bool is_zone_loaded;
 extern WorldServer worldserver;
 extern PetitionList petition_list;
 extern EntityList entity_list;
+
+namespace {
+	constexpr int kMSRPermanentServerBuffDuration = -1;
+	constexpr uint16 kMSRPermanentServerBuffSpellIds[] = { 44000, 44001, 44003, 44007 };
+}
+
 typedef void (Client::*ClientPacketProc)(const EQApplicationPacket *app);
 
 
@@ -524,6 +530,26 @@ int Client::HandlePacket(const EQApplicationPacket *app)
 	return(true);
 }
 
+void Client::ApplyPermanentServerBuffs()
+{
+	if (!RuleB(Custom, PermanentServerBuffsEnabled)) {
+		return;
+	}
+
+	for (const uint16 spell_id : kMSRPermanentServerBuffSpellIds) {
+		if (!IsValidSpell(spell_id)) {
+			LogWarning("MSR permanent server buff spell {0} is not valid and will not be applied to {1}", spell_id, GetCleanName());
+			continue;
+		}
+
+		if (FindBuff(spell_id)) {
+			continue;
+		}
+
+		ApplySpellBuff(spell_id, kMSRPermanentServerBuffDuration, GetLevel());
+	}
+}
+
 // Finish client connecting state
 void Client::CompleteConnect()
 {
@@ -904,6 +930,8 @@ void Client::CompleteConnect()
 	}
 
 	SendDynamicZoneUpdates();
+
+	ApplyPermanentServerBuffs();
 
 	/** Request adventure info **/
 	auto pack = new ServerPacket(ServerOP_AdventureDataRequest, 64);
