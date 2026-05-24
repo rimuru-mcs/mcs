@@ -1,0 +1,14 @@
+-- Recovery Slice v20 pending review
+-- Old Nektulos/Lavastorm route recovery must not be applied blindly.
+--
+-- Required before promotion:
+-- 1. Confirm old/client zone files are the intended runtime files.
+-- 2. Capture /loc for PoK -> Nektulos and any PoK -> Lavastorm route.
+-- 3. Capture /loc for all Nektulos <-> Lavastorm/Commonlands/Neriak route lines.
+-- 4. Capture /loc for Lavastorm <-> Najena/SolA/SolB/SolTemple route lines.
+-- 5. Capture wizard/druid port-in/succor/evac locations if those spell rows route through DB spell data.
+-- 6. Back up all touched zone, zone_points, doors, and spells_new rows.
+--
+-- Expected design:
+-- Ordinary MSR travel should route to version 0/classic Nektulos and Lavastorm.
+-- Revamped rows should remain in the database but should not be selected for ordinary travel.
