@@ -28,11 +28,10 @@
 --   being moved onto corpses.
 
 -- Progression max-level enforcement remains pending.
--- The code path exists:
---   - Character:PerCharacterQglobalMaxLevel reads qglobal CharMaxLevel.
---   - Character:PerCharacterBucketMaxLevel reads data bucket CharMaxLevel.
---   - Missing/empty CharMaxLevel returns 0, which behaves as no per-character cap.
+-- Slice v6 adds a focused audit before promoting a migration:
+--   database/recovery/audits/10_progression_cap_storage_audit.sql
+--   database/recovery/migrations_pending/070_review_progression_cap_candidates.sql
 --
--- Candidate only after focused audit confirms intended CharMaxLevel storage:
--- UPDATE rule_values SET rule_value = 'true'
--- WHERE ruleset_id = 1 AND rule_name IN ('Character:PerCharacterBucketMaxLevel', 'Character:PerCharacterQglobalMaxLevel');
+-- Important code-path warning:
+--   Character:PerCharacterQglobalMaxLevel is checked before Character:PerCharacterBucketMaxLevel.
+--   Do not enable both blindly, or bucket-backed caps may be ignored.
