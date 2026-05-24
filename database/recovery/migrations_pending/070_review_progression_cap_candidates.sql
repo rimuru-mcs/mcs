@@ -14,29 +14,19 @@
 --   data_buckets.character_id + key='CharMaxLevel'
 --   Character:PerCharacterBucketMaxLevel rule
 
--- Candidate A: enable bucket-backed progression cap enforcement only.
--- Promote only if audit 10 shows CharMaxLevel caps are present in data_buckets and sane.
--- UPDATE `rule_values`
--- SET `rule_value` = 'true'
--- WHERE `ruleset_id` = 1
---   AND `rule_name` = 'Character:PerCharacterBucketMaxLevel';
+-- PROMOTED TO SAFE MIGRATION IN SLICE V7:
+--   Audit 10 confirmed CharMaxLevel caps are present in data_buckets and absent from quest_globals.
+--   Slice v7 promotes Candidate A:
+--     Character:PerCharacterBucketMaxLevel  = true
+--     Character:PerCharacterQglobalMaxLevel = false
+--   across all existing rule sets.
 --
--- UPDATE `rule_values`
--- SET `rule_value` = 'false'
--- WHERE `ruleset_id` = 1
---   AND `rule_name` = 'Character:PerCharacterQglobalMaxLevel';
+-- See:
+--   database/recovery/migrations_safe/050_apply_bucket_progression_cap_recovery.sql
+--   database/recovery/audits/11_progression_cap_recovery_audit.sql
 
--- Candidate B: enable qglobal-backed progression cap enforcement only.
--- Promote only if audit 10 shows CharMaxLevel caps are present in quest_globals and sane.
--- UPDATE `rule_values`
--- SET `rule_value` = 'false'
--- WHERE `ruleset_id` = 1
---   AND `rule_name` = 'Character:PerCharacterBucketMaxLevel';
---
--- UPDATE `rule_values`
--- SET `rule_value` = 'true'
--- WHERE `ruleset_id` = 1
---   AND `rule_name` = 'Character:PerCharacterQglobalMaxLevel';
+-- Candidate B remains rejected for this recovered baseline:
+--   qglobal-backed enforcement is not enabled because audit 10 found no CharMaxLevel qglobals.
 
 -- Do not set Character:MaxLevel here. The DB currently has ruleset-specific max-level rows,
--- and progression enforcement should use the per-character cap source after audit confirmation.
+-- and progression enforcement should use the per-character bucket cap source confirmed by audit.
