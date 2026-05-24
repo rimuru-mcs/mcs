@@ -1,0 +1,27 @@
+-- MSR Recovery Slice v17 review note
+--
+-- v05 audit showed Blackburrow version 0 door rows incorrectly targeting Jaggedpine.
+-- This matches the lost update note that Blackburrow doors were set to Jaggedpine rather than behaving as open doors.
+--
+-- Promoted safe migration:
+--   database/recovery/migrations_safe/090_fix_blackburrow_jaggedpine_door_targets.sql
+--
+-- The migration backs up affected doors to:
+--   msr_recovery_blackburrow_door_backup
+--
+-- It then clears only:
+--   doors.zone='blackburrow'
+--   doors.version=0
+--   doors.dest_zone='jaggedpine'
+--
+-- Reversal, if needed during dev testing:
+--   UPDATE doors d
+--   JOIN msr_recovery_blackburrow_door_backup b ON b.id = d.id
+--   SET
+--     d.dest_zone = b.dest_zone,
+--     d.dest_x = b.dest_x,
+--     d.dest_y = b.dest_y,
+--     d.dest_z = b.dest_z
+--   WHERE b.zone = 'blackburrow'
+--     AND b.version = 0
+--     AND b.dest_zone = 'jaggedpine';
