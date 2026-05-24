@@ -1,46 +1,48 @@
-param(
-    [string]$Database = "peq",
-    [string]$User = "root",
-    [string]$HostName = "127.0.0.1",
-    [int]$Port = 3306,
-    [string]$AuditDir = "database\recovery\audits",
-    [string]$OutputDir = "database\recovery\audit_output"
-)
-
 $ErrorActionPreference = "Stop"
 
-function Find-DbClient {
-    foreach ($candidate in @("mariadb.exe", "mysql.exe", "mariadb", "mysql")) {
-        $cmd = Get-Command $candidate -ErrorAction SilentlyContinue
-        if ($cmd) { return $cmd.Source }
-    }
-    throw "Could not find mariadb/mysql client on PATH. Install MariaDB client tools or add mysql.exe/mariadb.exe to PATH."
+$RootDir = Resolve-Path (Join-Path $PSScriptRoot "..")
+$AuditDir = Join-Path $RootDir "database\recovery\audits"
+$OutputDir = Join-Path $RootDir "database\recovery\audit_output"
+
+$HostName = if ($env:MSR_DB_HOST) { $env:MSR_DB_HOST } else { "localhost" }
+$Port = if ($env:MSR_DB_PORT) { $env:MSR_DB_PORT } else { "3306" }
+$UserName = if ($env:MSR_DB_USER) { $env:MSR_DB_USER } elseif ($env:MSR_DB_USERNAME) { $env:MSR_DB_USERNAME } else { "root" }
+$Database = if ($env:MSR_DB_NAME) { $env:MSR_DB_NAME } elseif ($env:MSR_DB_DATABASE) { $env:MSR_DB_DATABASE } else { "msr_world_recovery" }
+$MysqlBin = if ($env:MSR_DB_CLIENT) { $env:MSR_DB_CLIENT } else { "mariadb" }
+
+if (!(Test-Path $AuditDir)) {
+    throw "Audit directory not found: $AuditDir"
 }
 
-$client = Find-DbClient
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
+$AuditFiles = Get-ChildItem -Path $AuditDir -Filter "*.sql" | Sort-Object Name
 
-$baseArgs = @("-h", $HostName, "-P", [string]$Port, "-u", $User, "--table", $Database)
-if ($env:MSR_DB_PASSWORD) {
-    $baseArgs = @("-h", $HostName, "-P", [string]$Port, "-u", $User, "-p$env:MSR_DB_PASSWORD", "--table", $Database)
-} else {
-    Write-Host "MSR_DB_PASSWORD is not set. The DB client may prompt for a password for each audit file." -ForegroundColor Yellow
-    $baseArgs = @("-h", $HostName, "-P", [string]$Port, "-u", $User, "-p", "--table", $Database)
+if ($AuditFiles.Count -eq 0) {
+    throw "No audit SQL files found in: $AuditDir"
 }
 
-$files = Get-ChildItem -Path $AuditDir -Filter "*.sql" | Sort-Object Name
-if (-not $files) {
-    throw "No audit SQL files found in $AuditDir"
-}
+Write-Host "MSR database audit"
+Write-Host "  Host:     $HostName"
+Write-Host "  Port:     $Port"
+Write-Host "  User:     $UserName"
+Write-Host "  Database: $Database"
+Write-Host "  Audits:   $($AuditFiles.Count)"
+Write-Host ""
 
-foreach ($file in $files) {
-    $outFile = Join-Path $OutputDir ($file.BaseName + ".txt")
-    Write-Host "Running audit $($file.Name) -> $outFile" -ForegroundColor Cyan
-    $sql = Get-Content -Path $file.FullName -Raw
-    $sql | & $client @baseArgs 2>&1 | Tee-Object -FilePath $outFile
-    if ($LASTEXITCODE -ne 0) {
-        throw "Audit failed: $($file.Name)"
+foreach ($AuditFile in $AuditFiles) {
+    $OutputFile = Join-Path $OutputDir ($AuditFile.BaseName + ".txt")
+    Write-Host "Running audit $($AuditFile.Name) -> database/recovery/audit_output/$($AuditFile.BaseName).txt"
+
+    $Args = @("-h", $HostName, "-P", $Port, "-u", $UserName, "--table", $Database)
+    if ($env:MSR_DB_PASSWORD) {
+        $Args = @("-h", $HostName, "-P", $Port, "-u", $UserName, "-p$($env:MSR_DB_PASSWORD)", "--table", $Database)
+    } else {
+        Write-Warning "MSR_DB_PASSWORD is not set. The DB client may prompt for a password for each audit file."
     }
+
+    Get-Content -Raw $AuditFile.FullName | & $MysqlBin @Args | Out-File -Encoding utf8 $OutputFile
 }
 
-Write-Host "Database audits completed. Output written to $OutputDir" -ForegroundColor Green
+Write-Host ""
+Write-Host "Audit complete."
+Write-Host "Output directory: database/recovery/audit_output"
