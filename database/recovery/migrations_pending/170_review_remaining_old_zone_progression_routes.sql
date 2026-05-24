@@ -1,0 +1,10 @@
+-- Recovery Slice v22 pending notes
+--
+-- The v22 safe migration fixes the first validated classic-route set.
+-- Still pending for later review:
+--   * Additional PoK stone and transport routes after expansion/progression testing.
+--   * Wizard/druid port-in spell route validation if affected.
+--   * Nektulos/Commonlands/Neriak old-zone route checks under non-GM progression context.
+--   * Whether a code-side route selector is needed for post-expansion access to revamped Nektulos/Lavastorm.
+--
+-- Do not remove version-1 zone rows. MSR progression needs old and later zone data to coexist.
