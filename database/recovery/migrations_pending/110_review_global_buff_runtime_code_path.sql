@@ -1,0 +1,15 @@
+-- MSR Recovery Pending Review 110
+-- Global buff runtime code path remains intentionally pending.
+--
+-- Slice v11 reconstructed the spell rows and kept the runtime rule disabled.
+-- Slice v12 audits source code to answer whether the server actually has a safe
+-- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007.
+--
+-- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:
+--   1. recovery/audit_global_buff_runtime_code.py output identifies a concrete code path,
+--   2. the code path is verified against spell IDs 44000-44007,
+--   3. login/zone entry behavior is tested on the MSR dev box,
+--   4. buff persistence/death/zoning behavior is tested,
+--   5. Echo of Luck's C++ hooks are verified separately.
+--
+-- This pending file is documentation only and should not be applied by the safe migration runner.
