@@ -1,22 +1,19 @@
--- MSR Recovery Pending Migration 060: sympathetic item candidates
--- DO NOT AUTO-RUN. Requires exact spell ID confirmation.
+-- MSR Recovery Pending Migration 060: Sympathetic item candidates
+-- DO NOT AUTO-RUN except for statements promoted to migrations_safe.
 
--- Lost notes mention sympathetic items should proc at all levels, not just level 70.
--- Candidate after audit 04 confirms affected items:
--- UPDATE items
--- SET proclevel = 0, proclevel2 = 0
--- WHERE proceffect IN (SELECT id FROM spells_new WHERE name LIKE '%Sympathetic%');
+-- Lost 5/23 notes mention:
+--   Fixed Sympathetic items now proc at all levels not just level 70
+--   Added Sympathetic Strike I on Simple Ring of the Hero
 
--- Some sympathetic behavior may use worn/focus effects instead of proceffect:
--- UPDATE items
--- SET wornlevel = 0, wornlevel2 = 0
--- WHERE worneffect IN (SELECT id FROM spells_new WHERE name LIKE '%Sympathetic%');
--- UPDATE items
--- SET focuslevel = 0, focuslevel2 = 0
--- WHERE focuseffect IN (SELECT id FROM spells_new WHERE name LIKE '%Sympathetic%');
+-- PROMOTED TO SAFE MIGRATION IN SLICE V8:
+--   Remove proc/worn/focus level gates from item effects attached to spells whose name contains
+--   "Sympathetic".
+--
+-- See:
+--   database/recovery/migrations_safe/060_apply_sympathetic_level_gate_recovery.sql
+--   database/recovery/audits/12_sympathetic_level_gate_recovery_audit.sql
 
--- Simple Ring of the Hero gets Sympathetic Strike I.
--- Candidate only after exact spell ID is confirmed from audit 04:
--- UPDATE items
--- SET proceffect = <Sympathetic Strike I spell id>, proctype = <confirmed proc type>, proclevel = 0, proclevel2 = 0
--- WHERE Name = 'Simple Ring of the Hero';
+-- Still pending:
+--   Simple Ring of the Hero needs a separate targeted audit/migration because the restored baseline
+--   audit did not yet confirm the exact item row and intended Sympathetic Strike I effect pairing.
+--   Do not guess the effect ID here.
