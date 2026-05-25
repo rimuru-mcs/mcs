@@ -1,0 +1,24 @@
+MSR client global buff spell row extraction
+Rows extracted: 80
+
+Rows by source:
+     8  /opt/msr/repo/msr/client_patches/quarantine_5_23_reported_crash/NMS Client/Resources/spells_us.txt
+     8  /opt/msr/repo/msr/client_patches/quarantine_5_23_reported_crash/NMS Client/spells_us.txt
+     8  /opt/msr/repo/msr/client_patches/stable_5_21_base/NMS Client/Resources/spells_us.txt
+     8  /opt/msr/repo/msr/client_patches/stable_5_21_base/NMS Client/spells_us.txt
+     8  /opt/msr/repo/msr/client_patches/test_5_21_dll_5_23_spells_storyline/NMS Client/Resources/spells_us.txt
+     8  /opt/msr/repo/msr/client_patches/test_5_21_dll_5_23_spells_storyline/NMS Client/spells_us.txt
+     8  Multiclass-Patch_5-21-UPDATE-FILES.zip:NMS Client/Resources/spells_us.txt
+     8  Multiclass-Patch_5-21-UPDATE-FILES.zip:NMS Client/spells_us.txt
+     8  NMS_Client_Patch_5-23-2026.zip:NMS_Client_Patch_5-23-2026/NMS Client/Resources/spells_us.txt
+     8  NMS_Client_Patch_5-23-2026.zip:NMS_Client_Patch_5-23-2026/NMS Client/spells_us.txt
+
+Rows by spell id:
+  44000: 10
+  44001: 10
+  44002: 10
+  44003: 10
+  44004: 10
+  44005: 10
+  44006: 10
+  44007: 10

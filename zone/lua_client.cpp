@@ -164,7 +164,7 @@ int Lua_Client::GetClassesBitmask() {
 // returns a bool. Updated to Lua_Safe_Call_Bool(false) to prevent Lua runtime
 // errors and ensure scripts receive the correct success/failure value.
 bool Lua_Client::AddExtraClass(int class_id) {
-	Lua_Safe_Call_Bool(false);
+	Lua_Safe_Call_Bool();
 	return self->AddExtraClass(class_id);
 }
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libperlbind.a CMakeFiles/perlbind.dir/src/function.cpp.o CMakeFiles/perlbind.dir/src/hash.cpp.o CMakeFiles/perlbind.dir/src/interpreter.cpp.o CMakeFiles/perlbind.dir/src/package.cpp.o
+/usr/bin/ranlib libperlbind.a

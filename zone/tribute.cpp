@@ -392,7 +392,9 @@ bool ZoneDatabase::LoadTributes() {
 
 void Client::SendGuildTributes()
 {
-	for (auto const& t : tribute_list) {
+	/* MSR recovery v28 guard: skip guild tribute packet during zone-entry crash recovery. */
+    return;
+for (auto const& t : tribute_list) {
 		if (!t.second.is_guild)
 			continue;	//skip non guild tributes here
 

@@ -890,8 +890,7 @@ Mob *SwarmPet::GetOwner()
 
 //New AA
 void Client::SendAlternateAdvancementTable() {
-	LogDebug("Sending AA Table");
-	for(auto &aa : zone->aa_abilities) {
+for(auto &aa : zone->aa_abilities) {
 		uint32 charges = 0;
 		auto ranks = GetAA(aa.second->first_rank_id, &charges);
 		if(ranks) {
@@ -1314,30 +1313,93 @@ void Client::ActivateAlternateAdvancementAbility(int rank_id, int target_id) {
 		return;
 
 	}
-	// --- Custom handling for Origin AA ---
-	if (ability->id == aaOrigin) {
+	
+
+	// --- Custom handling for Bazaar and Back / Origin AA ---
+	// MSR recovery:
+	// The recovered DB uses aa_ability.id = 331 for Origin and aa_ranks.id = 1000.
+	// zone/aa.h defines aaOrigin = 1000, so check both ability and rank shapes.
+	//
+	// IMPORTANT: EverQuest /loc displays Y, X, Z. Client::MovePC expects X, Y, Z.
+	// The live/recovered Bazaar landing points captured from /loc were:
+	//   /loc -151.44, 168.93, -16.25  => MovePC X=168.93, Y=-151.44, Z=-16.25
+	//   /loc -151.47, -177.88, -16.25 => MovePC X=-177.88, Y=-151.47, Z=-16.25
+	//
+	// Outside Bazaar:
+	//   save the current location into character buckets and move to one of the
+	//   two known Bazaar landing spots used by the live server/THJ behavior.
+	//
+	// Inside Bazaar:
+	//   read Return-* buckets and move the player back to the saved location.
+	if (rank->id == aaOrigin || ability->id == aaOrigin || ability->id == 331) {
 		std::string current_zone = zone->GetShortName();
 		std::transform(current_zone.begin(), current_zone.end(), current_zone.begin(), ::tolower);
 
-		if (current_zone != "bazaar") {
-			SetBucket("Return-Zone", current_zone, "0");
-			SetBucket("Return-X", std::to_string(GetX()), "0");
-			SetBucket("Return-Y", std::to_string(GetY()), "0");
-			SetBucket("Return-Z", std::to_string(GetZ()), "0");
-			SetBucket("Return-H", std::to_string(GetHeading()), "0");
-			if (zone->GetInstanceID() > 0) {
-				SetBucket("Return-Instance", std::to_string(zone->GetInstanceID()), "0");
+		auto bucket_to_float = [](const std::string& value, float fallback) -> float {
+			if (value.empty()) {
+				return fallback;
 			}
-				
 
-			uint32 bazaar_id = ZoneID("bazaar");
-			MovePC(bazaar_id, 0, 0.0f, 0.0f, 0.0f, 0.0f);
-			return; // stop here, don’t fall through to generic AA handling
+			char* end = nullptr;
+			const float parsed = std::strtof(value.c_str(), &end);
+			return (end && end != value.c_str()) ? parsed : fallback;
+		};
+
+		auto bucket_to_uint32 = [](const std::string& value, uint32 fallback) -> uint32 {
+			if (value.empty()) {
+				return fallback;
+			}
+
+			char* end = nullptr;
+			const unsigned long parsed = std::strtoul(value.c_str(), &end, 10);
+			return (end && end != value.c_str()) ? static_cast<uint32>(parsed) : fallback;
+		};
+
+		if (current_zone == "bazaar") {
+			std::string return_zone = GetBucket("Return-Zone");
+			std::transform(return_zone.begin(), return_zone.end(), return_zone.begin(), ::tolower);
+
+			if (return_zone.empty()) {
+				Message(Chat::Yellow, "Bazaar and Back could not find a saved return zone.");
+				return;
+			}
+
+			uint32 return_zone_id = ZoneID(return_zone.c_str());
+
+			if (return_zone_id == 0) {
+				Message(Chat::Yellow, "Bazaar and Back found a saved return zone, but it is not valid.");
+				return;
+			}
+
+			float return_x = bucket_to_float(GetBucket("Return-X"), 0.0f);
+			float return_y = bucket_to_float(GetBucket("Return-Y"), 0.0f);
+			float return_z = bucket_to_float(GetBucket("Return-Z"), 0.0f);
+			float return_h = bucket_to_float(GetBucket("Return-H"), 0.0f);
+			uint32 return_instance = bucket_to_uint32(GetBucket("Return-Instance"), 0);
+
+			MovePC(return_zone_id, return_instance, return_x, return_y, return_z, return_h);
+			return;
+		}
+
+		SetBucket("Return-Zone", current_zone, "0");
+		SetBucket("Return-X", std::to_string(GetX()), "0");
+		SetBucket("Return-Y", std::to_string(GetY()), "0");
+		SetBucket("Return-Z", std::to_string(GetZ()), "0");
+		SetBucket("Return-H", std::to_string(GetHeading()), "0");
+		SetBucket("Return-Instance", std::to_string(zone->GetInstanceID()), "0");
+
+		uint32 bazaar_id = ZoneID("bazaar");
+
+		if ((CharacterID() % 2) == 0) {
+			MovePC(bazaar_id, 0, 168.93f, -151.44f, -16.25f, 0.0f);
+		} else {
+			MovePC(bazaar_id, 0, -177.88f, -151.47f, -16.25f, 0.0f);
 		}
 
 		return;
 	}
-	// --- End custom Origin handling ---
+	// --- End custom handling for Bazaar and Back / Origin AA ---
+
 
 	if (!IsValidSpell(rank->spell)) {
 		return;

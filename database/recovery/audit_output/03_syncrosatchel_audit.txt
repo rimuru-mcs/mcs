@@ -1,0 +1,50 @@
++---------+------------------+---------------------+
+| section | audit_name       | audited_at          |
++---------+------------------+---------------------+
+| audit   | 03_syncrosatchel | 2026-05-24 15:33:01 |
++---------+------------------+---------------------+
++--------+---------------------------------------+---------+---------+-------+----------+---------+-------+-----------+--------+------------+-----------+--------------+
+| id     | Name                                  | price   | classes | slots | bagslots | bagtype | bagwr | itemclass | nodrop | attuneable | loregroup | scriptfileid |
++--------+---------------------------------------+---------+---------+-------+----------+---------+-------+-----------+--------+------------+-----------+--------------+
+| 147495 | Mage's Syncrosatchel                  |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9000 |            0 |
+| 147496 | Expanded Mage's Syncrosatchel         | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9000 |            0 |
+| 147510 | Bard's Syncrosatchel                  |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9001 |            0 |
+| 147511 | Expanded Bard's Syncrosatchel         | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9001 |            0 |
+| 147520 | Necromancer's Syncrosatchel           |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9002 |            0 |
+| 147521 | Expanded Necromancer's Syncrosatchel  | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9002 |            0 |
+| 147530 | Druid's Syncrosatchel                 |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9003 |            0 |
+| 147531 | Expanded Druid's Syncrosatchel        | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9003 |            0 |
+| 147540 | Shadowknight's Syncrosatchel          |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9004 |            0 |
+| 147541 | Expanded Shadowknight's Syncrosatchel | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9004 |            0 |
+| 147550 | Enchanter's Syncrosatchel             |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9005 |            0 |
+| 147551 | Expanded Enchanter's Syncrosatchel    | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9005 |            0 |
+| 147560 | Beastlord's Syncrosatchel             |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9006 |            0 |
+| 147561 | Expanded Beastlord's Syncrosatchel    | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9006 |            0 |
+| 147570 | Shaman's Syncrosatchel                |       0 |   65535 |     0 |        4 |       1 |   100 |         1 |      0 |          0 |      9007 |            0 |
+| 147571 | Expanded Shaman's Syncrosatchel       | 5000000 |   65535 |     0 |       16 |       1 |   100 |         1 |      0 |          0 |      9007 |            0 |
++--------+---------------------------------------+---------+---------+-------+----------+---------+-------+-----------+--------+------------+-----------+--------------+
++------------+-------------------+------+--------+---------------------------------------+------------+----------------+------------------+------------+------------+---------------+---------------+
+| merchantid | merchant_npc_name | slot | item   | item_name                             | item_price | level_required | classes_required | min_status | max_status | min_expansion | max_expansion |
++------------+-------------------+------+--------+---------------------------------------+------------+----------------+------------------+------------+------------+---------------+---------------+
+|     151044 | Bag Merchant Tunk |    3 | 147495 | Mage's Syncrosatchel                  |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |    4 | 147510 | Bard's Syncrosatchel                  |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |    5 | 147520 | Necromancer's Syncrosatchel           |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |    6 | 147530 | Druid's Syncrosatchel                 |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |    7 | 147540 | Shadowknight's Syncrosatchel          |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |    8 | 147550 | Enchanter's Syncrosatchel             |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |    9 | 147560 | Beastlord's Syncrosatchel             |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   10 | 147570 | Shaman's Syncrosatchel                |          0 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   11 | 147496 | Expanded Mage's Syncrosatchel         |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   12 | 147511 | Expanded Bard's Syncrosatchel         |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   13 | 147521 | Expanded Necromancer's Syncrosatchel  |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   14 | 147531 | Expanded Druid's Syncrosatchel        |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   15 | 147541 | Expanded Shadowknight's Syncrosatchel |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   16 | 147551 | Expanded Enchanter's Syncrosatchel    |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   17 | 147561 | Expanded Beastlord's Syncrosatchel    |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
+|     151044 | Bag Merchant Tunk |   18 | 147571 | Expanded Shaman's Syncrosatchel       |    5000000 |              0 |            65535 |          0 |        255 |            -1 |            -1 |
++------------+-------------------+------+--------+---------------------------------------+------------+----------------+------------------+------------+------------+---------------+---------------+
++------------+---------------------+
+| merchantid | syncrosatchel_count |
++------------+---------------------+
+|     151044 |                  16 |
++------------+---------------------+

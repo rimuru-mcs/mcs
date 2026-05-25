@@ -1,0 +1,988 @@
++--------------------+-----------------------------------------------------------------------------------------------------+
+| section            | note                                                                                                |
++--------------------+-----------------------------------------------------------------------------------------------------+
+| defiant_audit_note | This audit intentionally uses conservative schema columns so it works on the restored MSR baseline. |
++--------------------+-----------------------------------------------------------------------------------------------------+
++--------------------------+-------------------+----------------------+-------------+----------------+
+| section                  | COLUMN_NAME       | COLUMN_TYPE          | IS_NULLABLE | COLUMN_DEFAULT |
++--------------------------+-------------------+----------------------+-------------+----------------+
+| lootdrop_entries_columns | lootdrop_id       | int(11) unsigned     | NO          | 0              |
+| lootdrop_entries_columns | item_id           | int(11)              | NO          | 0              |
+| lootdrop_entries_columns | item_charges      | smallint(2) unsigned | NO          | 1              |
+| lootdrop_entries_columns | equip_item        | tinyint(2) unsigned  | NO          | 0              |
+| lootdrop_entries_columns | chance            | float                | NO          | 1              |
+| lootdrop_entries_columns | disabled_chance   | float                | NO          | 0              |
+| lootdrop_entries_columns | trivial_min_level | smallint(5) unsigned | NO          | 0              |
+| lootdrop_entries_columns | trivial_max_level | smallint(5) unsigned | NO          | 0              |
+| lootdrop_entries_columns | multiplier        | tinyint(2) unsigned  | NO          | 1              |
+| lootdrop_entries_columns | npc_min_level     | smallint(5) unsigned | NO          | 0              |
+| lootdrop_entries_columns | npc_max_level     | smallint(5) unsigned | NO          | 0              |
++--------------------------+-------------------+----------------------+-------------+----------------+
++---------------------------+--------------+---------------------+-------------+----------------+
+| section                   | COLUMN_NAME  | COLUMN_TYPE         | IS_NULLABLE | COLUMN_DEFAULT |
++---------------------------+--------------+---------------------+-------------+----------------+
+| loottable_entries_columns | loottable_id | int(11) unsigned    | NO          | 0              |
+| loottable_entries_columns | lootdrop_id  | int(11) unsigned    | NO          | 0              |
+| loottable_entries_columns | multiplier   | tinyint(2) unsigned | NO          | 1              |
+| loottable_entries_columns | droplimit    | tinyint(2) unsigned | NO          | 0              |
+| loottable_entries_columns | mindrop      | tinyint(2) unsigned | NO          | 0              |
+| loottable_entries_columns | probability  | float               | NO          | 100            |
++---------------------------+--------------+---------------------+-------------+----------------+
++----------------------+------------------------+----------------------+-------------+----------------+
+| section              | COLUMN_NAME            | COLUMN_TYPE          | IS_NULLABLE | COLUMN_DEFAULT |
++----------------------+------------------------+----------------------+-------------+----------------+
+| merchantlist_columns | merchantid             | int(11)              | NO          | 0              |
+| merchantlist_columns | slot                   | int(11) unsigned     | NO          | 0              |
+| merchantlist_columns | item                   | int(11)              | NO          | 0              |
+| merchantlist_columns | faction_required       | smallint(6)          | NO          | -100           |
+| merchantlist_columns | level_required         | tinyint(3) unsigned  | NO          | 0              |
+| merchantlist_columns | min_status             | tinyint(3) unsigned  | NO          | 0              |
+| merchantlist_columns | max_status             | tinyint(3) unsigned  | NO          | 255            |
+| merchantlist_columns | alt_currency_cost      | smallint(5) unsigned | NO          | 0              |
+| merchantlist_columns | classes_required       | int(11)              | NO          | 65535          |
+| merchantlist_columns | probability            | int(3)               | NO          | 100            |
+| merchantlist_columns | bucket_name            | varchar(100)         | NO          | ''             |
+| merchantlist_columns | bucket_value           | varchar(100)         | NO          | ''             |
+| merchantlist_columns | bucket_comparison      | tinyint(3) unsigned  | YES         | 0              |
+| merchantlist_columns | min_expansion          | tinyint(4)           | NO          | -1             |
+| merchantlist_columns | max_expansion          | tinyint(4)           | NO          | -1             |
+| merchantlist_columns | content_flags          | varchar(100)         | YES         | NULL           |
+| merchantlist_columns | content_flags_disabled | varchar(100)         | YES         | NULL           |
++----------------------+------------------------+----------------------+-------------+----------------+
++--------------------+-------------+
+| section            | count_value |
++--------------------+-------------+
+| defiant_item_count |         417 |
++--------------------+-------------+
++----------------------+-------+--------------------------------------+----------+---------+-------+---------+----------+----------+--------+--------+
+| section              | id    | Name                                 | itemtype | classes | races | slots   | reqlevel | reclevel | nodrop | norent |
++----------------------+-------+--------------------------------------+----------+---------+-------+---------+----------+----------+--------+--------+
+| defiant_items_sample | 17525 | Package of Defiant Armor             |       11 |   65535 | 65535 |       0 |        0 |        0 |      0 |      1 |
+| defiant_items_sample | 40598 | Bundle of Defiant Armor              |       11 |   65535 | 65535 |       0 |        0 |        0 |      0 |      1 |
+| defiant_items_sample | 50005 | Crude Defiant Plate Bracer           |       10 |     151 | 65535 |    1536 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50006 | Crude Defiant Plate Gauntlets        |       10 |     151 | 65535 |    4096 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50007 | Crude Defiant Plate Boots            |       10 |     151 | 65535 |  524288 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50008 | Crude Defiant Plate Helm             |       10 |     151 | 65535 |       4 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50009 | Crude Defiant Plate Vambraces        |       10 |     151 | 65535 |     128 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50010 | Crude Defiant Plate Greaves          |       10 |     151 | 65535 |  262144 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50011 | Crude Defiant Breastplate            |       10 |     151 | 65535 |  131072 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50012 | Crude Defiant Chain Bracer           |       10 |   33544 | 65535 |    1536 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50013 | Crude Defiant Chain Gauntlets        |       10 |   33544 | 65535 |    4096 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50014 | Crude Defiant Chain Boots            |       10 |   33544 | 65535 |  524288 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50015 | Crude Defiant Chain Coif             |       10 |   33544 | 65535 |       4 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50016 | Crude Defiant Chain Sleeves          |       10 |   33544 | 65535 |     128 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50017 | Crude Defiant Chain Leggings         |       10 |   33544 | 65535 |  262144 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50018 | Crude Defiant Chain Tunic            |       10 |   33544 | 65535 |  131072 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50019 | Crude Defiant Leather Bracer         |       10 |   16480 | 65535 |    1536 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50020 | Crude Defiant Leather Gloves         |       10 |   16480 | 65535 |    4096 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50021 | Crude Defiant Leather Boots          |       10 |   16480 | 65535 |  524288 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50022 | Crude Defiant Leather Cap            |       10 |   16480 | 65535 |       4 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50023 | Crude Defiant Leather Sleeves        |       10 |   16480 | 65535 |     128 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50024 | Crude Defiant Leather Trousers       |       10 |   16480 | 65535 |  262144 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50025 | Crude Defiant Leather Tunic          |       10 |   16480 | 65535 |  131072 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50026 | Crude Defiant Cloth Wristwrap        |       10 |   15360 | 65535 |    1536 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50027 | Crude Defiant Cloth Gloves           |       10 |   15360 | 65535 |    4096 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50028 | Crude Defiant Cloth Sandals          |       10 |   15360 | 65535 |  524288 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50029 | Crude Defiant Cloth Cap              |       10 |   15360 | 65535 |       4 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50030 | Crude Defiant Cloth Sleeves          |       10 |   15360 | 65535 |     128 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50031 | Crude Defiant Cloth Pantaloons       |       10 |   15360 | 65535 |  262144 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50032 | Crude Defiant Cloth Robe             |       10 |   15360 | 65535 |  131072 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50033 | Simple Defiant Plate Bracer          |       10 |     151 | 65535 |    1536 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50034 | Simple Defiant Plate Gauntlets       |       10 |     151 | 65535 |    4096 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50035 | Simple Defiant Plate Boots           |       10 |     151 | 65535 |  524288 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50036 | Simple Defiant Plate Helm            |       10 |     151 | 65535 |       4 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50037 | Simple Defiant Plate Vambraces       |       10 |     151 | 65535 |     128 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50038 | Simple Defiant Plate Greaves         |       10 |     151 | 65535 |  262144 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50039 | Simple Defiant Breastplate           |       10 |     151 | 65535 |  131072 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50040 | Simple Defiant Chain Bracer          |       10 |   33544 | 65535 |    1536 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50041 | Simple Defiant Chain Gauntlets       |       10 |   33544 | 65535 |    4096 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50042 | Simple Defiant Chain Boots           |       10 |   33544 | 65535 |  524288 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50043 | Simple Defiant Chain Coif            |       10 |   33544 | 65535 |       4 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50044 | Simple Defiant Chain Sleeves         |       10 |   33544 | 65535 |     128 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50045 | Simple Defiant Chain Leggings        |       10 |   33544 | 65535 |  262144 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50046 | Simple Defiant Chain Tunic           |       10 |   33544 | 65535 |  131072 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50047 | Simple Defiant Leather Bracer        |       10 |   16480 | 65535 |    1536 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50048 | Simple Defiant Leather Gloves        |       10 |   16480 | 65535 |    4096 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50049 | Simple Defiant Leather Boots         |       10 |   16480 | 65535 |  524288 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50050 | Simple Defiant Leather Cap           |       10 |   16480 | 65535 |       4 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50051 | Simple Defiant Leather Sleeves       |       10 |   16480 | 65535 |     128 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50052 | Simple Defiant Leather Trousers      |       10 |   16480 | 65535 |  262144 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50053 | Simple Defiant Leather Tunic         |       10 |   16480 | 65535 |  131072 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50054 | Simple Defiant Cloth Wristwrap       |       10 |   15360 | 65535 |    1536 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50055 | Simple Defiant Cloth Gloves          |       10 |   15360 | 65535 |    4096 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50056 | Simple Defiant Cloth Sandals         |       10 |   15360 | 65535 |  524288 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50057 | Simple Defiant Cloth Cap             |       10 |   15360 | 65535 |       4 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50058 | Simple Defiant Cloth Sleeves         |       10 |   15360 | 65535 |     128 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50059 | Simple Defiant Cloth Pantaloons      |       10 |   15360 | 65535 |  262144 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50060 | Simple Defiant Cloth Robe            |       10 |   15360 | 65535 |  131072 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50061 | Rough Defiant Plate Bracer           |       10 |     151 | 65535 |    1536 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50062 | Rough Defiant Plate Gauntlets        |       10 |     151 | 65535 |    4096 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50063 | Rough Defiant Plate Boots            |       10 |     151 | 65535 |  524288 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50064 | Rough Defiant Plate Helm             |       10 |     151 | 65535 |       4 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50065 | Rough Defiant Plate Vambraces        |       10 |     151 | 65535 |     128 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50066 | Rough Defiant Plate Greaves          |       10 |     151 | 65535 |  262144 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50067 | Rough Defiant Breastplate            |       10 |     151 | 65535 |  131072 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50068 | Rough Defiant Chain Bracer           |       10 |   33544 | 65535 |    1536 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50069 | Rough Defiant Chain Gauntlets        |       10 |   33544 | 65535 |    4096 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50070 | Rough Defiant Chain Boots            |       10 |   33544 | 65535 |  524288 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50071 | Rough Defiant Chain Coif             |       10 |   33544 | 65535 |       4 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50072 | Rough Defiant Chain Sleeves          |       10 |   33544 | 65535 |     128 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50073 | Rough Defiant Chain Leggings         |       10 |   33544 | 65535 |  262144 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50074 | Rough Defiant Chain Tunic            |       10 |   33544 | 65535 |  131072 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50075 | Rough Defiant Leather Bracer         |       10 |   16480 | 65535 |    1536 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50076 | Rough Defiant Leather Gloves         |       10 |   16480 | 65535 |    4096 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50077 | Rough Defiant Leather Boots          |       10 |   16480 | 65535 |  524288 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50078 | Rough Defiant Leather Cap            |       10 |   16480 | 65535 |       4 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50079 | Rough Defiant Leather Sleeves        |       10 |   16480 | 65535 |     128 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50080 | Rough Defiant Leather Trousers       |       10 |   16480 | 65535 |  262144 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50081 | Rough Defiant Leather Tunic          |       10 |   16480 | 65535 |  131072 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50082 | Rough Defiant Cloth Wristwrap        |       10 |   15360 | 65535 |    1536 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50083 | Rough Defiant Cloth Gloves           |       10 |   15360 | 65535 |    4096 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50084 | Rough Defiant Cloth Sandals          |       10 |   15360 | 65535 |  524288 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50085 | Rough Defiant Cloth Cap              |       10 |   15360 | 65535 |       4 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50086 | Rough Defiant Cloth Sleeves          |       10 |   15360 | 65535 |     128 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50087 | Rough Defiant Cloth Pantaloons       |       10 |   15360 | 65535 |  262144 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50088 | Rough Defiant Cloth Robe             |       10 |   15360 | 65535 |  131072 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50089 | Ornate Defiant Plate Bracer          |       10 |     151 | 65535 |    1536 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50090 | Ornate Defiant Plate Gauntlets       |       10 |     151 | 65535 |    4096 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50091 | Ornate Defiant Plate Boots           |       10 |     151 | 65535 |  524288 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50092 | Ornate Defiant Plate Helm            |       10 |     151 | 65535 |       4 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50093 | Ornate Defiant Plate Vambraces       |       10 |     151 | 65535 |     128 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50094 | Ornate Defiant Plate Greaves         |       10 |     151 | 65535 |  262144 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50095 | Ornate Defiant Breastplate           |       10 |     151 | 65535 |  131072 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50096 | Ornate Defiant Chain Bracer          |       10 |   33544 | 65535 |    1536 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50097 | Ornate Defiant Chain Gauntlets       |       10 |   33544 | 65535 |    4096 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50098 | Ornate Defiant Chain Boots           |       10 |   33544 | 65535 |  524288 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50099 | Ornate Defiant Chain Coif            |       10 |   33544 | 65535 |       4 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50100 | Ornate Defiant Chain Sleeves         |       10 |   33544 | 65535 |     128 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50101 | Ornate Defiant Chain Leggings        |       10 |   33544 | 65535 |  262144 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50102 | Ornate Defiant Chain Tunic           |       10 |   33544 | 65535 |  131072 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50103 | Ornate Defiant Leather Bracer        |       10 |   16480 | 65535 |    1536 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50104 | Ornate Defiant Leather Gloves        |       10 |   16480 | 65535 |    4096 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50105 | Ornate Defiant Leather Boots         |       10 |   16480 | 65535 |  524288 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50106 | Ornate Defiant Leather Cap           |       10 |   16480 | 65535 |       4 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50107 | Ornate Defiant Leather Sleeves       |       10 |   16480 | 65535 |     128 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50108 | Ornate Defiant Leather Trousers      |       10 |   16480 | 65535 |  262144 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50109 | Ornate Defiant Leather Tunic         |       10 |   16480 | 65535 |  131072 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50110 | Ornate Defiant Cloth Wristwrap       |       10 |   15360 | 65535 |    1536 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50111 | Ornate Defiant Cloth Gloves          |       10 |   15360 | 65535 |    4096 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50112 | Ornate Defiant Cloth Sandals         |       10 |   15360 | 65535 |  524288 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50113 | Ornate Defiant Cloth Cap             |       10 |   15360 | 65535 |       4 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50114 | Ornate Defiant Cloth Sleeves         |       10 |   15360 | 65535 |     128 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50115 | Ornate Defiant Cloth Pantaloons      |       10 |   15360 | 65535 |  262144 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50116 | Ornate Defiant Cloth Robe            |       10 |   15360 | 65535 |  131072 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50117 | Flawed Defiant Plate Bracer          |       10 |     151 | 65535 |    1536 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50118 | Flawed Defiant Plate Gauntlets       |       10 |     151 | 65535 |    4096 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50119 | Flawed Defiant Plate Boots           |       10 |     151 | 65535 |  524288 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50120 | Flawed Defiant Plate Helm            |       10 |     151 | 65535 |       4 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50121 | Flawed Defiant Plate Vambraces       |       10 |     151 | 65535 |     128 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50122 | Flawed Defiant Plate Greaves         |       10 |     151 | 65535 |  262144 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50123 | Flawed Defiant Breastplate           |       10 |     151 | 65535 |  131072 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50124 | Flawed Defiant Chain Bracer          |       10 |   33544 | 65535 |    1536 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50125 | Flawed Defiant Chain Gauntlets       |       10 |   33544 | 65535 |    4096 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50126 | Flawed Defiant Chain Boots           |       10 |   33544 | 65535 |  524288 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50127 | Flawed Defiant Chain Coif            |       10 |   33544 | 65535 |       4 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50128 | Flawed Defiant Chain Sleeves         |       10 |   33544 | 65535 |     128 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50129 | Flawed Defiant Chain Leggings        |       10 |   33544 | 65535 |  262144 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50130 | Flawed Defiant Chain Tunic           |       10 |   33544 | 65535 |  131072 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50131 | Flawed Defiant Leather Bracer        |       10 |   16480 | 65535 |    1536 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50132 | Flawed Defiant Leather Gloves        |       10 |   16480 | 65535 |    4096 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50133 | Flawed Defiant Leather Boots         |       10 |   16480 | 65535 |  524288 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50134 | Flawed Defiant Leather Cap           |       10 |   16480 | 65535 |       4 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50135 | Flawed Defiant Leather Sleeves       |       10 |   16480 | 65535 |     128 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50136 | Flawed Defiant Leather Trousers      |       10 |   16480 | 65535 |  262144 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50137 | Flawed Defiant Leather Tunic         |       10 |   16480 | 65535 |  131072 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50138 | Flawed Defiant Silk Wristwrap        |       10 |   15360 | 65535 |    1536 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50139 | Flawed Defiant Silk Gloves           |       10 |   15360 | 65535 |    4096 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50140 | Flawed Defiant Silk Sandals          |       10 |   15360 | 65535 |  524288 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50141 | Flawed Defiant Silk Cap              |       10 |   15360 | 65535 |       4 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50142 | Flawed Defiant Silk Sleeves          |       10 |   15360 | 65535 |     128 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50143 | Flawed Defiant Silk Pantaloons       |       10 |   15360 | 65535 |  262144 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50144 | Flawed Defiant Silk Robe             |       10 |   15360 | 65535 |  131072 |       37 |       50 |      1 |      1 |
+| defiant_items_sample | 50145 | Intricate Defiant Plate Bracer       |       10 |     151 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50146 | Intricate Defiant Plate Wristguard   |       10 |     151 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50147 | Intricate Defiant Plate Wristband    |       10 |     151 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50148 | Intricate Defiant Plate Gauntlets    |       10 |     151 | 65535 |    4096 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50149 | Intricate Defiant Plate Boots        |       10 |     151 | 65535 |  524288 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50150 | Intricate Defiant Plate Helm         |       10 |     151 | 65535 |       4 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50151 | Intricate Defiant Plate Vambraces    |       10 |     151 | 65535 |     128 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50152 | Intricate Defiant Plate Greaves      |       10 |     151 | 65535 |  262144 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50153 | Intricate Defiant Breastplate        |       10 |     151 | 65535 |  131072 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50154 | Intricate Defiant Chain Bracer       |       10 |   33544 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50155 | Intricate Defiant Chain Wristguard   |       10 |   33544 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50156 | Intricate Defiant Chain Gauntlets    |       10 |   33544 | 65535 |    4096 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50157 | Intricate Defiant Chain Boots        |       10 |   33544 | 65535 |  524288 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50158 | Intricate Defiant Chain Coif         |       10 |   33544 | 65535 |       4 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50159 | Intricate Defiant Chain Sleeves      |       10 |   33544 | 65535 |     128 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50160 | Intricate Defiant Chain Leggings     |       10 |   33544 | 65535 |  262144 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50161 | Intricate Defiant Chain Tunic        |       10 |   33544 | 65535 |  131072 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50162 | Intricate Defiant Leather Bracer     |       10 |   16480 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50163 | Intricate Defiant Leather Wristguard |       10 |   16480 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50164 | Intricate Defiant Leather Gloves     |       10 |   16480 | 65535 |    4096 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50165 | Intricate Defiant Leather Boots      |       10 |   16480 | 65535 |  524288 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50166 | Intricate Defiant Leather Cap        |       10 |   16480 | 65535 |       4 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50167 | Intricate Defiant Leather Sleeves    |       10 |   16480 | 65535 |     128 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50168 | Intricate Defiant Leather Trousers   |       10 |   16480 | 65535 |  262144 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50169 | Intricate Defiant Leather Tunic      |       10 |   16480 | 65535 |  131072 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50170 | Intricate Defiant Silk Wristguard    |       10 |   15360 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50171 | Intricate Defiant Silk Wristband     |       10 |   15360 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50172 | Intricate Defiant Silk Wristwrap     |       10 |   15360 | 65535 |    1536 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50173 | Intricate Defiant Silk Gloves        |       10 |   15360 | 65535 |    4096 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50174 | Intricate Defiant Silk Sandals       |       10 |   15360 | 65535 |  524288 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50175 | Intricate Defiant Silk Cap           |       10 |   15360 | 65535 |       4 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50176 | Intricate Defiant Silk Sleeves       |       10 |   15360 | 65535 |     128 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50177 | Intricate Defiant Silk Pantaloons    |       10 |   15360 | 65535 |  262144 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50178 | Intricate Defiant Silk Robe          |       10 |   15360 | 65535 |  131072 |       48 |       60 |      1 |      1 |
+| defiant_items_sample | 50179 | Elaborate Defiant Plate Bracer       |       10 |     151 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50180 | Elaborate Defiant Plate Wristguard   |       10 |     151 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50181 | Elaborate Defiant Plate Wristband    |       10 |     151 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50182 | Elaborate Defiant Plate Gauntlets    |       10 |     151 | 65535 |    4096 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50183 | Elaborate Defiant Plate Boots        |       10 |     151 | 65535 |  524288 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50184 | Elaborate Defiant Plate Helm         |       10 |     151 | 65535 |       4 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50185 | Elaborate Defiant Plate Vambraces    |       10 |     151 | 65535 |     128 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50186 | Elaborate Defiant Plate Greaves      |       10 |     151 | 65535 |  262144 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50187 | Elaborate Defiant Breastplate        |       10 |     151 | 65535 |  131072 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50188 | Elaborate Defiant Chain Bracer       |       10 |   33544 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50189 | Elaborate Defiant Chain Wristguard   |       10 |   33544 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50190 | Elaborate Defiant Chain Gauntlets    |       10 |   33544 | 65535 |    4096 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50191 | Elaborate Defiant Chain Boots        |       10 |   33544 | 65535 |  524288 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50192 | Elaborate Defiant Chain Coif         |       10 |   33544 | 65535 |       4 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50193 | Elaborate Defiant Chain Sleeves      |       10 |   33544 | 65535 |     128 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50194 | Elaborate Defiant Chain Leggings     |       10 |   33544 | 65535 |  262144 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50195 | Elaborate Defiant Chain Tunic        |       10 |   33544 | 65535 |  131072 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50196 | Elaborate Defiant Leather Bracer     |       10 |   16480 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50197 | Elaborate Defiant Leather Wristguard |       10 |   16480 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50198 | Elaborate Defiant Leather Gloves     |       10 |   16480 | 65535 |    4096 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50199 | Elaborate Defiant Leather Boots      |       10 |   16480 | 65535 |  524288 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50200 | Elaborate Defiant Leather Cap        |       10 |   16480 | 65535 |       4 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50201 | Elaborate Defiant Leather Sleeves    |       10 |   16480 | 65535 |     128 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50202 | Elaborate Defiant Leather Trousers   |       10 |   16480 | 65535 |  262144 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50203 | Elaborate Defiant Leather Tunic      |       10 |   16480 | 65535 |  131072 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50204 | Elaborate Defiant Silk Wristguard    |       10 |   15360 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50205 | Elaborate Defiant Silk Wristband     |       10 |   15360 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50206 | Elaborate Defiant Silk Wristwrap     |       10 |   15360 | 65535 |    1536 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50207 | Elaborate Defiant Silk Gloves        |       10 |   15360 | 65535 |    4096 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50208 | Elaborate Defiant Silk Sandals       |       10 |   15360 | 65535 |  524288 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50209 | Elaborate Defiant Silk Cap           |       10 |   15360 | 65535 |       4 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50210 | Elaborate Defiant Silk Sleeves       |       10 |   15360 | 65535 |     128 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50211 | Elaborate Defiant Silk Pantaloons    |       10 |   15360 | 65535 |  262144 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50212 | Elaborate Defiant Silk Robe          |       10 |   15360 | 65535 |  131072 |       59 |       70 |      1 |      1 |
+| defiant_items_sample | 50213 | Elegant Defiant Plate Bracer         |       10 |     151 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50214 | Elegant Defiant Plate Wristguard     |       10 |     151 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50215 | Elegant Defiant Plate Wristband      |       10 |     151 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50216 | Elegant Defiant Plate Gauntlets      |       10 |     151 | 65535 |    4096 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50217 | Elegant Defiant Plate Boots          |       10 |     151 | 65535 |  524288 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50218 | Elegant Defiant Plate Helm           |       10 |     151 | 65535 |       4 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50219 | Elegant Defiant Plate Vambraces      |       10 |     151 | 65535 |     128 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50220 | Elegant Defiant Plate Greaves        |       10 |     151 | 65535 |  262144 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50221 | Elegant Defiant Breastplate          |       10 |     151 | 65535 |  131072 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50222 | Elegant Defiant Chain Bracer         |       10 |   33544 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50223 | Elegant Defiant Chain Wristguard     |       10 |   33544 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50224 | Elegant Defiant Chain Gauntlets      |       10 |   33544 | 65535 |    4096 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50225 | Elegant Defiant Chain Boots          |       10 |   33544 | 65535 |  524288 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50226 | Elegant Defiant Chain Coif           |       10 |   33544 | 65535 |       4 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50227 | Elegant Defiant Chain Sleeves        |       10 |   33544 | 65535 |     128 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50228 | Elegant Defiant Chain Leggings       |       10 |   33544 | 65535 |  262144 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50229 | Elegant Defiant Chain Tunic          |       10 |   33544 | 65535 |  131072 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50230 | Elegant Defiant Leather Bracer       |       10 |   16480 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50231 | Elegant Defiant Leather Wristguard   |       10 |   16480 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50232 | Elegant Defiant Leather Gloves       |       10 |   16480 | 65535 |    4096 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50233 | Elegant Defiant Leather Boots        |       10 |   16480 | 65535 |  524288 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50234 | Elegant Defiant Leather Cap          |       10 |   16480 | 65535 |       4 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50235 | Elegant Defiant Leather Sleeves      |       10 |   16480 | 65535 |     128 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50236 | Elegant Defiant Leather Trousers     |       10 |   16480 | 65535 |  262144 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50237 | Elegant Defiant Leather Tunic        |       10 |   16480 | 65535 |  131072 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50238 | Elegant Defiant Silk Wristguard      |       10 |   15360 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50239 | Elegant Defiant Silk Wristband       |       10 |   15360 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50240 | Elegant Defiant Silk Wristwrap       |       10 |   15360 | 65535 |    1536 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50241 | Elegant Defiant Silk Gloves          |       10 |   15360 | 65535 |    4096 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50242 | Elegant Defiant Silk Sandals         |       10 |   15360 | 65535 |  524288 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50243 | Elegant Defiant Silk Cap             |       10 |   15360 | 65535 |       4 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50244 | Elegant Defiant Silk Sleeves         |       10 |   15360 | 65535 |     128 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50245 | Elegant Defiant Silk Pantaloons      |       10 |   15360 | 65535 |  262144 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50246 | Elegant Defiant Silk Robe            |       10 |   15360 | 65535 |  131072 |       70 |       80 |      1 |      1 |
+| defiant_items_sample | 50500 | Crude Defiant Amethyst               |       54 |   65535 | 65535 | 2070526 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50501 | Crude Defiant Emerald                |       54 |   65535 | 65535 | 2070526 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50502 | Crude Defiant Ruby Shard             |       54 |   65535 | 65535 | 2070526 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50503 | Crude Defiant Granite Pebble         |       54 |   65535 | 65535 | 2070526 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50504 | Crude Defiant Stone Fragment         |       54 |   65535 | 65535 | 2070526 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50505 | Crude Defiant Turquoise              |       54 |   65535 | 65535 | 2070526 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50506 | Crude Defiant Mace                   |        3 |   16861 | 65535 |   24576 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50507 | Crude Defiant Club                   |        3 |   15906 | 65535 |    8192 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50508 | Crude Defiant Shortsword             |        0 |     413 | 65535 |   24576 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50509 | Crude Defiant Axe                    |        0 |     413 | 65535 |   24576 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50510 | Crude Defiant Dagger                 |        2 |   16793 | 65535 |   24576 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50511 | Crude Defiant Spear                  |        2 |   15872 | 65535 |    8192 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50512 | Crude Defiant Fists                  |       45 |   16448 | 65535 |   24576 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50513 | Crude Defiant Quarterstaff           |        4 |   49245 | 65535 |    8192 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50514 | Crude Defiant Greatspear             |       35 |   32797 | 65535 |    8192 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50515 | Crude Defiant Greatsword             |        1 |   32797 | 65535 |    8192 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50516 | Crude Defiant Bow                    |        5 |     285 | 65535 |    2048 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50517 | Crude Defiant Spiked Shield          |        8 |   16861 | 65535 |   16384 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50518 | Crude Defiant Buckler                |        8 |   15906 | 65535 |   16384 |        0 |       10 |      1 |      1 |
+| defiant_items_sample | 50519 | Simple Defiant Alexandrite Shard     |       54 |   65535 | 65535 | 2070526 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50520 | Simple Defiant Bluestone             |       54 |   65535 | 65535 | 2070526 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50521 | Simple Defiant Jasper                |       54 |   65535 | 65535 | 2070526 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50522 | Simple Defiant Garnet                |       54 |   65535 | 65535 | 2070526 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50523 | Simple Defiant Hammer                |        3 |   16861 | 65535 |   24576 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50524 | Simple Defiant Wand                  |        3 |   15906 | 65535 |    8192 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50525 | Simple Defiant Shortsword            |        0 |     413 | 65535 |   24576 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50526 | Simple Defiant Bastard Sword         |        0 |     413 | 65535 |   24576 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50527 | Simple Defiant Claw-dagger           |        2 |   16793 | 65535 |   24576 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50528 | Simple Defiant Dagger                |        2 |   15872 | 65535 |    8192 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50529 | Simple Defiant Ulak                  |       45 |   16448 | 65535 |   24576 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50530 | Simple Defiant Twisted Staff         |        4 |   49245 | 65535 |    8192 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50531 | Simple Defiant Spear                 |       35 |   32797 | 65535 |    8192 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50532 | Simple Defiant Greataxe              |        1 |   32797 | 65535 |    8192 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50533 | Simple Defiant Bow                   |        5 |     285 | 65535 |    2048 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50534 | Simple Defiant Kite Shield           |        8 |   16861 | 65535 |   16384 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50535 | Simple Defiant Wooden Shield         |        8 |   15906 | 65535 |   16384 |        5 |       20 |      1 |      1 |
+| defiant_items_sample | 50536 | Rough Defiant Nihilite Shard         |       54 |   65535 | 65535 | 2070526 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50537 | Rough Defiant Trillion Amethyst      |       54 |   65535 | 65535 | 2070526 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50540 | Rough Defiant Hammer                 |        3 |   16861 | 65535 |   24576 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50541 | Rough Defiant Scepter                |        3 |   15906 | 65535 |    8192 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50542 | Rough Defiant Shortsword             |        0 |     413 | 65535 |   24576 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50543 | Rough Defiant Longsword              |        0 |     413 | 65535 |   24576 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50544 | Rough Defiant Stone Dagger           |        2 |   16793 | 65535 |   24576 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50545 | Rough Defiant Serrated Dagger        |        2 |   15872 | 65535 |    8192 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50546 | Rough Defiant Knuckle Dusters        |       45 |   16448 | 65535 |   24576 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50547 | Rough Defiant Spiked Staff           |        4 |   49245 | 65535 |    8192 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50548 | Rough Defiant Trident                |       35 |   32797 | 65535 |    8192 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50549 | Rough Defiant Halberd                |        1 |   32797 | 65535 |    8192 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50550 | Rough Defiant Bow                    |        5 |     285 | 65535 |    2048 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50551 | Rough Defiant Chitin Shield          |        8 |   16861 | 65535 |   16384 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50552 | Rough Defiant Round Shield           |        8 |   15906 | 65535 |   16384 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50553 | Rough Defiant Charm                  |       52 |   65535 | 65535 |       1 |       15 |       30 |      1 |      1 |
+| defiant_items_sample | 50554 | Ornate Defiant Harmonagate           |       54 |   65535 | 65535 | 2070526 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50555 | Ornate Defiant Geode                 |       54 |   65535 | 65535 | 2070526 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50556 | Ornate Defiant Bone Sledgehammer     |        3 |   16861 | 65535 |   24576 |       26 |       40 |      1 |      1 |
+| defiant_items_sample | 50557 | Ornate Defiant Scepter               |        3 |   15906 | 65535 |    8192 |       26 |       40 |      1 |      1 |
++----------------------+-------+--------------------------------------+----------+---------+-------+---------+----------+----------+--------+--------+
++------------------------------+-------------+
+| section                      | count_value |
++------------------------------+-------------+
+| defiant_lootdrop_entry_count |         372 |
++------------------------------+-------------+
++--------------------------+-------------+---------+--------------------------------------+--------------+------------+--------+-----------------+
+| section                  | lootdrop_id | item_id | Name                                 | item_charges | equip_item | chance | disabled_chance |
++--------------------------+-------------+---------+--------------------------------------+--------------+------------+--------+-----------------+
+| defiant_lootdrop_entries |      176432 |   50005 | Crude Defiant Plate Bracer           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50006 | Crude Defiant Plate Gauntlets        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50007 | Crude Defiant Plate Boots            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50008 | Crude Defiant Plate Helm             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50009 | Crude Defiant Plate Vambraces        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50010 | Crude Defiant Plate Greaves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50011 | Crude Defiant Breastplate            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50012 | Crude Defiant Chain Bracer           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50013 | Crude Defiant Chain Gauntlets        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50014 | Crude Defiant Chain Boots            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50015 | Crude Defiant Chain Coif             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50016 | Crude Defiant Chain Sleeves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50017 | Crude Defiant Chain Leggings         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50018 | Crude Defiant Chain Tunic            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50019 | Crude Defiant Leather Bracer         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50020 | Crude Defiant Leather Gloves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50021 | Crude Defiant Leather Boots          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50022 | Crude Defiant Leather Cap            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50023 | Crude Defiant Leather Sleeves        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50024 | Crude Defiant Leather Trousers       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50025 | Crude Defiant Leather Tunic          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50026 | Crude Defiant Cloth Wristwrap        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50027 | Crude Defiant Cloth Gloves           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50028 | Crude Defiant Cloth Sandals          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50029 | Crude Defiant Cloth Cap              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50030 | Crude Defiant Cloth Sleeves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50031 | Crude Defiant Cloth Pantaloons       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50032 | Crude Defiant Cloth Robe             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50500 | Crude Defiant Amethyst               |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50501 | Crude Defiant Emerald                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50502 | Crude Defiant Ruby Shard             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50503 | Crude Defiant Granite Pebble         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50504 | Crude Defiant Stone Fragment         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50505 | Crude Defiant Turquoise              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50506 | Crude Defiant Mace                   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50507 | Crude Defiant Club                   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50508 | Crude Defiant Shortsword             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50509 | Crude Defiant Axe                    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50510 | Crude Defiant Dagger                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50511 | Crude Defiant Spear                  |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50512 | Crude Defiant Fists                  |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50513 | Crude Defiant Quarterstaff           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50514 | Crude Defiant Greatspear             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50515 | Crude Defiant Greatsword             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50516 | Crude Defiant Bow                    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50517 | Crude Defiant Spiked Shield          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176432 |   50518 | Crude Defiant Buckler                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50033 | Simple Defiant Plate Bracer          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50034 | Simple Defiant Plate Gauntlets       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50035 | Simple Defiant Plate Boots           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50036 | Simple Defiant Plate Helm            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50037 | Simple Defiant Plate Vambraces       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50038 | Simple Defiant Plate Greaves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50039 | Simple Defiant Breastplate           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50040 | Simple Defiant Chain Bracer          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50041 | Simple Defiant Chain Gauntlets       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50042 | Simple Defiant Chain Boots           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50043 | Simple Defiant Chain Coif            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50044 | Simple Defiant Chain Sleeves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50045 | Simple Defiant Chain Leggings        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50046 | Simple Defiant Chain Tunic           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50047 | Simple Defiant Leather Bracer        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50048 | Simple Defiant Leather Gloves        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50049 | Simple Defiant Leather Boots         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50050 | Simple Defiant Leather Cap           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50051 | Simple Defiant Leather Sleeves       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50052 | Simple Defiant Leather Trousers      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50053 | Simple Defiant Leather Tunic         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50054 | Simple Defiant Cloth Wristwrap       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50055 | Simple Defiant Cloth Gloves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50056 | Simple Defiant Cloth Sandals         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50057 | Simple Defiant Cloth Cap             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50058 | Simple Defiant Cloth Sleeves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50059 | Simple Defiant Cloth Pantaloons      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50060 | Simple Defiant Cloth Robe            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50519 | Simple Defiant Alexandrite Shard     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50520 | Simple Defiant Bluestone             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50521 | Simple Defiant Jasper                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50522 | Simple Defiant Garnet                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50523 | Simple Defiant Hammer                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50524 | Simple Defiant Wand                  |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50525 | Simple Defiant Shortsword            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50526 | Simple Defiant Bastard Sword         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50527 | Simple Defiant Claw-dagger           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50528 | Simple Defiant Dagger                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50529 | Simple Defiant Ulak                  |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50530 | Simple Defiant Twisted Staff         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50531 | Simple Defiant Spear                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50532 | Simple Defiant Greataxe              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50533 | Simple Defiant Bow                   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50534 | Simple Defiant Kite Shield           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176433 |   50535 | Simple Defiant Wooden Shield         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50061 | Rough Defiant Plate Bracer           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50062 | Rough Defiant Plate Gauntlets        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50063 | Rough Defiant Plate Boots            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50064 | Rough Defiant Plate Helm             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50065 | Rough Defiant Plate Vambraces        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50066 | Rough Defiant Plate Greaves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50067 | Rough Defiant Breastplate            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50068 | Rough Defiant Chain Bracer           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50069 | Rough Defiant Chain Gauntlets        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50070 | Rough Defiant Chain Boots            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50071 | Rough Defiant Chain Coif             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50072 | Rough Defiant Chain Sleeves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50073 | Rough Defiant Chain Leggings         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50074 | Rough Defiant Chain Tunic            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50075 | Rough Defiant Leather Bracer         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50076 | Rough Defiant Leather Gloves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50077 | Rough Defiant Leather Boots          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50078 | Rough Defiant Leather Cap            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50079 | Rough Defiant Leather Sleeves        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50080 | Rough Defiant Leather Trousers       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50081 | Rough Defiant Leather Tunic          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50082 | Rough Defiant Cloth Wristwrap        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50083 | Rough Defiant Cloth Gloves           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50084 | Rough Defiant Cloth Sandals          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50085 | Rough Defiant Cloth Cap              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50086 | Rough Defiant Cloth Sleeves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50087 | Rough Defiant Cloth Pantaloons       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50088 | Rough Defiant Cloth Robe             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50536 | Rough Defiant Nihilite Shard         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50537 | Rough Defiant Trillion Amethyst      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50540 | Rough Defiant Hammer                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50541 | Rough Defiant Scepter                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50542 | Rough Defiant Shortsword             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50543 | Rough Defiant Longsword              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50544 | Rough Defiant Stone Dagger           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50545 | Rough Defiant Serrated Dagger        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50546 | Rough Defiant Knuckle Dusters        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50547 | Rough Defiant Spiked Staff           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50548 | Rough Defiant Trident                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50549 | Rough Defiant Halberd                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50550 | Rough Defiant Bow                    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50551 | Rough Defiant Chitin Shield          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50552 | Rough Defiant Round Shield           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176434 |   50553 | Rough Defiant Charm                  |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50089 | Ornate Defiant Plate Bracer          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50090 | Ornate Defiant Plate Gauntlets       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50091 | Ornate Defiant Plate Boots           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50092 | Ornate Defiant Plate Helm            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50093 | Ornate Defiant Plate Vambraces       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50094 | Ornate Defiant Plate Greaves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50095 | Ornate Defiant Breastplate           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50096 | Ornate Defiant Chain Bracer          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50097 | Ornate Defiant Chain Gauntlets       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50098 | Ornate Defiant Chain Boots           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50099 | Ornate Defiant Chain Coif            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50100 | Ornate Defiant Chain Sleeves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50101 | Ornate Defiant Chain Leggings        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50102 | Ornate Defiant Chain Tunic           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50103 | Ornate Defiant Leather Bracer        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50104 | Ornate Defiant Leather Gloves        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50105 | Ornate Defiant Leather Boots         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50106 | Ornate Defiant Leather Cap           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50107 | Ornate Defiant Leather Sleeves       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50108 | Ornate Defiant Leather Trousers      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50109 | Ornate Defiant Leather Tunic         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50110 | Ornate Defiant Cloth Wristwrap       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50111 | Ornate Defiant Cloth Gloves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50112 | Ornate Defiant Cloth Sandals         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50113 | Ornate Defiant Cloth Cap             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50114 | Ornate Defiant Cloth Sleeves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50115 | Ornate Defiant Cloth Pantaloons      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50116 | Ornate Defiant Cloth Robe            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50554 | Ornate Defiant Harmonagate           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50555 | Ornate Defiant Geode                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50556 | Ornate Defiant Bone Sledgehammer     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50557 | Ornate Defiant Scepter               |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50558 | Ornate Defiant Longsword             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50559 | Ornate Defiant Gladius               |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50560 | Ornate Defiant Rapier                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50561 | Ornate Defiant Dagger                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50562 | Ornate Defiant Orb                   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50563 | Ornate Defiant Skullstaff            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50564 | Ornate Defiant Harpoon               |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50565 | Ornate Defiant Scythe                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50566 | Ornate Defiant Bow                   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50567 | Ornate Defiant Skullshield           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50568 | Ornate Defiant Glowing Shield        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176435 |   50569 | Ornate Defiant Charm                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50117 | Flawed Defiant Plate Bracer          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50118 | Flawed Defiant Plate Gauntlets       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50119 | Flawed Defiant Plate Boots           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50120 | Flawed Defiant Plate Helm            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50121 | Flawed Defiant Plate Vambraces       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50122 | Flawed Defiant Plate Greaves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50123 | Flawed Defiant Breastplate           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50124 | Flawed Defiant Chain Bracer          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50125 | Flawed Defiant Chain Gauntlets       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50126 | Flawed Defiant Chain Boots           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50127 | Flawed Defiant Chain Coif            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50128 | Flawed Defiant Chain Sleeves         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50129 | Flawed Defiant Chain Leggings        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50130 | Flawed Defiant Chain Tunic           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50131 | Flawed Defiant Leather Bracer        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50132 | Flawed Defiant Leather Gloves        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50133 | Flawed Defiant Leather Boots         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50134 | Flawed Defiant Leather Cap           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50135 | Flawed Defiant Leather Sleeves       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50136 | Flawed Defiant Leather Trousers      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50137 | Flawed Defiant Leather Tunic         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50138 | Flawed Defiant Silk Wristwrap        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50139 | Flawed Defiant Silk Gloves           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50140 | Flawed Defiant Silk Sandals          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50141 | Flawed Defiant Silk Cap              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50142 | Flawed Defiant Silk Sleeves          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50143 | Flawed Defiant Silk Pantaloons       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50144 | Flawed Defiant Silk Robe             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50570 | Flawed Defiant Quartz                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50571 | Flawed Defiant Amberstone            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50572 | Flawed Defiant Brawl Stick           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50573 | Flawed Defiant Mace                  |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50574 | Flawed Defiant Longsword             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50575 | Flawed Defiant Shortsword            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50576 | Flawed Defiant Glass Shard           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50577 | Flawed Defiant Dagger                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50578 | Flawed Defiant Orb                   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50579 | Flawed Defiant Quarterstaff          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50580 | Flawed Defiant Lance                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50581 | Flawed Defiant Emeraldblade          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50582 | Flawed Defiant Longbow               |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50583 | Flawed Defiant Scale Shield          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50584 | Flawed Defiant Carapace              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176436 |   50585 | Flawed Defiant Charm                 |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50145 | Intricate Defiant Plate Bracer       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50146 | Intricate Defiant Plate Wristguard   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50147 | Intricate Defiant Plate Wristband    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50148 | Intricate Defiant Plate Gauntlets    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50149 | Intricate Defiant Plate Boots        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50150 | Intricate Defiant Plate Helm         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50151 | Intricate Defiant Plate Vambraces    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50152 | Intricate Defiant Plate Greaves      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50153 | Intricate Defiant Breastplate        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50154 | Intricate Defiant Chain Bracer       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50155 | Intricate Defiant Chain Wristguard   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50156 | Intricate Defiant Chain Gauntlets    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50157 | Intricate Defiant Chain Boots        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50158 | Intricate Defiant Chain Coif         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50159 | Intricate Defiant Chain Sleeves      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50160 | Intricate Defiant Chain Leggings     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50161 | Intricate Defiant Chain Tunic        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50162 | Intricate Defiant Leather Bracer     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50163 | Intricate Defiant Leather Wristguard |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50164 | Intricate Defiant Leather Gloves     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50165 | Intricate Defiant Leather Boots      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50166 | Intricate Defiant Leather Cap        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50167 | Intricate Defiant Leather Sleeves    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50168 | Intricate Defiant Leather Trousers   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50169 | Intricate Defiant Leather Tunic      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50170 | Intricate Defiant Silk Wristguard    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50171 | Intricate Defiant Silk Wristband     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50172 | Intricate Defiant Silk Wristwrap     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50173 | Intricate Defiant Silk Gloves        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50174 | Intricate Defiant Silk Sandals       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50175 | Intricate Defiant Silk Cap           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50176 | Intricate Defiant Silk Sleeves       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50177 | Intricate Defiant Silk Pantaloons    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50178 | Intricate Defiant Silk Robe          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50586 | Intricate Defiant Spotstone          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50587 | Intricate Defiant Crystal Shard      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50588 | Intricate Defiant Hammer             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50589 | Intricate Defiant Mace               |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50590 | Intricate Defiant Katana             |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50591 | Intricate Defiant Scimitar           |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50592 | Intricate Defiant Sacrificial Dagger |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50593 | Intricate Defiant Partisan Spear     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50594 | Intricate Defiant Handwraps          |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50595 | Intricate Defiant Spiked Warhammer   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50596 | Intricate Defiant Trident            |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50597 | Intricate Defiant Greatsword         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50598 | Intricate Defiant Bow                |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50599 | Intricate Defiant Hammered Buckler   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50600 | Intricate Defiant Targ Shield        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176437 |   50601 | Intricate Defiant Charm              |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50179 | Elaborate Defiant Plate Bracer       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50180 | Elaborate Defiant Plate Wristguard   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50181 | Elaborate Defiant Plate Wristband    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50182 | Elaborate Defiant Plate Gauntlets    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50183 | Elaborate Defiant Plate Boots        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50184 | Elaborate Defiant Plate Helm         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50185 | Elaborate Defiant Plate Vambraces    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50186 | Elaborate Defiant Plate Greaves      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50187 | Elaborate Defiant Breastplate        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50188 | Elaborate Defiant Chain Bracer       |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50189 | Elaborate Defiant Chain Wristguard   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50190 | Elaborate Defiant Chain Gauntlets    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50191 | Elaborate Defiant Chain Boots        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50192 | Elaborate Defiant Chain Coif         |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50193 | Elaborate Defiant Chain Sleeves      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50194 | Elaborate Defiant Chain Leggings     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50195 | Elaborate Defiant Chain Tunic        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50196 | Elaborate Defiant Leather Bracer     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50197 | Elaborate Defiant Leather Wristguard |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50198 | Elaborate Defiant Leather Gloves     |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50199 | Elaborate Defiant Leather Boots      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50200 | Elaborate Defiant Leather Cap        |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50201 | Elaborate Defiant Leather Sleeves    |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50202 | Elaborate Defiant Leather Trousers   |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50203 | Elaborate Defiant Leather Tunic      |            1 |          1 |      0 |               1 |
+| defiant_lootdrop_entries |      176438 |   50204 | Elaborate Defiant Silk Wristguard    |            1 |          1 |      0 |               1 |
++--------------------------+-------------+---------+--------------------------------------+--------------+------------+--------+-----------------+
++------------------------------+-------------+
+| section                      | count_value |
++------------------------------+-------------+
+| defiant_loottable_link_count |         372 |
++------------------------------+-------------+
++-------------------------+--------------+-------------+---------+--------------------------------------+
+| section                 | loottable_id | lootdrop_id | item_id | Name                                 |
++-------------------------+--------------+-------------+---------+--------------------------------------+
+| defiant_loottable_links |       110209 |      176432 |   50005 | Crude Defiant Plate Bracer           |
+| defiant_loottable_links |       110209 |      176432 |   50006 | Crude Defiant Plate Gauntlets        |
+| defiant_loottable_links |       110209 |      176432 |   50007 | Crude Defiant Plate Boots            |
+| defiant_loottable_links |       110209 |      176432 |   50008 | Crude Defiant Plate Helm             |
+| defiant_loottable_links |       110209 |      176432 |   50009 | Crude Defiant Plate Vambraces        |
+| defiant_loottable_links |       110209 |      176432 |   50010 | Crude Defiant Plate Greaves          |
+| defiant_loottable_links |       110209 |      176432 |   50011 | Crude Defiant Breastplate            |
+| defiant_loottable_links |       110209 |      176432 |   50012 | Crude Defiant Chain Bracer           |
+| defiant_loottable_links |       110209 |      176432 |   50013 | Crude Defiant Chain Gauntlets        |
+| defiant_loottable_links |       110209 |      176432 |   50014 | Crude Defiant Chain Boots            |
+| defiant_loottable_links |       110209 |      176432 |   50015 | Crude Defiant Chain Coif             |
+| defiant_loottable_links |       110209 |      176432 |   50016 | Crude Defiant Chain Sleeves          |
+| defiant_loottable_links |       110209 |      176432 |   50017 | Crude Defiant Chain Leggings         |
+| defiant_loottable_links |       110209 |      176432 |   50018 | Crude Defiant Chain Tunic            |
+| defiant_loottable_links |       110209 |      176432 |   50019 | Crude Defiant Leather Bracer         |
+| defiant_loottable_links |       110209 |      176432 |   50020 | Crude Defiant Leather Gloves         |
+| defiant_loottable_links |       110209 |      176432 |   50021 | Crude Defiant Leather Boots          |
+| defiant_loottable_links |       110209 |      176432 |   50022 | Crude Defiant Leather Cap            |
+| defiant_loottable_links |       110209 |      176432 |   50023 | Crude Defiant Leather Sleeves        |
+| defiant_loottable_links |       110209 |      176432 |   50024 | Crude Defiant Leather Trousers       |
+| defiant_loottable_links |       110209 |      176432 |   50025 | Crude Defiant Leather Tunic          |
+| defiant_loottable_links |       110209 |      176432 |   50026 | Crude Defiant Cloth Wristwrap        |
+| defiant_loottable_links |       110209 |      176432 |   50027 | Crude Defiant Cloth Gloves           |
+| defiant_loottable_links |       110209 |      176432 |   50028 | Crude Defiant Cloth Sandals          |
+| defiant_loottable_links |       110209 |      176432 |   50029 | Crude Defiant Cloth Cap              |
+| defiant_loottable_links |       110209 |      176432 |   50030 | Crude Defiant Cloth Sleeves          |
+| defiant_loottable_links |       110209 |      176432 |   50031 | Crude Defiant Cloth Pantaloons       |
+| defiant_loottable_links |       110209 |      176432 |   50032 | Crude Defiant Cloth Robe             |
+| defiant_loottable_links |       110209 |      176432 |   50500 | Crude Defiant Amethyst               |
+| defiant_loottable_links |       110209 |      176432 |   50501 | Crude Defiant Emerald                |
+| defiant_loottable_links |       110209 |      176432 |   50502 | Crude Defiant Ruby Shard             |
+| defiant_loottable_links |       110209 |      176432 |   50503 | Crude Defiant Granite Pebble         |
+| defiant_loottable_links |       110209 |      176432 |   50504 | Crude Defiant Stone Fragment         |
+| defiant_loottable_links |       110209 |      176432 |   50505 | Crude Defiant Turquoise              |
+| defiant_loottable_links |       110209 |      176432 |   50506 | Crude Defiant Mace                   |
+| defiant_loottable_links |       110209 |      176432 |   50507 | Crude Defiant Club                   |
+| defiant_loottable_links |       110209 |      176432 |   50508 | Crude Defiant Shortsword             |
+| defiant_loottable_links |       110209 |      176432 |   50509 | Crude Defiant Axe                    |
+| defiant_loottable_links |       110209 |      176432 |   50510 | Crude Defiant Dagger                 |
+| defiant_loottable_links |       110209 |      176432 |   50511 | Crude Defiant Spear                  |
+| defiant_loottable_links |       110209 |      176432 |   50512 | Crude Defiant Fists                  |
+| defiant_loottable_links |       110209 |      176432 |   50513 | Crude Defiant Quarterstaff           |
+| defiant_loottable_links |       110209 |      176432 |   50514 | Crude Defiant Greatspear             |
+| defiant_loottable_links |       110209 |      176432 |   50515 | Crude Defiant Greatsword             |
+| defiant_loottable_links |       110209 |      176432 |   50516 | Crude Defiant Bow                    |
+| defiant_loottable_links |       110209 |      176432 |   50517 | Crude Defiant Spiked Shield          |
+| defiant_loottable_links |       110209 |      176432 |   50518 | Crude Defiant Buckler                |
+| defiant_loottable_links |       110210 |      176433 |   50033 | Simple Defiant Plate Bracer          |
+| defiant_loottable_links |       110210 |      176433 |   50034 | Simple Defiant Plate Gauntlets       |
+| defiant_loottable_links |       110210 |      176433 |   50035 | Simple Defiant Plate Boots           |
+| defiant_loottable_links |       110210 |      176433 |   50036 | Simple Defiant Plate Helm            |
+| defiant_loottable_links |       110210 |      176433 |   50037 | Simple Defiant Plate Vambraces       |
+| defiant_loottable_links |       110210 |      176433 |   50038 | Simple Defiant Plate Greaves         |
+| defiant_loottable_links |       110210 |      176433 |   50039 | Simple Defiant Breastplate           |
+| defiant_loottable_links |       110210 |      176433 |   50040 | Simple Defiant Chain Bracer          |
+| defiant_loottable_links |       110210 |      176433 |   50041 | Simple Defiant Chain Gauntlets       |
+| defiant_loottable_links |       110210 |      176433 |   50042 | Simple Defiant Chain Boots           |
+| defiant_loottable_links |       110210 |      176433 |   50043 | Simple Defiant Chain Coif            |
+| defiant_loottable_links |       110210 |      176433 |   50044 | Simple Defiant Chain Sleeves         |
+| defiant_loottable_links |       110210 |      176433 |   50045 | Simple Defiant Chain Leggings        |
+| defiant_loottable_links |       110210 |      176433 |   50046 | Simple Defiant Chain Tunic           |
+| defiant_loottable_links |       110210 |      176433 |   50047 | Simple Defiant Leather Bracer        |
+| defiant_loottable_links |       110210 |      176433 |   50048 | Simple Defiant Leather Gloves        |
+| defiant_loottable_links |       110210 |      176433 |   50049 | Simple Defiant Leather Boots         |
+| defiant_loottable_links |       110210 |      176433 |   50050 | Simple Defiant Leather Cap           |
+| defiant_loottable_links |       110210 |      176433 |   50051 | Simple Defiant Leather Sleeves       |
+| defiant_loottable_links |       110210 |      176433 |   50052 | Simple Defiant Leather Trousers      |
+| defiant_loottable_links |       110210 |      176433 |   50053 | Simple Defiant Leather Tunic         |
+| defiant_loottable_links |       110210 |      176433 |   50054 | Simple Defiant Cloth Wristwrap       |
+| defiant_loottable_links |       110210 |      176433 |   50055 | Simple Defiant Cloth Gloves          |
+| defiant_loottable_links |       110210 |      176433 |   50056 | Simple Defiant Cloth Sandals         |
+| defiant_loottable_links |       110210 |      176433 |   50057 | Simple Defiant Cloth Cap             |
+| defiant_loottable_links |       110210 |      176433 |   50058 | Simple Defiant Cloth Sleeves         |
+| defiant_loottable_links |       110210 |      176433 |   50059 | Simple Defiant Cloth Pantaloons      |
+| defiant_loottable_links |       110210 |      176433 |   50060 | Simple Defiant Cloth Robe            |
+| defiant_loottable_links |       110210 |      176433 |   50519 | Simple Defiant Alexandrite Shard     |
+| defiant_loottable_links |       110210 |      176433 |   50520 | Simple Defiant Bluestone             |
+| defiant_loottable_links |       110210 |      176433 |   50521 | Simple Defiant Jasper                |
+| defiant_loottable_links |       110210 |      176433 |   50522 | Simple Defiant Garnet                |
+| defiant_loottable_links |       110210 |      176433 |   50523 | Simple Defiant Hammer                |
+| defiant_loottable_links |       110210 |      176433 |   50524 | Simple Defiant Wand                  |
+| defiant_loottable_links |       110210 |      176433 |   50525 | Simple Defiant Shortsword            |
+| defiant_loottable_links |       110210 |      176433 |   50526 | Simple Defiant Bastard Sword         |
+| defiant_loottable_links |       110210 |      176433 |   50527 | Simple Defiant Claw-dagger           |
+| defiant_loottable_links |       110210 |      176433 |   50528 | Simple Defiant Dagger                |
+| defiant_loottable_links |       110210 |      176433 |   50529 | Simple Defiant Ulak                  |
+| defiant_loottable_links |       110210 |      176433 |   50530 | Simple Defiant Twisted Staff         |
+| defiant_loottable_links |       110210 |      176433 |   50531 | Simple Defiant Spear                 |
+| defiant_loottable_links |       110210 |      176433 |   50532 | Simple Defiant Greataxe              |
+| defiant_loottable_links |       110210 |      176433 |   50533 | Simple Defiant Bow                   |
+| defiant_loottable_links |       110210 |      176433 |   50534 | Simple Defiant Kite Shield           |
+| defiant_loottable_links |       110210 |      176433 |   50535 | Simple Defiant Wooden Shield         |
+| defiant_loottable_links |       110211 |      176434 |   50061 | Rough Defiant Plate Bracer           |
+| defiant_loottable_links |       110211 |      176434 |   50062 | Rough Defiant Plate Gauntlets        |
+| defiant_loottable_links |       110211 |      176434 |   50063 | Rough Defiant Plate Boots            |
+| defiant_loottable_links |       110211 |      176434 |   50064 | Rough Defiant Plate Helm             |
+| defiant_loottable_links |       110211 |      176434 |   50065 | Rough Defiant Plate Vambraces        |
+| defiant_loottable_links |       110211 |      176434 |   50066 | Rough Defiant Plate Greaves          |
+| defiant_loottable_links |       110211 |      176434 |   50067 | Rough Defiant Breastplate            |
+| defiant_loottable_links |       110211 |      176434 |   50068 | Rough Defiant Chain Bracer           |
+| defiant_loottable_links |       110211 |      176434 |   50069 | Rough Defiant Chain Gauntlets        |
+| defiant_loottable_links |       110211 |      176434 |   50070 | Rough Defiant Chain Boots            |
+| defiant_loottable_links |       110211 |      176434 |   50071 | Rough Defiant Chain Coif             |
+| defiant_loottable_links |       110211 |      176434 |   50072 | Rough Defiant Chain Sleeves          |
+| defiant_loottable_links |       110211 |      176434 |   50073 | Rough Defiant Chain Leggings         |
+| defiant_loottable_links |       110211 |      176434 |   50074 | Rough Defiant Chain Tunic            |
+| defiant_loottable_links |       110211 |      176434 |   50075 | Rough Defiant Leather Bracer         |
+| defiant_loottable_links |       110211 |      176434 |   50076 | Rough Defiant Leather Gloves         |
+| defiant_loottable_links |       110211 |      176434 |   50077 | Rough Defiant Leather Boots          |
+| defiant_loottable_links |       110211 |      176434 |   50078 | Rough Defiant Leather Cap            |
+| defiant_loottable_links |       110211 |      176434 |   50079 | Rough Defiant Leather Sleeves        |
+| defiant_loottable_links |       110211 |      176434 |   50080 | Rough Defiant Leather Trousers       |
+| defiant_loottable_links |       110211 |      176434 |   50081 | Rough Defiant Leather Tunic          |
+| defiant_loottable_links |       110211 |      176434 |   50082 | Rough Defiant Cloth Wristwrap        |
+| defiant_loottable_links |       110211 |      176434 |   50083 | Rough Defiant Cloth Gloves           |
+| defiant_loottable_links |       110211 |      176434 |   50084 | Rough Defiant Cloth Sandals          |
+| defiant_loottable_links |       110211 |      176434 |   50085 | Rough Defiant Cloth Cap              |
+| defiant_loottable_links |       110211 |      176434 |   50086 | Rough Defiant Cloth Sleeves          |
+| defiant_loottable_links |       110211 |      176434 |   50087 | Rough Defiant Cloth Pantaloons       |
+| defiant_loottable_links |       110211 |      176434 |   50088 | Rough Defiant Cloth Robe             |
+| defiant_loottable_links |       110211 |      176434 |   50536 | Rough Defiant Nihilite Shard         |
+| defiant_loottable_links |       110211 |      176434 |   50537 | Rough Defiant Trillion Amethyst      |
+| defiant_loottable_links |       110211 |      176434 |   50540 | Rough Defiant Hammer                 |
+| defiant_loottable_links |       110211 |      176434 |   50541 | Rough Defiant Scepter                |
+| defiant_loottable_links |       110211 |      176434 |   50542 | Rough Defiant Shortsword             |
+| defiant_loottable_links |       110211 |      176434 |   50543 | Rough Defiant Longsword              |
+| defiant_loottable_links |       110211 |      176434 |   50544 | Rough Defiant Stone Dagger           |
+| defiant_loottable_links |       110211 |      176434 |   50545 | Rough Defiant Serrated Dagger        |
+| defiant_loottable_links |       110211 |      176434 |   50546 | Rough Defiant Knuckle Dusters        |
+| defiant_loottable_links |       110211 |      176434 |   50547 | Rough Defiant Spiked Staff           |
+| defiant_loottable_links |       110211 |      176434 |   50548 | Rough Defiant Trident                |
+| defiant_loottable_links |       110211 |      176434 |   50549 | Rough Defiant Halberd                |
+| defiant_loottable_links |       110211 |      176434 |   50550 | Rough Defiant Bow                    |
+| defiant_loottable_links |       110211 |      176434 |   50551 | Rough Defiant Chitin Shield          |
+| defiant_loottable_links |       110211 |      176434 |   50552 | Rough Defiant Round Shield           |
+| defiant_loottable_links |       110211 |      176434 |   50553 | Rough Defiant Charm                  |
+| defiant_loottable_links |       110212 |      176435 |   50089 | Ornate Defiant Plate Bracer          |
+| defiant_loottable_links |       110212 |      176435 |   50090 | Ornate Defiant Plate Gauntlets       |
+| defiant_loottable_links |       110212 |      176435 |   50091 | Ornate Defiant Plate Boots           |
+| defiant_loottable_links |       110212 |      176435 |   50092 | Ornate Defiant Plate Helm            |
+| defiant_loottable_links |       110212 |      176435 |   50093 | Ornate Defiant Plate Vambraces       |
+| defiant_loottable_links |       110212 |      176435 |   50094 | Ornate Defiant Plate Greaves         |
+| defiant_loottable_links |       110212 |      176435 |   50095 | Ornate Defiant Breastplate           |
+| defiant_loottable_links |       110212 |      176435 |   50096 | Ornate Defiant Chain Bracer          |
+| defiant_loottable_links |       110212 |      176435 |   50097 | Ornate Defiant Chain Gauntlets       |
+| defiant_loottable_links |       110212 |      176435 |   50098 | Ornate Defiant Chain Boots           |
+| defiant_loottable_links |       110212 |      176435 |   50099 | Ornate Defiant Chain Coif            |
+| defiant_loottable_links |       110212 |      176435 |   50100 | Ornate Defiant Chain Sleeves         |
+| defiant_loottable_links |       110212 |      176435 |   50101 | Ornate Defiant Chain Leggings        |
+| defiant_loottable_links |       110212 |      176435 |   50102 | Ornate Defiant Chain Tunic           |
+| defiant_loottable_links |       110212 |      176435 |   50103 | Ornate Defiant Leather Bracer        |
+| defiant_loottable_links |       110212 |      176435 |   50104 | Ornate Defiant Leather Gloves        |
+| defiant_loottable_links |       110212 |      176435 |   50105 | Ornate Defiant Leather Boots         |
+| defiant_loottable_links |       110212 |      176435 |   50106 | Ornate Defiant Leather Cap           |
+| defiant_loottable_links |       110212 |      176435 |   50107 | Ornate Defiant Leather Sleeves       |
+| defiant_loottable_links |       110212 |      176435 |   50108 | Ornate Defiant Leather Trousers      |
+| defiant_loottable_links |       110212 |      176435 |   50109 | Ornate Defiant Leather Tunic         |
+| defiant_loottable_links |       110212 |      176435 |   50110 | Ornate Defiant Cloth Wristwrap       |
+| defiant_loottable_links |       110212 |      176435 |   50111 | Ornate Defiant Cloth Gloves          |
+| defiant_loottable_links |       110212 |      176435 |   50112 | Ornate Defiant Cloth Sandals         |
+| defiant_loottable_links |       110212 |      176435 |   50113 | Ornate Defiant Cloth Cap             |
+| defiant_loottable_links |       110212 |      176435 |   50114 | Ornate Defiant Cloth Sleeves         |
+| defiant_loottable_links |       110212 |      176435 |   50115 | Ornate Defiant Cloth Pantaloons      |
+| defiant_loottable_links |       110212 |      176435 |   50116 | Ornate Defiant Cloth Robe            |
+| defiant_loottable_links |       110212 |      176435 |   50554 | Ornate Defiant Harmonagate           |
+| defiant_loottable_links |       110212 |      176435 |   50555 | Ornate Defiant Geode                 |
+| defiant_loottable_links |       110212 |      176435 |   50556 | Ornate Defiant Bone Sledgehammer     |
+| defiant_loottable_links |       110212 |      176435 |   50557 | Ornate Defiant Scepter               |
+| defiant_loottable_links |       110212 |      176435 |   50558 | Ornate Defiant Longsword             |
+| defiant_loottable_links |       110212 |      176435 |   50559 | Ornate Defiant Gladius               |
+| defiant_loottable_links |       110212 |      176435 |   50560 | Ornate Defiant Rapier                |
+| defiant_loottable_links |       110212 |      176435 |   50561 | Ornate Defiant Dagger                |
+| defiant_loottable_links |       110212 |      176435 |   50562 | Ornate Defiant Orb                   |
+| defiant_loottable_links |       110212 |      176435 |   50563 | Ornate Defiant Skullstaff            |
+| defiant_loottable_links |       110212 |      176435 |   50564 | Ornate Defiant Harpoon               |
+| defiant_loottable_links |       110212 |      176435 |   50565 | Ornate Defiant Scythe                |
+| defiant_loottable_links |       110212 |      176435 |   50566 | Ornate Defiant Bow                   |
+| defiant_loottable_links |       110212 |      176435 |   50567 | Ornate Defiant Skullshield           |
+| defiant_loottable_links |       110212 |      176435 |   50568 | Ornate Defiant Glowing Shield        |
+| defiant_loottable_links |       110212 |      176435 |   50569 | Ornate Defiant Charm                 |
+| defiant_loottable_links |       110213 |      176436 |   50117 | Flawed Defiant Plate Bracer          |
+| defiant_loottable_links |       110213 |      176436 |   50118 | Flawed Defiant Plate Gauntlets       |
+| defiant_loottable_links |       110213 |      176436 |   50119 | Flawed Defiant Plate Boots           |
+| defiant_loottable_links |       110213 |      176436 |   50120 | Flawed Defiant Plate Helm            |
+| defiant_loottable_links |       110213 |      176436 |   50121 | Flawed Defiant Plate Vambraces       |
+| defiant_loottable_links |       110213 |      176436 |   50122 | Flawed Defiant Plate Greaves         |
+| defiant_loottable_links |       110213 |      176436 |   50123 | Flawed Defiant Breastplate           |
+| defiant_loottable_links |       110213 |      176436 |   50124 | Flawed Defiant Chain Bracer          |
+| defiant_loottable_links |       110213 |      176436 |   50125 | Flawed Defiant Chain Gauntlets       |
+| defiant_loottable_links |       110213 |      176436 |   50126 | Flawed Defiant Chain Boots           |
+| defiant_loottable_links |       110213 |      176436 |   50127 | Flawed Defiant Chain Coif            |
+| defiant_loottable_links |       110213 |      176436 |   50128 | Flawed Defiant Chain Sleeves         |
+| defiant_loottable_links |       110213 |      176436 |   50129 | Flawed Defiant Chain Leggings        |
+| defiant_loottable_links |       110213 |      176436 |   50130 | Flawed Defiant Chain Tunic           |
+| defiant_loottable_links |       110213 |      176436 |   50131 | Flawed Defiant Leather Bracer        |
+| defiant_loottable_links |       110213 |      176436 |   50132 | Flawed Defiant Leather Gloves        |
+| defiant_loottable_links |       110213 |      176436 |   50133 | Flawed Defiant Leather Boots         |
+| defiant_loottable_links |       110213 |      176436 |   50134 | Flawed Defiant Leather Cap           |
+| defiant_loottable_links |       110213 |      176436 |   50135 | Flawed Defiant Leather Sleeves       |
+| defiant_loottable_links |       110213 |      176436 |   50136 | Flawed Defiant Leather Trousers      |
+| defiant_loottable_links |       110213 |      176436 |   50137 | Flawed Defiant Leather Tunic         |
+| defiant_loottable_links |       110213 |      176436 |   50138 | Flawed Defiant Silk Wristwrap        |
+| defiant_loottable_links |       110213 |      176436 |   50139 | Flawed Defiant Silk Gloves           |
+| defiant_loottable_links |       110213 |      176436 |   50140 | Flawed Defiant Silk Sandals          |
+| defiant_loottable_links |       110213 |      176436 |   50141 | Flawed Defiant Silk Cap              |
+| defiant_loottable_links |       110213 |      176436 |   50142 | Flawed Defiant Silk Sleeves          |
+| defiant_loottable_links |       110213 |      176436 |   50143 | Flawed Defiant Silk Pantaloons       |
+| defiant_loottable_links |       110213 |      176436 |   50144 | Flawed Defiant Silk Robe             |
+| defiant_loottable_links |       110213 |      176436 |   50570 | Flawed Defiant Quartz                |
+| defiant_loottable_links |       110213 |      176436 |   50571 | Flawed Defiant Amberstone            |
+| defiant_loottable_links |       110213 |      176436 |   50572 | Flawed Defiant Brawl Stick           |
+| defiant_loottable_links |       110213 |      176436 |   50573 | Flawed Defiant Mace                  |
+| defiant_loottable_links |       110213 |      176436 |   50574 | Flawed Defiant Longsword             |
+| defiant_loottable_links |       110213 |      176436 |   50575 | Flawed Defiant Shortsword            |
+| defiant_loottable_links |       110213 |      176436 |   50576 | Flawed Defiant Glass Shard           |
+| defiant_loottable_links |       110213 |      176436 |   50577 | Flawed Defiant Dagger                |
+| defiant_loottable_links |       110213 |      176436 |   50578 | Flawed Defiant Orb                   |
+| defiant_loottable_links |       110213 |      176436 |   50579 | Flawed Defiant Quarterstaff          |
+| defiant_loottable_links |       110213 |      176436 |   50580 | Flawed Defiant Lance                 |
+| defiant_loottable_links |       110213 |      176436 |   50581 | Flawed Defiant Emeraldblade          |
+| defiant_loottable_links |       110213 |      176436 |   50582 | Flawed Defiant Longbow               |
+| defiant_loottable_links |       110213 |      176436 |   50583 | Flawed Defiant Scale Shield          |
+| defiant_loottable_links |       110213 |      176436 |   50584 | Flawed Defiant Carapace              |
+| defiant_loottable_links |       110213 |      176436 |   50585 | Flawed Defiant Charm                 |
+| defiant_loottable_links |       110214 |      176437 |   50145 | Intricate Defiant Plate Bracer       |
+| defiant_loottable_links |       110214 |      176437 |   50146 | Intricate Defiant Plate Wristguard   |
+| defiant_loottable_links |       110214 |      176437 |   50147 | Intricate Defiant Plate Wristband    |
+| defiant_loottable_links |       110214 |      176437 |   50148 | Intricate Defiant Plate Gauntlets    |
+| defiant_loottable_links |       110214 |      176437 |   50149 | Intricate Defiant Plate Boots        |
+| defiant_loottable_links |       110214 |      176437 |   50150 | Intricate Defiant Plate Helm         |
+| defiant_loottable_links |       110214 |      176437 |   50151 | Intricate Defiant Plate Vambraces    |
+| defiant_loottable_links |       110214 |      176437 |   50152 | Intricate Defiant Plate Greaves      |
+| defiant_loottable_links |       110214 |      176437 |   50153 | Intricate Defiant Breastplate        |
+| defiant_loottable_links |       110214 |      176437 |   50154 | Intricate Defiant Chain Bracer       |
+| defiant_loottable_links |       110214 |      176437 |   50155 | Intricate Defiant Chain Wristguard   |
+| defiant_loottable_links |       110214 |      176437 |   50156 | Intricate Defiant Chain Gauntlets    |
+| defiant_loottable_links |       110214 |      176437 |   50157 | Intricate Defiant Chain Boots        |
+| defiant_loottable_links |       110214 |      176437 |   50158 | Intricate Defiant Chain Coif         |
+| defiant_loottable_links |       110214 |      176437 |   50159 | Intricate Defiant Chain Sleeves      |
+| defiant_loottable_links |       110214 |      176437 |   50160 | Intricate Defiant Chain Leggings     |
+| defiant_loottable_links |       110214 |      176437 |   50161 | Intricate Defiant Chain Tunic        |
+| defiant_loottable_links |       110214 |      176437 |   50162 | Intricate Defiant Leather Bracer     |
+| defiant_loottable_links |       110214 |      176437 |   50163 | Intricate Defiant Leather Wristguard |
+| defiant_loottable_links |       110214 |      176437 |   50164 | Intricate Defiant Leather Gloves     |
+| defiant_loottable_links |       110214 |      176437 |   50165 | Intricate Defiant Leather Boots      |
+| defiant_loottable_links |       110214 |      176437 |   50166 | Intricate Defiant Leather Cap        |
+| defiant_loottable_links |       110214 |      176437 |   50167 | Intricate Defiant Leather Sleeves    |
+| defiant_loottable_links |       110214 |      176437 |   50168 | Intricate Defiant Leather Trousers   |
+| defiant_loottable_links |       110214 |      176437 |   50169 | Intricate Defiant Leather Tunic      |
+| defiant_loottable_links |       110214 |      176437 |   50170 | Intricate Defiant Silk Wristguard    |
+| defiant_loottable_links |       110214 |      176437 |   50171 | Intricate Defiant Silk Wristband     |
+| defiant_loottable_links |       110214 |      176437 |   50172 | Intricate Defiant Silk Wristwrap     |
+| defiant_loottable_links |       110214 |      176437 |   50173 | Intricate Defiant Silk Gloves        |
+| defiant_loottable_links |       110214 |      176437 |   50174 | Intricate Defiant Silk Sandals       |
+| defiant_loottable_links |       110214 |      176437 |   50175 | Intricate Defiant Silk Cap           |
+| defiant_loottable_links |       110214 |      176437 |   50176 | Intricate Defiant Silk Sleeves       |
+| defiant_loottable_links |       110214 |      176437 |   50177 | Intricate Defiant Silk Pantaloons    |
+| defiant_loottable_links |       110214 |      176437 |   50178 | Intricate Defiant Silk Robe          |
+| defiant_loottable_links |       110214 |      176437 |   50586 | Intricate Defiant Spotstone          |
+| defiant_loottable_links |       110214 |      176437 |   50587 | Intricate Defiant Crystal Shard      |
+| defiant_loottable_links |       110214 |      176437 |   50588 | Intricate Defiant Hammer             |
+| defiant_loottable_links |       110214 |      176437 |   50589 | Intricate Defiant Mace               |
+| defiant_loottable_links |       110214 |      176437 |   50590 | Intricate Defiant Katana             |
+| defiant_loottable_links |       110214 |      176437 |   50591 | Intricate Defiant Scimitar           |
+| defiant_loottable_links |       110214 |      176437 |   50592 | Intricate Defiant Sacrificial Dagger |
+| defiant_loottable_links |       110214 |      176437 |   50593 | Intricate Defiant Partisan Spear     |
+| defiant_loottable_links |       110214 |      176437 |   50594 | Intricate Defiant Handwraps          |
+| defiant_loottable_links |       110214 |      176437 |   50595 | Intricate Defiant Spiked Warhammer   |
+| defiant_loottable_links |       110214 |      176437 |   50596 | Intricate Defiant Trident            |
+| defiant_loottable_links |       110214 |      176437 |   50597 | Intricate Defiant Greatsword         |
+| defiant_loottable_links |       110214 |      176437 |   50598 | Intricate Defiant Bow                |
+| defiant_loottable_links |       110214 |      176437 |   50599 | Intricate Defiant Hammered Buckler   |
+| defiant_loottable_links |       110214 |      176437 |   50600 | Intricate Defiant Targ Shield        |
+| defiant_loottable_links |       110214 |      176437 |   50601 | Intricate Defiant Charm              |
+| defiant_loottable_links |       110215 |      176438 |   50179 | Elaborate Defiant Plate Bracer       |
+| defiant_loottable_links |       110215 |      176438 |   50180 | Elaborate Defiant Plate Wristguard   |
+| defiant_loottable_links |       110215 |      176438 |   50181 | Elaborate Defiant Plate Wristband    |
+| defiant_loottable_links |       110215 |      176438 |   50182 | Elaborate Defiant Plate Gauntlets    |
+| defiant_loottable_links |       110215 |      176438 |   50183 | Elaborate Defiant Plate Boots        |
+| defiant_loottable_links |       110215 |      176438 |   50184 | Elaborate Defiant Plate Helm         |
+| defiant_loottable_links |       110215 |      176438 |   50185 | Elaborate Defiant Plate Vambraces    |
+| defiant_loottable_links |       110215 |      176438 |   50186 | Elaborate Defiant Plate Greaves      |
+| defiant_loottable_links |       110215 |      176438 |   50187 | Elaborate Defiant Breastplate        |
+| defiant_loottable_links |       110215 |      176438 |   50188 | Elaborate Defiant Chain Bracer       |
+| defiant_loottable_links |       110215 |      176438 |   50189 | Elaborate Defiant Chain Wristguard   |
+| defiant_loottable_links |       110215 |      176438 |   50190 | Elaborate Defiant Chain Gauntlets    |
+| defiant_loottable_links |       110215 |      176438 |   50191 | Elaborate Defiant Chain Boots        |
+| defiant_loottable_links |       110215 |      176438 |   50192 | Elaborate Defiant Chain Coif         |
+| defiant_loottable_links |       110215 |      176438 |   50193 | Elaborate Defiant Chain Sleeves      |
+| defiant_loottable_links |       110215 |      176438 |   50194 | Elaborate Defiant Chain Leggings     |
+| defiant_loottable_links |       110215 |      176438 |   50195 | Elaborate Defiant Chain Tunic        |
+| defiant_loottable_links |       110215 |      176438 |   50196 | Elaborate Defiant Leather Bracer     |
+| defiant_loottable_links |       110215 |      176438 |   50197 | Elaborate Defiant Leather Wristguard |
+| defiant_loottable_links |       110215 |      176438 |   50198 | Elaborate Defiant Leather Gloves     |
+| defiant_loottable_links |       110215 |      176438 |   50199 | Elaborate Defiant Leather Boots      |
+| defiant_loottable_links |       110215 |      176438 |   50200 | Elaborate Defiant Leather Cap        |
+| defiant_loottable_links |       110215 |      176438 |   50201 | Elaborate Defiant Leather Sleeves    |
+| defiant_loottable_links |       110215 |      176438 |   50202 | Elaborate Defiant Leather Trousers   |
+| defiant_loottable_links |       110215 |      176438 |   50203 | Elaborate Defiant Leather Tunic      |
+| defiant_loottable_links |       110215 |      176438 |   50204 | Elaborate Defiant Silk Wristguard    |
++-------------------------+--------------+-------------+---------+--------------------------------------+
++--------------------------+-------------+
+| section                  | count_value |
++--------------------------+-------------+
+| defiant_npc_source_count |           0 |
++--------------------------+-------------+
++------------------------------+-------------+
+| section                      | count_value |
++------------------------------+-------------+
+| defiant_merchant_entry_count |           0 |
++------------------------------+-------------+

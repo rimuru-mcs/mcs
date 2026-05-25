@@ -987,7 +987,7 @@ RULE_BOOL(Custom, StaticInstanceMode, false, "Enable static expedition behavior 
 RULE_INT(Custom, FarmingInstanceVersion, 100, "Version ID for respawning/farming instances")
 RULE_INT(Custom, StaticInstanceVersion, 101, "Version ID for non-respawning instances")
 RULE_INT(Custom, RespawnOverride, 0, "Default respawn override in seconds for farming instances (version 100). 0 = disabled")
-RULE_BOOL(Custom, IgnoreAALevelRequirements, false)
+RULE_BOOL(Custom, IgnoreAALevelRequirements, false, "Ignore AA level requirements for custom multiclass recovery behavior.")
 RULE_CATEGORY_END()
 
 #undef RULE_CATEGORY

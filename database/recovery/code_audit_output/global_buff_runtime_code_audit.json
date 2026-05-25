@@ -1,0 +1,4569 @@
+{
+  "audited_at": "2026-05-24T09:36:17.116473+00:00",
+  "conclusion": "Potential runtime references were found. Review the match list manually before enabling buffs.",
+  "matches": {
+    "cast_candidates": [
+      {
+        "line": 2938,
+        "path": "changelog.txt",
+        "pattern": "cast_candidates",
+        "text": "mackal: Beneficial single target buffs shouldn't have their mana/timers set if they fail to cast after the Mob::SpellOnTarget call in Mob::SpellFinished"
+      },
+      {
+        "line": 3143,
+        "path": "changelog.txt",
+        "pattern": "cast_candidates",
+        "text": "Added checks to avoid AE Buff casting on enemy mobs"
+      },
+      {
+        "line": 5479,
+        "path": "changelog.txt",
+        "pattern": "cast_candidates",
+        "text": "Trevius: Exported SpellFinished(spell_id, spell_target = this, mana_cost = 0) to Perl Mob."
+      },
+      {
+        "line": 1034,
+        "path": "CHANGELOG.md",
+        "pattern": "cast_candidates",
+        "text": "* Fix crash in CastSpell Quest API input cast ([#3610](https://github.com/EQEmu/Server/pull/3610)) @Akkadius 2023-10-07"
+      },
+      {
+        "line": 1052,
+        "path": "CHANGELOG.md",
+        "pattern": "cast_candidates",
+        "text": "* Add Caster ID Parameter to FindBuff in Perl/Lua ([#3590](https://github.com/EQEmu/Server/pull/3590)) @Kinglykrab 2023-09-29"
+      },
+      {
+        "line": 2599,
+        "path": "CHANGELOG.md",
+        "pattern": "cast_candidates",
+        "text": "* Add Buff support for Bards under AI_IdleCastChecks ([#2590](https://github.com/EQEmu/Server/pull/2590)) ([Aeadoin](https://github.com/Aeadoin)) 2022-11-28"
+      },
+      {
+        "line": 3175,
+        "path": "CHANGELOG.md",
+        "pattern": "cast_candidates",
+        "text": "* Add rule for NPC Level Based Buff Restrictions. ([#2708](https://github.com/EQEmu/Server/pull/2708)) ([noudess](https://github.com/noudess)) 2023-01-15"
+      },
+      {
+        "line": 1298,
+        "path": "zone/botspellsai.cpp",
+        "pattern": "cast_candidates",
+        "text": "result = Mob::CastSpell(AIBot_spells[i].spellid, tar->GetID(), EQ::spells::CastingSlot::Gem2, spells[AIBot_spells[i].spellid].cast_time, AIBot_spells[i].manacost == -2 ? 0 : mana_cost, oDontDoAgainBefore, -1, -1, 0, &(AIBot_spells[i].resist_adjust));"
+      },
+      {
+        "line": 3450,
+        "path": "zone/botspellsai.cpp",
+        "pattern": "cast_candidates",
+        "text": "//this gets called from InterruptSpell() for failure or SpellFinished() for success"
+      },
+      {
+        "line": 887,
+        "path": "zone/merc.cpp",
+        "pattern": "cast_candidates",
+        "text": "BuffProcess();"
+      },
+      {
+        "line": 1601,
+        "path": "zone/merc.cpp",
+        "pattern": "cast_candidates",
+        "text": "result = CastSpell(spellid, tar->GetID(), EQ::spells::CastingSlot::Gem2, -1, mana_cost, oDontDoAgainBefore, -1, -1, 0, 0);"
+      },
+      {
+        "line": 2030,
+        "path": "zone/merc.cpp",
+        "pattern": "cast_candidates",
+        "text": "//CastSpell(selectedMercSpell.spellid, corpse->GetID(), 1, -1, -1, &TempDontRootMeBeforeTime);"
+      },
+      {
+        "line": 3591,
+        "path": "zone/merc.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline);"
+      },
+      {
+        "line": 404,
+        "path": "zone/questmgr.cpp",
+        "pattern": "cast_candidates",
+        "text": "owner->SpellFinished(spell_id, tgt, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 411,
+        "path": "zone/questmgr.cpp",
+        "pattern": "cast_candidates",
+        "text": "initiator->SpellFinished(spell_id, initiator, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 2761,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2765,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2769,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2777,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c->GetMerc()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2783,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2832,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "m->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2836,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "m->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2869,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "m.member->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2873,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "m.member->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2897,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2901,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2905,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2913,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->GetMerc()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2919,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2960,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2964,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2968,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2976,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->GetMerc()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 2982,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3023,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3027,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3031,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3039,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c->GetMerc()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3045,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3412,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3416,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3420,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "b->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3428,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->GetMerc()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 3434,
+        "path": "zone/worldserver.cpp",
+        "pattern": "cast_candidates",
+        "text": "c.second->GetPet()->ApplySpellBuff(s->spell_id);"
+      },
+      {
+        "line": 1422,
+        "path": "zone/aa.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (!SpellFinished(rank->spell, entity_list.GetMob(target_id), EQ::spells::CastingSlot::AltAbility, spells[rank->spell].mana, -1, spells[rank->spell].resist_difficulty, false, -1,"
+      },
+      {
+        "line": 1428,
+        "path": "zone/aa.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (!CastSpell(rank->spell, target_id, EQ::spells::CastingSlot::AltAbility, -1, -1, 0, -1, rank->spell_type + pTimerAAStart, timer_duration, nullptr, rank->id)) {"
+      },
+      {
+        "line": 197,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id);"
+      },
+      {
+        "line": 198,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id, int slot);"
+      },
+      {
+        "line": 199,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id, int slot, int cast_time);"
+      },
+      {
+        "line": 200,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost);"
+      },
+      {
+        "line": 201,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot);"
+      },
+      {
+        "line": 202,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, int timer_duration);"
+      },
+      {
+        "line": 203,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, int timer_duration,"
+      },
+      {
+        "line": 205,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(int spell_id, Lua_Mob target);"
+      },
+      {
+        "line": 206,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(int spell_id, Lua_Mob target, int slot);"
+      },
+      {
+        "line": 207,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used);"
+      },
+      {
+        "line": 208,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot);"
+      },
+      {
+        "line": 209,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust);"
+      },
+      {
+        "line": 210,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust, bool proc);"
+      },
+      {
+        "line": 488,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "void ApplySpellBuff(int spell_id);"
+      },
+      {
+        "line": 489,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "void ApplySpellBuff(int spell_id, int duration);"
+      },
+      {
+        "line": 490,
+        "path": "zone/lua_mob.h",
+        "pattern": "cast_candidates",
+        "text": "void ApplySpellBuff(int spell_id, int duration, int level);"
+      },
+      {
+        "line": 138,
+        "path": "zone/trap.cpp",
+        "pattern": "cast_candidates",
+        "text": "hiddenTrigger->SpellFinished(effectvalue, trigger, EQ::spells::CastingSlot::Item, 0, -1, spells[effectvalue].resist_difficulty);"
+      },
+      {
+        "line": 5324,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);"
+      },
+      {
+        "line": 5326,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);"
+      },
+      {
+        "line": 5330,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, on, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);"
+      },
+      {
+        "line": 5332,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, on, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);"
+      },
+      {
+        "line": 5745,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool CastSpell = false;"
+      },
+      {
+        "line": 5770,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell = true;"
+      },
+      {
+        "line": 5778,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell = true; //In this case effect_slot is what was passed into function."
+      },
+      {
+        "line": 5781,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (CastSpell) {"
+      },
+      {
+        "line": 5783,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[spell_id].limit_value[effect_slot], target, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[effect_slot]].resist_difficulty);"
+      },
+      {
+        "line": 5789,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(best_spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[best_spell_id].resist_difficulty);"
+      },
+      {
+        "line": 5808,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[spell_id].base_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 5838,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 5856,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 6102,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 6105,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 6136,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(focus_trigger, target);"
+      },
+      {
+        "line": 6139,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(focus_trigger, this, EQ::spells::CastingSlot::Item, 0, -1, spells[focus_trigger].resist_difficulty);"
+      },
+      {
+        "line": 6146,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(focus_trigger, this);"
+      },
+      {
+        "line": 6149,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(focus_trigger, target, EQ::spells::CastingSlot::Item, 0, -1, spells[focus_trigger].resist_difficulty);"
+      },
+      {
+        "line": 6465,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[spell_id].limit_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[i]].resist_difficulty);"
+      },
+      {
+        "line": 6480,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(aabonuses.SpellOnKill[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnKill[i]].resist_difficulty);"
+      },
+      {
+        "line": 6485,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(itembonuses.SpellOnKill[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnKill[i]].resist_difficulty);"
+      },
+      {
+        "line": 6490,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spellbonuses.SpellOnKill[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnKill[i]].resist_difficulty);"
+      },
+      {
+        "line": 6507,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(aabonuses.SpellOnDeath[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnDeath[i]].resist_difficulty);"
+      },
+      {
+        "line": 6513,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(itembonuses.SpellOnDeath[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[itembonuses.SpellOnDeath[i]].resist_difficulty);"
+      },
+      {
+        "line": 6519,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spellbonuses.SpellOnDeath[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spellbonuses.SpellOnDeath[i]].resist_difficulty);"
+      },
+      {
+        "line": 7010,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[spell_id].base_value[i], this);"
+      },
+      {
+        "line": 7024,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[spell_id].base_value[i], this);"
+      },
+      {
+        "line": 7041,
+        "path": "zone/mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[spell_id].base_value[i], this);"
+      },
+      {
+        "line": 5318,
+        "path": "zone/client.cpp",
+        "pattern": "cast_candidates",
+        "text": "target->SpellFinished(target->GetLDoNTrapSpellID(), this, EQ::spells::CastingSlot::Item, 0, -1, spells[target->GetLDoNTrapSpellID()].resist_difficulty);"
+      },
+      {
+        "line": 5440,
+        "path": "zone/client.cpp",
+        "pattern": "cast_candidates",
+        "text": "target->SpellFinished(target->GetLDoNTrapSpellID(), this, EQ::spells::CastingSlot::Item, 0, -1, spells[target->GetLDoNTrapSpellID()].resist_difficulty);"
+      },
+      {
+        "line": 5459,
+        "path": "zone/client.cpp",
+        "pattern": "cast_candidates",
+        "text": "target->SpellFinished(target->GetLDoNTrapSpellID(), this, EQ::spells::CastingSlot::Item, 0, -1, spells[target->GetLDoNTrapSpellID()].resist_difficulty);"
+      },
+      {
+        "line": 11959,
+        "path": "zone/client.cpp",
+        "pattern": "cast_candidates",
+        "text": "m->ApplySpellBuff(spell_id, duration, level);"
+      },
+      {
+        "line": 971,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->CastSpell(spell_id, target_id);"
+      },
+      {
+        "line": 976,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot));"
+      },
+      {
+        "line": 981,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time);"
+      },
+      {
+        "line": 986,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost);"
+      },
+      {
+        "line": 993,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, 0xFFFFFFFF, 0xFFFFFFFF, 0, &res);"
+      },
+      {
+        "line": 999,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->SpellFinished(spell_id, self, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 1004,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 1009,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, mana_cost, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 1014,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, mana_cost, -1, resist_diff);"
+      },
+      {
+        "line": 2799,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->ApplySpellBuff(spell_id);"
+      },
+      {
+        "line": 2804,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->ApplySpellBuff(spell_id, duration);"
+      },
+      {
+        "line": 2809,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->ApplySpellBuff(spell_id, duration, level);"
+      },
+      {
+        "line": 3356,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"ApplySpellBuff\", (void(*)(Mob*, int))&Perl_Mob_ApplySpellBuff);"
+      },
+      {
+        "line": 3357,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"ApplySpellBuff\", (void(*)(Mob*, int, int))&Perl_Mob_ApplySpellBuff);"
+      },
+      {
+        "line": 3358,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"ApplySpellBuff\", (void(*)(Mob*, int, int, int))&Perl_Mob_ApplySpellBuff);"
+      },
+      {
+        "line": 3390,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"CastSpell\", (void(*)(Mob*, uint16, uint16))&Perl_Mob_CastSpell);"
+      },
+      {
+        "line": 3391,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"CastSpell\", (void(*)(Mob*, uint16, uint16, int))&Perl_Mob_CastSpell);"
+      },
+      {
+        "line": 3392,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"CastSpell\", (void(*)(Mob*, uint16, uint16, int, int))&Perl_Mob_CastSpell);"
+      },
+      {
+        "line": 3393,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"CastSpell\", (void(*)(Mob*, uint16, uint16, int, int, int))&Perl_Mob_CastSpell);"
+      },
+      {
+        "line": 3394,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"CastSpell\", (void(*)(Mob*, uint16, uint16, int, int, int, int16))&Perl_Mob_CastSpell);"
+      },
+      {
+        "line": 3918,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"SpellFinished\", (void(*)(Mob*, uint16))&Perl_Mob_SpellFinished);"
+      },
+      {
+        "line": 3919,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"SpellFinished\", (void(*)(Mob*, uint16, Mob*))&Perl_Mob_SpellFinished);"
+      },
+      {
+        "line": 3920,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"SpellFinished\", (void(*)(Mob*, uint16, Mob*, int32))&Perl_Mob_SpellFinished);"
+      },
+      {
+        "line": 3921,
+        "path": "zone/perl_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "package.add(\"SpellFinished\", (void(*)(Mob*, uint16, Mob*, int32, uint16))&Perl_Mob_SpellFinished);"
+      },
+      {
+        "line": 1801,
+        "path": "zone/special_attacks.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (CastSpell(SPELL_NPC_HARM_TOUCH, target->GetID())) {"
+      },
+      {
+        "line": 1808,
+        "path": "zone/special_attacks.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (CastSpell(SPELL_LAY_ON_HANDS, GetID())) {"
+      },
+      {
+        "line": 521,
+        "path": "zone/lua_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "luabind::value(\"CastSpell\", static_cast<int>(OP_CastSpell)),"
+      },
+      {
+        "line": 637,
+        "path": "zone/npc.cpp",
+        "pattern": "cast_candidates",
+        "text": "BuffProcess();"
+      },
+      {
+        "line": 24,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "gets the op and calls CastSpell() with all the relevant info including"
+      },
+      {
+        "line": 27,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "b) NPC does CastSpell() from AI"
+      },
+      {
+        "line": 30,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "a)\tCastSpell() determines there is a cast time and sets some state keeping"
+      },
+      {
+        "line": 33,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "b)\tCastSpell() sees there's no cast time, and calls CastedSpellFinished()"
+      },
+      {
+        "line": 38,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell() is expired, and calls CastedSpellFinished()"
+      },
+      {
+        "line": 43,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished() is called."
+      },
+      {
+        "line": 46,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished() checks some things like LoS, reagents, target and"
+      },
+      {
+        "line": 65,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "Most user code should call CastSpell(), with a 0 casting time if needed,"
+      },
+      {
+        "line": 66,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "and not SpellFinished()."
+      },
+      {
+        "line": 145,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// only CastSpell and DoCastSpell should be setting casting_spell_id."
+      },
+      {
+        "line": 152,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// but things like SpellFinished() can run concurrent with a triggered cast"
+      },
+      {
+        "line": 154,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Mob::CastSpell(uint16 spell_id, uint16 target_id, CastingSlot slot,"
+      },
+      {
+        "line": 159,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "LogSpells(\"CastSpell called for spell [{}] ([{}]) on entity [{}], slot [{}], time [{}], mana [{}], from item slot [{}]\","
+      },
+      {
+        "line": 353,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// this is the 2nd phase of CastSpell, broken up like this to make it easier"
+      },
+      {
+        "line": 645,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "Always checked at the start of CastSpell."
+      },
+      {
+        "line": 646,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "Checked before special cases for bards casting from SpellFinished."
+      },
+      {
+        "line": 759,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "If the spell is a casted spell, check on CastSpell and ignore on SpellFinished."
+      },
+      {
+        "line": 760,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "If the spell is a initiated from SpellFinished, then check at start of SpellFinished."
+      },
+      {
+        "line": 850,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "If the spell is a casted spell, check on CastSpell and ignore on SpellFinished."
+      },
+      {
+        "line": 851,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "If the spell is a initiated from SpellFinished, then check at start of SpellFinished."
+      },
+      {
+        "line": 1499,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "This is used when spells fail at CastSpell or when CastSpell is bypassed and spell is launched initially from SpellFinished."
+      },
+      {
+        "line": 1501,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "-AA that fail at CastSpell because they never get timer set."
+      },
+      {
+        "line": 1502,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "-Instant cast items that fail at CastSpell because they never get timer set."
+      },
+      {
+        "line": 1518,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// just check timed spell specific things before passing off to SpellFinished"
+      },
+      {
+        "line": 1855,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "if(!SpellFinished(spell_id, spell_target, slot, mana_used, inventory_slot, resist_adjust, false,-1, 0xFFFFFFFF, 0, true))"
+      },
+      {
+        "line": 1857,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "LogSpells(\"Casting of [{}] canceled: SpellFinished returned false\", spell_id);"
+      },
+      {
+        "line": 2542,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Mob::SpellFinished(uint16 spell_id, Mob *spell_target, CastingSlot slot, int32 mana_used,"
+      },
+      {
+        "line": 3051,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (!SpellFinished(spell_id, spell_target, slot, spells[spell_id].mana, 0xFFFFFFFF, spells[spell_id].resist_difficulty)) {"
+      },
+      {
+        "line": 3190,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// helper function for AddBuff to determine stacking"
+      },
+      {
+        "line": 3627,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "int Mob::AddBuff(Mob *caster, uint16 spell_id, int duration, int32 level_override, bool disable_buff_overwrite)"
+      },
+      {
+        "line": 3781,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket();"
+      },
+      {
+        "line": 3792,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket();"
+      },
+      {
+        "line": 3875,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// Mob::SpellFinished"
+      },
+      {
+        "line": 3876,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// Entity::AESpell (called by Mob::SpellFinished)"
+      },
+      {
+        "line": 3877,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "// Group::CastGroupSpell (called by Mob::SpellFinished)"
+      },
+      {
+        "line": 4647,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished("
+      },
+      {
+        "line": 6670,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket();"
+      },
+      {
+        "line": 6675,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *Mob::MakeBuffsPacket(bool for_target, bool clear_buffs)"
+      },
+      {
+        "line": 7332,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (!CastSpell(spell_id, target_id, CastingSlot::Item, cast_time, 0, 0, item_slot)) {"
+      },
+      {
+        "line": 7341,
+        "path": "zone/spells.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (SpellFinished(spell_id, entity_list.GetMob(target_id), CastingSlot::Item, 0, item_slot)) {"
+      },
+      {
+        "line": 115,
+        "path": "zone/mob_ai.cpp",
+        "pattern": "cast_candidates",
+        "text": "// this is ugly -- ignore distance for hatelist spells, looks like the client is only checking distance for some targettypes in CastSpell,"
+      },
+      {
+        "line": 375,
+        "path": "zone/mob_ai.cpp",
+        "pattern": "cast_candidates",
+        "text": "return CastSpell(AIspells[i].spellid, tar->GetID(), EQ::spells::CastingSlot::Gem2, AIspells[i].manacost == -2 ? 0 : -1, mana_cost, oDontDoAgainBefore, -1, -1, 0, &(AIspells[i].resist_adjust));"
+      },
+      {
+        "line": 668,
+        "path": "zone/mob_ai.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_to_cast, tar->GetID(), slot_to_use);"
+      },
+      {
+        "line": 682,
+        "path": "zone/mob_ai.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_to_cast, tar->GetID(), slot_to_use);"
+      },
+      {
+        "line": 1865,
+        "path": "zone/mob_ai.cpp",
+        "pattern": "cast_candidates",
+        "text": "//this gets called from InterruptSpell() for failure or SpellFinished() for success"
+      },
+      {
+        "line": 358,
+        "path": "zone/bot.h",
+        "pattern": "cast_candidates",
+        "text": "virtual bool CastSpell(uint16 spell_id, uint16 target_id, EQ::spells::CastingSlot slot = EQ::spells::CastingSlot::Item, int32 casttime = -1, int32 mana_cost = -1, uint32* oSpellWillFinish = 0,"
+      },
+      {
+        "line": 2407,
+        "path": "zone/attack.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(GetLDoNTrapSpellID(), other, EQ::spells::CastingSlot::Item, 0, -1, spells[GetLDoNTrapSpellID()].resist_difficulty, false);"
+      },
+      {
+        "line": 6111,
+        "path": "zone/attack.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spellbonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID], on, EQ::spells::CastingSlot::Item, 0, -1, spells[spellbonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID]].resist_difficulty);"
+      },
+      {
+        "line": 6127,
+        "path": "zone/attack.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(itembonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID], on, EQ::spells::CastingSlot::Item, 0, -1, spells[itembonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID]].resist_difficulty);"
+      },
+      {
+        "line": 6141,
+        "path": "zone/attack.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(aabonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID], on, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID]].resist_difficulty);"
+      },
+      {
+        "line": 96,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 123,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 222,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 228,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 236,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 292,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 298,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 304,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 338,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 365,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 450,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 458,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 508,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 514,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 545,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 572,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 605,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 630,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 650,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 676,
+        "path": "zone/aura.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, mob);"
+      },
+      {
+        "line": 518,
+        "path": "zone/client_process.cpp",
+        "pattern": "cast_candidates",
+        "text": "BuffProcess();"
+      },
+      {
+        "line": 2307,
+        "path": "zone/client_process.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket(false);"
+      },
+      {
+        "line": 1930,
+        "path": "zone/bot_command.cpp",
+        "pattern": "cast_candidates",
+        "text": "return casting_bot->CastSpell(spell_id, target_mob->GetID(), EQ::spells::CastingSlot::Gem2, -1, -1, dont_root_before);"
+      },
+      {
+        "line": 415,
+        "path": "zone/pets.cpp",
+        "pattern": "cast_candidates",
+        "text": "npc->CastSpell(SPELL_UNSUMMON_SELF, npc->GetID()); //Live like behavior, damages self for 20K"
+      },
+      {
+        "line": 438,
+        "path": "zone/pets.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(SPELL_UNSUMMON_SELF, GetID()); //Live like behavior, damages self for 20K"
+      },
+      {
+        "line": 884,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id) {"
+      },
+      {
+        "line": 886,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id);"
+      },
+      {
+        "line": 889,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot) {"
+      },
+      {
+        "line": 897,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(cast_slot));"
+      },
+      {
+        "line": 900,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time) {"
+      },
+      {
+        "line": 902,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time);"
+      },
+      {
+        "line": 905,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost) {"
+      },
+      {
+        "line": 907,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost);"
+      },
+      {
+        "line": 910,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot) {"
+      },
+      {
+        "line": 912,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, static_cast<uint32>(item_slot));"
+      },
+      {
+        "line": 915,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer,"
+      },
+      {
+        "line": 918,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, static_cast<uint32>(item_slot),"
+      },
+      {
+        "line": 922,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer,"
+      },
+      {
+        "line": 927,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, static_cast<uint32>(item_slot),"
+      },
+      {
+        "line": 931,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target) {"
+      },
+      {
+        "line": 933,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->SpellFinished(spell_id, target);"
+      },
+      {
+        "line": 936,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot) {"
+      },
+      {
+        "line": 938,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot));"
+      },
+      {
+        "line": 941,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used) {"
+      },
+      {
+        "line": 943,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used);"
+      },
+      {
+        "line": 946,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot) {"
+      },
+      {
+        "line": 948,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used, inventory_slot);"
+      },
+      {
+        "line": 951,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust) {"
+      },
+      {
+        "line": 953,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used, inventory_slot, resist_adjust);"
+      },
+      {
+        "line": 956,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust, bool proc) {"
+      },
+      {
+        "line": 958,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used, inventory_slot, resist_adjust, proc);"
+      },
+      {
+        "line": 2561,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "void Lua_Mob::ApplySpellBuff(int spell_id) {"
+      },
+      {
+        "line": 2563,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->ApplySpellBuff(spell_id);"
+      },
+      {
+        "line": 2566,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "void Lua_Mob::ApplySpellBuff(int spell_id, int duration) {"
+      },
+      {
+        "line": 2568,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->ApplySpellBuff(spell_id, duration);"
+      },
+      {
+        "line": 2571,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "void Lua_Mob::ApplySpellBuff(int spell_id, int duration, int level) {"
+      },
+      {
+        "line": 2573,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": "self->ApplySpellBuff(spell_id, level);"
+      },
+      {
+        "line": 3214,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"ApplySpellBuff\", (void(Lua_Mob::*)(int))&Lua_Mob::ApplySpellBuff)"
+      },
+      {
+        "line": 3215,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"ApplySpellBuff\", (void(Lua_Mob::*)(int,int))&Lua_Mob::ApplySpellBuff)"
+      },
+      {
+        "line": 3216,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"ApplySpellBuff\", (void(Lua_Mob::*)(int,int,int))&Lua_Mob::ApplySpellBuff)"
+      },
+      {
+        "line": 3253,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3254,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3255,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int,int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3256,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int,int,int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3257,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int,int,int,int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3258,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int,int,int,int,int,int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3259,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"CastSpell\", (bool(Lua_Mob::*)(int,int,int,int,int,int,int,int,int))&Lua_Mob::CastSpell)"
+      },
+      {
+        "line": 3711,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"SpellFinished\", (bool(Lua_Mob::*)(int,Lua_Mob))&Lua_Mob::SpellFinished)"
+      },
+      {
+        "line": 3712,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"SpellFinished\", (bool(Lua_Mob::*)(int,Lua_Mob,int))&Lua_Mob::SpellFinished)"
+      },
+      {
+        "line": 3713,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"SpellFinished\", (bool(Lua_Mob::*)(int,Lua_Mob,int,int))&Lua_Mob::SpellFinished)"
+      },
+      {
+        "line": 3714,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"SpellFinished\", (bool(Lua_Mob::*)(int,Lua_Mob,int,int,uint32))&Lua_Mob::SpellFinished)"
+      },
+      {
+        "line": 3715,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"SpellFinished\", (bool(Lua_Mob::*)(int,Lua_Mob,int,int,uint32,int))&Lua_Mob::SpellFinished)"
+      },
+      {
+        "line": 3716,
+        "path": "zone/lua_mob.cpp",
+        "pattern": "cast_candidates",
+        "text": ".def(\"SpellFinished\", (bool(Lua_Mob::*)(int,Lua_Mob,int,int,uint32,int,bool))&Lua_Mob::SpellFinished)"
+      },
+      {
+        "line": 915,
+        "path": "zone/effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "// the client does this check before calling CastSpell, should prevent discs being eaten"
+      },
+      {
+        "line": 921,
+        "path": "zone/effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "if(!p_timers.Expired(&database, DiscTimer, false)) { // lets not set the reuse timer in case CastSpell fails (or we would have to turn off the timer, but CastSpell will set it as well)"
+      },
+      {
+        "line": 956,
+        "path": "zone/effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, entity_list.GetMob(target), EQ::spells::CastingSlot::Discipline, 0, -1, spells[spell_id].resist_difficulty, false, -1, (uint32)DiscTimer, reduced_recast, false);"
+      },
+      {
+        "line": 960,
+        "path": "zone/effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (!CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline, -1, -1, 0, -1, (uint32)DiscTimer, reduced_recast)) {"
+      },
+      {
+        "line": 971,
+        "path": "zone/effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, entity_list.GetMob(target), EQ::spells::CastingSlot::Discipline, 0, -1, spells[spell_id].resist_difficulty, false, -1, 0xFFFFFFFF, 0, false);"
+      },
+      {
+        "line": 975,
+        "path": "zone/effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline);"
+      },
+      {
+        "line": 915,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket(false);"
+      },
+      {
+        "line": 4376,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "LogSpells(\"OP CastSpell: slot [{}] spell [{}] target [{}] inv [{}]\", castspell->slot, castspell->spell_id, castspell->target_id, (unsigned long)castspell->inventoryslot);"
+      },
+      {
+        "line": 4403,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_to_cast, castspell->target_id, slot);"
+      },
+      {
+        "line": 4455,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(item->Click.Effect, castspell->target_id, slot, item->CastTime, 0, 0, castspell->inventoryslot);"
+      },
+      {
+        "line": 4494,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(item->Click.Effect, castspell->target_id, slot, item->CastTime, 0, 0, castspell->inventoryslot);"
+      },
+      {
+        "line": 4559,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_to_cast, castspell->target_id, slot);"
+      },
+      {
+        "line": 9644,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(item->Click.Effect, target_id, CastingSlot::Item, item->CastTime, 0, 0, slot_id);"
+      },
+      {
+        "line": 9716,
+        "path": "zone/client_packet.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(augitem->Click.Effect, target_id, CastingSlot::Item, augitem->CastTime, 0, 0, slot_id);"
+      },
+      {
+        "line": 1598,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "BuffProcess();"
+      },
+      {
+        "line": 2052,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(PULL_AGGRO, tar->GetID());"
+      },
+      {
+        "line": 4955,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(SPELL_NPC_HARM_TOUCH, target->GetID());"
+      },
+      {
+        "line": 4962,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(SPELL_LAY_ON_HANDS, GetID());"
+      },
+      {
+        "line": 5488,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "bool Bot::CastSpell("
+      },
+      {
+        "line": 5501,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "// LogSpells(\"CastSpell called for spell [{}] ([{}]) on entity [{}], slot [{}], time [{}], mana [{}], from item slot [{}]\", spells[spell_id].name, spell_id, target_id, slot, cast_time, mana_cost, (item_slot==0xFFFFFFFF)?999:item_slot);"
+      },
+      {
+        "line": 5571,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "Result = Mob::CastSpell(spell_id, target_id, slot, cast_time, mana_cost, oSpellWillFinish, item_slot, 0xFFFFFFFF, 0, resist_adjust, aa_id);"
+      },
+      {
+        "line": 7838,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline);"
+      },
+      {
+        "line": 8487,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "m->ApplySpellBuff(spell_id, duration, level);"
+      },
+      {
+        "line": 9299,
+        "path": "zone/bot.cpp",
+        "pattern": "cast_candidates",
+        "text": "if (!CastSpell(item->Click.Effect, tar->GetID(), EQ::spells::CastingSlot::Item, item->CastTime, 0, 0, slot_id)) {"
+      },
+      {
+        "line": 372,
+        "path": "zone/mob.h",
+        "pattern": "cast_candidates",
+        "text": "virtual bool CastSpell(uint16 spell_id, uint16 target_id, EQ::spells::CastingSlot slot = EQ::spells::CastingSlot::Item, int32 casttime = -1,"
+      },
+      {
+        "line": 382,
+        "path": "zone/mob.h",
+        "pattern": "cast_candidates",
+        "text": "bool SpellFinished(uint16 spell_id, Mob *target, EQ::spells::CastingSlot slot = EQ::spells::CastingSlot::Item, int mana_used = 0,"
+      },
+      {
+        "line": 437,
+        "path": "zone/mob.h",
+        "pattern": "cast_candidates",
+        "text": "void BuffProcess();"
+      },
+      {
+        "line": 452,
+        "path": "zone/mob.h",
+        "pattern": "cast_candidates",
+        "text": "int AddBuff(Mob *caster, const uint16 spell_id, int duration = 0, int32 level_override = -1, bool disable_buff_overwrite = false);"
+      },
+      {
+        "line": 468,
+        "path": "zone/mob.h",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *MakeBuffsPacket(bool for_target = true, bool clear_buffs = false);"
+      },
+      {
+        "line": 509,
+        "path": "zone/mob.h",
+        "pattern": "cast_candidates",
+        "text": "void ApplySpellBuff(int spell_id, int duration = 0, int level_override = -1);"
+      },
+      {
+        "line": 101,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "buffslot = AddBuff(caster, spell_id, durat, caster_level);"
+      },
+      {
+        "line": 117,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "buffslot = caster->AddBuff(caster, spell_id);"
+      },
+      {
+        "line": 124,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "buffslot = AddBuff(caster, spell_id, duration_override, -1, disable_buff_overwrite);"
+      },
+      {
+        "line": 162,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket(false);"
+      },
+      {
+        "line": 821,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "// This was done in AddBuff, but we were not a pet yet, so"
+      },
+      {
+        "line": 823,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket();"
+      },
+      {
+        "line": 2969,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "caster->SpellFinished(spells[spell_id].limit_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[i]].resist_difficulty);"
+      },
+      {
+        "line": 3051,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "caster->SpellFinished(best_spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[best_spell_id].resist_difficulty);"
+      },
+      {
+        "line": 3062,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "caster->SpellFinished(spells[spell_id].limit_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[i]].resist_difficulty);"
+      },
+      {
+        "line": 3852,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "void Mob::BuffProcess()"
+      },
+      {
+        "line": 4209,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spells[buff.spellid].base_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[buff.spellid].base_value[i]].resist_difficulty);"
+      },
+      {
+        "line": 4503,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket(true, true);"
+      },
+      {
+        "line": 4737,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket();"
+      },
+      {
+        "line": 4748,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket();"
+      },
+      {
+        "line": 4755,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "EQApplicationPacket *outapp = MakeBuffsPacket(false);"
+      },
+      {
+        "line": 6316,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished("
+      },
+      {
+        "line": 6441,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(proc_spellid, proc_target, EQ::spells::CastingSlot::Item, 0, -1, spells[proc_spellid].resist_difficulty);"
+      },
+      {
+        "line": 6446,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(proc_spellid, this, EQ::spells::CastingSlot::Item, 0, -1, spells[proc_spellid].resist_difficulty);"
+      },
+      {
+        "line": 9794,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 9797,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(spell_id, attacker, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);"
+      },
+      {
+        "line": 9837,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(trigger_spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[trigger_spell_id].resist_difficulty);"
+      },
+      {
+        "line": 9843,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "SpellFinished(trigger_spell_id, current_target, EQ::spells::CastingSlot::Item, 0, -1, spells[trigger_spell_id].resist_difficulty);"
+      },
+      {
+        "line": 10643,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "cast_candidates",
+        "text": "void Mob::ApplySpellBuff(int spell_id, int duration, int level)"
+      }
+    ],
+    "custom_rule_exact": [
+      {
+        "line": 22,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "custom_rule_exact",
+        "text": "| 5/23 | Global buff toggle | `rule_values`: `Custom:PermanentServerBuffsEnabled` | Safe placeholder only, default false |"
+      },
+      {
+        "line": 22,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_exact",
+        "text": "--   - Keep Custom:PermanentServerBuffsEnabled disabled."
+      },
+      {
+        "line": 779,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_exact",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 797,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 810,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_exact",
+        "text": "'. Custom:PermanentServerBuffsEnabled was kept false.'"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql",
+        "pattern": "custom_rule_exact",
+        "text": "(1, 'Custom:PermanentServerBuffsEnabled', 'false', 'MSR recovery placeholder. Added from lost 5/23 update notes; kept disabled until global buff code/spells are verified.')"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql",
+        "pattern": "custom_rule_exact",
+        "text": "VALUES ('010_add_neutral_recovery_rule_placeholders.sql', 'Added neutral Custom:PermanentServerBuffsEnabled placeholder if missing; existing value preserved.')"
+      },
+      {
+        "line": 37,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 66,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 74,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 21,
+        "path": "database/recovery/audits/08_safe_rule_and_syncrosatchel_recovery_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 30,
+        "path": "database/recovery/audits/07_recovery_migration_log_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 67,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 76,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "--   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule."
+      },
+      {
+        "line": 26,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 152,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 14,
+        "path": "database/recovery/audits/01_rules_and_server_defaults_audit.sql",
+        "pattern": "custom_rule_exact",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "custom_rule_exact",
+        "text": "-- Do NOT set Custom:PermanentServerBuffsEnabled=true until:"
+      },
+      {
+        "line": 15,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "custom_rule_exact",
+        "text": "--   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled."
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "custom_rule_exact",
+        "text": "-- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only."
+      },
+      {
+        "line": 25,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "custom_rule_exact",
+        "text": "--   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "custom_rule_exact",
+        "text": "-- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007."
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "custom_rule_exact",
+        "text": "-- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:"
+      },
+      {
+        "line": 18,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "custom_rule_exact",
+        "text": "-- WHERE ruleset_id = 1 AND rule_name = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 75,
+        "path": "docs/recovery/RECOVERY_SLICE_V6_PROGRESSION_CAP_AUDIT.md",
+        "pattern": "custom_rule_exact",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 51,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "custom_rule_exact",
+        "text": "- disabled `Custom:PermanentServerBuffsEnabled` placeholder rule"
+      },
+      {
+        "line": 68,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "custom_rule_exact",
+        "text": "The new `07_recovery_migration_log_audit.sql` output should show the ledger table, the applied safe migrations, and `Custom:PermanentServerBuffsEnabled=false`."
+      },
+      {
+        "line": 47,
+        "path": "docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md",
+        "pattern": "custom_rule_exact",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 24,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "custom_rule_exact",
+        "text": "`Custom:PermanentServerBuffsEnabled` remains `false` after this migration. The goal is only to restore the spell-row data that the server/client now expect to exist."
+      },
+      {
+        "line": 41,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "custom_rule_exact",
+        "text": "- `Custom:PermanentServerBuffsEnabled` remains `false`."
+      },
+      {
+        "line": 50,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md",
+        "pattern": "custom_rule_exact",
+        "text": "- `Custom:PermanentServerBuffsEnabled` rule placeholder set to `false`"
+      },
+      {
+        "line": 5,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "custom_rule_exact",
+        "text": "Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled."
+      },
+      {
+        "line": 15,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "custom_rule_exact",
+        "text": "- enable `Custom:PermanentServerBuffsEnabled`,"
+      },
+      {
+        "line": 66,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "custom_rule_exact",
+        "text": "If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice."
+      },
+      {
+        "line": 50,
+        "path": "docs/recovery/RECOVERY_SLICE_V5_CORPSE_RULESET_RECOVERY.md",
+        "pattern": "custom_rule_exact",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 46,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "custom_rule_exact",
+        "text": "- `Custom:PermanentServerBuffsEnabled` is missing before safe migration 010 is applied."
+      }
+    ],
+    "custom_rule_symbol": [
+      {
+        "line": 22,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "custom_rule_symbol",
+        "text": "| 5/23 | Global buff toggle | `rule_values`: `Custom:PermanentServerBuffsEnabled` | Safe placeholder only, default false |"
+      },
+      {
+        "line": 22,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "--   - Keep Custom:PermanentServerBuffsEnabled disabled."
+      },
+      {
+        "line": 779,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 797,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 810,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "'. Custom:PermanentServerBuffsEnabled was kept false.'"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "(1, 'Custom:PermanentServerBuffsEnabled', 'false', 'MSR recovery placeholder. Added from lost 5/23 update notes; kept disabled until global buff code/spells are verified.')"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "VALUES ('010_add_neutral_recovery_rule_placeholders.sql', 'Added neutral Custom:PermanentServerBuffsEnabled placeholder if missing; existing value preserved.')"
+      },
+      {
+        "line": 37,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 66,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 74,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 21,
+        "path": "database/recovery/audits/08_safe_rule_and_syncrosatchel_recovery_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 30,
+        "path": "database/recovery/audits/07_recovery_migration_log_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 67,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 76,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "--   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule."
+      },
+      {
+        "line": 26,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 152,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 14,
+        "path": "database/recovery/audits/01_rules_and_server_defaults_audit.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "-- Do NOT set Custom:PermanentServerBuffsEnabled=true until:"
+      },
+      {
+        "line": 15,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "--   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled."
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "-- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only."
+      },
+      {
+        "line": 25,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "--   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "-- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007."
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "-- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:"
+      },
+      {
+        "line": 18,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "custom_rule_symbol",
+        "text": "-- WHERE ruleset_id = 1 AND rule_name = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 75,
+        "path": "docs/recovery/RECOVERY_SLICE_V6_PROGRESSION_CAP_AUDIT.md",
+        "pattern": "custom_rule_symbol",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 51,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "custom_rule_symbol",
+        "text": "- disabled `Custom:PermanentServerBuffsEnabled` placeholder rule"
+      },
+      {
+        "line": 68,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "custom_rule_symbol",
+        "text": "The new `07_recovery_migration_log_audit.sql` output should show the ledger table, the applied safe migrations, and `Custom:PermanentServerBuffsEnabled=false`."
+      },
+      {
+        "line": 47,
+        "path": "docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md",
+        "pattern": "custom_rule_symbol",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 24,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "custom_rule_symbol",
+        "text": "`Custom:PermanentServerBuffsEnabled` remains `false` after this migration. The goal is only to restore the spell-row data that the server/client now expect to exist."
+      },
+      {
+        "line": 41,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "custom_rule_symbol",
+        "text": "- `Custom:PermanentServerBuffsEnabled` remains `false`."
+      },
+      {
+        "line": 50,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md",
+        "pattern": "custom_rule_symbol",
+        "text": "- `Custom:PermanentServerBuffsEnabled` rule placeholder set to `false`"
+      },
+      {
+        "line": 5,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "custom_rule_symbol",
+        "text": "Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled."
+      },
+      {
+        "line": 15,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "custom_rule_symbol",
+        "text": "- enable `Custom:PermanentServerBuffsEnabled`,"
+      },
+      {
+        "line": 66,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "custom_rule_symbol",
+        "text": "If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice."
+      },
+      {
+        "line": 50,
+        "path": "docs/recovery/RECOVERY_SLICE_V5_CORPSE_RULESET_RECOVERY.md",
+        "pattern": "custom_rule_symbol",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 46,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "custom_rule_symbol",
+        "text": "- `Custom:PermanentServerBuffsEnabled` is missing before safe migration 010 is applied."
+      }
+    ],
+    "echo_spell_names": [
+      {
+        "line": 23,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "echo_spell_names",
+        "text": "| 5/23 | Global buffs reduced to 4 and combined into Echo of Power | `spells_new` IDs 44000\u201344007 and client spell file alignment | Audit/pending only |"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44000 Echo of Experience"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44001 Echo of Power"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44002 Echo of Statistics"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44003 Echo of Speed"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44004 Echo of Mana"
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44005 Echo of Haste"
+      },
+      {
+        "line": 11,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44006 Echo of Health"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   44007 Echo of Luck"
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   - 5/23 changed 44001 from Echo of Armor to Echo of Power."
+      },
+      {
+        "line": 268,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44000, 'Echo of Experience', 'BLUE_TRAIL', '', '', ' gains an edge.', 'Your thoughts quicken.', '', 'Your mind returns to normal.', 0, 0, 0, 0, 3000, 0, 0, 3600, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 337, 254, 6, 0, 98, -1, 0, 0, 254, 254, 254,..."
+      },
+      {
+        "line": 269,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44001, 'Echo of Power', 'PLAYER_1', '', '', '', 'You are filled with absolute power.', '''s eyes gleam with absolute power.', 'Your absolute power fades.', 100, 100, 0, 0, 24000, 1500, 1500, 3, 2400, 0, 2500, 0, 0, 0, 0, 2, 0, 115, 105, 0, 0, 105, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 65, 65, 65, 18, 16, 160, 1405, 0, 0, 1405, 241, 0, 2012, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 109, 109, 1, 20, 100, 100, 20, 3, 0, 1, 0, 0, 4, 7, 5, 6, 15, 0, 11, 97, 254, 254, 69, 1, 41, ..."
+      },
+      {
+        "line": 270,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44002, 'Echo of Statistics', 'PLAYER_1', '', '', '', 'You feel focused.', ' looks focused.', 'Your focus fades.', 100, 100, 0, 0, 13000, 3000, 1500, 3, 2400, 0, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 544, 544, 0, 75, 70, 75, 70, 65, 65, 65, 65, 755, 0, 2056, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 201, 201, 1, 1, 1, 1, 10, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 4, 8, 9, 10, 69, 41, 0, 5, -1, 0, 0, 254, 254, 254, 254, ..."
+      },
+      {
+        "line": 271,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44003, 'Echo of Speed', 'PLAYER_1', '', '', '', 'Your feet move faster.', '', 'You slow down.', 0, 150, 0, 0, 0, 0, 0, 4, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 2010, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 102, 100, 100, 100, 100, 100, 100, 100, 100, 100, 102, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 3, 254, 41, 5, 70, -1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, ..."
+      },
+      {
+        "line": 272,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44004, 'Echo of Mana', 'PLAYER_1', '', '', '', 'Your mind eases with thoughts of tranquility.', '''s mind eases with thoughts of tranquility.', 'Your mind returns to normal.', 100, 100, 0, 0, 12000, 1500, 1500, 3, 2400, 0, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 275, 18, 28, 28, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2076, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 2..."
+      },
+      {
+        "line": 273,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44005, 'Echo of Haste', 'PLAYER_1', '', '', '', 'Your body pulses with the spirit of the Shissar.', '''s body pulses with the spirit of the Shissar.', 'Your body slows.', 0, 100, 0, 0, 9000, 1500, 1500, 3, 2400, 0, 560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 166, 40, 0, 0, 0, 40, 0, 0, 0, 0, 160, 0, 0, 2124, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, ..."
+      },
+      {
+        "line": 274,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44006, 'Echo of Health', 'PLAYER_1', 'Echo of Health', '', '', 'You begin to regenerate.', ' begins to regenerate.', 'You have stopped regenerating.', 0, 60, 0, 0, 6000, 1500, 1500, 10, 2400, 0, 650, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 118, 2007, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 0, 254, 41, 5..."
+      },
+      {
+        "line": 275,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "echo_spell_names",
+        "text": "(44007, 'Echo of Luck', 'PLAYER_1', 'Echo of Luck', '', '', 'You are surrounded by an aura of unimaginable fortune', 'is surrounded by an aura of unimaginable fortune', 'aura of unimaginable fortune fades', 100, 0, 0, 0, 2500, 1500, 1500, 10, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2516, 2057, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 109, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 1, 1, 254, 254..."
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- The lost notes mention 44000-44007, Echo of Luck, and later Echo of Power consolidation."
+      },
+      {
+        "line": 26,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "'Echo of Experience', 'Echo of Armor', 'Echo of Statistics', 'Echo of Speed',"
+      },
+      {
+        "line": 27,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "'Echo of Mana', 'Echo of Haste', 'Echo of Health', 'Echo of Luck', 'Echo of Power'"
+      },
+      {
+        "line": 48,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Experience' THEN 1 ELSE 0 END) AS `echo_experience_rows`,"
+      },
+      {
+        "line": 49,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Power' THEN 1 ELSE 0 END) AS `echo_power_rows`,"
+      },
+      {
+        "line": 50,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Statistics' THEN 1 ELSE 0 END) AS `echo_statistics_rows`,"
+      },
+      {
+        "line": 51,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Speed' THEN 1 ELSE 0 END) AS `echo_speed_rows`,"
+      },
+      {
+        "line": 52,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Mana' THEN 1 ELSE 0 END) AS `echo_mana_rows`,"
+      },
+      {
+        "line": 53,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Haste' THEN 1 ELSE 0 END) AS `echo_haste_rows`,"
+      },
+      {
+        "line": 54,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Health' THEN 1 ELSE 0 END) AS `echo_health_rows`,"
+      },
+      {
+        "line": 55,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_rows`"
+      },
+      {
+        "line": 24,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44000 AND `name` = 'Echo of Experience' THEN 1 ELSE 0 END) AS `echo_experience_ok`,"
+      },
+      {
+        "line": 25,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44001 AND `name` = 'Echo of Power' THEN 1 ELSE 0 END) AS `echo_power_ok`,"
+      },
+      {
+        "line": 26,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44002 AND `name` = 'Echo of Statistics' THEN 1 ELSE 0 END) AS `echo_statistics_ok`,"
+      },
+      {
+        "line": 27,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44003 AND `name` = 'Echo of Speed' THEN 1 ELSE 0 END) AS `echo_speed_ok`,"
+      },
+      {
+        "line": 28,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44004 AND `name` = 'Echo of Mana' THEN 1 ELSE 0 END) AS `echo_mana_ok`,"
+      },
+      {
+        "line": 29,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44005 AND `name` = 'Echo of Haste' THEN 1 ELSE 0 END) AS `echo_haste_ok`,"
+      },
+      {
+        "line": 30,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44006 AND `name` = 'Echo of Health' THEN 1 ELSE 0 END) AS `echo_health_ok`,"
+      },
+      {
+        "line": 31,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "SUM(CASE WHEN `id` = 44007 AND `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_ok`"
+      },
+      {
+        "line": 105,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "OR `name` LIKE '%Echo of Power%'"
+      },
+      {
+        "line": 106,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "OR `name` LIKE '%Echo of Experience%'"
+      },
+      {
+        "line": 107,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "echo_spell_names",
+        "text": "OR `name` LIKE '%Echo of Luck%'"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   4. runtime testing confirms Echo of Power / Echo of Luck behavior is safe."
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44000 Echo of Experience"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44002 Echo of Statistics"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44003 Echo of Speed"
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44004 Echo of Mana"
+      },
+      {
+        "line": 11,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44005 Echo of Haste"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44006 Echo of Health"
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--       44007 Echo of Luck"
+      },
+      {
+        "line": 14,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   - 5/23 reduced/combined global buffs, including Echo of Power."
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "echo_spell_names",
+        "text": "--   5. Echo of Luck's C++ hooks are verified separately."
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44000 Echo of Experience"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44001 Echo of Armor, later merged into Echo of Power"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44002 Echo of Statistics"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44003 Echo of Speed"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44004 Echo of Mana"
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44005 Echo of Haste"
+      },
+      {
+        "line": 11,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44006 Echo of Health"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 44007 Echo of Luck"
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- 5/23 then reduced global buffs to 4 and combined others into Echo of Power."
+      },
+      {
+        "line": 22,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- SET name = 'Echo of Power'"
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "echo_spell_names",
+        "text": "-- WHERE id = 44001 AND name IN ('Echo of Armor', 'Echo of Power');"
+      },
+      {
+        "line": 11,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44000 | Echo of Experience |"
+      },
+      {
+        "line": 12,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44001 | Echo of Power |"
+      },
+      {
+        "line": 13,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44002 | Echo of Statistics |"
+      },
+      {
+        "line": 14,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44003 | Echo of Speed |"
+      },
+      {
+        "line": 15,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44004 | Echo of Mana |"
+      },
+      {
+        "line": 16,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44005 | Echo of Haste |"
+      },
+      {
+        "line": 17,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44006 | Echo of Health |"
+      },
+      {
+        "line": 18,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "| 44007 | Echo of Luck |"
+      },
+      {
+        "line": 28,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "Slice v10 extracted 80 matching rows across repo-staged client patch copies and the uploaded patch ZIPs. The 5/23 patch rows were selected because they represent the latest documented update, including the 5/23 change that consolidated power buffs into `Echo of Power`."
+      },
+      {
+        "line": 40,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "echo_spell_names",
+        "text": "- `44001` is `Echo of Power`."
+      },
+      {
+        "line": 61,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md",
+        "pattern": "echo_spell_names",
+        "text": "- global buff spell IDs 44000\u201344007 and Echo of Power consolidation"
+      },
+      {
+        "line": 48,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "echo_spell_names",
+        "text": "- `Echo of Power` is not present in the restored dump."
+      }
+    ],
+    "global_buff_ids": [
+      {
+        "line": 17,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "global_buff_ids",
+        "text": "| 5/21 | Global buffs 44000\u201344007 | `spells_new`, `rule_values`, item/spell scripts | Audit only |"
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "global_buff_ids",
+        "text": "| 5/23 | Global buffs reduced to 4 and combined into Echo of Power | `spells_new` IDs 44000\u201344007 and client spell file alignment | Audit/pending only |"
+      },
+      {
+        "line": 4,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- Lost 5/21 and 5/23 notes mention global buff spell work around IDs 44000-44007:"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44000 Echo of Experience"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44001 Echo of Power"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44002 Echo of Statistics"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44003 Echo of Speed"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44004 Echo of Mana"
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44005 Echo of Haste"
+      },
+      {
+        "line": 11,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44006 Echo of Health"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   44007 Echo of Luck"
+      },
+      {
+        "line": 15,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   - The restored DB is missing spell IDs 44000-44007."
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   - 5/23 changed 44001 from Echo of Armor to Echo of Power."
+      },
+      {
+        "line": 268,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44000, 'Echo of Experience', 'BLUE_TRAIL', '', '', ' gains an edge.', 'Your thoughts quicken.', '', 'Your mind returns to normal.', 0, 0, 0, 0, 3000, 0, 0, 3600, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 337, 254, 6, 0, 98, -1, 0, 0, 254, 254, 254,..."
+      },
+      {
+        "line": 269,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44001, 'Echo of Power', 'PLAYER_1', '', '', '', 'You are filled with absolute power.', '''s eyes gleam with absolute power.', 'Your absolute power fades.', 100, 100, 0, 0, 24000, 1500, 1500, 3, 2400, 0, 2500, 0, 0, 0, 0, 2, 0, 115, 105, 0, 0, 105, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 65, 65, 65, 18, 16, 160, 1405, 0, 0, 1405, 241, 0, 2012, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 109, 109, 1, 20, 100, 100, 20, 3, 0, 1, 0, 0, 4, 7, 5, 6, 15, 0, 11, 97, 254, 254, 69, 1, 41, ..."
+      },
+      {
+        "line": 270,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44002, 'Echo of Statistics', 'PLAYER_1', '', '', '', 'You feel focused.', ' looks focused.', 'Your focus fades.', 100, 100, 0, 0, 13000, 3000, 1500, 3, 2400, 0, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 544, 544, 0, 75, 70, 75, 70, 65, 65, 65, 65, 755, 0, 2056, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 201, 201, 1, 1, 1, 1, 10, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 4, 8, 9, 10, 69, 41, 0, 5, -1, 0, 0, 254, 254, 254, 254, ..."
+      },
+      {
+        "line": 271,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44003, 'Echo of Speed', 'PLAYER_1', '', '', '', 'Your feet move faster.', '', 'You slow down.', 0, 150, 0, 0, 0, 0, 0, 4, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 2010, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 102, 100, 100, 100, 100, 100, 100, 100, 100, 100, 102, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 3, 254, 41, 5, 70, -1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, ..."
+      },
+      {
+        "line": 272,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44004, 'Echo of Mana', 'PLAYER_1', '', '', '', 'Your mind eases with thoughts of tranquility.', '''s mind eases with thoughts of tranquility.', 'Your mind returns to normal.', 100, 100, 0, 0, 12000, 1500, 1500, 3, 2400, 0, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 275, 18, 28, 28, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2076, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 2..."
+      },
+      {
+        "line": 273,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44005, 'Echo of Haste', 'PLAYER_1', '', '', '', 'Your body pulses with the spirit of the Shissar.', '''s body pulses with the spirit of the Shissar.', 'Your body slows.', 0, 100, 0, 0, 9000, 1500, 1500, 3, 2400, 0, 560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 166, 40, 0, 0, 0, 40, 0, 0, 0, 0, 160, 0, 0, 2124, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, ..."
+      },
+      {
+        "line": 274,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44006, 'Echo of Health', 'PLAYER_1', 'Echo of Health', '', '', 'You begin to regenerate.', ' begins to regenerate.', 'You have stopped regenerating.', 0, 60, 0, 0, 6000, 1500, 1500, 10, 2400, 0, 650, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 118, 2007, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 0, 254, 41, 5..."
+      },
+      {
+        "line": 275,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "(44007, 'Echo of Luck', 'PLAYER_1', 'Echo of Luck', '', '', 'You are surrounded by an aura of unimaginable fortune', 'is surrounded by an aura of unimaginable fortune', 'aura of unimaginable fortune fades', 100, 0, 0, 0, 2500, 1500, 1500, 10, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2516, 2057, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 109, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 1, 1, 254, 254..."
+      },
+      {
+        "line": 280,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007"
+      },
+      {
+        "line": 772,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007"
+      },
+      {
+        "line": 781,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "'MSR recovery placeholder. Global buff spell rows 44000-44007 were reconstructed in Slice v11, but automatic permanent server buffs remain disabled until runtime code is verified.'"
+      },
+      {
+        "line": 787,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_buff_ids",
+        "text": "' | Slice v11 reconstructed global buff spell rows 44000-44007; kept disabled pending runtime verification.'"
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- The lost notes mention 44000-44007, Echo of Luck, and later Echo of Power consolidation."
+      },
+      {
+        "line": 24,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE id BETWEEN 44000 AND 44007"
+      },
+      {
+        "line": 42,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007"
+      },
+      {
+        "line": 57,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007;"
+      },
+      {
+        "line": 24,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44000 AND `name` = 'Echo of Experience' THEN 1 ELSE 0 END) AS `echo_experience_ok`,"
+      },
+      {
+        "line": 25,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44001 AND `name` = 'Echo of Power' THEN 1 ELSE 0 END) AS `echo_power_ok`,"
+      },
+      {
+        "line": 26,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44002 AND `name` = 'Echo of Statistics' THEN 1 ELSE 0 END) AS `echo_statistics_ok`,"
+      },
+      {
+        "line": 27,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44003 AND `name` = 'Echo of Speed' THEN 1 ELSE 0 END) AS `echo_speed_ok`,"
+      },
+      {
+        "line": 28,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44004 AND `name` = 'Echo of Mana' THEN 1 ELSE 0 END) AS `echo_mana_ok`,"
+      },
+      {
+        "line": 29,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44005 AND `name` = 'Echo of Haste' THEN 1 ELSE 0 END) AS `echo_haste_ok`,"
+      },
+      {
+        "line": 30,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44006 AND `name` = 'Echo of Health' THEN 1 ELSE 0 END) AS `echo_health_ok`,"
+      },
+      {
+        "line": 31,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "SUM(CASE WHEN `id` = 44007 AND `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_ok`"
+      },
+      {
+        "line": 33,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007;"
+      },
+      {
+        "line": 58,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule."
+      },
+      {
+        "line": 66,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "WHERE `id` BETWEEN 44000 AND 44007"
+      },
+      {
+        "line": 147,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_buff_ids",
+        "text": "(SELECT COUNT(*) FROM `spells_new` WHERE `id` BETWEEN 44000 AND 44007) AS `global_buff_exact_id_rows`,"
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44000: 10"
+      },
+      {
+        "line": 18,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44001: 10"
+      },
+      {
+        "line": 19,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44002: 10"
+      },
+      {
+        "line": 20,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44003: 10"
+      },
+      {
+        "line": 21,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44004: 10"
+      },
+      {
+        "line": 22,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44005: 10"
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44006: 10"
+      },
+      {
+        "line": 24,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_buff_ids",
+        "text": "44007: 10"
+      },
+      {
+        "line": 4,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- Slice v11 reconstructs spell rows 44000-44007 only."
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   2. that code path is verified against spell IDs 44000-44007,"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   - 5/21 global buffs at spell IDs 44000-44007:"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44000 Echo of Experience"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44001 Echo of Armor"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44002 Echo of Statistics"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44003 Echo of Speed"
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44004 Echo of Mana"
+      },
+      {
+        "line": 11,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44005 Echo of Haste"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44006 Echo of Health"
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--       44007 Echo of Luck"
+      },
+      {
+        "line": 30,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   5. If server code expects 44000-44007 but 5/23 consolidated buffs, recover"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007."
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "global_buff_ids",
+        "text": "--   2. the code path is verified against spell IDs 44000-44007,"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44000 Echo of Experience"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44001 Echo of Armor, later merged into Echo of Power"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44002 Echo of Statistics"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44003 Echo of Speed"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44004 Echo of Mana"
+      },
+      {
+        "line": 10,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44005 Echo of Haste"
+      },
+      {
+        "line": 11,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44006 Echo of Health"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- 44007 Echo of Luck"
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_buff_ids",
+        "text": "-- WHERE id = 44001 AND name IN ('Echo of Armor', 'Echo of Power');"
+      },
+      {
+        "line": 11,
+        "path": "docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md",
+        "pattern": "global_buff_ids",
+        "text": "The restored DB does not contain spell IDs `44000-44007`, while the lost notes"
+      },
+      {
+        "line": 11,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44000 | Echo of Experience |"
+      },
+      {
+        "line": 12,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44001 | Echo of Power |"
+      },
+      {
+        "line": 13,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44002 | Echo of Statistics |"
+      },
+      {
+        "line": 14,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44003 | Echo of Speed |"
+      },
+      {
+        "line": 15,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44004 | Echo of Mana |"
+      },
+      {
+        "line": 16,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44005 | Echo of Haste |"
+      },
+      {
+        "line": 17,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44006 | Echo of Health |"
+      },
+      {
+        "line": 18,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "| 44007 | Echo of Luck |"
+      },
+      {
+        "line": 39,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "- `spells_new` contains 8 rows for IDs `44000` through `44007`."
+      },
+      {
+        "line": 40,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_buff_ids",
+        "text": "- `44001` is `Echo of Power`."
+      },
+      {
+        "line": 61,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md",
+        "pattern": "global_buff_ids",
+        "text": "- global buff spell IDs 44000\u201344007 and Echo of Power consolidation"
+      },
+      {
+        "line": 5,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_buff_ids",
+        "text": "Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled."
+      },
+      {
+        "line": 66,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_buff_ids",
+        "text": "If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice."
+      },
+      {
+        "line": 47,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "global_buff_ids",
+        "text": "- Global buff spells `44000` through `44007` are not present in `spells_new` in the restored dump."
+      },
+      {
+        "line": 5159,
+        "path": "utils/sql/git/optional/2020_07_20_tool_gearup_armor_sets.sql",
+        "pattern": "global_buff_ids",
+        "text": "('1', '67', '6', '13674', '44001', '7'),"
+      },
+      {
+        "line": 5231,
+        "path": "utils/sql/git/optional/2020_07_20_tool_gearup_armor_sets.sql",
+        "pattern": "global_buff_ids",
+        "text": "('1', '68', '6', '13674', '44004', '7'),"
+      },
+      {
+        "line": 5303,
+        "path": "utils/sql/git/optional/2020_07_20_tool_gearup_armor_sets.sql",
+        "pattern": "global_buff_ids",
+        "text": "('1', '69', '6', '13674', '44006', '7'),"
+      }
+    ],
+    "global_or_permanent_buff_words": [
+      {
+        "line": 3869,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "buffs[buffs_i].ticsremaining != PERMANENT_BUFF_DURATION) {"
+      },
+      {
+        "line": 10625,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "duration = PERMANENT_BUFF_DURATION;"
+      },
+      {
+        "line": 10658,
+        "path": "zone/spell_effects.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "duration = PERMANENT_BUFF_DURATION;"
+      },
+      {
+        "line": 1331,
+        "path": "common/spdat.h",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "#define PERMANENT_BUFF_DURATION \t-1000 //this is arbitrary used when overriding spells regular buff duration to set it as permenant"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "| 5/20 | Server buff prices lowered | NPC/merchant/quest data, possibly items | Audit later after NPC identified |"
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "| 5/21 | Global buffs 44000\u201344007 | `spells_new`, `rule_values`, item/spell scripts | Audit only |"
+      },
+      {
+        "line": 22,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "| 5/23 | Global buff toggle | `rule_values`: `Custom:PermanentServerBuffsEnabled` | Safe placeholder only, default false |"
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/RECOVERY_DB_FIX_MAP.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "| 5/23 | Global buffs reduced to 4 and combined into Echo of Power | `spells_new` IDs 44000\u201344007 and client spell file alignment | Audit/pending only |"
+      },
+      {
+        "line": 16,
+        "path": "database/recovery/README.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "The uploaded SQL archive is useful as a baseline, but it does not appear to be a later patch delta containing all lost updates. The changelog references work that must be reconstructed, including global buff consolidation, syncrosatchel fixes, sympathetic item/proc changes, and zone/waypoint/progression changes."
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Reconstructs missing global/server buff spell rows from the recovered 5/23 client spell file."
+      },
+      {
+        "line": 4,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Lost 5/21 and 5/23 notes mention global buff spell work around IDs 44000-44007:"
+      },
+      {
+        "line": 22,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   - Keep Custom:PermanentServerBuffsEnabled disabled."
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   - Do not enable/cast permanent server buffs yet; server-side code/runtime path is still unverified."
+      },
+      {
+        "line": 779,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 781,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'MSR recovery placeholder. Global buff spell rows 44000-44007 were reconstructed in Slice v11, but automatic permanent server buffs remain disabled until runtime code is verified.'"
+      },
+      {
+        "line": 787,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "' | Slice v11 reconstructed global buff spell rows 44000-44007; kept disabled pending runtime verification.'"
+      },
+      {
+        "line": 795,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "' | Slice v11 safety: permanent server buffs remain disabled until runtime code is verified.'"
+      },
+      {
+        "line": 797,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 804,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Reconstructed missing global buff spell rows from recovered 5/23 client spells_us.txt. Before=',"
+      },
+      {
+        "line": 810,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'. Custom:PermanentServerBuffsEnabled was kept false.'"
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "(1, 'Custom:PermanentServerBuffsEnabled', 'false', 'MSR recovery placeholder. Added from lost 5/23 update notes; kept disabled until global buff code/spells are verified.')"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "VALUES ('010_add_neutral_recovery_rule_placeholders.sql', 'Added neutral Custom:PermanentServerBuffsEnabled placeholder if missing; existing value preserved.')"
+      },
+      {
+        "line": 1,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- MSR Recovery Audit 02: global buff spell and rule state"
+      },
+      {
+        "line": 37,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Global buff spell-row recovery audit."
+      },
+      {
+        "line": 21,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'global_buff_rows' AS `section`,"
+      },
+      {
+        "line": 46,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'global_buff_summary' AS `section`,"
+      },
+      {
+        "line": 47,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "COUNT(*) AS `global_buff_rows_present`,"
+      },
+      {
+        "line": 60,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'global_buff_rule' AS `section`,"
+      },
+      {
+        "line": 66,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 74,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 21,
+        "path": "database/recovery/audits/08_safe_rule_and_syncrosatchel_recovery_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 30,
+        "path": "database/recovery/audits/07_recovery_migration_log_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Global buff runtime readiness DB audit."
+      },
+      {
+        "line": 23,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "COUNT(*) AS `global_buff_rows_present`,"
+      },
+      {
+        "line": 67,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 76,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Global buff reconstruction audit."
+      },
+      {
+        "line": 7,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   The lost 5/21 and 5/23 notes describe global/server buff work around"
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule."
+      },
+      {
+        "line": 26,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 27,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:PermanentServerBuffsNPCID',"
+      },
+      {
+        "line": 28,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:ServerBuffsEnabled',"
+      },
+      {
+        "line": 29,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:ServerBuffNPCID'"
+      },
+      {
+        "line": 147,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "(SELECT COUNT(*) FROM `spells_new` WHERE `id` BETWEEN 44000 AND 44007) AS `global_buff_exact_id_rows`,"
+      },
+      {
+        "line": 152,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'"
+      },
+      {
+        "line": 153,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": ") AS `permanent_server_buffs_rule_rows`;"
+      },
+      {
+        "line": 3,
+        "path": "database/recovery/audits/01_rules_and_server_defaults_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- max-level/progression gates, and the permanent server buff toggle."
+      },
+      {
+        "line": 14,
+        "path": "database/recovery/audits/01_rules_and_server_defaults_audit.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "'Custom:PermanentServerBuffsEnabled',"
+      },
+      {
+        "line": 1,
+        "path": "database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "MSR client global buff spell row extraction"
+      },
+      {
+        "line": 19,
+        "path": "database/recovery/migrations_pending/080_review_targeted_hero_ring_and_transcendent_bag_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   4. Keep this as a separate reviewed migration from broad global buff work."
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Global buff runtime activation remains intentionally pending."
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Do NOT set Custom:PermanentServerBuffsEnabled=true until:"
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   1. the server code path that casts/applies permanent server buffs is located,"
+      },
+      {
+        "line": 5,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   - 5/21 global buffs at spell IDs 44000-44007:"
+      },
+      {
+        "line": 14,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   - 5/23 reduced/combined global buffs, including Echo of Power."
+      },
+      {
+        "line": 15,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled."
+      },
+      {
+        "line": 17,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only."
+      },
+      {
+        "line": 25,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "--   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration"
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Global buff runtime code path remains intentionally pending."
+      },
+      {
+        "line": 6,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007."
+      },
+      {
+        "line": 8,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:"
+      },
+      {
+        "line": 1,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- MSR Recovery Pending Migration 030: global buff candidates"
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- 5/23 then reduced global buffs to 4 and combined others into Echo of Power."
+      },
+      {
+        "line": 18,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "-- WHERE ruleset_id = 1 AND rule_name = 'Custom:PermanentServerBuffsEnabled';"
+      },
+      {
+        "line": 75,
+        "path": "docs/recovery/RECOVERY_SLICE_V6_PROGRESSION_CAP_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 1,
+        "path": "docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "# MSR Recovery Slice v10 \u2014 Global Buff Reconstruction Audit"
+      },
+      {
+        "line": 3,
+        "path": "docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "This slice prepares the next recovery target: the lost server/global buff work"
+      },
+      {
+        "line": 6,
+        "path": "docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "It is audit/extraction only. It does not enable permanent server buffs and does"
+      },
+      {
+        "line": 12,
+        "path": "docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "describe those IDs as server/global buffs. The 5/23 client patch also changed"
+      },
+      {
+        "line": 67,
+        "path": "docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "database/recovery/client_spell_extract/global_buff_client_spell_rows.tsv"
+      },
+      {
+        "line": 17,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "The restored database audit confirmed the DB is alive, but the backup is not the full lost 5/23 state.  It still lacks the permanent server buff toggle rule, the global buff spell rows, and several later rule/item/merchant changes.  Before applying real recovery fixes, the migration machinery must be boring, repeatable, and safe."
+      },
+      {
+        "line": 51,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- disabled `Custom:PermanentServerBuffsEnabled` placeholder rule"
+      },
+      {
+        "line": 53,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "They do not enable permanent buffs and do not modify items, doors, zones, loot, or merchants."
+      },
+      {
+        "line": 68,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "The new `07_recovery_migration_log_audit.sql` output should show the ledger table, the applied safe migrations, and `Custom:PermanentServerBuffsEnabled=false`."
+      },
+      {
+        "line": 79,
+        "path": "docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Corpse-run, progression cap, zone-line, defiant loot removal, and global buff spell reconstruction should remain review-first until their exact effects are pinned down."
+      },
+      {
+        "line": 7,
+        "path": "docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "This slice intentionally avoids global buffs, corpse/death rules, Defiant cleanup, sympathetic proc changes, and zone/waypoint rewrites. Those are still real recovery targets, but they need separate validation."
+      },
+      {
+        "line": 47,
+        "path": "docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 1,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "# MSR Recovery Slice v11 \u2014 Global Buff Spell Row Recovery"
+      },
+      {
+        "line": 5,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Slice v11 reconstructs the missing global/server buff rows in `spells_new` using the recovered 5/23 client `spells_us.txt` truth extracted during Slice v10."
+      },
+      {
+        "line": 22,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "This slice **does not enable permanent server buffs**."
+      },
+      {
+        "line": 24,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "`Custom:PermanentServerBuffsEnabled` remains `false` after this migration. The goal is only to restore the spell-row data that the server/client now expect to exist."
+      },
+      {
+        "line": 41,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- `Custom:PermanentServerBuffsEnabled` remains `false`."
+      },
+      {
+        "line": 5,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_1_VERIFY_FIX.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Slice v12 added the global buff runtime audit tooling, but the verifier was too strict: it required the source-audit script to contain its own filename as literal text."
+      },
+      {
+        "line": 50,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- `Custom:PermanentServerBuffsEnabled` rule placeholder set to `false`"
+      },
+      {
+        "line": 61,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- global buff spell IDs 44000\u201344007 and Echo of Power consolidation"
+      },
+      {
+        "line": 1,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "# MSR Recovery Slice v12 \u2014 Global Buff Runtime Audit"
+      },
+      {
+        "line": 5,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled."
+      },
+      {
+        "line": 15,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- enable `Custom:PermanentServerBuffsEnabled`,"
+      },
+      {
+        "line": 53,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- `database/recovery/code_audit_output/global_buff_runtime_code_audit.txt`"
+      },
+      {
+        "line": 54,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- `database/recovery/code_audit_output/global_buff_runtime_code_audit.json`"
+      },
+      {
+        "line": 66,
+        "path": "docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice."
+      },
+      {
+        "line": 50,
+        "path": "docs/recovery/RECOVERY_SLICE_V5_CORPSE_RULESET_RECOVERY.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement"
+      },
+      {
+        "line": 46,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- `Custom:PermanentServerBuffsEnabled` is missing before safe migration 010 is applied."
+      },
+      {
+        "line": 47,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "- Global buff spells `44000` through `44007` are not present in `spells_new` in the restored dump."
+      },
+      {
+        "line": 64,
+        "path": "docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "4. Reconstruct global buff spell rows from the 5/21 and 5/23 client spell files and compare them against server `spells_new` structure before adding them."
+      },
+      {
+        "line": 74,
+        "path": "common/patches/rof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToRoFBuffSlot(int index);"
+      },
+      {
+        "line": 427,
+        "path": "common/patches/rof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "eq->slotid = ServerToRoFBuffSlot(emu->slotid);"
+      },
+      {
+        "line": 472,
+        "path": "common/patches/rof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "__packet->WriteUInt32(emu->type == 0 ? ServerToRoFBuffSlot(emu->entries[i].buff_slot) : emu->entries[i].buff_slot);"
+      },
+      {
+        "line": 6295,
+        "path": "common/patches/rof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToRoFBuffSlot(int index)"
+      },
+      {
+        "line": 76,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToRoF2BuffSlot(int index);"
+      },
+      {
+        "line": 498,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "eq->slotid = ServerToRoF2BuffSlot(emu->slotid);"
+      },
+      {
+        "line": 543,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "__packet->WriteUInt32(emu->type == 0 ? ServerToRoF2BuffSlot(emu->entries[i].buff_slot) : emu->entries[i].buff_slot);"
+      },
+      {
+        "line": 6569,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToRoF2BuffSlot(int index)"
+      },
+      {
+        "line": 70,
+        "path": "common/patches/uf.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToUFBuffSlot(int index);"
+      },
+      {
+        "line": 370,
+        "path": "common/patches/uf.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "eq->slotid = ServerToUFBuffSlot(emu->slotid);"
+      },
+      {
+        "line": 392,
+        "path": "common/patches/uf.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "__packet->WriteUInt32(emu->type == 0 ? ServerToUFBuffSlot(emu->entries[i].buff_slot) : emu->entries[i].buff_slot);"
+      },
+      {
+        "line": 4856,
+        "path": "common/patches/uf.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToUFBuffSlot(int index)"
+      },
+      {
+        "line": 68,
+        "path": "common/patches/sod.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToSoDBuffSlot(int index);"
+      },
+      {
+        "line": 313,
+        "path": "common/patches/sod.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "eq->slotid = ServerToSoDBuffSlot(emu->slotid);"
+      },
+      {
+        "line": 4238,
+        "path": "common/patches/sod.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToSoDBuffSlot(int index)"
+      },
+      {
+        "line": 67,
+        "path": "common/patches/sof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToSoFBuffSlot(int index);"
+      },
+      {
+        "line": 292,
+        "path": "common/patches/sof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "eq->slotid = ServerToSoFBuffSlot(emu->slotid);"
+      },
+      {
+        "line": 3636,
+        "path": "common/patches/sof.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToSoFBuffSlot(int index) {"
+      },
+      {
+        "line": 67,
+        "path": "common/patches/titanium.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToTitaniumBuffSlot(int index);"
+      },
+      {
+        "line": 273,
+        "path": "common/patches/titanium.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "eq->slotid = ServerToTitaniumBuffSlot(emu->slotid);"
+      },
+      {
+        "line": 3516,
+        "path": "common/patches/titanium.cpp",
+        "pattern": "global_or_permanent_buff_words",
+        "text": "static inline int ServerToTitaniumBuffSlot(int index)"
+      }
+    ],
+    "luck_hooks": [
+      {
+        "line": 245,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "- Server honors expansions that alter bank size and power source, general9 and general10 slots"
+      },
+      {
+        "line": 401,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "- If you need to manually assign ammo or powersource slots, use these values:"
+      },
+      {
+        "line": 402,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "-- PowerSource = 21"
+      },
+      {
+        "line": 425,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Uleat: Activation of RoF+ clients' two additional general slots and integration of SoF+ clients' PowerSource slot"
+      },
+      {
+        "line": 429,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "-- 'slotPowerSource'(21) is no longer a special case slot(9999)"
+      },
+      {
+        "line": 430,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "- Special code has been added to exclude 'slotPowerSource,' 'slotGeneral9' and 'slotGeneral10' from server"
+      },
+      {
+        "line": 3409,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Uleat: Fixed a corpse looting issue where the power source item (slot 9999) was being omitted from the corpse inventory. A previous oversight on my part. Also refined message reporting. (RoF: increased corpse slot limit to 34)"
+      },
+      {
+        "line": 3410,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Uleat: Power Source items will now report in 'worn' instead of 'inv' when using #peekinv."
+      },
+      {
+        "line": 3427,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Uleat: Corrected a bug in ItemInst::IsSlotAllowed that 'passed' PowerSource slot checks regardless of ItemInst::Slots value."
+      },
+      {
+        "line": 3664,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Sorvani: (Uleat) Update to inspect (SoF+) and corpses to related to handling power sources. Titanium inspect still broken."
+      },
+      {
+        "line": 4940,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Trevius: Power Source slot can now be augmented."
+      },
+      {
+        "line": 4968,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Trevius: Added Power Source slot to item stat (charm) scaling."
+      },
+      {
+        "line": 5610,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Trevius: Fixed a crash when using NukeItem on the Power Source slot for a Titanium client."
+      },
+      {
+        "line": 6762,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Trevius: SoF - Adjusted Power Source code some to remove a bug with using the slot."
+      },
+      {
+        "line": 6775,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Trevius: SoF - The Power Source Slot is now a usable slot.  Items set to use slot 22 in the items table will be able to use this new slot."
+      },
+      {
+        "line": 7275,
+        "path": "changelog.txt",
+        "pattern": "luck_hooks",
+        "text": "Trevius: SoF - Added a few more encodes/decodes to resolve more slot change issues related to the addition of the Power Source Slot"
+      },
+      {
+        "line": 250,
+        "path": "zone/embparser_api.cpp",
+        "pattern": "luck_hooks",
+        "text": "else if (identifier == \"powersource\")           result = EQ::invslot::slotPowerSource;"
+      },
+      {
+        "line": 5013,
+        "path": "zone/attack.cpp",
+        "pattern": "luck_hooks",
+        "text": "// TODO: powersource procs -- powersource procs are on invis augs, so shouldn't need anything extra"
+      },
+      {
+        "line": 5102,
+        "path": "zone/attack.cpp",
+        "pattern": "luck_hooks",
+        "text": "// TODO: Powersource procs -- powersource procs are from augs so shouldn't need anything extra"
+      },
+      {
+        "line": 6692,
+        "path": "zone/lua_general.cpp",
+        "pattern": "luck_hooks",
+        "text": "luabind::value(\"PowerSource\", static_cast<int>(EQ::invslot::slotPowerSource)),"
+      },
+      {
+        "line": 3879,
+        "path": "zone/bot.cpp",
+        "pattern": "luck_hooks",
+        "text": "invslot::slotWaist,\t\t\tinvslot::slotPowerSource,\tinvslot::slotAmmo"
+      },
+      {
+        "line": 471,
+        "path": "common/item_data.h",
+        "pattern": "luck_hooks",
+        "text": "uint8\tAugSlotUnk2[invaug::SOCKET_COUNT] {};\t// RoF: Augment Slot 1-6 Unknown Most likely Powersource related"
+      },
+      {
+        "line": 253,
+        "path": "common/item_instance.h",
+        "pattern": "luck_hooks",
+        "text": "// to centralize where it is done to make future changes easier (ex. whenever powersources come around)"
+      },
+      {
+        "line": 766,
+        "path": "common/eq_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "//   -- Expansion::TBS \"The Buried Sea\" - toggles slotPowerSource activated (set) and deactivated (clear)"
+      },
+      {
+        "line": 771,
+        "path": "common/eq_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "// - Power Source slot is enabled, but not activated, by GM flag when expansion bit is (clear) (RoF+ only)"
+      },
+      {
+        "line": 801,
+        "path": "common/eq_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "inventory_dynamic_nongm_lookup_entries[iter]->EquipmentBitmask = Titanium::invslot::EQUIPMENT_BITMASK; // power source"
+      },
+      {
+        "line": 813,
+        "path": "common/eq_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "// update power source"
+      },
+      {
+        "line": 879,
+        "path": "common/eq_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "// update power source"
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "luck_hooks",
+        "text": "--   44007 Echo of Luck"
+      },
+      {
+        "line": 275,
+        "path": "database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql",
+        "pattern": "luck_hooks",
+        "text": "(44007, 'Echo of Luck', 'PLAYER_1', 'Echo of Luck', '', '', 'You are surrounded by an aura of unimaginable fortune', 'is surrounded by an aura of unimaginable fortune', 'aura of unimaginable fortune fades', 100, 0, 0, 0, 2500, 1500, 1500, 10, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2516, 2057, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 109, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 1, 1, 254, 254..."
+      },
+      {
+        "line": 2,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "luck_hooks",
+        "text": "-- The lost notes mention 44000-44007, Echo of Luck, and later Echo of Power consolidation."
+      },
+      {
+        "line": 27,
+        "path": "database/recovery/audits/02_global_buffs_audit.sql",
+        "pattern": "luck_hooks",
+        "text": "'Echo of Mana', 'Echo of Haste', 'Echo of Health', 'Echo of Luck', 'Echo of Power'"
+      },
+      {
+        "line": 55,
+        "path": "database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql",
+        "pattern": "luck_hooks",
+        "text": "SUM(CASE WHEN `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_rows`"
+      },
+      {
+        "line": 31,
+        "path": "database/recovery/audits/16_global_buff_runtime_readiness_audit.sql",
+        "pattern": "luck_hooks",
+        "text": "SUM(CASE WHEN `id` = 44007 AND `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_ok`"
+      },
+      {
+        "line": 107,
+        "path": "database/recovery/audits/14_global_buff_reconstruction_audit.sql",
+        "pattern": "luck_hooks",
+        "text": "OR `name` LIKE '%Echo of Luck%'"
+      },
+      {
+        "line": 9,
+        "path": "database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql",
+        "pattern": "luck_hooks",
+        "text": "--   4. runtime testing confirms Echo of Power / Echo of Luck behavior is safe."
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql",
+        "pattern": "luck_hooks",
+        "text": "--       44007 Echo of Luck"
+      },
+      {
+        "line": 13,
+        "path": "database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql",
+        "pattern": "luck_hooks",
+        "text": "--   5. Echo of Luck's C++ hooks are verified separately."
+      },
+      {
+        "line": 12,
+        "path": "database/recovery/migrations_pending/030_review_global_buff_candidates.sql",
+        "pattern": "luck_hooks",
+        "text": "-- 44007 Echo of Luck"
+      },
+      {
+        "line": 18,
+        "path": "docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md",
+        "pattern": "luck_hooks",
+        "text": "| 44007 | Echo of Luck |"
+      },
+      {
+        "line": 183,
+        "path": "common/patches/uf_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "case invslot::slotPowerSource:"
+      },
+      {
+        "line": 184,
+        "path": "common/patches/uf_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "return \"Power Source\";"
+      },
+      {
+        "line": 1110,
+        "path": "common/patches/rof2_structs.h",
+        "pattern": "luck_hooks",
+        "text": "/*00584*/ Texture_Struct equip_powersource;// Equipment: Non-visual"
+      },
+      {
+        "line": 4824,
+        "path": "common/patches/rof2_structs.h",
+        "pattern": "luck_hooks",
+        "text": "uint32 Power; // Enables \"Power\" percentage field used by Power Sources"
+      },
+      {
+        "line": 144,
+        "path": "common/patches/rof_limits.h",
+        "pattern": "luck_hooks",
+        "text": "slotPowerSource,"
+      },
+      {
+        "line": 178,
+        "path": "common/patches/rof_limits.h",
+        "pattern": "luck_hooks",
+        "text": "const int16 BONUS_STAT_END = invslot::slotPowerSource;"
+      },
+      {
+        "line": 4263,
+        "path": "common/patches/uf_structs.h",
+        "pattern": "luck_hooks",
+        "text": "uint32 unknown15; //0xffffffff - Power Source Capacity?"
+      },
+      {
+        "line": 134,
+        "path": "common/patches/sod_limits.h",
+        "pattern": "luck_hooks",
+        "text": "slotPowerSource,"
+      },
+      {
+        "line": 168,
+        "path": "common/patches/sod_limits.h",
+        "pattern": "luck_hooks",
+        "text": "const int16 BONUS_STAT_END = invslot::slotPowerSource;"
+      },
+      {
+        "line": 1462,
+        "path": "common/patches/rof.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 1470,
+        "path": "common/patches/rof.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 4788,
+        "path": "common/patches/rof.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 4797,
+        "path": "common/patches/rof.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 1055,
+        "path": "common/patches/rof_structs.h",
+        "pattern": "luck_hooks",
+        "text": "/*00584*/ Texture_Struct equip_powersource; // Equiptment: Non-visual"
+      },
+      {
+        "line": 4735,
+        "path": "common/patches/rof_structs.h",
+        "pattern": "luck_hooks",
+        "text": "uint32 Power; // Enables \"Power\" percentage field used by Power Sources"
+      },
+      {
+        "line": 4139,
+        "path": "common/patches/sod_structs.h",
+        "pattern": "luck_hooks",
+        "text": "uint32 unknown15; //0xffffffff - Power Source Capacity?"
+      },
+      {
+        "line": 4159,
+        "path": "common/patches/sod_structs.h",
+        "pattern": "luck_hooks",
+        "text": "uint8 unknown18;\t//Power Source Capacity or evolve filename?"
+      },
+      {
+        "line": 146,
+        "path": "common/patches/rof2_limits.h",
+        "pattern": "luck_hooks",
+        "text": "slotPowerSource,"
+      },
+      {
+        "line": 180,
+        "path": "common/patches/rof2_limits.h",
+        "pattern": "luck_hooks",
+        "text": "const int16 BONUS_STAT_END = invslot::slotPowerSource;"
+      },
+      {
+        "line": 430,
+        "path": "common/patches/deprecated_sod_itemfields.h",
+        "pattern": "luck_hooks",
+        "text": "/* 193 */\tC(\"0\")\t//Power Source Capacity"
+      },
+      {
+        "line": 430,
+        "path": "common/patches/deprecated_uf_itemfields.h",
+        "pattern": "luck_hooks",
+        "text": "/* 193 */\tC(\"0\")\t//Power Source Capacity"
+      },
+      {
+        "line": 1532,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 1540,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 5045,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 5054,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "luck_hooks",
+        "text": "// Swap last 2 slots for Arrow and Power Source"
+      },
+      {
+        "line": 5948,
+        "path": "common/patches/rof2.cpp",
+        "pattern": "luck_hooks",
+        "text": "//unknown18;\t//Power Source Capacity or evolve filename?"
+      },
+      {
+        "line": 183,
+        "path": "common/patches/sod_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "case invslot::slotPowerSource:"
+      },
+      {
+        "line": 184,
+        "path": "common/patches/sod_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "return \"Power Source\";"
+      },
+      {
+        "line": 183,
+        "path": "common/patches/sof_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "case invslot::slotPowerSource:"
+      },
+      {
+        "line": 184,
+        "path": "common/patches/sof_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "return \"Power Source\";"
+      },
+      {
+        "line": 204,
+        "path": "common/patches/rof_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "case invslot::slotPowerSource:"
+      },
+      {
+        "line": 205,
+        "path": "common/patches/rof_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "return \"Power Source\";"
+      },
+      {
+        "line": 208,
+        "path": "common/patches/rof2_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "case invslot::slotPowerSource:"
+      },
+      {
+        "line": 209,
+        "path": "common/patches/rof2_limits.cpp",
+        "pattern": "luck_hooks",
+        "text": "return \"Power Source\";"
+      },
+      {
+        "line": 134,
+        "path": "common/patches/sof_limits.h",
+        "pattern": "luck_hooks",
+        "text": "slotPowerSource,"
+      },
+      {
+        "line": 168,
+        "path": "common/patches/sof_limits.h",
+        "pattern": "luck_hooks",
+        "text": "const int16 BONUS_STAT_END = invslot::slotPowerSource;"
+      },
+      {
+        "line": 430,
+        "path": "common/patches/deprecated_sof_itemfields.h",
+        "pattern": "luck_hooks",
+        "text": "/* 193 */\tC(\"0\")\t//Power Source Capacity"
+      },
+      {
+        "line": 4060,
+        "path": "common/patches/sof_structs.h",
+        "pattern": "luck_hooks",
+        "text": "uint32 unknown15; //0xffffffff - Power Source Capacity?"
+      },
+      {
+        "line": 134,
+        "path": "common/patches/uf_limits.h",
+        "pattern": "luck_hooks",
+        "text": "slotPowerSource,"
+      },
+      {
+        "line": 168,
+        "path": "common/patches/uf_limits.h",
+        "pattern": "luck_hooks",
+        "text": "const int16 BONUS_STAT_END = invslot::slotPowerSource;"
+      },
+      {
+        "line": 433,
+        "path": "common/patches/deprecated_rof_itemfields.h",
+        "pattern": "luck_hooks",
+        "text": "/* 193 */\tC(\"0\")\t//Power Source Capacity"
+      },
+      {
+        "line": 2544,
+        "path": "common/patches/titanium.cpp",
+        "pattern": "luck_hooks",
+        "text": "// nullify power source element in server array"
+      },
+      {
+        "line": 2545,
+        "path": "common/patches/titanium.cpp",
+        "pattern": "luck_hooks",
+        "text": "strn0cpy(emu->itemnames[EQ::invslot::slotPowerSource], \"\", sizeof(emu->itemnames[EQ::invslot::slotPowerSource]));"
+      },
+      {
+        "line": 2546,
+        "path": "common/patches/titanium.cpp",
+        "pattern": "luck_hooks",
+        "text": "emu->itemicons[EQ::invslot::slotPowerSource] = 0xFFFFFFFF;"
+      },
+      {
+        "line": 433,
+        "path": "common/patches/deprecated_rof2_itemfields.h",
+        "pattern": "luck_hooks",
+        "text": "/* 193 */\tC(\"0\")\t//Power Source Capacity"
+      },
+      {
+        "line": 4955,
+        "path": "common/database/database_update_manifest.cpp",
+        "pattern": "luck_hooks",
+        "text": "MODIFY COLUMN `powersourcecapacity` MEDIUMINT(7)     NOT NULL DEFAULT 0,"
+      },
+      {
+        "line": 270,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "int32_t     powersourcecapacity;"
+      },
+      {
+        "line": 565,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "\"powersourcecapacity\","
+      },
+      {
+        "line": 856,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "\"powersourcecapacity\","
+      },
+      {
+        "line": 1181,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "e.powersourcecapacity = 0;"
+      },
+      {
+        "line": 1502,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "e.powersourcecapacity = row[248] ? static_cast<int32_t>(atoi(row[248])) : 0;"
+      },
+      {
+        "line": 1820,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "v.push_back(columns[248] + \" = \" + std::to_string(e.powersourcecapacity));"
+      },
+      {
+        "line": 2126,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "v.push_back(std::to_string(e.powersourcecapacity));"
+      },
+      {
+        "line": 2440,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "v.push_back(std::to_string(e.powersourcecapacity));"
+      },
+      {
+        "line": 2758,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "e.powersourcecapacity = row[248] ? static_cast<int32_t>(atoi(row[248])) : 0;"
+      },
+      {
+        "line": 3067,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "e.powersourcecapacity = row[248] ? static_cast<int32_t>(atoi(row[248])) : 0;"
+      },
+      {
+        "line": 3426,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "v.push_back(std::to_string(e.powersourcecapacity));"
+      },
+      {
+        "line": 3733,
+        "path": "common/repositories/base/base_items_repository.h",
+        "pattern": "luck_hooks",
+        "text": "v.push_back(std::to_string(e.powersourcecapacity));"
+      },
+      {
+        "line": 220,
+        "path": "utils/scripts/import_13th_floor.pl",
+        "pattern": "luck_hooks",
+        "text": "\"scriptfileid\", \"powersourcecapacity\", \"augslot1unk2\", \"augslot2unk2\", \"augslot3unk2\", \"augslot4unk2\","
+      },
+      {
+        "line": 225,
+        "path": "utils/scripts/import_13th_floor.pl",
+        "pattern": "luck_hooks",
+        "text": "\"rightclickscriptid\", \"powersourcecap\",    \"augslot1unk\", \"augslot2unk\", \"augslot3unk\", \"augslot4unk\","
+      }
+    ]
+  },
+  "pattern_counts": {
+    "cast_candidates": 300,
+    "custom_rule_exact": 37,
+    "custom_rule_symbol": 37,
+    "echo_spell_names": 73,
+    "global_buff_ids": 91,
+    "global_or_permanent_buff_words": 117,
+    "luck_hooks": 100
+  },
+  "readiness": {
+    "candidate_buff_runtime_references_found": true,
+    "custom_rule_reference_found": true,
+    "echo_spell_name_reference_found": true,
+    "global_buff_id_reference_found": true,
+    "luck_hook_reference_found": true
+  },
+  "root": "/opt/msr/repo/msr",
+  "scanned_files": 3820,
+  "scanned_lines": 1384500
+}

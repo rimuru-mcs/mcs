@@ -1,0 +1,807 @@
+MSR Global Buff Runtime Code Audit
+Script:     audit_global_buff_runtime_code.py
+=================================
+Audited at: 2026-05-24T09:36:17.116473+00:00
+Root:       /opt/msr/repo/msr
+Files:      3820
+Lines:      1384500
+
+Readiness
+---------
+custom_rule_reference_found: True
+global_buff_id_reference_found: True
+echo_spell_name_reference_found: True
+candidate_buff_runtime_references_found: True
+luck_hook_reference_found: True
+
+Conclusion
+----------
+Potential runtime references were found. Review the match list manually before enabling buffs.
+
+Pattern counts
+--------------
+cast_candidates: 300
+custom_rule_exact: 37
+custom_rule_symbol: 37
+echo_spell_names: 73
+global_buff_ids: 91
+global_or_permanent_buff_words: 117
+luck_hooks: 100
+
+Matches: cast_candidates
+------------------------
+changelog.txt:2938: mackal: Beneficial single target buffs shouldn't have their mana/timers set if they fail to cast after the Mob::SpellOnTarget call in Mob::SpellFinished
+changelog.txt:3143: Added checks to avoid AE Buff casting on enemy mobs
+changelog.txt:5479: Trevius: Exported SpellFinished(spell_id, spell_target = this, mana_cost = 0) to Perl Mob.
+CHANGELOG.md:1034: * Fix crash in CastSpell Quest API input cast ([#3610](https://github.com/EQEmu/Server/pull/3610)) @Akkadius 2023-10-07
+CHANGELOG.md:1052: * Add Caster ID Parameter to FindBuff in Perl/Lua ([#3590](https://github.com/EQEmu/Server/pull/3590)) @Kinglykrab 2023-09-29
+CHANGELOG.md:2599: * Add Buff support for Bards under AI_IdleCastChecks ([#2590](https://github.com/EQEmu/Server/pull/2590)) ([Aeadoin](https://github.com/Aeadoin)) 2022-11-28
+CHANGELOG.md:3175: * Add rule for NPC Level Based Buff Restrictions. ([#2708](https://github.com/EQEmu/Server/pull/2708)) ([noudess](https://github.com/noudess)) 2023-01-15
+zone/botspellsai.cpp:1298: result = Mob::CastSpell(AIBot_spells[i].spellid, tar->GetID(), EQ::spells::CastingSlot::Gem2, spells[AIBot_spells[i].spellid].cast_time, AIBot_spells[i].manacost == -2 ? 0 : mana_cost, oDontDoAgainBefore, -1, -1, 0, &(AIBot_spells[i].resist_adjust));
+zone/botspellsai.cpp:3450: //this gets called from InterruptSpell() for failure or SpellFinished() for success
+zone/merc.cpp:887: BuffProcess();
+zone/merc.cpp:1601: result = CastSpell(spellid, tar->GetID(), EQ::spells::CastingSlot::Gem2, -1, mana_cost, oDontDoAgainBefore, -1, -1, 0, 0);
+zone/merc.cpp:2030: //CastSpell(selectedMercSpell.spellid, corpse->GetID(), 1, -1, -1, &TempDontRootMeBeforeTime);
+zone/merc.cpp:3591: CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline);
+zone/questmgr.cpp:404: owner->SpellFinished(spell_id, tgt, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/questmgr.cpp:411: initiator->SpellFinished(spell_id, initiator, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/worldserver.cpp:2761: c->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2765: b->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2769: b->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2777: c->GetMerc()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2783: c->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2832: m->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2836: m->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2869: m.member->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2873: m.member->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2897: c.second->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2901: b->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2905: b->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2913: c.second->GetMerc()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2919: c.second->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2960: c.second->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2964: b->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2968: b->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2976: c.second->GetMerc()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:2982: c.second->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3023: c->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3027: b->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3031: b->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3039: c->GetMerc()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3045: c->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3412: c.second->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3416: b->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3420: b->GetPet()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3428: c.second->GetMerc()->ApplySpellBuff(s->spell_id);
+zone/worldserver.cpp:3434: c.second->GetPet()->ApplySpellBuff(s->spell_id);
+zone/aa.cpp:1422: if (!SpellFinished(rank->spell, entity_list.GetMob(target_id), EQ::spells::CastingSlot::AltAbility, spells[rank->spell].mana, -1, spells[rank->spell].resist_difficulty, false, -1,
+zone/aa.cpp:1428: if (!CastSpell(rank->spell, target_id, EQ::spells::CastingSlot::AltAbility, -1, -1, 0, -1, rank->spell_type + pTimerAAStart, timer_duration, nullptr, rank->id)) {
+zone/lua_mob.h:197: bool CastSpell(int spell_id, int target_id);
+zone/lua_mob.h:198: bool CastSpell(int spell_id, int target_id, int slot);
+zone/lua_mob.h:199: bool CastSpell(int spell_id, int target_id, int slot, int cast_time);
+zone/lua_mob.h:200: bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost);
+zone/lua_mob.h:201: bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot);
+zone/lua_mob.h:202: bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, int timer_duration);
+zone/lua_mob.h:203: bool CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer, int timer_duration,
+zone/lua_mob.h:205: bool SpellFinished(int spell_id, Lua_Mob target);
+zone/lua_mob.h:206: bool SpellFinished(int spell_id, Lua_Mob target, int slot);
+zone/lua_mob.h:207: bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used);
+zone/lua_mob.h:208: bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot);
+zone/lua_mob.h:209: bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust);
+zone/lua_mob.h:210: bool SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust, bool proc);
+zone/lua_mob.h:488: void ApplySpellBuff(int spell_id);
+zone/lua_mob.h:489: void ApplySpellBuff(int spell_id, int duration);
+zone/lua_mob.h:490: void ApplySpellBuff(int spell_id, int duration, int level);
+zone/trap.cpp:138: hiddenTrigger->SpellFinished(effectvalue, trigger, EQ::spells::CastingSlot::Item, 0, -1, spells[effectvalue].resist_difficulty);
+zone/mob.cpp:5324: SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);
+zone/mob.cpp:5326: SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);
+zone/mob.cpp:5330: SpellFinished(spell_id, on, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);
+zone/mob.cpp:5332: SpellFinished(spell_id, on, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty, true, level_override);
+zone/mob.cpp:5745: bool CastSpell = false;
+zone/mob.cpp:5770: CastSpell = true;
+zone/mob.cpp:5778: CastSpell = true; //In this case effect_slot is what was passed into function.
+zone/mob.cpp:5781: if (CastSpell) {
+zone/mob.cpp:5783: SpellFinished(spells[spell_id].limit_value[effect_slot], target, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[effect_slot]].resist_difficulty);
+zone/mob.cpp:5789: SpellFinished(best_spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[best_spell_id].resist_difficulty);
+zone/mob.cpp:5808: SpellFinished(spells[spell_id].base_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/mob.cpp:5838: SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/mob.cpp:5856: SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/mob.cpp:6102: SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/mob.cpp:6105: SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/mob.cpp:6136: SpellFinished(focus_trigger, target);
+zone/mob.cpp:6139: SpellFinished(focus_trigger, this, EQ::spells::CastingSlot::Item, 0, -1, spells[focus_trigger].resist_difficulty);
+zone/mob.cpp:6146: SpellFinished(focus_trigger, this);
+zone/mob.cpp:6149: SpellFinished(focus_trigger, target, EQ::spells::CastingSlot::Item, 0, -1, spells[focus_trigger].resist_difficulty);
+zone/mob.cpp:6465: SpellFinished(spells[spell_id].limit_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[i]].resist_difficulty);
+zone/mob.cpp:6480: SpellFinished(aabonuses.SpellOnKill[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnKill[i]].resist_difficulty);
+zone/mob.cpp:6485: SpellFinished(itembonuses.SpellOnKill[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnKill[i]].resist_difficulty);
+zone/mob.cpp:6490: SpellFinished(spellbonuses.SpellOnKill[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnKill[i]].resist_difficulty);
+zone/mob.cpp:6507: SpellFinished(aabonuses.SpellOnDeath[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SpellOnDeath[i]].resist_difficulty);
+zone/mob.cpp:6513: SpellFinished(itembonuses.SpellOnDeath[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[itembonuses.SpellOnDeath[i]].resist_difficulty);
+zone/mob.cpp:6519: SpellFinished(spellbonuses.SpellOnDeath[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spellbonuses.SpellOnDeath[i]].resist_difficulty);
+zone/mob.cpp:7010: SpellFinished(spells[spell_id].base_value[i], this);
+zone/mob.cpp:7024: SpellFinished(spells[spell_id].base_value[i], this);
+zone/mob.cpp:7041: SpellFinished(spells[spell_id].base_value[i], this);
+zone/client.cpp:5318: target->SpellFinished(target->GetLDoNTrapSpellID(), this, EQ::spells::CastingSlot::Item, 0, -1, spells[target->GetLDoNTrapSpellID()].resist_difficulty);
+zone/client.cpp:5440: target->SpellFinished(target->GetLDoNTrapSpellID(), this, EQ::spells::CastingSlot::Item, 0, -1, spells[target->GetLDoNTrapSpellID()].resist_difficulty);
+zone/client.cpp:5459: target->SpellFinished(target->GetLDoNTrapSpellID(), this, EQ::spells::CastingSlot::Item, 0, -1, spells[target->GetLDoNTrapSpellID()].resist_difficulty);
+zone/client.cpp:11959: m->ApplySpellBuff(spell_id, duration, level);
+zone/perl_mob.cpp:971: self->CastSpell(spell_id, target_id);
+zone/perl_mob.cpp:976: self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot));
+zone/perl_mob.cpp:981: self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time);
+zone/perl_mob.cpp:986: self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost);
+zone/perl_mob.cpp:993: self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, 0xFFFFFFFF, 0xFFFFFFFF, 0, &res);
+zone/perl_mob.cpp:999: self->SpellFinished(spell_id, self, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/perl_mob.cpp:1004: self->SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/perl_mob.cpp:1009: self->SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, mana_cost, -1, spells[spell_id].resist_difficulty);
+zone/perl_mob.cpp:1014: self->SpellFinished(spell_id, target, EQ::spells::CastingSlot::Item, mana_cost, -1, resist_diff);
+zone/perl_mob.cpp:2799: self->ApplySpellBuff(spell_id);
+zone/perl_mob.cpp:2804: self->ApplySpellBuff(spell_id, duration);
+zone/perl_mob.cpp:2809: self->ApplySpellBuff(spell_id, duration, level);
+zone/perl_mob.cpp:3356: package.add("ApplySpellBuff", (void(*)(Mob*, int))&Perl_Mob_ApplySpellBuff);
+zone/perl_mob.cpp:3357: package.add("ApplySpellBuff", (void(*)(Mob*, int, int))&Perl_Mob_ApplySpellBuff);
+zone/perl_mob.cpp:3358: package.add("ApplySpellBuff", (void(*)(Mob*, int, int, int))&Perl_Mob_ApplySpellBuff);
+zone/perl_mob.cpp:3390: package.add("CastSpell", (void(*)(Mob*, uint16, uint16))&Perl_Mob_CastSpell);
+zone/perl_mob.cpp:3391: package.add("CastSpell", (void(*)(Mob*, uint16, uint16, int))&Perl_Mob_CastSpell);
+zone/perl_mob.cpp:3392: package.add("CastSpell", (void(*)(Mob*, uint16, uint16, int, int))&Perl_Mob_CastSpell);
+zone/perl_mob.cpp:3393: package.add("CastSpell", (void(*)(Mob*, uint16, uint16, int, int, int))&Perl_Mob_CastSpell);
+zone/perl_mob.cpp:3394: package.add("CastSpell", (void(*)(Mob*, uint16, uint16, int, int, int, int16))&Perl_Mob_CastSpell);
+zone/perl_mob.cpp:3918: package.add("SpellFinished", (void(*)(Mob*, uint16))&Perl_Mob_SpellFinished);
+zone/perl_mob.cpp:3919: package.add("SpellFinished", (void(*)(Mob*, uint16, Mob*))&Perl_Mob_SpellFinished);
+zone/perl_mob.cpp:3920: package.add("SpellFinished", (void(*)(Mob*, uint16, Mob*, int32))&Perl_Mob_SpellFinished);
+zone/perl_mob.cpp:3921: package.add("SpellFinished", (void(*)(Mob*, uint16, Mob*, int32, uint16))&Perl_Mob_SpellFinished);
+zone/special_attacks.cpp:1801: if (CastSpell(SPELL_NPC_HARM_TOUCH, target->GetID())) {
+zone/special_attacks.cpp:1808: if (CastSpell(SPELL_LAY_ON_HANDS, GetID())) {
+zone/lua_packet.cpp:521: luabind::value("CastSpell", static_cast<int>(OP_CastSpell)),
+zone/npc.cpp:637: BuffProcess();
+zone/spells.cpp:24: gets the op and calls CastSpell() with all the relevant info including
+zone/spells.cpp:27: b) NPC does CastSpell() from AI
+zone/spells.cpp:30: a)	CastSpell() determines there is a cast time and sets some state keeping
+zone/spells.cpp:33: b)	CastSpell() sees there's no cast time, and calls CastedSpellFinished()
+zone/spells.cpp:38: CastSpell() is expired, and calls CastedSpellFinished()
+zone/spells.cpp:43: SpellFinished() is called.
+zone/spells.cpp:46: SpellFinished() checks some things like LoS, reagents, target and
+zone/spells.cpp:65: Most user code should call CastSpell(), with a 0 casting time if needed,
+zone/spells.cpp:66: and not SpellFinished().
+zone/spells.cpp:145: // only CastSpell and DoCastSpell should be setting casting_spell_id.
+zone/spells.cpp:152: // but things like SpellFinished() can run concurrent with a triggered cast
+zone/spells.cpp:154: bool Mob::CastSpell(uint16 spell_id, uint16 target_id, CastingSlot slot,
+zone/spells.cpp:159: LogSpells("CastSpell called for spell [{}] ([{}]) on entity [{}], slot [{}], time [{}], mana [{}], from item slot [{}]",
+zone/spells.cpp:353: // this is the 2nd phase of CastSpell, broken up like this to make it easier
+zone/spells.cpp:645: Always checked at the start of CastSpell.
+zone/spells.cpp:646: Checked before special cases for bards casting from SpellFinished.
+zone/spells.cpp:759: If the spell is a casted spell, check on CastSpell and ignore on SpellFinished.
+zone/spells.cpp:760: If the spell is a initiated from SpellFinished, then check at start of SpellFinished.
+zone/spells.cpp:850: If the spell is a casted spell, check on CastSpell and ignore on SpellFinished.
+zone/spells.cpp:851: If the spell is a initiated from SpellFinished, then check at start of SpellFinished.
+zone/spells.cpp:1499: This is used when spells fail at CastSpell or when CastSpell is bypassed and spell is launched initially from SpellFinished.
+zone/spells.cpp:1501: -AA that fail at CastSpell because they never get timer set.
+zone/spells.cpp:1502: -Instant cast items that fail at CastSpell because they never get timer set.
+zone/spells.cpp:1518: // just check timed spell specific things before passing off to SpellFinished
+zone/spells.cpp:1855: if(!SpellFinished(spell_id, spell_target, slot, mana_used, inventory_slot, resist_adjust, false,-1, 0xFFFFFFFF, 0, true))
+zone/spells.cpp:1857: LogSpells("Casting of [{}] canceled: SpellFinished returned false", spell_id);
+zone/spells.cpp:2542: bool Mob::SpellFinished(uint16 spell_id, Mob *spell_target, CastingSlot slot, int32 mana_used,
+zone/spells.cpp:3051: if (!SpellFinished(spell_id, spell_target, slot, spells[spell_id].mana, 0xFFFFFFFF, spells[spell_id].resist_difficulty)) {
+zone/spells.cpp:3190: // helper function for AddBuff to determine stacking
+zone/spells.cpp:3627: int Mob::AddBuff(Mob *caster, uint16 spell_id, int duration, int32 level_override, bool disable_buff_overwrite)
+zone/spells.cpp:3781: EQApplicationPacket *outapp = MakeBuffsPacket();
+zone/spells.cpp:3792: EQApplicationPacket *outapp = MakeBuffsPacket();
+zone/spells.cpp:3875: // Mob::SpellFinished
+zone/spells.cpp:3876: // Entity::AESpell (called by Mob::SpellFinished)
+zone/spells.cpp:3877: // Group::CastGroupSpell (called by Mob::SpellFinished)
+zone/spells.cpp:4647: SpellFinished(
+zone/spells.cpp:6670: EQApplicationPacket *outapp = MakeBuffsPacket();
+zone/spells.cpp:6675: EQApplicationPacket *Mob::MakeBuffsPacket(bool for_target, bool clear_buffs)
+zone/spells.cpp:7332: if (!CastSpell(spell_id, target_id, CastingSlot::Item, cast_time, 0, 0, item_slot)) {
+zone/spells.cpp:7341: if (SpellFinished(spell_id, entity_list.GetMob(target_id), CastingSlot::Item, 0, item_slot)) {
+zone/mob_ai.cpp:115: // this is ugly -- ignore distance for hatelist spells, looks like the client is only checking distance for some targettypes in CastSpell,
+zone/mob_ai.cpp:375: return CastSpell(AIspells[i].spellid, tar->GetID(), EQ::spells::CastingSlot::Gem2, AIspells[i].manacost == -2 ? 0 : -1, mana_cost, oDontDoAgainBefore, -1, -1, 0, &(AIspells[i].resist_adjust));
+zone/mob_ai.cpp:668: CastSpell(spell_to_cast, tar->GetID(), slot_to_use);
+zone/mob_ai.cpp:682: CastSpell(spell_to_cast, tar->GetID(), slot_to_use);
+zone/mob_ai.cpp:1865: //this gets called from InterruptSpell() for failure or SpellFinished() for success
+zone/bot.h:358: virtual bool CastSpell(uint16 spell_id, uint16 target_id, EQ::spells::CastingSlot slot = EQ::spells::CastingSlot::Item, int32 casttime = -1, int32 mana_cost = -1, uint32* oSpellWillFinish = 0,
+zone/attack.cpp:2407: SpellFinished(GetLDoNTrapSpellID(), other, EQ::spells::CastingSlot::Item, 0, -1, spells[GetLDoNTrapSpellID()].resist_difficulty, false);
+zone/attack.cpp:6111: SpellFinished(spellbonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID], on, EQ::spells::CastingSlot::Item, 0, -1, spells[spellbonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID]].resist_difficulty);
+zone/attack.cpp:6127: SpellFinished(itembonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID], on, EQ::spells::CastingSlot::Item, 0, -1, spells[itembonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID]].resist_difficulty);
+zone/attack.cpp:6141: SpellFinished(aabonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID], on, EQ::spells::CastingSlot::Item, 0, -1, spells[aabonuses.SkillAttackProc[i + SBIndex::SKILLATK_PROC_SPELL_ID]].resist_difficulty);
+zone/aura.cpp:96: SpellFinished(spell_id, mob);
+zone/aura.cpp:123: SpellFinished(spell_id, mob);
+zone/aura.cpp:222: SpellFinished(spell_id, mob);
+zone/aura.cpp:228: SpellFinished(spell_id, mob);
+zone/aura.cpp:236: SpellFinished(spell_id, mob);
+zone/aura.cpp:292: SpellFinished(spell_id, mob);
+zone/aura.cpp:298: SpellFinished(spell_id, mob);
+zone/aura.cpp:304: SpellFinished(spell_id, mob);
+zone/aura.cpp:338: SpellFinished(spell_id, mob);
+zone/aura.cpp:365: SpellFinished(spell_id, mob);
+zone/aura.cpp:450: SpellFinished(spell_id, mob);
+zone/aura.cpp:458: SpellFinished(spell_id, mob);
+zone/aura.cpp:508: SpellFinished(spell_id, mob);
+zone/aura.cpp:514: SpellFinished(spell_id, mob);
+zone/aura.cpp:545: SpellFinished(spell_id, mob);
+zone/aura.cpp:572: SpellFinished(spell_id, mob);
+zone/aura.cpp:605: SpellFinished(spell_id, mob);
+zone/aura.cpp:630: SpellFinished(spell_id, mob);
+zone/aura.cpp:650: SpellFinished(spell_id, mob);
+zone/aura.cpp:676: SpellFinished(spell_id, mob);
+zone/client_process.cpp:518: BuffProcess();
+zone/client_process.cpp:2307: EQApplicationPacket *outapp = MakeBuffsPacket(false);
+zone/bot_command.cpp:1930: return casting_bot->CastSpell(spell_id, target_mob->GetID(), EQ::spells::CastingSlot::Gem2, -1, -1, dont_root_before);
+zone/pets.cpp:415: npc->CastSpell(SPELL_UNSUMMON_SELF, npc->GetID()); //Live like behavior, damages self for 20K
+zone/pets.cpp:438: CastSpell(SPELL_UNSUMMON_SELF, GetID()); //Live like behavior, damages self for 20K
+zone/lua_mob.cpp:884: bool Lua_Mob::CastSpell(int spell_id, int target_id) {
+zone/lua_mob.cpp:886: return self->CastSpell(spell_id, target_id);
+zone/lua_mob.cpp:889: bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot) {
+zone/lua_mob.cpp:897: return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(cast_slot));
+zone/lua_mob.cpp:900: bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time) {
+zone/lua_mob.cpp:902: return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time);
+zone/lua_mob.cpp:905: bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost) {
+zone/lua_mob.cpp:907: return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost);
+zone/lua_mob.cpp:910: bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot) {
+zone/lua_mob.cpp:912: return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, static_cast<uint32>(item_slot));
+zone/lua_mob.cpp:915: bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer,
+zone/lua_mob.cpp:918: return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, static_cast<uint32>(item_slot),
+zone/lua_mob.cpp:922: bool Lua_Mob::CastSpell(int spell_id, int target_id, int slot, int cast_time, int mana_cost, int item_slot, int timer,
+zone/lua_mob.cpp:927: return self->CastSpell(spell_id, target_id, static_cast<EQ::spells::CastingSlot>(slot), cast_time, mana_cost, nullptr, static_cast<uint32>(item_slot),
+zone/lua_mob.cpp:931: bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target) {
+zone/lua_mob.cpp:933: return self->SpellFinished(spell_id, target);
+zone/lua_mob.cpp:936: bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot) {
+zone/lua_mob.cpp:938: return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot));
+zone/lua_mob.cpp:941: bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used) {
+zone/lua_mob.cpp:943: return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used);
+zone/lua_mob.cpp:946: bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot) {
+zone/lua_mob.cpp:948: return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used, inventory_slot);
+zone/lua_mob.cpp:951: bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust) {
+zone/lua_mob.cpp:953: return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used, inventory_slot, resist_adjust);
+zone/lua_mob.cpp:956: bool Lua_Mob::SpellFinished(int spell_id, Lua_Mob target, int slot, int mana_used, uint32 inventory_slot, int resist_adjust, bool proc) {
+zone/lua_mob.cpp:958: return self->SpellFinished(spell_id, target, static_cast<EQ::spells::CastingSlot>(slot), mana_used, inventory_slot, resist_adjust, proc);
+zone/lua_mob.cpp:2561: void Lua_Mob::ApplySpellBuff(int spell_id) {
+zone/lua_mob.cpp:2563: self->ApplySpellBuff(spell_id);
+zone/lua_mob.cpp:2566: void Lua_Mob::ApplySpellBuff(int spell_id, int duration) {
+zone/lua_mob.cpp:2568: self->ApplySpellBuff(spell_id, duration);
+zone/lua_mob.cpp:2571: void Lua_Mob::ApplySpellBuff(int spell_id, int duration, int level) {
+zone/lua_mob.cpp:2573: self->ApplySpellBuff(spell_id, level);
+zone/lua_mob.cpp:3214: .def("ApplySpellBuff", (void(Lua_Mob::*)(int))&Lua_Mob::ApplySpellBuff)
+zone/lua_mob.cpp:3215: .def("ApplySpellBuff", (void(Lua_Mob::*)(int,int))&Lua_Mob::ApplySpellBuff)
+zone/lua_mob.cpp:3216: .def("ApplySpellBuff", (void(Lua_Mob::*)(int,int,int))&Lua_Mob::ApplySpellBuff)
+zone/lua_mob.cpp:3253: .def("CastSpell", (bool(Lua_Mob::*)(int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3254: .def("CastSpell", (bool(Lua_Mob::*)(int,int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3255: .def("CastSpell", (bool(Lua_Mob::*)(int,int,int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3256: .def("CastSpell", (bool(Lua_Mob::*)(int,int,int,int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3257: .def("CastSpell", (bool(Lua_Mob::*)(int,int,int,int,int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3258: .def("CastSpell", (bool(Lua_Mob::*)(int,int,int,int,int,int,int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3259: .def("CastSpell", (bool(Lua_Mob::*)(int,int,int,int,int,int,int,int,int))&Lua_Mob::CastSpell)
+zone/lua_mob.cpp:3711: .def("SpellFinished", (bool(Lua_Mob::*)(int,Lua_Mob))&Lua_Mob::SpellFinished)
+zone/lua_mob.cpp:3712: .def("SpellFinished", (bool(Lua_Mob::*)(int,Lua_Mob,int))&Lua_Mob::SpellFinished)
+zone/lua_mob.cpp:3713: .def("SpellFinished", (bool(Lua_Mob::*)(int,Lua_Mob,int,int))&Lua_Mob::SpellFinished)
+zone/lua_mob.cpp:3714: .def("SpellFinished", (bool(Lua_Mob::*)(int,Lua_Mob,int,int,uint32))&Lua_Mob::SpellFinished)
+zone/lua_mob.cpp:3715: .def("SpellFinished", (bool(Lua_Mob::*)(int,Lua_Mob,int,int,uint32,int))&Lua_Mob::SpellFinished)
+zone/lua_mob.cpp:3716: .def("SpellFinished", (bool(Lua_Mob::*)(int,Lua_Mob,int,int,uint32,int,bool))&Lua_Mob::SpellFinished)
+zone/effects.cpp:915: // the client does this check before calling CastSpell, should prevent discs being eaten
+zone/effects.cpp:921: if(!p_timers.Expired(&database, DiscTimer, false)) { // lets not set the reuse timer in case CastSpell fails (or we would have to turn off the timer, but CastSpell will set it as well)
+zone/effects.cpp:956: SpellFinished(spell_id, entity_list.GetMob(target), EQ::spells::CastingSlot::Discipline, 0, -1, spells[spell_id].resist_difficulty, false, -1, (uint32)DiscTimer, reduced_recast, false);
+zone/effects.cpp:960: if (!CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline, -1, -1, 0, -1, (uint32)DiscTimer, reduced_recast)) {
+zone/effects.cpp:971: SpellFinished(spell_id, entity_list.GetMob(target), EQ::spells::CastingSlot::Discipline, 0, -1, spells[spell_id].resist_difficulty, false, -1, 0xFFFFFFFF, 0, false);
+zone/effects.cpp:975: CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline);
+zone/client_packet.cpp:915: EQApplicationPacket *outapp = MakeBuffsPacket(false);
+zone/client_packet.cpp:4376: LogSpells("OP CastSpell: slot [{}] spell [{}] target [{}] inv [{}]", castspell->slot, castspell->spell_id, castspell->target_id, (unsigned long)castspell->inventoryslot);
+zone/client_packet.cpp:4403: CastSpell(spell_to_cast, castspell->target_id, slot);
+zone/client_packet.cpp:4455: CastSpell(item->Click.Effect, castspell->target_id, slot, item->CastTime, 0, 0, castspell->inventoryslot);
+zone/client_packet.cpp:4494: CastSpell(item->Click.Effect, castspell->target_id, slot, item->CastTime, 0, 0, castspell->inventoryslot);
+zone/client_packet.cpp:4559: CastSpell(spell_to_cast, castspell->target_id, slot);
+zone/client_packet.cpp:9644: CastSpell(item->Click.Effect, target_id, CastingSlot::Item, item->CastTime, 0, 0, slot_id);
+zone/client_packet.cpp:9716: CastSpell(augitem->Click.Effect, target_id, CastingSlot::Item, augitem->CastTime, 0, 0, slot_id);
+zone/bot.cpp:1598: BuffProcess();
+zone/bot.cpp:2052: CastSpell(PULL_AGGRO, tar->GetID());
+zone/bot.cpp:4955: CastSpell(SPELL_NPC_HARM_TOUCH, target->GetID());
+zone/bot.cpp:4962: CastSpell(SPELL_LAY_ON_HANDS, GetID());
+zone/bot.cpp:5488: bool Bot::CastSpell(
+zone/bot.cpp:5501: // LogSpells("CastSpell called for spell [{}] ([{}]) on entity [{}], slot [{}], time [{}], mana [{}], from item slot [{}]", spells[spell_id].name, spell_id, target_id, slot, cast_time, mana_cost, (item_slot==0xFFFFFFFF)?999:item_slot);
+zone/bot.cpp:5571: Result = Mob::CastSpell(spell_id, target_id, slot, cast_time, mana_cost, oSpellWillFinish, item_slot, 0xFFFFFFFF, 0, resist_adjust, aa_id);
+zone/bot.cpp:7838: CastSpell(spell_id, target, EQ::spells::CastingSlot::Discipline);
+zone/bot.cpp:8487: m->ApplySpellBuff(spell_id, duration, level);
+zone/bot.cpp:9299: if (!CastSpell(item->Click.Effect, tar->GetID(), EQ::spells::CastingSlot::Item, item->CastTime, 0, 0, slot_id)) {
+zone/mob.h:372: virtual bool CastSpell(uint16 spell_id, uint16 target_id, EQ::spells::CastingSlot slot = EQ::spells::CastingSlot::Item, int32 casttime = -1,
+zone/mob.h:382: bool SpellFinished(uint16 spell_id, Mob *target, EQ::spells::CastingSlot slot = EQ::spells::CastingSlot::Item, int mana_used = 0,
+zone/mob.h:437: void BuffProcess();
+zone/mob.h:452: int AddBuff(Mob *caster, const uint16 spell_id, int duration = 0, int32 level_override = -1, bool disable_buff_overwrite = false);
+zone/mob.h:468: EQApplicationPacket *MakeBuffsPacket(bool for_target = true, bool clear_buffs = false);
+zone/mob.h:509: void ApplySpellBuff(int spell_id, int duration = 0, int level_override = -1);
+zone/spell_effects.cpp:101: buffslot = AddBuff(caster, spell_id, durat, caster_level);
+zone/spell_effects.cpp:117: buffslot = caster->AddBuff(caster, spell_id);
+zone/spell_effects.cpp:124: buffslot = AddBuff(caster, spell_id, duration_override, -1, disable_buff_overwrite);
+zone/spell_effects.cpp:162: EQApplicationPacket *outapp = MakeBuffsPacket(false);
+zone/spell_effects.cpp:821: // This was done in AddBuff, but we were not a pet yet, so
+zone/spell_effects.cpp:823: EQApplicationPacket *outapp = MakeBuffsPacket();
+zone/spell_effects.cpp:2969: caster->SpellFinished(spells[spell_id].limit_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[i]].resist_difficulty);
+zone/spell_effects.cpp:3051: caster->SpellFinished(best_spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[best_spell_id].resist_difficulty);
+zone/spell_effects.cpp:3062: caster->SpellFinished(spells[spell_id].limit_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[spell_id].limit_value[i]].resist_difficulty);
+zone/spell_effects.cpp:3852: void Mob::BuffProcess()
+zone/spell_effects.cpp:4209: SpellFinished(spells[buff.spellid].base_value[i], this, EQ::spells::CastingSlot::Item, 0, -1, spells[spells[buff.spellid].base_value[i]].resist_difficulty);
+zone/spell_effects.cpp:4503: EQApplicationPacket *outapp = MakeBuffsPacket(true, true);
+zone/spell_effects.cpp:4737: EQApplicationPacket *outapp = MakeBuffsPacket();
+zone/spell_effects.cpp:4748: EQApplicationPacket *outapp = MakeBuffsPacket();
+zone/spell_effects.cpp:4755: EQApplicationPacket *outapp = MakeBuffsPacket(false);
+zone/spell_effects.cpp:6316: SpellFinished(
+zone/spell_effects.cpp:6441: SpellFinished(proc_spellid, proc_target, EQ::spells::CastingSlot::Item, 0, -1, spells[proc_spellid].resist_difficulty);
+zone/spell_effects.cpp:6446: SpellFinished(proc_spellid, this, EQ::spells::CastingSlot::Item, 0, -1, spells[proc_spellid].resist_difficulty);
+zone/spell_effects.cpp:9794: SpellFinished(spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/spell_effects.cpp:9797: SpellFinished(spell_id, attacker, EQ::spells::CastingSlot::Item, 0, -1, spells[spell_id].resist_difficulty);
+zone/spell_effects.cpp:9837: SpellFinished(trigger_spell_id, this, EQ::spells::CastingSlot::Item, 0, -1, spells[trigger_spell_id].resist_difficulty);
+zone/spell_effects.cpp:9843: SpellFinished(trigger_spell_id, current_target, EQ::spells::CastingSlot::Item, 0, -1, spells[trigger_spell_id].resist_difficulty);
+zone/spell_effects.cpp:10643: void Mob::ApplySpellBuff(int spell_id, int duration, int level)
+(truncated at 300 matches)
+
+Matches: custom_rule_exact
+--------------------------
+database/recovery/RECOVERY_DB_FIX_MAP.md:22: | 5/23 | Global buff toggle | `rule_values`: `Custom:PermanentServerBuffsEnabled` | Safe placeholder only, default false |
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:22: --   - Keep Custom:PermanentServerBuffsEnabled disabled.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:779: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:797: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:810: '. Custom:PermanentServerBuffsEnabled was kept false.'
+database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql:7: (1, 'Custom:PermanentServerBuffsEnabled', 'false', 'MSR recovery placeholder. Added from lost 5/23 update notes; kept disabled until global buff code/spells are verified.')
+database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql:12: VALUES ('010_add_neutral_recovery_rule_placeholders.sql', 'Added neutral Custom:PermanentServerBuffsEnabled placeholder if missing; existing value preserved.')
+database/recovery/audits/02_global_buffs_audit.sql:37: WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:66: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:74: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/audits/08_safe_rule_and_syncrosatchel_recovery_audit.sql:21: 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/07_recovery_migration_log_audit.sql:30: WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:67: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:76: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:8: --   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule.
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:26: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:152: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/01_rules_and_server_defaults_audit.sql:14: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:5: -- Do NOT set Custom:PermanentServerBuffsEnabled=true until:
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:15: --   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:17: -- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:25: --   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:6: -- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007.
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:8: -- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:18: -- WHERE ruleset_id = 1 AND rule_name = 'Custom:PermanentServerBuffsEnabled';
+docs/recovery/RECOVERY_SLICE_V6_PROGRESSION_CAP_AUDIT.md:75: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:51: - disabled `Custom:PermanentServerBuffsEnabled` placeholder rule
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:68: The new `07_recovery_migration_log_audit.sql` output should show the ledger table, the applied safe migrations, and `Custom:PermanentServerBuffsEnabled=false`.
+docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md:47: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:24: `Custom:PermanentServerBuffsEnabled` remains `false` after this migration. The goal is only to restore the spell-row data that the server/client now expect to exist.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:41: - `Custom:PermanentServerBuffsEnabled` remains `false`.
+docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md:50: - `Custom:PermanentServerBuffsEnabled` rule placeholder set to `false`
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:5: Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled.
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:15: - enable `Custom:PermanentServerBuffsEnabled`,
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:66: If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice.
+docs/recovery/RECOVERY_SLICE_V5_CORPSE_RULESET_RECOVERY.md:50: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:46: - `Custom:PermanentServerBuffsEnabled` is missing before safe migration 010 is applied.
+
+Matches: custom_rule_symbol
+---------------------------
+database/recovery/RECOVERY_DB_FIX_MAP.md:22: | 5/23 | Global buff toggle | `rule_values`: `Custom:PermanentServerBuffsEnabled` | Safe placeholder only, default false |
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:22: --   - Keep Custom:PermanentServerBuffsEnabled disabled.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:779: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:797: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:810: '. Custom:PermanentServerBuffsEnabled was kept false.'
+database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql:7: (1, 'Custom:PermanentServerBuffsEnabled', 'false', 'MSR recovery placeholder. Added from lost 5/23 update notes; kept disabled until global buff code/spells are verified.')
+database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql:12: VALUES ('010_add_neutral_recovery_rule_placeholders.sql', 'Added neutral Custom:PermanentServerBuffsEnabled placeholder if missing; existing value preserved.')
+database/recovery/audits/02_global_buffs_audit.sql:37: WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:66: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:74: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/audits/08_safe_rule_and_syncrosatchel_recovery_audit.sql:21: 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/07_recovery_migration_log_audit.sql:30: WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:67: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:76: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:8: --   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule.
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:26: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:152: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/01_rules_and_server_defaults_audit.sql:14: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:5: -- Do NOT set Custom:PermanentServerBuffsEnabled=true until:
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:15: --   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:17: -- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:25: --   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:6: -- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007.
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:8: -- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:18: -- WHERE ruleset_id = 1 AND rule_name = 'Custom:PermanentServerBuffsEnabled';
+docs/recovery/RECOVERY_SLICE_V6_PROGRESSION_CAP_AUDIT.md:75: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:51: - disabled `Custom:PermanentServerBuffsEnabled` placeholder rule
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:68: The new `07_recovery_migration_log_audit.sql` output should show the ledger table, the applied safe migrations, and `Custom:PermanentServerBuffsEnabled=false`.
+docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md:47: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:24: `Custom:PermanentServerBuffsEnabled` remains `false` after this migration. The goal is only to restore the spell-row data that the server/client now expect to exist.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:41: - `Custom:PermanentServerBuffsEnabled` remains `false`.
+docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md:50: - `Custom:PermanentServerBuffsEnabled` rule placeholder set to `false`
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:5: Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled.
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:15: - enable `Custom:PermanentServerBuffsEnabled`,
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:66: If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice.
+docs/recovery/RECOVERY_SLICE_V5_CORPSE_RULESET_RECOVERY.md:50: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:46: - `Custom:PermanentServerBuffsEnabled` is missing before safe migration 010 is applied.
+
+Matches: echo_spell_names
+-------------------------
+database/recovery/RECOVERY_DB_FIX_MAP.md:23: | 5/23 | Global buffs reduced to 4 and combined into Echo of Power | `spells_new` IDs 44000–44007 and client spell file alignment | Audit/pending only |
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:5: --   44000 Echo of Experience
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:6: --   44001 Echo of Power
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:7: --   44002 Echo of Statistics
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:8: --   44003 Echo of Speed
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:9: --   44004 Echo of Mana
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:10: --   44005 Echo of Haste
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:11: --   44006 Echo of Health
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:12: --   44007 Echo of Luck
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:17: --   - 5/23 changed 44001 from Echo of Armor to Echo of Power.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:268: (44000, 'Echo of Experience', 'BLUE_TRAIL', '', '', ' gains an edge.', 'Your thoughts quicken.', '', 'Your mind returns to normal.', 0, 0, 0, 0, 3000, 0, 0, 3600, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 337, 254, 6, 0, 98, -1, 0, 0, 254, 254, 254,...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:269: (44001, 'Echo of Power', 'PLAYER_1', '', '', '', 'You are filled with absolute power.', '''s eyes gleam with absolute power.', 'Your absolute power fades.', 100, 100, 0, 0, 24000, 1500, 1500, 3, 2400, 0, 2500, 0, 0, 0, 0, 2, 0, 115, 105, 0, 0, 105, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 65, 65, 65, 18, 16, 160, 1405, 0, 0, 1405, 241, 0, 2012, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 109, 109, 1, 20, 100, 100, 20, 3, 0, 1, 0, 0, 4, 7, 5, 6, 15, 0, 11, 97, 254, 254, 69, 1, 41, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:270: (44002, 'Echo of Statistics', 'PLAYER_1', '', '', '', 'You feel focused.', ' looks focused.', 'Your focus fades.', 100, 100, 0, 0, 13000, 3000, 1500, 3, 2400, 0, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 544, 544, 0, 75, 70, 75, 70, 65, 65, 65, 65, 755, 0, 2056, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 201, 201, 1, 1, 1, 1, 10, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 4, 8, 9, 10, 69, 41, 0, 5, -1, 0, 0, 254, 254, 254, 254, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:271: (44003, 'Echo of Speed', 'PLAYER_1', '', '', '', 'Your feet move faster.', '', 'You slow down.', 0, 150, 0, 0, 0, 0, 0, 4, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 2010, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 102, 100, 100, 100, 100, 100, 100, 100, 100, 100, 102, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 3, 254, 41, 5, 70, -1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:272: (44004, 'Echo of Mana', 'PLAYER_1', '', '', '', 'Your mind eases with thoughts of tranquility.', '''s mind eases with thoughts of tranquility.', 'Your mind returns to normal.', 100, 100, 0, 0, 12000, 1500, 1500, 3, 2400, 0, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 275, 18, 28, 28, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2076, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 2...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:273: (44005, 'Echo of Haste', 'PLAYER_1', '', '', '', 'Your body pulses with the spirit of the Shissar.', '''s body pulses with the spirit of the Shissar.', 'Your body slows.', 0, 100, 0, 0, 9000, 1500, 1500, 3, 2400, 0, 560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 166, 40, 0, 0, 0, 40, 0, 0, 0, 0, 160, 0, 0, 2124, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:274: (44006, 'Echo of Health', 'PLAYER_1', 'Echo of Health', '', '', 'You begin to regenerate.', ' begins to regenerate.', 'You have stopped regenerating.', 0, 60, 0, 0, 6000, 1500, 1500, 10, 2400, 0, 650, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 118, 2007, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 0, 254, 41, 5...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:275: (44007, 'Echo of Luck', 'PLAYER_1', 'Echo of Luck', '', '', 'You are surrounded by an aura of unimaginable fortune', 'is surrounded by an aura of unimaginable fortune', 'aura of unimaginable fortune fades', 100, 0, 0, 0, 2500, 1500, 1500, 10, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2516, 2057, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 109, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 1, 1, 254, 254...
+database/recovery/audits/02_global_buffs_audit.sql:2: -- The lost notes mention 44000-44007, Echo of Luck, and later Echo of Power consolidation.
+database/recovery/audits/02_global_buffs_audit.sql:26: 'Echo of Experience', 'Echo of Armor', 'Echo of Statistics', 'Echo of Speed',
+database/recovery/audits/02_global_buffs_audit.sql:27: 'Echo of Mana', 'Echo of Haste', 'Echo of Health', 'Echo of Luck', 'Echo of Power'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:48: SUM(CASE WHEN `name` = 'Echo of Experience' THEN 1 ELSE 0 END) AS `echo_experience_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:49: SUM(CASE WHEN `name` = 'Echo of Power' THEN 1 ELSE 0 END) AS `echo_power_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:50: SUM(CASE WHEN `name` = 'Echo of Statistics' THEN 1 ELSE 0 END) AS `echo_statistics_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:51: SUM(CASE WHEN `name` = 'Echo of Speed' THEN 1 ELSE 0 END) AS `echo_speed_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:52: SUM(CASE WHEN `name` = 'Echo of Mana' THEN 1 ELSE 0 END) AS `echo_mana_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:53: SUM(CASE WHEN `name` = 'Echo of Haste' THEN 1 ELSE 0 END) AS `echo_haste_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:54: SUM(CASE WHEN `name` = 'Echo of Health' THEN 1 ELSE 0 END) AS `echo_health_rows`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:55: SUM(CASE WHEN `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_rows`
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:24: SUM(CASE WHEN `id` = 44000 AND `name` = 'Echo of Experience' THEN 1 ELSE 0 END) AS `echo_experience_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:25: SUM(CASE WHEN `id` = 44001 AND `name` = 'Echo of Power' THEN 1 ELSE 0 END) AS `echo_power_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:26: SUM(CASE WHEN `id` = 44002 AND `name` = 'Echo of Statistics' THEN 1 ELSE 0 END) AS `echo_statistics_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:27: SUM(CASE WHEN `id` = 44003 AND `name` = 'Echo of Speed' THEN 1 ELSE 0 END) AS `echo_speed_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:28: SUM(CASE WHEN `id` = 44004 AND `name` = 'Echo of Mana' THEN 1 ELSE 0 END) AS `echo_mana_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:29: SUM(CASE WHEN `id` = 44005 AND `name` = 'Echo of Haste' THEN 1 ELSE 0 END) AS `echo_haste_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:30: SUM(CASE WHEN `id` = 44006 AND `name` = 'Echo of Health' THEN 1 ELSE 0 END) AS `echo_health_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:31: SUM(CASE WHEN `id` = 44007 AND `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_ok`
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:105: OR `name` LIKE '%Echo of Power%'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:106: OR `name` LIKE '%Echo of Experience%'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:107: OR `name` LIKE '%Echo of Luck%'
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:9: --   4. runtime testing confirms Echo of Power / Echo of Luck behavior is safe.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:6: --       44000 Echo of Experience
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:8: --       44002 Echo of Statistics
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:9: --       44003 Echo of Speed
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:10: --       44004 Echo of Mana
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:11: --       44005 Echo of Haste
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:12: --       44006 Echo of Health
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:13: --       44007 Echo of Luck
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:14: --   - 5/23 reduced/combined global buffs, including Echo of Power.
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:13: --   5. Echo of Luck's C++ hooks are verified separately.
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:5: -- 44000 Echo of Experience
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:6: -- 44001 Echo of Armor, later merged into Echo of Power
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:7: -- 44002 Echo of Statistics
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:8: -- 44003 Echo of Speed
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:9: -- 44004 Echo of Mana
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:10: -- 44005 Echo of Haste
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:11: -- 44006 Echo of Health
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:12: -- 44007 Echo of Luck
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:13: -- 5/23 then reduced global buffs to 4 and combined others into Echo of Power.
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:22: -- SET name = 'Echo of Power'
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:23: -- WHERE id = 44001 AND name IN ('Echo of Armor', 'Echo of Power');
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:11: | 44000 | Echo of Experience |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:12: | 44001 | Echo of Power |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:13: | 44002 | Echo of Statistics |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:14: | 44003 | Echo of Speed |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:15: | 44004 | Echo of Mana |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:16: | 44005 | Echo of Haste |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:17: | 44006 | Echo of Health |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:18: | 44007 | Echo of Luck |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:28: Slice v10 extracted 80 matching rows across repo-staged client patch copies and the uploaded patch ZIPs. The 5/23 patch rows were selected because they represent the latest documented update, including the 5/23 change that consolidated power buffs into `Echo of Power`.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:40: - `44001` is `Echo of Power`.
+docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md:61: - global buff spell IDs 44000–44007 and Echo of Power consolidation
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:48: - `Echo of Power` is not present in the restored dump.
+
+Matches: global_buff_ids
+------------------------
+database/recovery/RECOVERY_DB_FIX_MAP.md:17: | 5/21 | Global buffs 44000–44007 | `spells_new`, `rule_values`, item/spell scripts | Audit only |
+database/recovery/RECOVERY_DB_FIX_MAP.md:23: | 5/23 | Global buffs reduced to 4 and combined into Echo of Power | `spells_new` IDs 44000–44007 and client spell file alignment | Audit/pending only |
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:4: -- Lost 5/21 and 5/23 notes mention global buff spell work around IDs 44000-44007:
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:5: --   44000 Echo of Experience
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:6: --   44001 Echo of Power
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:7: --   44002 Echo of Statistics
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:8: --   44003 Echo of Speed
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:9: --   44004 Echo of Mana
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:10: --   44005 Echo of Haste
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:11: --   44006 Echo of Health
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:12: --   44007 Echo of Luck
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:15: --   - The restored DB is missing spell IDs 44000-44007.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:17: --   - 5/23 changed 44001 from Echo of Armor to Echo of Power.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:268: (44000, 'Echo of Experience', 'BLUE_TRAIL', '', '', ' gains an edge.', 'Your thoughts quicken.', '', 'Your mind returns to normal.', 0, 0, 0, 0, 3000, 0, 0, 3600, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 337, 254, 6, 0, 98, -1, 0, 0, 254, 254, 254,...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:269: (44001, 'Echo of Power', 'PLAYER_1', '', '', '', 'You are filled with absolute power.', '''s eyes gleam with absolute power.', 'Your absolute power fades.', 100, 100, 0, 0, 24000, 1500, 1500, 3, 2400, 0, 2500, 0, 0, 0, 0, 2, 0, 115, 105, 0, 0, 105, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 65, 65, 65, 18, 16, 160, 1405, 0, 0, 1405, 241, 0, 2012, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 109, 109, 1, 20, 100, 100, 20, 3, 0, 1, 0, 0, 4, 7, 5, 6, 15, 0, 11, 97, 254, 254, 69, 1, 41, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:270: (44002, 'Echo of Statistics', 'PLAYER_1', '', '', '', 'You feel focused.', ' looks focused.', 'Your focus fades.', 100, 100, 0, 0, 13000, 3000, 1500, 3, 2400, 0, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 544, 544, 0, 75, 70, 75, 70, 65, 65, 65, 65, 755, 0, 2056, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 201, 201, 1, 1, 1, 1, 10, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 4, 8, 9, 10, 69, 41, 0, 5, -1, 0, 0, 254, 254, 254, 254, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:271: (44003, 'Echo of Speed', 'PLAYER_1', '', '', '', 'Your feet move faster.', '', 'You slow down.', 0, 150, 0, 0, 0, 0, 0, 4, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 2010, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 102, 100, 100, 100, 100, 100, 100, 100, 100, 100, 102, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 3, 254, 41, 5, 70, -1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:272: (44004, 'Echo of Mana', 'PLAYER_1', '', '', '', 'Your mind eases with thoughts of tranquility.', '''s mind eases with thoughts of tranquility.', 'Your mind returns to normal.', 100, 100, 0, 0, 12000, 1500, 1500, 3, 2400, 0, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 275, 18, 28, 28, 0, 0, 0, 0, 0, 0, 18, 0, 0, 2076, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 2...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:273: (44005, 'Echo of Haste', 'PLAYER_1', '', '', '', 'Your body pulses with the spirit of the Shissar.', '''s body pulses with the spirit of the Shissar.', 'Your body slows.', 0, 100, 0, 0, 9000, 1500, 1500, 3, 2400, 0, 560, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 166, 40, 0, 0, 0, 40, 0, 0, 0, 0, 160, 0, 0, 2124, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 1, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, ...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:274: (44006, 'Echo of Health', 'PLAYER_1', 'Echo of Health', '', '', 'You begin to regenerate.', ' begins to regenerate.', 'You have stopped regenerating.', 0, 60, 0, 0, 6000, 1500, 1500, 10, 2400, 0, 650, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 118, 2007, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 109, 100, 0, 1, 0, 0, 254, 254, 254, 254, 254, 254, 254, 254, 254, 254, 0, 254, 41, 5...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:275: (44007, 'Echo of Luck', 'PLAYER_1', 'Echo of Luck', '', '', 'You are surrounded by an aura of unimaginable fortune', 'is surrounded by an aura of unimaginable fortune', 'aura of unimaginable fortune fades', 100, 0, 0, 0, 2500, 1500, 1500, 10, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2516, 2057, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 109, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 1, 1, 254, 254...
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:280: WHERE `id` BETWEEN 44000 AND 44007
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:772: WHERE `id` BETWEEN 44000 AND 44007
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:781: 'MSR recovery placeholder. Global buff spell rows 44000-44007 were reconstructed in Slice v11, but automatic permanent server buffs remain disabled until runtime code is verified.'
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:787: ' | Slice v11 reconstructed global buff spell rows 44000-44007; kept disabled pending runtime verification.'
+database/recovery/audits/02_global_buffs_audit.sql:2: -- The lost notes mention 44000-44007, Echo of Luck, and later Echo of Power consolidation.
+database/recovery/audits/02_global_buffs_audit.sql:24: WHERE id BETWEEN 44000 AND 44007
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:42: WHERE `id` BETWEEN 44000 AND 44007
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:57: WHERE `id` BETWEEN 44000 AND 44007;
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:24: SUM(CASE WHEN `id` = 44000 AND `name` = 'Echo of Experience' THEN 1 ELSE 0 END) AS `echo_experience_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:25: SUM(CASE WHEN `id` = 44001 AND `name` = 'Echo of Power' THEN 1 ELSE 0 END) AS `echo_power_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:26: SUM(CASE WHEN `id` = 44002 AND `name` = 'Echo of Statistics' THEN 1 ELSE 0 END) AS `echo_statistics_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:27: SUM(CASE WHEN `id` = 44003 AND `name` = 'Echo of Speed' THEN 1 ELSE 0 END) AS `echo_speed_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:28: SUM(CASE WHEN `id` = 44004 AND `name` = 'Echo of Mana' THEN 1 ELSE 0 END) AS `echo_mana_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:29: SUM(CASE WHEN `id` = 44005 AND `name` = 'Echo of Haste' THEN 1 ELSE 0 END) AS `echo_haste_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:30: SUM(CASE WHEN `id` = 44006 AND `name` = 'Echo of Health' THEN 1 ELSE 0 END) AS `echo_health_ok`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:31: SUM(CASE WHEN `id` = 44007 AND `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_ok`
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:33: WHERE `id` BETWEEN 44000 AND 44007;
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:58: WHERE `id` BETWEEN 44000 AND 44007
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:8: --   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule.
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:66: WHERE `id` BETWEEN 44000 AND 44007
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:147: (SELECT COUNT(*) FROM `spells_new` WHERE `id` BETWEEN 44000 AND 44007) AS `global_buff_exact_id_rows`,
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:17: 44000: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:18: 44001: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:19: 44002: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:20: 44003: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:21: 44004: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:22: 44005: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:23: 44006: 10
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:24: 44007: 10
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:4: -- Slice v11 reconstructs spell rows 44000-44007 only.
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:7: --   2. that code path is verified against spell IDs 44000-44007,
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:5: --   - 5/21 global buffs at spell IDs 44000-44007:
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:6: --       44000 Echo of Experience
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:7: --       44001 Echo of Armor
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:8: --       44002 Echo of Statistics
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:9: --       44003 Echo of Speed
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:10: --       44004 Echo of Mana
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:11: --       44005 Echo of Haste
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:12: --       44006 Echo of Health
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:13: --       44007 Echo of Luck
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:30: --   5. If server code expects 44000-44007 but 5/23 consolidated buffs, recover
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:6: -- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007.
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:10: --   2. the code path is verified against spell IDs 44000-44007,
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:5: -- 44000 Echo of Experience
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:6: -- 44001 Echo of Armor, later merged into Echo of Power
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:7: -- 44002 Echo of Statistics
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:8: -- 44003 Echo of Speed
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:9: -- 44004 Echo of Mana
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:10: -- 44005 Echo of Haste
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:11: -- 44006 Echo of Health
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:12: -- 44007 Echo of Luck
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:23: -- WHERE id = 44001 AND name IN ('Echo of Armor', 'Echo of Power');
+docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md:11: The restored DB does not contain spell IDs `44000-44007`, while the lost notes
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:11: | 44000 | Echo of Experience |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:12: | 44001 | Echo of Power |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:13: | 44002 | Echo of Statistics |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:14: | 44003 | Echo of Speed |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:15: | 44004 | Echo of Mana |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:16: | 44005 | Echo of Haste |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:17: | 44006 | Echo of Health |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:18: | 44007 | Echo of Luck |
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:39: - `spells_new` contains 8 rows for IDs `44000` through `44007`.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:40: - `44001` is `Echo of Power`.
+docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md:61: - global buff spell IDs 44000–44007 and Echo of Power consolidation
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:5: Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled.
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:66: If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice.
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:47: - Global buff spells `44000` through `44007` are not present in `spells_new` in the restored dump.
+utils/sql/git/optional/2020_07_20_tool_gearup_armor_sets.sql:5159: ('1', '67', '6', '13674', '44001', '7'),
+utils/sql/git/optional/2020_07_20_tool_gearup_armor_sets.sql:5231: ('1', '68', '6', '13674', '44004', '7'),
+utils/sql/git/optional/2020_07_20_tool_gearup_armor_sets.sql:5303: ('1', '69', '6', '13674', '44006', '7'),
+
+Matches: global_or_permanent_buff_words
+---------------------------------------
+zone/spell_effects.cpp:3869: buffs[buffs_i].ticsremaining != PERMANENT_BUFF_DURATION) {
+zone/spell_effects.cpp:10625: duration = PERMANENT_BUFF_DURATION;
+zone/spell_effects.cpp:10658: duration = PERMANENT_BUFF_DURATION;
+common/spdat.h:1331: #define PERMANENT_BUFF_DURATION 	-1000 //this is arbitrary used when overriding spells regular buff duration to set it as permenant
+database/recovery/RECOVERY_DB_FIX_MAP.md:12: | 5/20 | Server buff prices lowered | NPC/merchant/quest data, possibly items | Audit later after NPC identified |
+database/recovery/RECOVERY_DB_FIX_MAP.md:17: | 5/21 | Global buffs 44000–44007 | `spells_new`, `rule_values`, item/spell scripts | Audit only |
+database/recovery/RECOVERY_DB_FIX_MAP.md:22: | 5/23 | Global buff toggle | `rule_values`: `Custom:PermanentServerBuffsEnabled` | Safe placeholder only, default false |
+database/recovery/RECOVERY_DB_FIX_MAP.md:23: | 5/23 | Global buffs reduced to 4 and combined into Echo of Power | `spells_new` IDs 44000–44007 and client spell file alignment | Audit/pending only |
+database/recovery/README.md:16: The uploaded SQL archive is useful as a baseline, but it does not appear to be a later patch delta containing all lost updates. The changelog references work that must be reconstructed, including global buff consolidation, syncrosatchel fixes, sympathetic item/proc changes, and zone/waypoint/progression changes.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:2: -- Reconstructs missing global/server buff spell rows from the recovered 5/23 client spell file.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:4: -- Lost 5/21 and 5/23 notes mention global buff spell work around IDs 44000-44007:
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:22: --   - Keep Custom:PermanentServerBuffsEnabled disabled.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:23: --   - Do not enable/cast permanent server buffs yet; server-side code/runtime path is still unverified.
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:779: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:781: 'MSR recovery placeholder. Global buff spell rows 44000-44007 were reconstructed in Slice v11, but automatic permanent server buffs remain disabled until runtime code is verified.'
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:787: ' | Slice v11 reconstructed global buff spell rows 44000-44007; kept disabled pending runtime verification.'
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:795: ' | Slice v11 safety: permanent server buffs remain disabled until runtime code is verified.'
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:797: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:804: 'Reconstructed missing global buff spell rows from recovered 5/23 client spells_us.txt. Before=',
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:810: '. Custom:PermanentServerBuffsEnabled was kept false.'
+database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql:7: (1, 'Custom:PermanentServerBuffsEnabled', 'false', 'MSR recovery placeholder. Added from lost 5/23 update notes; kept disabled until global buff code/spells are verified.')
+database/recovery/migrations_safe/010_add_neutral_recovery_rule_placeholders.sql:12: VALUES ('010_add_neutral_recovery_rule_placeholders.sql', 'Added neutral Custom:PermanentServerBuffsEnabled placeholder if missing; existing value preserved.')
+database/recovery/audits/02_global_buffs_audit.sql:1: -- MSR Recovery Audit 02: global buff spell and rule state
+database/recovery/audits/02_global_buffs_audit.sql:37: WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:2: -- Global buff spell-row recovery audit.
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:21: 'global_buff_rows' AS `section`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:46: 'global_buff_summary' AS `section`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:47: COUNT(*) AS `global_buff_rows_present`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:60: 'global_buff_rule' AS `section`,
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:66: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:74: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/audits/08_safe_rule_and_syncrosatchel_recovery_audit.sql:21: 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/07_recovery_migration_log_audit.sql:30: WHERE rule_name = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:2: -- Global buff runtime readiness DB audit.
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:23: COUNT(*) AS `global_buff_rows_present`,
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:67: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled';
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:76: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:2: -- Global buff reconstruction audit.
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:7: --   The lost 5/21 and 5/23 notes describe global/server buff work around
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:8: --   spell IDs 44000-44007 and a Custom:PermanentServerBuffsEnabled rule.
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:26: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:27: 'Custom:PermanentServerBuffsNPCID',
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:28: 'Custom:ServerBuffsEnabled',
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:29: 'Custom:ServerBuffNPCID'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:147: (SELECT COUNT(*) FROM `spells_new` WHERE `id` BETWEEN 44000 AND 44007) AS `global_buff_exact_id_rows`,
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:152: WHERE `rule_name` = 'Custom:PermanentServerBuffsEnabled'
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:153: ) AS `permanent_server_buffs_rule_rows`;
+database/recovery/audits/01_rules_and_server_defaults_audit.sql:3: -- max-level/progression gates, and the permanent server buff toggle.
+database/recovery/audits/01_rules_and_server_defaults_audit.sql:14: 'Custom:PermanentServerBuffsEnabled',
+database/recovery/client_spell_extract/global_buff_client_spell_rows_summary.txt:1: MSR client global buff spell row extraction
+database/recovery/migrations_pending/080_review_targeted_hero_ring_and_transcendent_bag_candidates.sql:19: --   4. Keep this as a separate reviewed migration from broad global buff work.
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:2: -- Global buff runtime activation remains intentionally pending.
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:5: -- Do NOT set Custom:PermanentServerBuffsEnabled=true until:
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:6: --   1. the server code path that casts/applies permanent server buffs is located,
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:5: --   - 5/21 global buffs at spell IDs 44000-44007:
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:14: --   - 5/23 reduced/combined global buffs, including Echo of Power.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:15: --   - 5/23 added/toggled Custom:PermanentServerBuffsEnabled.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:17: -- Earlier safe migrations added Custom:PermanentServerBuffsEnabled=false only.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:25: --   3. Do not enable Custom:PermanentServerBuffsEnabled in the same migration
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:2: -- Global buff runtime code path remains intentionally pending.
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:6: -- runtime path for Custom:PermanentServerBuffsEnabled and spell IDs 44000-44007.
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:8: -- Do NOT promote a migration that sets Custom:PermanentServerBuffsEnabled=true until:
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:1: -- MSR Recovery Pending Migration 030: global buff candidates
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:13: -- 5/23 then reduced global buffs to 4 and combined others into Echo of Power.
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:18: -- WHERE ruleset_id = 1 AND rule_name = 'Custom:PermanentServerBuffsEnabled';
+docs/recovery/RECOVERY_SLICE_V6_PROGRESSION_CAP_AUDIT.md:75: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md:1: # MSR Recovery Slice v10 — Global Buff Reconstruction Audit
+docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md:3: This slice prepares the next recovery target: the lost server/global buff work
+docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md:6: It is audit/extraction only. It does not enable permanent server buffs and does
+docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md:12: describe those IDs as server/global buffs. The 5/23 client patch also changed
+docs/recovery/RECOVERY_SLICE_V10_GLOBAL_BUFF_RECONSTRUCTION_AUDIT.md:67: database/recovery/client_spell_extract/global_buff_client_spell_rows.tsv
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:17: The restored database audit confirmed the DB is alive, but the backup is not the full lost 5/23 state.  It still lacks the permanent server buff toggle rule, the global buff spell rows, and several later rule/item/merchant changes.  Before applying real recovery fixes, the migration machinery must be boring, repeatable, and safe.
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:51: - disabled `Custom:PermanentServerBuffsEnabled` placeholder rule
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:53: They do not enable permanent buffs and do not modify items, doors, zones, loot, or merchants.
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:68: The new `07_recovery_migration_log_audit.sql` output should show the ledger table, the applied safe migrations, and `Custom:PermanentServerBuffsEnabled=false`.
+docs/recovery/RECOVERY_SLICE_V3_SAFE_DB_APPLY.md:79: Corpse-run, progression cap, zone-line, defiant loot removal, and global buff spell reconstruction should remain review-first until their exact effects are pinned down.
+docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md:7: This slice intentionally avoids global buffs, corpse/death rules, Defiant cleanup, sympathetic proc changes, and zone/waypoint rewrites. Those are still real recovery targets, but they need separate validation.
+docs/recovery/RECOVERY_SLICE_V4_SAFE_DB_FIXES.md:47: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:1: # MSR Recovery Slice v11 — Global Buff Spell Row Recovery
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:5: Slice v11 reconstructs the missing global/server buff rows in `spells_new` using the recovered 5/23 client `spells_us.txt` truth extracted during Slice v10.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:22: This slice **does not enable permanent server buffs**.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:24: `Custom:PermanentServerBuffsEnabled` remains `false` after this migration. The goal is only to restore the spell-row data that the server/client now expect to exist.
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:41: - `Custom:PermanentServerBuffsEnabled` remains `false`.
+docs/recovery/RECOVERY_SLICE_V12_1_VERIFY_FIX.md:5: Slice v12 added the global buff runtime audit tooling, but the verifier was too strict: it required the source-audit script to contain its own filename as literal text.
+docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md:50: - `Custom:PermanentServerBuffsEnabled` rule placeholder set to `false`
+docs/recovery/RECOVERY_SLICE_V2_DATABASE_BASELINE.md:61: - global buff spell IDs 44000–44007 and Echo of Power consolidation
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:1: # MSR Recovery Slice v12 — Global Buff Runtime Audit
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:5: Slice v11 reconstructed the missing global buff spell rows `44000` through `44007`, but deliberately kept `Custom:PermanentServerBuffsEnabled` disabled.
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:15: - enable `Custom:PermanentServerBuffsEnabled`,
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:53: - `database/recovery/code_audit_output/global_buff_runtime_code_audit.txt`
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:54: - `database/recovery/code_audit_output/global_buff_runtime_code_audit.json`
+docs/recovery/RECOVERY_SLICE_V12_GLOBAL_BUFF_RUNTIME_AUDIT.md:66: If the code audit finds no direct reference to `Custom:PermanentServerBuffsEnabled`, spell IDs `44000`-`44007`, or the Echo spell names, then the next slice should be a code implementation/audit slice, not a DB activation slice.
+docs/recovery/RECOVERY_SLICE_V5_CORPSE_RULESET_RECOVERY.md:50: Global buff spell rows and Custom:PermanentServerBuffsEnabled enablement
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:46: - `Custom:PermanentServerBuffsEnabled` is missing before safe migration 010 is applied.
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:47: - Global buff spells `44000` through `44007` are not present in `spells_new` in the restored dump.
+docs/recovery/RECOVERY_SLICE_V2_1_DB_AUDIT_FIX.md:64: 4. Reconstruct global buff spell rows from the 5/21 and 5/23 client spell files and compare them against server `spells_new` structure before adding them.
+common/patches/rof.cpp:74: static inline int ServerToRoFBuffSlot(int index);
+common/patches/rof.cpp:427: eq->slotid = ServerToRoFBuffSlot(emu->slotid);
+common/patches/rof.cpp:472: __packet->WriteUInt32(emu->type == 0 ? ServerToRoFBuffSlot(emu->entries[i].buff_slot) : emu->entries[i].buff_slot);
+common/patches/rof.cpp:6295: static inline int ServerToRoFBuffSlot(int index)
+common/patches/rof2.cpp:76: static inline int ServerToRoF2BuffSlot(int index);
+common/patches/rof2.cpp:498: eq->slotid = ServerToRoF2BuffSlot(emu->slotid);
+common/patches/rof2.cpp:543: __packet->WriteUInt32(emu->type == 0 ? ServerToRoF2BuffSlot(emu->entries[i].buff_slot) : emu->entries[i].buff_slot);
+common/patches/rof2.cpp:6569: static inline int ServerToRoF2BuffSlot(int index)
+common/patches/uf.cpp:70: static inline int ServerToUFBuffSlot(int index);
+common/patches/uf.cpp:370: eq->slotid = ServerToUFBuffSlot(emu->slotid);
+common/patches/uf.cpp:392: __packet->WriteUInt32(emu->type == 0 ? ServerToUFBuffSlot(emu->entries[i].buff_slot) : emu->entries[i].buff_slot);
+common/patches/uf.cpp:4856: static inline int ServerToUFBuffSlot(int index)
+common/patches/sod.cpp:68: static inline int ServerToSoDBuffSlot(int index);
+common/patches/sod.cpp:313: eq->slotid = ServerToSoDBuffSlot(emu->slotid);
+common/patches/sod.cpp:4238: static inline int ServerToSoDBuffSlot(int index)
+common/patches/sof.cpp:67: static inline int ServerToSoFBuffSlot(int index);
+common/patches/sof.cpp:292: eq->slotid = ServerToSoFBuffSlot(emu->slotid);
+common/patches/sof.cpp:3636: static inline int ServerToSoFBuffSlot(int index) {
+common/patches/titanium.cpp:67: static inline int ServerToTitaniumBuffSlot(int index);
+common/patches/titanium.cpp:273: eq->slotid = ServerToTitaniumBuffSlot(emu->slotid);
+common/patches/titanium.cpp:3516: static inline int ServerToTitaniumBuffSlot(int index)
+
+Matches: luck_hooks
+-------------------
+changelog.txt:245: - Server honors expansions that alter bank size and power source, general9 and general10 slots
+changelog.txt:401: - If you need to manually assign ammo or powersource slots, use these values:
+changelog.txt:402: -- PowerSource = 21
+changelog.txt:425: Uleat: Activation of RoF+ clients' two additional general slots and integration of SoF+ clients' PowerSource slot
+changelog.txt:429: -- 'slotPowerSource'(21) is no longer a special case slot(9999)
+changelog.txt:430: - Special code has been added to exclude 'slotPowerSource,' 'slotGeneral9' and 'slotGeneral10' from server
+changelog.txt:3409: Uleat: Fixed a corpse looting issue where the power source item (slot 9999) was being omitted from the corpse inventory. A previous oversight on my part. Also refined message reporting. (RoF: increased corpse slot limit to 34)
+changelog.txt:3410: Uleat: Power Source items will now report in 'worn' instead of 'inv' when using #peekinv.
+changelog.txt:3427: Uleat: Corrected a bug in ItemInst::IsSlotAllowed that 'passed' PowerSource slot checks regardless of ItemInst::Slots value.
+changelog.txt:3664: Sorvani: (Uleat) Update to inspect (SoF+) and corpses to related to handling power sources. Titanium inspect still broken.
+changelog.txt:4940: Trevius: Power Source slot can now be augmented.
+changelog.txt:4968: Trevius: Added Power Source slot to item stat (charm) scaling.
+changelog.txt:5610: Trevius: Fixed a crash when using NukeItem on the Power Source slot for a Titanium client.
+changelog.txt:6762: Trevius: SoF - Adjusted Power Source code some to remove a bug with using the slot.
+changelog.txt:6775: Trevius: SoF - The Power Source Slot is now a usable slot.  Items set to use slot 22 in the items table will be able to use this new slot.
+changelog.txt:7275: Trevius: SoF - Added a few more encodes/decodes to resolve more slot change issues related to the addition of the Power Source Slot
+zone/embparser_api.cpp:250: else if (identifier == "powersource")           result = EQ::invslot::slotPowerSource;
+zone/attack.cpp:5013: // TODO: powersource procs -- powersource procs are on invis augs, so shouldn't need anything extra
+zone/attack.cpp:5102: // TODO: Powersource procs -- powersource procs are from augs so shouldn't need anything extra
+zone/lua_general.cpp:6692: luabind::value("PowerSource", static_cast<int>(EQ::invslot::slotPowerSource)),
+zone/bot.cpp:3879: invslot::slotWaist,			invslot::slotPowerSource,	invslot::slotAmmo
+common/item_data.h:471: uint8	AugSlotUnk2[invaug::SOCKET_COUNT] {};	// RoF: Augment Slot 1-6 Unknown Most likely Powersource related
+common/item_instance.h:253: // to centralize where it is done to make future changes easier (ex. whenever powersources come around)
+common/eq_limits.cpp:766: //   -- Expansion::TBS "The Buried Sea" - toggles slotPowerSource activated (set) and deactivated (clear)
+common/eq_limits.cpp:771: // - Power Source slot is enabled, but not activated, by GM flag when expansion bit is (clear) (RoF+ only)
+common/eq_limits.cpp:801: inventory_dynamic_nongm_lookup_entries[iter]->EquipmentBitmask = Titanium::invslot::EQUIPMENT_BITMASK; // power source
+common/eq_limits.cpp:813: // update power source
+common/eq_limits.cpp:879: // update power source
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:12: --   44007 Echo of Luck
+database/recovery/migrations_safe/070_apply_global_buff_spell_row_reconstruction.sql:275: (44007, 'Echo of Luck', 'PLAYER_1', 'Echo of Luck', '', '', 'You are surrounded by an aura of unimaginable fortune', 'is surrounded by an aura of unimaginable fortune', 'aura of unimaginable fortune fades', 100, 0, 0, 0, 2500, 1500, 1500, 10, 2400, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2516, 2057, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, 109, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 1, 1, 1, 254, 254...
+database/recovery/audits/02_global_buffs_audit.sql:2: -- The lost notes mention 44000-44007, Echo of Luck, and later Echo of Power consolidation.
+database/recovery/audits/02_global_buffs_audit.sql:27: 'Echo of Mana', 'Echo of Haste', 'Echo of Health', 'Echo of Luck', 'Echo of Power'
+database/recovery/audits/15_global_buff_spell_row_recovery_audit.sql:55: SUM(CASE WHEN `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_rows`
+database/recovery/audits/16_global_buff_runtime_readiness_audit.sql:31: SUM(CASE WHEN `id` = 44007 AND `name` = 'Echo of Luck' THEN 1 ELSE 0 END) AS `echo_luck_ok`
+database/recovery/audits/14_global_buff_reconstruction_audit.sql:107: OR `name` LIKE '%Echo of Luck%'
+database/recovery/migrations_pending/100_review_global_buff_runtime_activation.sql:9: --   4. runtime testing confirms Echo of Power / Echo of Luck behavior is safe.
+database/recovery/migrations_pending/090_review_global_buff_reconstruction_candidates.sql:13: --       44007 Echo of Luck
+database/recovery/migrations_pending/110_review_global_buff_runtime_code_path.sql:13: --   5. Echo of Luck's C++ hooks are verified separately.
+database/recovery/migrations_pending/030_review_global_buff_candidates.sql:12: -- 44007 Echo of Luck
+docs/recovery/RECOVERY_SLICE_V11_GLOBAL_BUFF_SPELL_ROWS.md:18: | 44007 | Echo of Luck |
+common/patches/uf_limits.cpp:183: case invslot::slotPowerSource:
+common/patches/uf_limits.cpp:184: return "Power Source";
+common/patches/rof2_structs.h:1110: /*00584*/ Texture_Struct equip_powersource;// Equipment: Non-visual
+common/patches/rof2_structs.h:4824: uint32 Power; // Enables "Power" percentage field used by Power Sources
+common/patches/rof_limits.h:144: slotPowerSource,
+common/patches/rof_limits.h:178: const int16 BONUS_STAT_END = invslot::slotPowerSource;
+common/patches/uf_structs.h:4263: uint32 unknown15; //0xffffffff - Power Source Capacity?
+common/patches/sod_limits.h:134: slotPowerSource,
+common/patches/sod_limits.h:168: const int16 BONUS_STAT_END = invslot::slotPowerSource;
+common/patches/rof.cpp:1462: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof.cpp:1470: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof.cpp:4788: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof.cpp:4797: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof_structs.h:1055: /*00584*/ Texture_Struct equip_powersource; // Equiptment: Non-visual
+common/patches/rof_structs.h:4735: uint32 Power; // Enables "Power" percentage field used by Power Sources
+common/patches/sod_structs.h:4139: uint32 unknown15; //0xffffffff - Power Source Capacity?
+common/patches/sod_structs.h:4159: uint8 unknown18;	//Power Source Capacity or evolve filename?
+common/patches/rof2_limits.h:146: slotPowerSource,
+common/patches/rof2_limits.h:180: const int16 BONUS_STAT_END = invslot::slotPowerSource;
+common/patches/deprecated_sod_itemfields.h:430: /* 193 */	C("0")	//Power Source Capacity
+common/patches/deprecated_uf_itemfields.h:430: /* 193 */	C("0")	//Power Source Capacity
+common/patches/rof2.cpp:1532: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof2.cpp:1540: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof2.cpp:5045: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof2.cpp:5054: // Swap last 2 slots for Arrow and Power Source
+common/patches/rof2.cpp:5948: //unknown18;	//Power Source Capacity or evolve filename?
+common/patches/sod_limits.cpp:183: case invslot::slotPowerSource:
+common/patches/sod_limits.cpp:184: return "Power Source";
+common/patches/sof_limits.cpp:183: case invslot::slotPowerSource:
+common/patches/sof_limits.cpp:184: return "Power Source";
+common/patches/rof_limits.cpp:204: case invslot::slotPowerSource:
+common/patches/rof_limits.cpp:205: return "Power Source";
+common/patches/rof2_limits.cpp:208: case invslot::slotPowerSource:
+common/patches/rof2_limits.cpp:209: return "Power Source";
+common/patches/sof_limits.h:134: slotPowerSource,
+common/patches/sof_limits.h:168: const int16 BONUS_STAT_END = invslot::slotPowerSource;
+common/patches/deprecated_sof_itemfields.h:430: /* 193 */	C("0")	//Power Source Capacity
+common/patches/sof_structs.h:4060: uint32 unknown15; //0xffffffff - Power Source Capacity?
+common/patches/uf_limits.h:134: slotPowerSource,
+common/patches/uf_limits.h:168: const int16 BONUS_STAT_END = invslot::slotPowerSource;
+common/patches/deprecated_rof_itemfields.h:433: /* 193 */	C("0")	//Power Source Capacity
+common/patches/titanium.cpp:2544: // nullify power source element in server array
+common/patches/titanium.cpp:2545: strn0cpy(emu->itemnames[EQ::invslot::slotPowerSource], "", sizeof(emu->itemnames[EQ::invslot::slotPowerSource]));
+common/patches/titanium.cpp:2546: emu->itemicons[EQ::invslot::slotPowerSource] = 0xFFFFFFFF;
+common/patches/deprecated_rof2_itemfields.h:433: /* 193 */	C("0")	//Power Source Capacity
+common/database/database_update_manifest.cpp:4955: MODIFY COLUMN `powersourcecapacity` MEDIUMINT(7)     NOT NULL DEFAULT 0,
+common/repositories/base/base_items_repository.h:270: int32_t     powersourcecapacity;
+common/repositories/base/base_items_repository.h:565: "powersourcecapacity",
+common/repositories/base/base_items_repository.h:856: "powersourcecapacity",
+common/repositories/base/base_items_repository.h:1181: e.powersourcecapacity = 0;
+common/repositories/base/base_items_repository.h:1502: e.powersourcecapacity = row[248] ? static_cast<int32_t>(atoi(row[248])) : 0;
+common/repositories/base/base_items_repository.h:1820: v.push_back(columns[248] + " = " + std::to_string(e.powersourcecapacity));
+common/repositories/base/base_items_repository.h:2126: v.push_back(std::to_string(e.powersourcecapacity));
+common/repositories/base/base_items_repository.h:2440: v.push_back(std::to_string(e.powersourcecapacity));
+common/repositories/base/base_items_repository.h:2758: e.powersourcecapacity = row[248] ? static_cast<int32_t>(atoi(row[248])) : 0;
+common/repositories/base/base_items_repository.h:3067: e.powersourcecapacity = row[248] ? static_cast<int32_t>(atoi(row[248])) : 0;
+common/repositories/base/base_items_repository.h:3426: v.push_back(std::to_string(e.powersourcecapacity));
+common/repositories/base/base_items_repository.h:3733: v.push_back(std::to_string(e.powersourcecapacity));
+utils/scripts/import_13th_floor.pl:220: "scriptfileid", "powersourcecapacity", "augslot1unk2", "augslot2unk2", "augslot3unk2", "augslot4unk2",
+utils/scripts/import_13th_floor.pl:225: "rightclickscriptid", "powersourcecap",    "augslot1unk", "augslot2unk", "augslot3unk", "augslot4unk",
+

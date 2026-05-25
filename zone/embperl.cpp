@@ -17,6 +17,7 @@ Eglin
 #include "../common/features.h"
 #include "../common/process/process_helper.h"
 #include "../common/file.h"
+#include "../common/strings.h"
 #include "../common/timer.h"
 
 #ifndef GvCV_set

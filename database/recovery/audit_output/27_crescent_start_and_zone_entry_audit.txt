@@ -1,0 +1,23 @@
++--------------------+--------------+------------+----------------+---------+---------------+---------------+---------------+------------------------+
+| section            | zoneidnumber | short_name | long_name      | version | min_expansion | max_expansion | content_flags | content_flags_disabled |
++--------------------+--------------+------------+----------------+---------+---------------+---------------+---------------+------------------------+
+| crescent_zone_rows |          394 | crescent   | Crescent Reach |       0 |            -1 |            -1 | NULL          | NULL                   |
++--------------------+--------------+------------+----------------+---------+---------------+---------------+---------------+------------------------+
++-----------------------------+---------------------------+---------------------+-----------------------------------------+
+| section                     | crescent_start_rows_total | gated_by_v27a_count | still_ungated_blank_content_flags_count |
++-----------------------------+---------------------------+---------------------+-----------------------------------------+
+| crescent_start_gate_summary |                         0 |                NULL |                                    NULL |
++-----------------------------+---------------------------+---------------------+-----------------------------------------+
++----------------------------------+----+-------------------------------+---------+------------+----------------+---------+---------+----------+
+| section                          | id | name                          | zone_id | short_name | long_name      | x       | y       | z        |
++----------------------------------+----+-------------------------------+---------+------------+----------------+---------+---------+----------+
+| characters_currently_in_crescent | 16 | Grikeleper-deleted-1765644076 |     394 | crescent   | Crescent Reach | -48.875 |     -21 | 0.854421 |
+| characters_currently_in_crescent | 19 | Cofiryyka-deleted-1765646048  |     394 | crescent   | Crescent Reach |     -51 |     -20 |  0.85857 |
+| characters_currently_in_crescent | 20 | Frokk-deleted-1765646213      |     394 | crescent   | Crescent Reach |     -51 | -13.125 |  0.85153 |
+| characters_currently_in_crescent | 21 | Jipoxijety-deleted-1765646575 |     394 | crescent   | Crescent Reach |     -51 |       0 |  1.69039 |
+| characters_currently_in_crescent | 22 | Qoostineg-deleted-1765646769  |     394 | crescent   | Crescent Reach |     -51 |     -20 |  0.85857 |
+| characters_currently_in_crescent | 23 | Mopoja-deleted-1765646832     |     394 | crescent   | Crescent Reach |     -51 |     -20 |  0.85857 |
+| characters_currently_in_crescent | 24 | Skoomix-deleted-1765646926    |     394 | crescent   | Crescent Reach |     -51 | -19.875 | 0.858442 |
+| characters_currently_in_crescent | 28 | Rimuru-deleted-1779635700     |     394 | crescent   | Crescent Reach |     -51 |     -20 |     0.79 |
+| characters_currently_in_crescent | 29 | Rimuruu                       |     394 | crescent   | Crescent Reach |     -51 |     -20 |     0.79 |
++----------------------------------+----+-------------------------------+---------+------------+----------------+---------+---------+----------+

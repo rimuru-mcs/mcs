@@ -1,0 +1,1033 @@
++---------+------------------------------+---------------------+
+| section | audit_name                   | audited_at          |
++---------+------------------------------+---------------------+
+| audit   | 06_defiant_and_missing_items | 2026-05-24 15:33:11 |
++---------+------------------------------+---------------------+
++-------+--------------------------------------+-----------+-------+----------+----------+---------+---------+--------------+--------+------------+
+| id    | Name                                 | minstatus | price | reqlevel | reclevel | classes | slots   | artifactflag | nodrop | attuneable |
++-------+--------------------------------------+-----------+-------+----------+----------+---------+---------+--------------+--------+------------+
+| 17525 | Package of Defiant Armor             |         0 |     0 |        0 |        0 |   65535 |       0 |            0 |      0 |          0 |
+| 40598 | Bundle of Defiant Armor              |         0 |     0 |        0 |        0 |   65535 |       0 |            0 |      0 |          0 |
+| 50005 | Crude Defiant Plate Bracer           |         0 |  1242 |        0 |       10 |     151 |    1536 |            0 |      1 |          1 |
+| 50006 | Crude Defiant Plate Gauntlets        |         0 |  1380 |        0 |       10 |     151 |    4096 |            0 |      1 |          1 |
+| 50007 | Crude Defiant Plate Boots            |         0 |  1533 |        0 |       10 |     151 |  524288 |            0 |      1 |          1 |
+| 50008 | Crude Defiant Plate Helm             |         0 |  1704 |        0 |       10 |     151 |       4 |            0 |      1 |          1 |
+| 50009 | Crude Defiant Plate Vambraces        |         0 |  1893 |        0 |       10 |     151 |     128 |            0 |      1 |          1 |
+| 50010 | Crude Defiant Plate Greaves          |         0 |  2103 |        0 |       10 |     151 |  262144 |            0 |      1 |          1 |
+| 50011 | Crude Defiant Breastplate            |         0 |  2337 |        0 |       10 |     151 |  131072 |            0 |      1 |          1 |
+| 50012 | Crude Defiant Chain Bracer           |         0 |  1242 |        0 |       10 |   33544 |    1536 |            0 |      1 |          1 |
+| 50013 | Crude Defiant Chain Gauntlets        |         0 |  1380 |        0 |       10 |   33544 |    4096 |            0 |      1 |          1 |
+| 50014 | Crude Defiant Chain Boots            |         0 |  1533 |        0 |       10 |   33544 |  524288 |            0 |      1 |          1 |
+| 50015 | Crude Defiant Chain Coif             |         0 |  1704 |        0 |       10 |   33544 |       4 |            0 |      1 |          1 |
+| 50016 | Crude Defiant Chain Sleeves          |         0 |  1893 |        0 |       10 |   33544 |     128 |            0 |      1 |          1 |
+| 50017 | Crude Defiant Chain Leggings         |         0 |  2103 |        0 |       10 |   33544 |  262144 |            0 |      1 |          1 |
+| 50018 | Crude Defiant Chain Tunic            |         0 |  2337 |        0 |       10 |   33544 |  131072 |            0 |      1 |          1 |
+| 50019 | Crude Defiant Leather Bracer         |         0 |  1242 |        0 |       10 |   16480 |    1536 |            0 |      1 |          1 |
+| 50020 | Crude Defiant Leather Gloves         |         0 |  1380 |        0 |       10 |   16480 |    4096 |            0 |      1 |          1 |
+| 50021 | Crude Defiant Leather Boots          |         0 |  1533 |        0 |       10 |   16480 |  524288 |            0 |      1 |          1 |
+| 50022 | Crude Defiant Leather Cap            |         0 |  1704 |        0 |       10 |   16480 |       4 |            0 |      1 |          1 |
+| 50023 | Crude Defiant Leather Sleeves        |         0 |  1893 |        0 |       10 |   16480 |     128 |            0 |      1 |          1 |
+| 50024 | Crude Defiant Leather Trousers       |         0 |  2103 |        0 |       10 |   16480 |  262144 |            0 |      1 |          1 |
+| 50025 | Crude Defiant Leather Tunic          |         0 |  2337 |        0 |       10 |   16480 |  131072 |            0 |      1 |          1 |
+| 50026 | Crude Defiant Cloth Wristwrap        |         0 |  1242 |        0 |       10 |   15360 |    1536 |            0 |      1 |          1 |
+| 50027 | Crude Defiant Cloth Gloves           |         0 |  1380 |        0 |       10 |   15360 |    4096 |            0 |      1 |          1 |
+| 50028 | Crude Defiant Cloth Sandals          |         0 |  1533 |        0 |       10 |   15360 |  524288 |            0 |      1 |          1 |
+| 50029 | Crude Defiant Cloth Cap              |         0 |  1704 |        0 |       10 |   15360 |       4 |            0 |      1 |          1 |
+| 50030 | Crude Defiant Cloth Sleeves          |         0 |  1893 |        0 |       10 |   15360 |     128 |            0 |      1 |          1 |
+| 50031 | Crude Defiant Cloth Pantaloons       |         0 |  2103 |        0 |       10 |   15360 |  262144 |            0 |      1 |          1 |
+| 50032 | Crude Defiant Cloth Robe             |         0 |  2337 |        0 |       10 |   15360 |  131072 |            0 |      1 |          1 |
+| 50033 | Simple Defiant Plate Bracer          |         0 |  1769 |        5 |       20 |     151 |    1536 |            0 |      1 |          1 |
+| 50034 | Simple Defiant Plate Gauntlets       |         0 |  1966 |        5 |       20 |     151 |    4096 |            0 |      1 |          1 |
+| 50035 | Simple Defiant Plate Boots           |         0 |  2184 |        5 |       20 |     151 |  524288 |            0 |      1 |          1 |
+| 50036 | Simple Defiant Plate Helm            |         0 |  2427 |        5 |       20 |     151 |       4 |            0 |      1 |          1 |
+| 50037 | Simple Defiant Plate Vambraces       |         0 |  2696 |        5 |       20 |     151 |     128 |            0 |      1 |          1 |
+| 50038 | Simple Defiant Plate Greaves         |         0 |  2996 |        5 |       20 |     151 |  262144 |            0 |      1 |          1 |
+| 50039 | Simple Defiant Breastplate           |         0 |  3329 |        5 |       20 |     151 |  131072 |            0 |      1 |          1 |
+| 50040 | Simple Defiant Chain Bracer          |         0 |  1769 |        5 |       20 |   33544 |    1536 |            0 |      1 |          1 |
+| 50041 | Simple Defiant Chain Gauntlets       |         0 |  1966 |        5 |       20 |   33544 |    4096 |            0 |      1 |          1 |
+| 50042 | Simple Defiant Chain Boots           |         0 |  2184 |        5 |       20 |   33544 |  524288 |            0 |      1 |          1 |
+| 50043 | Simple Defiant Chain Coif            |         0 |  2427 |        5 |       20 |   33544 |       4 |            0 |      1 |          1 |
+| 50044 | Simple Defiant Chain Sleeves         |         0 |  2696 |        5 |       20 |   33544 |     128 |            0 |      1 |          1 |
+| 50045 | Simple Defiant Chain Leggings        |         0 |  2996 |        5 |       20 |   33544 |  262144 |            0 |      1 |          1 |
+| 50046 | Simple Defiant Chain Tunic           |         0 |  3329 |        5 |       20 |   33544 |  131072 |            0 |      1 |          1 |
+| 50047 | Simple Defiant Leather Bracer        |         0 |  1769 |        5 |       20 |   16480 |    1536 |            0 |      1 |          1 |
+| 50048 | Simple Defiant Leather Gloves        |         0 |  1966 |        5 |       20 |   16480 |    4096 |            0 |      1 |          1 |
+| 50049 | Simple Defiant Leather Boots         |         0 |  2184 |        5 |       20 |   16480 |  524288 |            0 |      1 |          1 |
+| 50050 | Simple Defiant Leather Cap           |         0 |  2427 |        5 |       20 |   16480 |       4 |            0 |      1 |          1 |
+| 50051 | Simple Defiant Leather Sleeves       |         0 |  2696 |        5 |       20 |   16480 |     128 |            0 |      1 |          1 |
+| 50052 | Simple Defiant Leather Trousers      |         0 |  2996 |        5 |       20 |   16480 |  262144 |            0 |      1 |          1 |
+| 50053 | Simple Defiant Leather Tunic         |         0 |  3329 |        5 |       20 |   16480 |  131072 |            0 |      1 |          1 |
+| 50054 | Simple Defiant Cloth Wristwrap       |         0 |  1769 |        5 |       20 |   15360 |    1536 |            0 |      1 |          1 |
+| 50055 | Simple Defiant Cloth Gloves          |         0 |  1966 |        5 |       20 |   15360 |    4096 |            0 |      1 |          1 |
+| 50056 | Simple Defiant Cloth Sandals         |         0 |  2184 |        5 |       20 |   15360 |  524288 |            0 |      1 |          1 |
+| 50057 | Simple Defiant Cloth Cap             |         0 |  2427 |        5 |       20 |   15360 |       4 |            0 |      1 |          1 |
+| 50058 | Simple Defiant Cloth Sleeves         |         0 |  2696 |        5 |       20 |   15360 |     128 |            0 |      1 |          1 |
+| 50059 | Simple Defiant Cloth Pantaloons      |         0 |  2996 |        5 |       20 |   15360 |  262144 |            0 |      1 |          1 |
+| 50060 | Simple Defiant Cloth Robe            |         0 |  3329 |        5 |       20 |   15360 |  131072 |            0 |      1 |          1 |
+| 50061 | Rough Defiant Plate Bracer           |         0 |  2627 |       15 |       30 |     151 |    1536 |            0 |      1 |          1 |
+| 50062 | Rough Defiant Plate Gauntlets        |         0 |  2919 |       15 |       30 |     151 |    4096 |            0 |      1 |          1 |
+| 50063 | Rough Defiant Plate Boots            |         0 |  3243 |       15 |       30 |     151 |  524288 |            0 |      1 |          1 |
+| 50064 | Rough Defiant Plate Helm             |         0 |  3603 |       15 |       30 |     151 |       4 |            0 |      1 |          1 |
+| 50065 | Rough Defiant Plate Vambraces        |         0 |  4004 |       15 |       30 |     151 |     128 |            0 |      1 |          1 |
+| 50066 | Rough Defiant Plate Greaves          |         0 |  4449 |       15 |       30 |     151 |  262144 |            0 |      1 |          1 |
+| 50067 | Rough Defiant Breastplate            |         0 |  4943 |       15 |       30 |     151 |  131072 |            0 |      1 |          1 |
+| 50068 | Rough Defiant Chain Bracer           |         0 |  2627 |       15 |       30 |   33544 |    1536 |            0 |      1 |          1 |
+| 50069 | Rough Defiant Chain Gauntlets        |         0 |  2919 |       15 |       30 |   33544 |    4096 |            0 |      1 |          1 |
+| 50070 | Rough Defiant Chain Boots            |         0 |  3243 |       15 |       30 |   33544 |  524288 |            0 |      1 |          1 |
+| 50071 | Rough Defiant Chain Coif             |         0 |  3603 |       15 |       30 |   33544 |       4 |            0 |      1 |          1 |
+| 50072 | Rough Defiant Chain Sleeves          |         0 |  4004 |       15 |       30 |   33544 |     128 |            0 |      1 |          1 |
+| 50073 | Rough Defiant Chain Leggings         |         0 |  4449 |       15 |       30 |   33544 |  262144 |            0 |      1 |          1 |
+| 50074 | Rough Defiant Chain Tunic            |         0 |  4943 |       15 |       30 |   33544 |  131072 |            0 |      1 |          1 |
+| 50075 | Rough Defiant Leather Bracer         |         0 |  2627 |       15 |       30 |   16480 |    1536 |            0 |      1 |          1 |
+| 50076 | Rough Defiant Leather Gloves         |         0 |  2919 |       15 |       30 |   16480 |    4096 |            0 |      1 |          1 |
+| 50077 | Rough Defiant Leather Boots          |         0 |  3243 |       15 |       30 |   16480 |  524288 |            0 |      1 |          1 |
+| 50078 | Rough Defiant Leather Cap            |         0 |  3603 |       15 |       30 |   16480 |       4 |            0 |      1 |          1 |
+| 50079 | Rough Defiant Leather Sleeves        |         0 |  4004 |       15 |       30 |   16480 |     128 |            0 |      1 |          1 |
+| 50080 | Rough Defiant Leather Trousers       |         0 |  4449 |       15 |       30 |   16480 |  262144 |            0 |      1 |          1 |
+| 50081 | Rough Defiant Leather Tunic          |         0 |  4943 |       15 |       30 |   16480 |  131072 |            0 |      1 |          1 |
+| 50082 | Rough Defiant Cloth Wristwrap        |         0 |  2627 |       15 |       30 |   15360 |    1536 |            0 |      1 |          1 |
+| 50083 | Rough Defiant Cloth Gloves           |         0 |  2919 |       15 |       30 |   15360 |    4096 |            0 |      1 |          1 |
+| 50084 | Rough Defiant Cloth Sandals          |         0 |  3243 |       15 |       30 |   15360 |  524288 |            0 |      1 |          1 |
+| 50085 | Rough Defiant Cloth Cap              |         0 |  3603 |       15 |       30 |   15360 |       4 |            0 |      1 |          1 |
+| 50086 | Rough Defiant Cloth Sleeves          |         0 |  4004 |       15 |       30 |   15360 |     128 |            0 |      1 |          1 |
+| 50087 | Rough Defiant Cloth Pantaloons       |         0 |  4449 |       15 |       30 |   15360 |  262144 |            0 |      1 |          1 |
+| 50088 | Rough Defiant Cloth Robe             |         0 |  4943 |       15 |       30 |   15360 |  131072 |            0 |      1 |          1 |
+| 50089 | Ornate Defiant Plate Bracer          |         0 |  3361 |       26 |       40 |     151 |    1536 |            0 |      1 |          1 |
+| 50090 | Ornate Defiant Plate Gauntlets       |         0 |  3734 |       26 |       40 |     151 |    4096 |            0 |      1 |          1 |
+| 50091 | Ornate Defiant Plate Boots           |         0 |  4149 |       26 |       40 |     151 |  524288 |            0 |      1 |          1 |
+| 50092 | Ornate Defiant Plate Helm            |         0 |  4610 |       26 |       40 |     151 |       4 |            0 |      1 |          1 |
+| 50093 | Ornate Defiant Plate Vambraces       |         0 |  5122 |       26 |       40 |     151 |     128 |            0 |      1 |          1 |
+| 50094 | Ornate Defiant Plate Greaves         |         0 |  5691 |       26 |       40 |     151 |  262144 |            0 |      1 |          1 |
+| 50095 | Ornate Defiant Breastplate           |         0 |  6324 |       26 |       40 |     151 |  131072 |            0 |      1 |          1 |
+| 50096 | Ornate Defiant Chain Bracer          |         0 |  3361 |       26 |       40 |   33544 |    1536 |            0 |      1 |          1 |
+| 50097 | Ornate Defiant Chain Gauntlets       |         0 |  3734 |       26 |       40 |   33544 |    4096 |            0 |      1 |          1 |
+| 50098 | Ornate Defiant Chain Boots           |         0 |  4149 |       26 |       40 |   33544 |  524288 |            0 |      1 |          1 |
+| 50099 | Ornate Defiant Chain Coif            |         0 |  4610 |       26 |       40 |   33544 |       4 |            0 |      1 |          1 |
+| 50100 | Ornate Defiant Chain Sleeves         |         0 |  5122 |       26 |       40 |   33544 |     128 |            0 |      1 |          1 |
+| 50101 | Ornate Defiant Chain Leggings        |         0 |  5691 |       26 |       40 |   33544 |  262144 |            0 |      1 |          1 |
+| 50102 | Ornate Defiant Chain Tunic           |         0 |  6324 |       26 |       40 |   33544 |  131072 |            0 |      1 |          1 |
+| 50103 | Ornate Defiant Leather Bracer        |         0 |  3361 |       26 |       40 |   16480 |    1536 |            0 |      1 |          1 |
+| 50104 | Ornate Defiant Leather Gloves        |         0 |  3734 |       26 |       40 |   16480 |    4096 |            0 |      1 |          1 |
+| 50105 | Ornate Defiant Leather Boots         |         0 |  4149 |       26 |       40 |   16480 |  524288 |            0 |      1 |          1 |
+| 50106 | Ornate Defiant Leather Cap           |         0 |  4610 |       26 |       40 |   16480 |       4 |            0 |      1 |          1 |
+| 50107 | Ornate Defiant Leather Sleeves       |         0 |  5122 |       26 |       40 |   16480 |     128 |            0 |      1 |          1 |
+| 50108 | Ornate Defiant Leather Trousers      |         0 |  5691 |       26 |       40 |   16480 |  262144 |            0 |      1 |          1 |
+| 50109 | Ornate Defiant Leather Tunic         |         0 |  6324 |       26 |       40 |   16480 |  131072 |            0 |      1 |          1 |
+| 50110 | Ornate Defiant Cloth Wristwrap       |         0 |  3361 |       26 |       40 |   15360 |    1536 |            0 |      1 |          1 |
+| 50111 | Ornate Defiant Cloth Gloves          |         0 |  3734 |       26 |       40 |   15360 |    4096 |            0 |      1 |          1 |
+| 50112 | Ornate Defiant Cloth Sandals         |         0 |  4149 |       26 |       40 |   15360 |  524288 |            0 |      1 |          1 |
+| 50113 | Ornate Defiant Cloth Cap             |         0 |  4610 |       26 |       40 |   15360 |       4 |            0 |      1 |          1 |
+| 50114 | Ornate Defiant Cloth Sleeves         |         0 |  5122 |       26 |       40 |   15360 |     128 |            0 |      1 |          1 |
+| 50115 | Ornate Defiant Cloth Pantaloons      |         0 |  5691 |       26 |       40 |   15360 |  262144 |            0 |      1 |          1 |
+| 50116 | Ornate Defiant Cloth Robe            |         0 |  6324 |       26 |       40 |   15360 |  131072 |            0 |      1 |          1 |
+| 50117 | Flawed Defiant Plate Bracer          |         0 |  4487 |       37 |       50 |     151 |    1536 |            0 |      1 |          1 |
+| 50118 | Flawed Defiant Plate Gauntlets       |         0 |  4985 |       37 |       50 |     151 |    4096 |            0 |      1 |          1 |
+| 50119 | Flawed Defiant Plate Boots           |         0 |  5539 |       37 |       50 |     151 |  524288 |            0 |      1 |          1 |
+| 50120 | Flawed Defiant Plate Helm            |         0 |  6155 |       37 |       50 |     151 |       4 |            0 |      1 |          1 |
+| 50121 | Flawed Defiant Plate Vambraces       |         0 |  6839 |       37 |       50 |     151 |     128 |            0 |      1 |          1 |
+| 50122 | Flawed Defiant Plate Greaves         |         0 |  7599 |       37 |       50 |     151 |  262144 |            0 |      1 |          1 |
+| 50123 | Flawed Defiant Breastplate           |         0 |  8443 |       37 |       50 |     151 |  131072 |            0 |      1 |          1 |
+| 50124 | Flawed Defiant Chain Bracer          |         0 |  4487 |       37 |       50 |   33544 |    1536 |            0 |      1 |          1 |
+| 50125 | Flawed Defiant Chain Gauntlets       |         0 |  4985 |       37 |       50 |   33544 |    4096 |            0 |      1 |          1 |
+| 50126 | Flawed Defiant Chain Boots           |         0 |  5539 |       37 |       50 |   33544 |  524288 |            0 |      1 |          1 |
+| 50127 | Flawed Defiant Chain Coif            |         0 |  6155 |       37 |       50 |   33544 |       4 |            0 |      1 |          1 |
+| 50128 | Flawed Defiant Chain Sleeves         |         0 |  6839 |       37 |       50 |   33544 |     128 |            0 |      1 |          1 |
+| 50129 | Flawed Defiant Chain Leggings        |         0 |  7599 |       37 |       50 |   33544 |  262144 |            0 |      1 |          1 |
+| 50130 | Flawed Defiant Chain Tunic           |         0 |  8443 |       37 |       50 |   33544 |  131072 |            0 |      1 |          1 |
+| 50131 | Flawed Defiant Leather Bracer        |         0 |  4487 |       37 |       50 |   16480 |    1536 |            0 |      1 |          1 |
+| 50132 | Flawed Defiant Leather Gloves        |         0 |  4985 |       37 |       50 |   16480 |    4096 |            0 |      1 |          1 |
+| 50133 | Flawed Defiant Leather Boots         |         0 |  5539 |       37 |       50 |   16480 |  524288 |            0 |      1 |          1 |
+| 50134 | Flawed Defiant Leather Cap           |         0 |  6155 |       37 |       50 |   16480 |       4 |            0 |      1 |          1 |
+| 50135 | Flawed Defiant Leather Sleeves       |         0 |  6839 |       37 |       50 |   16480 |     128 |            0 |      1 |          1 |
+| 50136 | Flawed Defiant Leather Trousers      |         0 |  7599 |       37 |       50 |   16480 |  262144 |            0 |      1 |          1 |
+| 50137 | Flawed Defiant Leather Tunic         |         0 |  8443 |       37 |       50 |   16480 |  131072 |            0 |      1 |          1 |
+| 50138 | Flawed Defiant Silk Wristwrap        |         0 |  4487 |       37 |       50 |   15360 |    1536 |            0 |      1 |          1 |
+| 50139 | Flawed Defiant Silk Gloves           |         0 |  4985 |       37 |       50 |   15360 |    4096 |            0 |      1 |          1 |
+| 50140 | Flawed Defiant Silk Sandals          |         0 |  5539 |       37 |       50 |   15360 |  524288 |            0 |      1 |          1 |
+| 50141 | Flawed Defiant Silk Cap              |         0 |  6155 |       37 |       50 |   15360 |       4 |            0 |      1 |          1 |
+| 50142 | Flawed Defiant Silk Sleeves          |         0 |  6839 |       37 |       50 |   15360 |     128 |            0 |      1 |          1 |
+| 50143 | Flawed Defiant Silk Pantaloons       |         0 |  7599 |       37 |       50 |   15360 |  262144 |            0 |      1 |          1 |
+| 50144 | Flawed Defiant Silk Robe             |         0 |  8443 |       37 |       50 |   15360 |  131072 |            0 |      1 |          1 |
+| 50145 | Intricate Defiant Plate Bracer       |         0 |  5298 |       48 |       60 |     151 |    1536 |            0 |      1 |          1 |
+| 50146 | Intricate Defiant Plate Wristguard   |         0 |  5298 |       48 |       60 |     151 |    1536 |            0 |      1 |          1 |
+| 50147 | Intricate Defiant Plate Wristband    |         0 |  5298 |       48 |       60 |     151 |    1536 |            0 |      1 |          1 |
+| 50148 | Intricate Defiant Plate Gauntlets    |         0 |  5887 |       48 |       60 |     151 |    4096 |            0 |      1 |          1 |
+| 50149 | Intricate Defiant Plate Boots        |         0 |  6541 |       48 |       60 |     151 |  524288 |            0 |      1 |          1 |
+| 50150 | Intricate Defiant Plate Helm         |         0 |  7268 |       48 |       60 |     151 |       4 |            0 |      1 |          1 |
+| 50151 | Intricate Defiant Plate Vambraces    |         0 |  8075 |       48 |       60 |     151 |     128 |            0 |      1 |          1 |
+| 50152 | Intricate Defiant Plate Greaves      |         0 |  8973 |       48 |       60 |     151 |  262144 |            0 |      1 |          1 |
+| 50153 | Intricate Defiant Breastplate        |         0 |  9970 |       48 |       60 |     151 |  131072 |            0 |      1 |          1 |
+| 50154 | Intricate Defiant Chain Bracer       |         0 |  5298 |       48 |       60 |   33544 |    1536 |            0 |      1 |          1 |
+| 50155 | Intricate Defiant Chain Wristguard   |         0 |  5298 |       48 |       60 |   33544 |    1536 |            0 |      1 |          1 |
+| 50156 | Intricate Defiant Chain Gauntlets    |         0 |  5887 |       48 |       60 |   33544 |    4096 |            0 |      1 |          1 |
+| 50157 | Intricate Defiant Chain Boots        |         0 |  6541 |       48 |       60 |   33544 |  524288 |            0 |      1 |          1 |
+| 50158 | Intricate Defiant Chain Coif         |         0 |  7268 |       48 |       60 |   33544 |       4 |            0 |      1 |          1 |
+| 50159 | Intricate Defiant Chain Sleeves      |         0 |  8075 |       48 |       60 |   33544 |     128 |            0 |      1 |          1 |
+| 50160 | Intricate Defiant Chain Leggings     |         0 |  8973 |       48 |       60 |   33544 |  262144 |            0 |      1 |          1 |
+| 50161 | Intricate Defiant Chain Tunic        |         0 |  9970 |       48 |       60 |   33544 |  131072 |            0 |      1 |          1 |
+| 50162 | Intricate Defiant Leather Bracer     |         0 |  5298 |       48 |       60 |   16480 |    1536 |            0 |      1 |          1 |
+| 50163 | Intricate Defiant Leather Wristguard |         0 |  5298 |       48 |       60 |   16480 |    1536 |            0 |      1 |          1 |
+| 50164 | Intricate Defiant Leather Gloves     |         0 |  5887 |       48 |       60 |   16480 |    4096 |            0 |      1 |          1 |
+| 50165 | Intricate Defiant Leather Boots      |         0 |  6541 |       48 |       60 |   16480 |  524288 |            0 |      1 |          1 |
+| 50166 | Intricate Defiant Leather Cap        |         0 |  7268 |       48 |       60 |   16480 |       4 |            0 |      1 |          1 |
+| 50167 | Intricate Defiant Leather Sleeves    |         0 |  8075 |       48 |       60 |   16480 |     128 |            0 |      1 |          1 |
+| 50168 | Intricate Defiant Leather Trousers   |         0 |  8973 |       48 |       60 |   16480 |  262144 |            0 |      1 |          1 |
+| 50169 | Intricate Defiant Leather Tunic      |         0 |  9970 |       48 |       60 |   16480 |  131072 |            0 |      1 |          1 |
+| 50170 | Intricate Defiant Silk Wristguard    |         0 |  5298 |       48 |       60 |   15360 |    1536 |            0 |      1 |          1 |
+| 50171 | Intricate Defiant Silk Wristband     |         0 |  5298 |       48 |       60 |   15360 |    1536 |            0 |      1 |          1 |
+| 50172 | Intricate Defiant Silk Wristwrap     |         0 |  5298 |       48 |       60 |   15360 |    1536 |            0 |      1 |          1 |
+| 50173 | Intricate Defiant Silk Gloves        |         0 |  5887 |       48 |       60 |   15360 |    4096 |            0 |      1 |          1 |
+| 50174 | Intricate Defiant Silk Sandals       |         0 |  6541 |       48 |       60 |   15360 |  524288 |            0 |      1 |          1 |
+| 50175 | Intricate Defiant Silk Cap           |         0 |  7268 |       48 |       60 |   15360 |       4 |            0 |      1 |          1 |
+| 50176 | Intricate Defiant Silk Sleeves       |         0 |  8075 |       48 |       60 |   15360 |     128 |            0 |      1 |          1 |
+| 50177 | Intricate Defiant Silk Pantaloons    |         0 |  8973 |       48 |       60 |   15360 |  262144 |            0 |      1 |          1 |
+| 50178 | Intricate Defiant Silk Robe          |         0 |  9970 |       48 |       60 |   15360 |  131072 |            0 |      1 |          1 |
+| 50179 | Elaborate Defiant Plate Bracer       |         0 |  6257 |       59 |       70 |     151 |    1536 |            0 |      1 |          1 |
+| 50180 | Elaborate Defiant Plate Wristguard   |         0 |  6257 |       59 |       70 |     151 |    1536 |            0 |      1 |          1 |
+| 50181 | Elaborate Defiant Plate Wristband    |         0 |  6257 |       59 |       70 |     151 |    1536 |            0 |      1 |          1 |
+| 50182 | Elaborate Defiant Plate Gauntlets    |         0 |  6952 |       59 |       70 |     151 |    4096 |            0 |      1 |          1 |
+| 50183 | Elaborate Defiant Plate Boots        |         0 |  7725 |       59 |       70 |     151 |  524288 |            0 |      1 |          1 |
+| 50184 | Elaborate Defiant Plate Helm         |         0 |  8583 |       59 |       70 |     151 |       4 |            0 |      1 |          1 |
+| 50185 | Elaborate Defiant Plate Vambraces    |         0 |  9537 |       59 |       70 |     151 |     128 |            0 |      1 |          1 |
+| 50186 | Elaborate Defiant Plate Greaves      |         0 | 10597 |       59 |       70 |     151 |  262144 |            0 |      1 |          1 |
+| 50187 | Elaborate Defiant Breastplate        |         0 | 11774 |       59 |       70 |     151 |  131072 |            0 |      1 |          1 |
+| 50188 | Elaborate Defiant Chain Bracer       |         0 |  6257 |       59 |       70 |   33544 |    1536 |            0 |      1 |          1 |
+| 50189 | Elaborate Defiant Chain Wristguard   |         0 |  6257 |       59 |       70 |   33544 |    1536 |            0 |      1 |          1 |
+| 50190 | Elaborate Defiant Chain Gauntlets    |         0 |  6952 |       59 |       70 |   33544 |    4096 |            0 |      1 |          1 |
+| 50191 | Elaborate Defiant Chain Boots        |         0 |  7725 |       59 |       70 |   33544 |  524288 |            0 |      1 |          1 |
+| 50192 | Elaborate Defiant Chain Coif         |         0 |  8583 |       59 |       70 |   33544 |       4 |            0 |      1 |          1 |
+| 50193 | Elaborate Defiant Chain Sleeves      |         0 |  9537 |       59 |       70 |   33544 |     128 |            0 |      1 |          1 |
+| 50194 | Elaborate Defiant Chain Leggings     |         0 | 10597 |       59 |       70 |   33544 |  262144 |            0 |      1 |          1 |
+| 50195 | Elaborate Defiant Chain Tunic        |         0 | 11774 |       59 |       70 |   33544 |  131072 |            0 |      1 |          1 |
+| 50196 | Elaborate Defiant Leather Bracer     |         0 |  6257 |       59 |       70 |   16480 |    1536 |            0 |      1 |          1 |
+| 50197 | Elaborate Defiant Leather Wristguard |         0 |  6257 |       59 |       70 |   16480 |    1536 |            0 |      1 |          1 |
+| 50198 | Elaborate Defiant Leather Gloves     |         0 |  6952 |       59 |       70 |   16480 |    4096 |            0 |      1 |          1 |
+| 50199 | Elaborate Defiant Leather Boots      |         0 |  7725 |       59 |       70 |   16480 |  524288 |            0 |      1 |          1 |
+| 50200 | Elaborate Defiant Leather Cap        |         0 |  8583 |       59 |       70 |   16480 |       4 |            0 |      1 |          1 |
+| 50201 | Elaborate Defiant Leather Sleeves    |         0 |  9537 |       59 |       70 |   16480 |     128 |            0 |      1 |          1 |
+| 50202 | Elaborate Defiant Leather Trousers   |         0 | 10597 |       59 |       70 |   16480 |  262144 |            0 |      1 |          1 |
+| 50203 | Elaborate Defiant Leather Tunic      |         0 | 11774 |       59 |       70 |   16480 |  131072 |            0 |      1 |          1 |
+| 50204 | Elaborate Defiant Silk Wristguard    |         0 |  6257 |       59 |       70 |   15360 |    1536 |            0 |      1 |          1 |
+| 50205 | Elaborate Defiant Silk Wristband     |         0 |  6257 |       59 |       70 |   15360 |    1536 |            0 |      1 |          1 |
+| 50206 | Elaborate Defiant Silk Wristwrap     |         0 |  6257 |       59 |       70 |   15360 |    1536 |            0 |      1 |          1 |
+| 50207 | Elaborate Defiant Silk Gloves        |         0 |  6952 |       59 |       70 |   15360 |    4096 |            0 |      1 |          1 |
+| 50208 | Elaborate Defiant Silk Sandals       |         0 |  7725 |       59 |       70 |   15360 |  524288 |            0 |      1 |          1 |
+| 50209 | Elaborate Defiant Silk Cap           |         0 |  8583 |       59 |       70 |   15360 |       4 |            0 |      1 |          1 |
+| 50210 | Elaborate Defiant Silk Sleeves       |         0 |  9537 |       59 |       70 |   15360 |     128 |            0 |      1 |          1 |
+| 50211 | Elaborate Defiant Silk Pantaloons    |         0 | 10597 |       59 |       70 |   15360 |  262144 |            0 |      1 |          1 |
+| 50212 | Elaborate Defiant Silk Robe          |         0 | 11774 |       59 |       70 |   15360 |  131072 |            0 |      1 |          1 |
+| 50213 | Elegant Defiant Plate Bracer         |         0 |  7373 |       70 |       80 |     151 |    1536 |            0 |      1 |          1 |
+| 50214 | Elegant Defiant Plate Wristguard     |         0 |  7373 |       70 |       80 |     151 |    1536 |            0 |      1 |          1 |
+| 50215 | Elegant Defiant Plate Wristband      |         0 |  7373 |       70 |       80 |     151 |    1536 |            0 |      1 |          1 |
+| 50216 | Elegant Defiant Plate Gauntlets      |         0 |  8192 |       70 |       80 |     151 |    4096 |            0 |      1 |          1 |
+| 50217 | Elegant Defiant Plate Boots          |         0 |  9102 |       70 |       80 |     151 |  524288 |            0 |      1 |          1 |
+| 50218 | Elegant Defiant Plate Helm           |         0 | 10113 |       70 |       80 |     151 |       4 |            0 |      1 |          1 |
+| 50219 | Elegant Defiant Plate Vambraces      |         0 | 11237 |       70 |       80 |     151 |     128 |            0 |      1 |          1 |
+| 50220 | Elegant Defiant Plate Greaves        |         0 | 12486 |       70 |       80 |     151 |  262144 |            0 |      1 |          1 |
+| 50221 | Elegant Defiant Breastplate          |         0 | 13873 |       70 |       80 |     151 |  131072 |            0 |      1 |          1 |
+| 50222 | Elegant Defiant Chain Bracer         |         0 |  7373 |       70 |       80 |   33544 |    1536 |            0 |      1 |          1 |
+| 50223 | Elegant Defiant Chain Wristguard     |         0 |  7373 |       70 |       80 |   33544 |    1536 |            0 |      1 |          1 |
+| 50224 | Elegant Defiant Chain Gauntlets      |         0 |  8192 |       70 |       80 |   33544 |    4096 |            0 |      1 |          1 |
+| 50225 | Elegant Defiant Chain Boots          |         0 |  9102 |       70 |       80 |   33544 |  524288 |            0 |      1 |          1 |
+| 50226 | Elegant Defiant Chain Coif           |         0 | 10113 |       70 |       80 |   33544 |       4 |            0 |      1 |          1 |
+| 50227 | Elegant Defiant Chain Sleeves        |         0 | 11237 |       70 |       80 |   33544 |     128 |            0 |      1 |          1 |
+| 50228 | Elegant Defiant Chain Leggings       |         0 | 12486 |       70 |       80 |   33544 |  262144 |            0 |      1 |          1 |
+| 50229 | Elegant Defiant Chain Tunic          |         0 | 13873 |       70 |       80 |   33544 |  131072 |            0 |      1 |          1 |
+| 50230 | Elegant Defiant Leather Bracer       |         0 |  7373 |       70 |       80 |   16480 |    1536 |            0 |      1 |          1 |
+| 50231 | Elegant Defiant Leather Wristguard   |         0 |  7373 |       70 |       80 |   16480 |    1536 |            0 |      1 |          1 |
+| 50232 | Elegant Defiant Leather Gloves       |         0 |  8192 |       70 |       80 |   16480 |    4096 |            0 |      1 |          1 |
+| 50233 | Elegant Defiant Leather Boots        |         0 |  9102 |       70 |       80 |   16480 |  524288 |            0 |      1 |          1 |
+| 50234 | Elegant Defiant Leather Cap          |         0 | 10113 |       70 |       80 |   16480 |       4 |            0 |      1 |          1 |
+| 50235 | Elegant Defiant Leather Sleeves      |         0 | 11237 |       70 |       80 |   16480 |     128 |            0 |      1 |          1 |
+| 50236 | Elegant Defiant Leather Trousers     |         0 | 12486 |       70 |       80 |   16480 |  262144 |            0 |      1 |          1 |
+| 50237 | Elegant Defiant Leather Tunic        |         0 | 13873 |       70 |       80 |   16480 |  131072 |            0 |      1 |          1 |
+| 50238 | Elegant Defiant Silk Wristguard      |         0 |  7373 |       70 |       80 |   15360 |    1536 |            0 |      1 |          1 |
+| 50239 | Elegant Defiant Silk Wristband       |         0 |  7373 |       70 |       80 |   15360 |    1536 |            0 |      1 |          1 |
+| 50240 | Elegant Defiant Silk Wristwrap       |         0 |  7373 |       70 |       80 |   15360 |    1536 |            0 |      1 |          1 |
+| 50241 | Elegant Defiant Silk Gloves          |         0 |  8192 |       70 |       80 |   15360 |    4096 |            0 |      1 |          1 |
+| 50242 | Elegant Defiant Silk Sandals         |         0 |  9102 |       70 |       80 |   15360 |  524288 |            0 |      1 |          1 |
+| 50243 | Elegant Defiant Silk Cap             |         0 | 10113 |       70 |       80 |   15360 |       4 |            0 |      1 |          1 |
+| 50244 | Elegant Defiant Silk Sleeves         |         0 | 11237 |       70 |       80 |   15360 |     128 |            0 |      1 |          1 |
+| 50245 | Elegant Defiant Silk Pantaloons      |         0 | 12486 |       70 |       80 |   15360 |  262144 |            0 |      1 |          1 |
+| 50246 | Elegant Defiant Silk Robe            |         0 | 13873 |       70 |       80 |   15360 |  131072 |            0 |      1 |          1 |
+| 50500 | Crude Defiant Amethyst               |         0 |  1145 |        0 |       10 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50501 | Crude Defiant Emerald                |         0 |  1397 |        0 |       10 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50502 | Crude Defiant Ruby Shard             |         0 |  1661 |        0 |       10 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50503 | Crude Defiant Granite Pebble         |         0 |   898 |        0 |       10 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50504 | Crude Defiant Stone Fragment         |         0 |   900 |        0 |       10 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50505 | Crude Defiant Turquoise              |         0 |  1557 |        0 |       10 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50506 | Crude Defiant Mace                   |         0 |  1150 |        0 |       10 |   16861 |   24576 |            0 |      1 |          1 |
+| 50507 | Crude Defiant Club                   |         0 |  1040 |        0 |       10 |   15906 |    8192 |            0 |      1 |          1 |
+| 50508 | Crude Defiant Shortsword             |         0 |  1171 |        0 |       10 |     413 |   24576 |            0 |      1 |          1 |
+| 50509 | Crude Defiant Axe                    |         0 |  1474 |        0 |       10 |     413 |   24576 |            0 |      1 |          1 |
+| 50510 | Crude Defiant Dagger                 |         0 |  1613 |        0 |       10 |   16793 |   24576 |            0 |      1 |          1 |
+| 50511 | Crude Defiant Spear                  |         0 |  1541 |        0 |       10 |   15872 |    8192 |            0 |      1 |          1 |
+| 50512 | Crude Defiant Fists                  |         0 |  1206 |        0 |       10 |   16448 |   24576 |            0 |      1 |          1 |
+| 50513 | Crude Defiant Quarterstaff           |         0 |   993 |        0 |       10 |   49245 |    8192 |            0 |      1 |          1 |
+| 50514 | Crude Defiant Greatspear             |         0 |  1103 |        0 |       10 |   32797 |    8192 |            0 |      1 |          1 |
+| 50515 | Crude Defiant Greatsword             |         0 |  1582 |        0 |       10 |   32797 |    8192 |            0 |      1 |          1 |
+| 50516 | Crude Defiant Bow                    |         0 |  1182 |        0 |       10 |     285 |    2048 |            0 |      1 |          1 |
+| 50517 | Crude Defiant Spiked Shield          |         0 |  1061 |        0 |       10 |   16861 |   16384 |            0 |      1 |          1 |
+| 50518 | Crude Defiant Buckler                |         0 |   731 |        0 |       10 |   15906 |   16384 |            0 |      1 |          1 |
+| 50519 | Simple Defiant Alexandrite Shard     |         0 |  1439 |        5 |       20 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50520 | Simple Defiant Bluestone             |         0 |  2500 |        5 |       20 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50521 | Simple Defiant Jasper                |         0 |  2466 |        5 |       20 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50522 | Simple Defiant Garnet                |         0 |  1686 |        5 |       20 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50523 | Simple Defiant Hammer                |         0 |  2384 |        5 |       20 |   16861 |   24576 |            0 |      1 |          1 |
+| 50524 | Simple Defiant Wand                  |         0 |  1550 |        5 |       20 |   15906 |    8192 |            0 |      1 |          1 |
+| 50525 | Simple Defiant Shortsword            |         0 |  1189 |        5 |       20 |     413 |   24576 |            0 |      1 |          1 |
+| 50526 | Simple Defiant Bastard Sword         |         0 |  1177 |        5 |       20 |     413 |   24576 |            0 |      1 |          1 |
+| 50527 | Simple Defiant Claw-dagger           |         0 |  2226 |        5 |       20 |   16793 |   24576 |            0 |      1 |          1 |
+| 50528 | Simple Defiant Dagger                |         0 |  2006 |        5 |       20 |   15872 |    8192 |            0 |      1 |          1 |
+| 50529 | Simple Defiant Ulak                  |         0 |  2285 |        5 |       20 |   16448 |   24576 |            0 |      1 |          1 |
+| 50530 | Simple Defiant Twisted Staff         |         0 |  1686 |        5 |       20 |   49245 |    8192 |            0 |      1 |          1 |
+| 50531 | Simple Defiant Spear                 |         0 |  1643 |        5 |       20 |   32797 |    8192 |            0 |      1 |          1 |
+| 50532 | Simple Defiant Greataxe              |         0 |  1913 |        5 |       20 |   32797 |    8192 |            0 |      1 |          1 |
+| 50533 | Simple Defiant Bow                   |         0 |  1362 |        5 |       20 |     285 |    2048 |            0 |      1 |          1 |
+| 50534 | Simple Defiant Kite Shield           |         0 |  1197 |        5 |       20 |   16861 |   16384 |            0 |      1 |          1 |
+| 50535 | Simple Defiant Wooden Shield         |         0 |  1314 |        5 |       20 |   15906 |   16384 |            0 |      1 |          1 |
+| 50536 | Rough Defiant Nihilite Shard         |         0 |  1932 |       15 |       30 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50537 | Rough Defiant Trillion Amethyst      |         0 |  1469 |       15 |       30 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50540 | Rough Defiant Hammer                 |         0 |  2364 |       15 |       30 |   16861 |   24576 |            0 |      1 |          1 |
+| 50541 | Rough Defiant Scepter                |         0 |  2908 |       15 |       30 |   15906 |    8192 |            0 |      1 |          1 |
+| 50542 | Rough Defiant Shortsword             |         0 |  1632 |       15 |       30 |     413 |   24576 |            0 |      1 |          1 |
+| 50543 | Rough Defiant Longsword              |         0 |  3219 |       15 |       30 |     413 |   24576 |            0 |      1 |          1 |
+| 50544 | Rough Defiant Stone Dagger           |         0 |  3245 |       15 |       30 |   16793 |   24576 |            0 |      1 |          1 |
+| 50545 | Rough Defiant Serrated Dagger        |         0 |  1997 |       15 |       30 |   15872 |    8192 |            0 |      1 |          1 |
+| 50546 | Rough Defiant Knuckle Dusters        |         0 |  1518 |       15 |       30 |   16448 |   24576 |            0 |      1 |          1 |
+| 50547 | Rough Defiant Spiked Staff           |         0 |  1907 |       15 |       30 |   49245 |    8192 |            0 |      1 |          1 |
+| 50548 | Rough Defiant Trident                |         0 |  2156 |       15 |       30 |   32797 |    8192 |            0 |      1 |          1 |
+| 50549 | Rough Defiant Halberd                |         0 |  2045 |       15 |       30 |   32797 |    8192 |            0 |      1 |          1 |
+| 50550 | Rough Defiant Bow                    |         0 |  2616 |       15 |       30 |     285 |    2048 |            0 |      1 |          1 |
+| 50551 | Rough Defiant Chitin Shield          |         0 |  2507 |       15 |       30 |   16861 |   16384 |            0 |      1 |          1 |
+| 50552 | Rough Defiant Round Shield           |         0 |  2205 |       15 |       30 |   15906 |   16384 |            0 |      1 |          1 |
+| 50553 | Rough Defiant Charm                  |         0 |  2454 |       15 |       30 |   65535 |       1 |            0 |      1 |          1 |
+| 50554 | Ornate Defiant Harmonagate           |         0 |  2114 |       26 |       40 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50555 | Ornate Defiant Geode                 |         0 |  3477 |       26 |       40 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50556 | Ornate Defiant Bone Sledgehammer     |         0 |  2624 |       26 |       40 |   16861 |   24576 |            0 |      1 |          1 |
+| 50557 | Ornate Defiant Scepter               |         0 |  3160 |       26 |       40 |   15906 |    8192 |            0 |      1 |          1 |
+| 50558 | Ornate Defiant Longsword             |         0 |  3350 |       26 |       40 |     413 |   24576 |            0 |      1 |          1 |
+| 50559 | Ornate Defiant Gladius               |         0 |  3667 |       26 |       40 |     413 |   24576 |            0 |      1 |          1 |
+| 50560 | Ornate Defiant Rapier                |         0 |  3267 |       26 |       40 |   16793 |   24576 |            0 |      1 |          1 |
+| 50561 | Ornate Defiant Dagger                |         0 |  4175 |       26 |       40 |   15872 |    8192 |            0 |      1 |          1 |
+| 50562 | Ornate Defiant Orb                   |         0 |  1970 |       26 |       40 |   16448 |   24576 |            0 |      1 |          1 |
+| 50563 | Ornate Defiant Skullstaff            |         0 |  3974 |       26 |       40 |   49245 |    8192 |            0 |      1 |          1 |
+| 50564 | Ornate Defiant Harpoon               |         0 |  3353 |       26 |       40 |   32797 |    8192 |            0 |      1 |          1 |
+| 50565 | Ornate Defiant Scythe                |         0 |  3846 |       26 |       40 |   32797 |    8192 |            0 |      1 |          1 |
+| 50566 | Ornate Defiant Bow                   |         0 |  3947 |       26 |       40 |     285 |    2048 |            0 |      1 |          1 |
+| 50567 | Ornate Defiant Skullshield           |         0 |  3505 |       26 |       40 |   16861 |   16384 |            0 |      1 |          1 |
+| 50568 | Ornate Defiant Glowing Shield        |         0 |  2395 |       26 |       40 |   15906 |   16384 |            0 |      1 |          1 |
+| 50569 | Ornate Defiant Charm                 |         0 |  2475 |       26 |       40 |   65535 |       1 |            0 |      1 |          1 |
+| 50570 | Flawed Defiant Quartz                |         0 |  3379 |       37 |       50 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50571 | Flawed Defiant Amberstone            |         0 |  2113 |       37 |       50 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50572 | Flawed Defiant Brawl Stick           |         0 |  2694 |       37 |       50 |   16861 |   24576 |            0 |      1 |          1 |
+| 50573 | Flawed Defiant Mace                  |         0 |  4069 |       37 |       50 |   15906 |    8192 |            0 |      1 |          1 |
+| 50574 | Flawed Defiant Longsword             |         0 |  2574 |       37 |       50 |     413 |   24576 |            0 |      1 |          1 |
+| 50575 | Flawed Defiant Shortsword            |         0 |  3075 |       37 |       50 |     413 |   24576 |            0 |      1 |          1 |
+| 50576 | Flawed Defiant Glass Shard           |         0 |  4821 |       37 |       50 |   16793 |   24576 |            0 |      1 |          1 |
+| 50577 | Flawed Defiant Dagger                |         0 |  2105 |       37 |       50 |   15872 |    8192 |            0 |      1 |          1 |
+| 50578 | Flawed Defiant Orb                   |         0 |  4669 |       37 |       50 |   16448 |   24576 |            0 |      1 |          1 |
+| 50579 | Flawed Defiant Quarterstaff          |         0 |  3947 |       37 |       50 |   49245 |    8192 |            0 |      1 |          1 |
+| 50580 | Flawed Defiant Lance                 |         0 |  2190 |       37 |       50 |   32797 |    8192 |            0 |      1 |          1 |
+| 50581 | Flawed Defiant Emeraldblade          |         0 |  3035 |       37 |       50 |   32797 |    8192 |            0 |      1 |          1 |
+| 50582 | Flawed Defiant Longbow               |         0 |  3021 |       37 |       50 |     285 |    2048 |            0 |      1 |          1 |
+| 50583 | Flawed Defiant Scale Shield          |         0 |  4201 |       37 |       50 |   16861 |   16384 |            0 |      1 |          1 |
+| 50584 | Flawed Defiant Carapace              |         0 |  3470 |       37 |       50 |   15906 |   16384 |            0 |      1 |          1 |
+| 50585 | Flawed Defiant Charm                 |         0 |  2320 |       37 |       50 |   65535 |       1 |            0 |      1 |          1 |
+| 50586 | Intricate Defiant Spotstone          |         0 |  5054 |       48 |       60 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50587 | Intricate Defiant Crystal Shard      |         0 |  5470 |       48 |       60 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50588 | Intricate Defiant Hammer             |         0 |  5106 |       48 |       60 |   16861 |   24576 |            0 |      1 |          1 |
+| 50589 | Intricate Defiant Mace               |         0 |  2515 |       48 |       60 |   15906 |    8192 |            0 |      1 |          1 |
+| 50590 | Intricate Defiant Katana             |         0 |  5369 |       48 |       60 |     413 |   24576 |            0 |      1 |          1 |
+| 50591 | Intricate Defiant Scimitar           |         0 |  5483 |       48 |       60 |     413 |   24576 |            0 |      1 |          1 |
+| 50592 | Intricate Defiant Sacrificial Dagger |         0 |  2574 |       48 |       60 |   16793 |   24576 |            0 |      1 |          1 |
+| 50593 | Intricate Defiant Partisan Spear     |         0 |  4402 |       48 |       60 |   15872 |    8192 |            0 |      1 |          1 |
+| 50594 | Intricate Defiant Handwraps          |         0 |  3557 |       48 |       60 |   16448 |   24576 |            0 |      1 |          1 |
+| 50595 | Intricate Defiant Spiked Warhammer   |         0 |  4951 |       48 |       60 |   49245 |    8192 |            0 |      1 |          1 |
+| 50596 | Intricate Defiant Trident            |         0 |  2489 |       48 |       60 |   32797 |    8192 |            0 |      1 |          1 |
+| 50597 | Intricate Defiant Greatsword         |         0 |  2964 |       48 |       60 |   32797 |    8192 |            0 |      1 |          1 |
+| 50598 | Intricate Defiant Bow                |         0 |  4547 |       48 |       60 |     285 |    2048 |            0 |      1 |          1 |
+| 50599 | Intricate Defiant Hammered Buckler   |         0 |  3331 |       48 |       60 |   16861 |   16384 |            0 |      1 |          1 |
+| 50600 | Intricate Defiant Targ Shield        |         0 |  3447 |       48 |       60 |   15906 |   16384 |            0 |      1 |          1 |
+| 50601 | Intricate Defiant Charm              |         0 |  3516 |       48 |       60 |   65535 |       1 |            0 |      1 |          1 |
+| 50602 | Elaborate Defiant Fire Bauble        |         0 |  4539 |       59 |       70 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50603 | Elaborate Defiant Coldstone          |         0 |  3386 |       59 |       70 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50604 | Elaborate Defiant Spikemaul          |         0 |  6001 |       59 |       70 |   16861 |   24576 |            0 |      1 |          1 |
+| 50605 | Elaborate Defiant Dragonrod          |         0 |  3404 |       59 |       70 |   15906 |    8192 |            0 |      1 |          1 |
+| 50606 | Elaborate Defiant Kama               |         0 |  3440 |       59 |       70 |     413 |   24576 |            0 |      1 |          1 |
+| 50607 | Elaborate Defiant Cutlass            |         0 |  5186 |       59 |       70 |     413 |   24576 |            0 |      1 |          1 |
+| 50608 | Elaborate Defiant Rapier             |         0 |  2774 |       59 |       70 |   16793 |   24576 |            0 |      1 |          1 |
+| 50609 | Elaborate Defiant Flint Spear        |         0 |  6427 |       59 |       70 |   15872 |    8192 |            0 |      1 |          1 |
+| 50610 | Elaborate Defiant Quickclaw          |         0 |  5198 |       59 |       70 |   16448 |   24576 |            0 |      1 |          1 |
+| 50611 | Elaborate Defiant Minotaur Staff     |         0 |  4164 |       59 |       70 |   49245 |    8192 |            0 |      1 |          1 |
+| 50612 | Elaborate Defiant Poleaxe            |         0 |  4324 |       59 |       70 |   32797 |    8192 |            0 |      1 |          1 |
+| 50613 | Elaborate Defiant Claymore           |         0 |  5923 |       59 |       70 |   32797 |    8192 |            0 |      1 |          1 |
+| 50614 | Elaborate Defiant Recurve Bow        |         0 |  6042 |       59 |       70 |     285 |    2048 |            0 |      1 |          1 |
+| 50615 | Elaborate Defiant Aegis              |         0 |  3230 |       59 |       70 |   16861 |   16384 |            0 |      1 |          1 |
+| 50616 | Elaborate Defiant Heater             |         0 |  6020 |       59 |       70 |   15906 |   16384 |            0 |      1 |          1 |
+| 50617 | Elegant Defiant Goshenite            |         0 |  3520 |       70 |       80 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50618 | Elegant Defiant Nightstone           |         0 |  3681 |       70 |       80 |   65535 | 2070526 |            0 |      1 |          1 |
+| 50619 | Elegant Defiant Square Hammer        |         0 |  5906 |       70 |       80 |   16861 |   24576 |            0 |      1 |          1 |
+| 50620 | Elegant Defiant Sceptre              |         0 |  5076 |       70 |       80 |   15906 |    8192 |            0 |      1 |          1 |
+| 50621 | Elegant Defiant Shortsword           |         0 |  3954 |       70 |       80 |     413 |   24576 |            0 |      1 |          1 |
+| 50622 | Elegant Defiant Fireborn Axe         |         0 |  5516 |       70 |       80 |     413 |   24576 |            0 |      1 |          1 |
+| 50623 | Elegant Defiant Nightblade           |         0 |  4286 |       70 |       80 |   16793 |   24576 |            0 |      1 |          1 |
+| 50624 | Elegant Defiant Dayblade             |         0 |  4762 |       70 |       80 |   15872 |    8192 |            0 |      1 |          1 |
+| 50625 | Elegant Defiant Knuckle Guards       |         0 |  3131 |       70 |       80 |   16448 |   24576 |            0 |      1 |          1 |
+| 50626 | Elegant Defiant Warhammer            |         0 |  3378 |       70 |       80 |   49245 |    8192 |            0 |      1 |          1 |
+| 50627 | Elegant Defiant Forked Spear         |         0 |  6330 |       70 |       80 |   32797 |    8192 |            0 |      1 |          1 |
+| 50628 | Elegant Defiant Battleaxe            |         0 |  5696 |       70 |       80 |   32797 |    8192 |            0 |      1 |          1 |
+| 50629 | Elegant Defiant Bow                  |         0 |  7191 |       70 |       80 |     285 |    2048 |            0 |      1 |          1 |
+| 50630 | Elegant Defiant Round Shield         |         0 |  4137 |       70 |       80 |   16861 |   16384 |            0 |      1 |          1 |
+| 50631 | Elegant Defiant Buckler              |         0 |  5126 |       70 |       80 |   15906 |   16384 |            0 |      1 |          1 |
+| 60500 | Flawed Defiant Plate Bracer          |         0 |  4487 |       50 |        0 |     151 |    1536 |            0 |      0 |          0 |
+| 60501 | Flawed Defiant Plate Gauntlets       |         0 |  4985 |       50 |        0 |     151 |    4096 |            0 |      0 |          0 |
+| 60502 | Flawed Defiant Plate Boots           |         0 |  5539 |       50 |        0 |     151 |  524288 |            0 |      0 |          0 |
+| 60503 | Flawed Defiant Plate Helm            |         0 |  6155 |       50 |        0 |     151 |       4 |            0 |      0 |          0 |
+| 60504 | Flawed Defiant Plate Vambraces       |         0 |  6839 |       50 |        0 |     151 |     128 |            0 |      0 |          0 |
+| 60505 | Flawed Defiant Plate Greaves         |         0 |  7599 |       50 |        0 |     151 |  262144 |            0 |      0 |          0 |
+| 60506 | Flawed Defiant Breastplate           |         0 |  8443 |       50 |        0 |     151 |  131072 |            0 |      0 |          0 |
+| 60507 | Flawed Defiant Chain Bracer          |         0 |  4487 |       50 |        0 |   33544 |    1536 |            0 |      0 |          0 |
+| 60508 | Flawed Defiant Chain Gauntlets       |         0 |  4985 |       50 |        0 |   33544 |    4096 |            0 |      0 |          0 |
+| 60509 | Flawed Defiant Chain Boots           |         0 |  5539 |       50 |        0 |   33544 |  524288 |            0 |      0 |          0 |
+| 60510 | Flawed Defiant Chain Coif            |         0 |  6155 |       50 |        0 |   33544 |       4 |            0 |      0 |          0 |
+| 60511 | Flawed Defiant Chain Sleeves         |         0 |  6839 |       50 |        0 |   33544 |     128 |            0 |      0 |          0 |
+| 60512 | Flawed Defiant Chain Leggings        |         0 |  7599 |       50 |        0 |   33544 |  262144 |            0 |      0 |          0 |
+| 60513 | Flawed Defiant Chain Tunic           |         0 |  8443 |       50 |        0 |   33544 |  131072 |            0 |      0 |          0 |
+| 60514 | Flawed Defiant Leather Bracer        |         0 |  4487 |       50 |        0 |   16480 |    1536 |            0 |      0 |          0 |
+| 60515 | Flawed Defiant Leather Gloves        |         0 |  4985 |       50 |        0 |   16480 |    4096 |            0 |      0 |          0 |
+| 60516 | Flawed Defiant Leather Boots         |         0 |  5539 |       50 |        0 |   16480 |  524288 |            0 |      0 |          0 |
+| 60517 | Flawed Defiant Leather Cap           |         0 |  6155 |       50 |        0 |   16480 |       4 |            0 |      0 |          0 |
+| 60518 | Flawed Defiant Leather Sleeves       |         0 |  6839 |       50 |        0 |   16480 |     128 |            0 |      0 |          0 |
+| 60519 | Flawed Defiant Leather Trousers      |         0 |  7599 |       50 |        0 |   16480 |  262144 |            0 |      0 |          0 |
+| 60520 | Flawed Defiant Leather Tunic         |         0 |  8443 |       50 |        0 |   16480 |  131072 |            0 |      0 |          0 |
+| 60521 | Flawed Defiant Silk Wristwrap        |         0 |  4487 |       50 |        0 |   15360 |    1536 |            0 |      0 |          0 |
+| 60522 | Flawed Defiant Silk Gloves           |         0 |  4985 |       50 |        0 |   15360 |    4096 |            0 |      0 |          0 |
+| 60523 | Flawed Defiant Silk Sandals          |         0 |  5539 |       50 |        0 |   15360 |  524288 |            0 |      0 |          0 |
+| 60524 | Flawed Defiant Silk Cap              |         0 |  6155 |       50 |        0 |   15360 |       4 |            0 |      0 |          0 |
+| 60525 | Flawed Defiant Silk Sleeves          |         0 |  6839 |       50 |        0 |   15360 |     128 |            0 |      0 |          0 |
+| 60526 | Flawed Defiant Silk Pantaloons       |         0 |  7599 |       50 |        0 |   15360 |  262144 |            0 |      0 |          0 |
+| 60527 | Flawed Defiant Silk Robe             |         0 |  8443 |       50 |        0 |   15360 |  131072 |            0 |      0 |          0 |
+| 60548 | Flawed Defiant Brawl Stick           |         0 |  2694 |       50 |        0 |   16861 |   24576 |            0 |      0 |          0 |
+| 60549 | Flawed Defiant Mace                  |         0 |  4069 |       50 |        0 |   15906 |    8192 |            0 |      0 |          0 |
+| 60550 | Flawed Defiant Longsword             |         0 |  2574 |       50 |        0 |     413 |   24576 |            0 |      0 |          0 |
+| 60551 | Flawed Defiant Shortsword            |         0 |  3075 |       50 |        0 |     413 |   24576 |            0 |      0 |          0 |
+| 60552 | Flawed Defiant Glass Shard           |         0 |  4821 |       50 |        0 |   16793 |   24576 |            0 |      0 |          0 |
+| 60553 | Flawed Defiant Dagger                |         0 |  2105 |       50 |        0 |   15872 |    8192 |            0 |      0 |          0 |
+| 60554 | Flawed Defiant Orb                   |         0 |  4669 |       50 |        0 |   16448 |   24576 |            0 |      0 |          0 |
+| 60555 | Flawed Defiant Quarterstaff          |         0 |  3947 |       50 |        0 |   49245 |    8192 |            0 |      0 |          0 |
+| 60556 | Flawed Defiant Lance                 |         0 |  2190 |       50 |        0 |   32797 |    8192 |            0 |      0 |          0 |
+| 60557 | Flawed Defiant Emeraldblade          |         0 |  3035 |       50 |        0 |   32797 |    8192 |            0 |      0 |          0 |
+| 60558 | Flawed Defiant Longbow               |         0 |  3021 |       50 |        0 |     285 |    2048 |            0 |      0 |          0 |
+| 60559 | Flawed Defiant Scale Shield          |         0 |  4201 |       50 |        0 |   16861 |   16384 |            0 |      0 |          0 |
+| 60560 | Flawed Defiant Carapace              |         0 |  3470 |       50 |        0 |   15906 |   16384 |            0 |      0 |          0 |
+| 60561 | Flawed Defiant Charm                 |         0 |  2320 |       50 |        0 |   65535 |       1 |            0 |      0 |          0 |
+| 71709 | Mask of Defiant Rage                 |         0 |     0 |       50 |        0 |   65535 |       8 |            0 |      1 |          1 |
++-------+--------------------------------------+-----------+-------+----------+----------+---------+---------+--------------+--------+------------+
++--------------------+
+| defiant_item_count |
++--------------------+
+|                417 |
++--------------------+
++------------+----------------------+-----------------------+-------------------+-------------------+
+| merchantid | merchant_npc_name    | expansion_gated_items | min_min_expansion | max_max_expansion |
++------------+----------------------+-----------------------+-------------------+-------------------+
+|     202178 | Channeler_Lariland   |                    61 |                18 |                -1 |
+|     202288 | Kurlond_Axebringer   |                    44 |                 7 |                -1 |
+|     202218 | Wanderer_Qenda       |                    42 |                18 |                -1 |
+|      61059 | Merchant_Tissan      |                    41 |                70 |                -1 |
+|      60037 | Hindaek_Stormhammer  |                    40 |                12 |                -1 |
+|      60078 | Kalameky_Darkfoam    |                    40 |                12 |                -1 |
+|      61033 | Tanalin_Silverkale   |                    39 |                70 |                -1 |
+|      61044 | Merchant_Tyslin      |                    38 |                 8 |                -1 |
+|      62026 | Merchant_Tyslin      |                    38 |                 8 |                -1 |
+|      61043 | Merchant_Silspin     |                    37 |                11 |                -1 |
+|     202208 | Elementalist_Kaeob   |                    35 |                18 |                -1 |
+|     202174 | Channeler_Olaemos    |                    33 |                18 |                -1 |
+|     202204 | Elementalist_Somat   |                    32 |                18 |                -1 |
+|     202203 | Heretic_Elirev       |                    30 |                18 |                -1 |
+|     202213 | Illusionist_Sevat    |                    29 |                18 |                -1 |
+|     202199 | Heretic_Drahur       |                    23 |                18 |                -1 |
+|     408162 | Palik_Agrolm         |                    23 |                 1 |                -1 |
+|     202158 | Beorobin_Amondson    |                    21 |                 6 |                -1 |
+|     202183 | Mystic_Goharkor      |                    21 |                18 |                -1 |
+|     202156 | Blane_Darkblade      |                    19 |                 6 |                -1 |
+|     202310 | Heldin_Swordbreaker  |                    19 |                 7 |                -1 |
+|     202470 | Wanderer_Qendaa      |                    19 |                18 |                -1 |
+|      22116 | Palik_Agrolm         |                    18 |                 1 |                -1 |
+|     202216 | Wanderer_Kedrisan    |                    18 |                13 |                -1 |
+|      22115 | Tallik_Jaggedfire    |                    17 |                 1 |                -1 |
+|     202223 | Vicar_Thiran         |                    17 |                18 |                -1 |
+|     408163 | Tallik_Jaggedfire    |                    17 |                 1 |                -1 |
+|     202209 | Illusionist_Jerup    |                    16 |                18 |                -1 |
+|     202461 | Channeler_Larilanda  |                    16 |                18 |                -1 |
+|     202187 | Reaver_Thirlan       |                    15 |                18 |                -1 |
+|     202217 | Wanderer_Frardok     |                    15 |                12 |                -1 |
+|      61048 | Opal_Leganyn         |                    12 |                70 |                -1 |
+|     202188 | Reaver_Uledrith      |                    12 |                18 |                -1 |
+|     202232 | Minstrel_Gwiar       |                    12 |                18 |                -1 |
+|     202214 | Wanderer_Astobin     |                    11 |                18 |                -1 |
+|     202219 | Vicar_Ceraen         |                    11 |                18 |                -1 |
+|     202468 | Illusionist_Sevata   |                    11 |                18 |                -1 |
+|     202177 | Channeler_Cerakoth   |                     9 |                11 |                -1 |
+|     202197 | Cavalier_Preradus    |                     9 |                18 |                -1 |
+|     202176 | Channeler_Alyrianne  |                     8 |                13 |                -1 |
+|     202179 | Mystic_Abomin        |                     8 |                18 |                -1 |
+|     202233 | Minstrel_Joet        |                     8 |                18 |                -1 |
+|     202460 | Channeler_Olaemsa    |                     8 |                18 |                -1 |
+|      60069 | Baldoleky_Rockfinder |                     7 |                 1 |                -1 |
+|     345004 | Zeflmin_Werlikanin   |                     7 |                10 |                -1 |
+|      62009 | Stormy               |                     6 |                 9 |                -1 |
+|      62028 | Merchant_Yisasan     |                     6 |                 3 |                -1 |
+|     202198 | Cavalier_Aodus       |                     6 |                18 |                -1 |
+|     202228 | Primalist_Worenon    |                     6 |                18 |                -1 |
+|     202193 | Pathfinder_Vaered    |                     5 |                18 |                -1 |
+|     202227 | Primalist_Nydalith   |                     5 |                18 |                -1 |
+|      60075 | Hanamaf_Darkfoam     |                     4 |                 6 |                -1 |
+|     202161 | Ulin_Velnik          |                     4 |                16 |                -1 |
+|     202192 | Pathfinder_Thoajin   |                     4 |                18 |                -1 |
+|     202229 | Minstrel_Eoweril     |                     4 |                18 |                -1 |
+|     202308 | Zhao_V`karin         |                     4 |                15 |                -1 |
+|     202465 | Elementalist_Somata  |                     4 |                18 |                -1 |
+|     202467 | Illusionist_Jerupa   |                     4 |                18 |                -1 |
+|     202471 | Vicar_Thirana        |                     4 |                18 |                -1 |
+|     202181 | Mystic_Pikor         |                     3 |                13 |                -1 |
+|     202186 | Reaver_Muron         |                     3 |                13 |                -1 |
+|     202191 | Pathfinder_Naend     |                     3 |                13 |                -1 |
+|     202201 | Heretic_Ceikon       |                     3 |                13 |                -1 |
+|     202206 | Elementalist_Siewth  |                     3 |                13 |                -1 |
+|     202211 | Illusionist_Acored   |                     3 |                13 |                -1 |
+|     202221 | Vicar_Diarin         |                     3 |                13 |                -1 |
+|     202226 | Primalist_Loerith    |                     3 |                13 |                -1 |
+|     202231 | Minstrel_Silnon      |                     3 |                13 |                -1 |
+|     395068 | Gray_Peacebloom      |                     3 |                12 |                -1 |
+|     395125 | Kulvinia_Brightflame |                     3 |                12 |                -1 |
+|      62013 | Elle_Leafdancer      |                     2 |                99 |                -1 |
+|     202155 | Tana_Clawguard       |                     2 |                18 |                -1 |
+|     202159 | Mystic_Abomin        |                     2 |                 9 |                17 |
+|     202184 | Reaver_Nydlil        |                     2 |                18 |                -1 |
+|     202194 | Cavalier_Waut        |                     2 |                18 |                -1 |
+|     202464 | Heretic_Drahura      |                     2 |                18 |                -1 |
+|      60000 | Gretta_Mottle        |                     1 |                 8 |                -1 |
+|      60019 | Vacto_Molunel        |                     1 |                 9 |                -1 |
+|      60035 | Aarina_Ratsbone      |                     1 |                 5 |                -1 |
+|      60070 | Aarina_Ratsbone      |                     1 |                 5 |                -1 |
+|      61015 | Seria_Woodwind       |                     1 |                99 |                -1 |
+|      61019 | Allia_Moondancer     |                     1 |                 9 |                -1 |
+|      61045 | Merchant_Issynal     |                     1 |                 5 |                -1 |
+|      62014 | Griff_Candleflame    |                     1 |                99 |                -1 |
+|     202157 | Larquin_Julinok      |                     1 |                18 |                -1 |
+|     202189 | Pathfinder_Viliken   |                     1 |                18 |                -1 |
+|     202224 | Primalist_Saosith    |                     1 |                18 |                -1 |
+|     202289 | Gaddi_Buruca         |                     1 |                18 |                -1 |
+|     202309 | Keshyk_Wardorn       |                     1 |                18 |                -1 |
+|     202320 | Wanderer_Astobin     |                     1 |                15 |                17 |
+|     202334 | Wanderer_Kedrisan    |                     1 |                 8 |                17 |
+|     202343 | Vicar_Ceraen         |                     1 |                 9 |                99 |
+|     202463 | Mystic_Goharkora     |                     1 |                18 |                -1 |
+|     202499 | Channeler_Keatrem    |                     1 |                 8 |                17 |
++------------+----------------------+-----------------------+-------------------+-------------------+
++------------+----------------------+------+---------+----------------------------------------------------+---------------+---------------+----------------+------------------+
+| merchantid | merchant_npc_name    | slot | item    | item_name                                          | min_expansion | max_expansion | level_required | classes_required |
++------------+----------------------+------+---------+----------------------------------------------------+---------------+---------------+----------------+------------------+
+|      22115 | Tallik_Jaggedfire    |    1 |   59542 | Spell: Mass Imbue Amber                            |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    2 |   59543 | Spell: Mass Imbue Black Pearl                      |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    3 |   59544 | Spell: Mass Imbue Black Sapphire                   |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    4 |   59545 | Spell: Mass Imbue Diamond                          |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    5 |   59546 | Spell: Mass Imbue Emerald                          |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    6 |   59547 | Spell: Mass Imbue Fire Opal                        |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    7 |   59548 | Spell: Mass Imbue Ivory                            |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    8 |   59549 | Spell: Mass Imbue Jade                             |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |    9 |   59550 | Spell: Mass Imbue Opal                             |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   10 |   59551 | Spell: Mass Imbue Peridot                          |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   11 |   59552 | Spell: Mass Imbue Plains Pebble                    |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   12 |   59553 | Spell: Mass Imbue Rose Quartz                      |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   13 |   59554 | Spell: Mass Imbue Ruby                             |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   14 |   59555 | Spell: Mass Imbue Sapphire                         |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   15 |   59556 | Spell: Mass Imbue Topaz                            |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   16 |   59557 | Spell: Mass Purify Mana                            |             1 |            -1 |              0 |            65535 |
+|      22115 | Tallik_Jaggedfire    |   17 |   59558 | Spell: Mass Thicken Mana                           |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    1 |   59529 | Spell: Mass Clarify Mana                           |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    2 |   59530 | Spell: Mass Crystallize Mana                       |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    3 |   59531 | Spell: Mass Distill Mana                           |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    4 |   59532 | Spell: Mass Enchant Adamantite                     |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    5 |   59533 | Spell: Mass Enchant Brellium                       |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    6 |   59534 | Spell: Mass Enchant Clay                           |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    7 |   59535 | Spell: Mass Enchant Electrum                       |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    8 |   59536 | Spell: Mass Enchant Gold                           |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |    9 |   59537 | Spell: Mass Enchant Mithril                        |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   10 |   59538 | Spell: Mass Enchant Platinum                       |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   11 |   59539 | Spell: Mass Enchant Silver                         |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   12 |   59540 | Spell: Mass Enchant Steel                          |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   13 |   59541 | Spell: Mass Enchant Velium                         |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   14 |   59542 | Spell: Mass Imbue Amber                            |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   15 |   26970 | Spell: Tiny Companion                              |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   20 | 2024539 | NULL                                               |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   21 | 2024541 | NULL                                               |             1 |            -1 |              0 |            65535 |
+|      22116 | Palik_Agrolm         |   22 | 2024540 | NULL                                               |             1 |            -1 |              0 |            65535 |
+|      60000 | Gretta_Mottle        |    1 |   57921 | Dwarven Steel                                      |             8 |            -1 |              0 |            65535 |
+|      60019 | Vacto_Molunel        |    5 |   81824 | Blessed Water of Brell Serilis                     |             9 |            -1 |              0 |            65535 |
+|      60035 | Aarina_Ratsbone      |    1 |   28880 | Black Ceremonial Coffin                            |             5 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    1 |   34478 | Anthracite Coal                                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    4 |   34479 | Bituminous Coal                                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    5 |   34475 | Black Nitrous Coal                                 |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    6 |   34537 | Breastplate Template Mold                          |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    7 |   34480 | Brimstone Coal                                     |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    8 |   34470 | Brown Coal                                         |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |    9 |   34473 | Brown Nitrous Coal                                 |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   10 |   34529 | Chainmail Arms Template Pattern                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   11 |   34528 | Chainmail Belt Template Pattern                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   12 |   34533 | Chainmail Boots Template Pattern                   |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   13 |   34530 | Chainmail Bracer Template Pattern                  |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   14 |   34525 | Chainmail Chestguard Template Pattern              |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   15 |   34527 | Chainmail Cloak Template Pattern                   |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   16 |   34522 | Chainmail Coif Template Pattern                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   17 |   34524 | Chainmail Collar Template Pattern                  |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   18 |   34523 | Chainmail Faceguard Template Pattern               |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   19 |   34531 | Chainmail Gloves Template Pattern                  |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   20 |   34532 | Chainmail Legplates Template Pattern               |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   21 |   34526 | Chainmail Spaulders Template Pattern               |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   22 |   34467 | Crude Coal                                         |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   24 |   34474 | Dark Brown Coal                                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   25 |   34472 | Dull Black Coal                                    |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   28 |   34476 | Lustrous Black Coal                                |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   30 |   17901 | Medicine Bag                                       |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   31 |   34546 | Metal Tempering Chemicals                          |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   32 |   34468 | Natural Coal                                       |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   33 |   34471 | Nitrous Coal                                       |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   34 |   34540 | Plate Belt Template Mold                           |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   35 |   34545 | Plate Boot Template Mold                           |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   36 |   34542 | Plate Bracer Template Mold                         |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   37 |   34539 | Plate Cloak Template Mold                          |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   38 |   34543 | Plate Gauntlet Template Mold                       |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   39 |   34536 | Plate Gorget Template Mold                         |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   40 |   34544 | Plate Greaves Template Mold                        |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   41 |   34534 | Plate Helm Template Mold                           |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   42 |   34538 | Plate Pauldron Template Mold                       |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   43 |   34541 | Plate Vambrace Template Mold                       |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   44 |   34535 | Plate Visor Template Mold                          |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   47 |   34469 | Sulfurous Coal                                     |            12 |            -1 |              0 |            65535 |
+|      60037 | Hindaek_Stormhammer  |   49 |   34477 | Toluene Coal                                       |            12 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |    1 |   93172 | Arnworth                                           |             1 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |    3 |   93170 | Cententialspore                                    |             1 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |    8 |   10073 | Dufrenite                                          |             1 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |   10 |   93169 | Gerti Blossom                                      |             1 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |   12 |   93171 | Katuka Bark                                        |             1 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |   18 |   93167 | Small Vial                                         |             1 |            -1 |              0 |            65535 |
+|      60069 | Baldoleky_Rockfinder |   20 |   93168 | Tregrum                                            |             1 |            -1 |              0 |            65535 |
+|      60070 | Aarina_Ratsbone      |   12 |   28880 | Black Ceremonial Coffin                            |             5 |            -1 |              0 |            65535 |
+|      60075 | Hanamaf_Darkfoam     |    4 |   67393 | Deep Fungus Mold                                   |             6 |            -1 |              0 |            65535 |
+|      60075 | Hanamaf_Darkfoam     |    5 |   67394 | Distilled Spirits                                  |             6 |            -1 |              0 |            65535 |
+|      60075 | Hanamaf_Darkfoam     |   12 |   75847 | Unusual Wine and Ale - Part 1                      |             6 |            -1 |              0 |            65535 |
+|      60075 | Hanamaf_Darkfoam     |   13 |   75848 | Unusual Wine and Ale - Part 2                      |             6 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |    3 |   34486 | Cord Filament                                      |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |    4 |   34482 | Crude Filament                                     |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |    5 |   34487 | Fiber Filament                                     |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |    6 |   34491 | Fine Filament                                      |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   10 |   34516 | Leather Belt Template Pattern                      |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   11 |   34521 | Leather Boots Template Pattern                     |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   12 |   34515 | Leather Cloak Template Pattern                     |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   13 |   34519 | Leather Gloves Template Pattern                    |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   14 |   34512 | Leather Gorget Template Pattern                    |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   15 |   34520 | Leather Leggings Template Pattern                  |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   16 |   34511 | Leather Mask Template Pattern                      |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   17 |   34514 | Leather Shoulderpads Template Pattern              |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   18 |   34510 | Leather Skullcap Template Pattern                  |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   19 |   34517 | Leather Sleeves Template Pattern                   |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   20 |   34513 | Leather Tunic Template Pattern                     |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   21 |   34518 | Leather Wristbands Template Pattern                |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   22 |   34494 | Mythical Filament                                  |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   24 |   34483 | Plain Filament                                     |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   25 |   34504 | Silk Belt Template Pattern                         |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   26 |   34509 | Silk Boot Template Pattern                         |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   27 |   34497 | Silk Cap Template Pattern                          |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   28 |   34503 | Silk Cloak Template Pattern                        |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   29 |   34548 | Silk Curing Chemicals                              |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   30 |   34492 | Silk Filament                                      |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   31 |   34507 | Silk Glove Template Pattern                        |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   32 |   34499 | Silk Gorget Template Pattern                       |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   33 |   34498 | Silk Mask Template Pattern                         |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   34 |   34508 | Silk Pant Template Pattern                         |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   35 |   34501 | Silk Robe Template Pattern                         |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   36 |   34502 | Silk Shoulderpad Template Pattern                  |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   37 |   34505 | Silk Sleeve Template Pattern                       |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   38 |   34500 | Silk Tunic Template Pattern                        |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   39 |   34506 | Silk Wristband Template Pattern                    |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   40 |   34914 | Simple Sewing Needle                               |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   55 |   34490 | Soft Filament                                      |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   56 |   34493 | Strand Filament                                    |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   57 |   34488 | String Filament                                    |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   58 |   34547 | Tanning Chemicals                                  |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   59 |   34485 | Thread Filament                                    |            12 |            -1 |              0 |            65535 |
+|      60078 | Kalameky_Darkfoam    |   61 |   34484 | Twisted Filament                                   |            12 |            -1 |              0 |            65535 |
+|      61015 | Seria_Woodwind       |   15 |   10023 | Jade                                               |            99 |            -1 |              0 |            65535 |
+|      61019 | Allia_Moondancer     |    1 |   81825 | Blessed Water of Tunare                            |             9 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    1 |   34478 | Anthracite Coal                                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    2 |   34479 | Bituminous Coal                                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    3 |   34475 | Black Nitrous Coal                                 |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    5 |   34537 | Breastplate Template Mold                          |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    6 |   34480 | Brimstone Coal                                     |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    7 |   34470 | Brown Coal                                         |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    8 |   34473 | Brown Nitrous Coal                                 |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |    9 |   34529 | Chainmail Arms Template Pattern                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   10 |   34528 | Chainmail Belt Template Pattern                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   12 |   34533 | Chainmail Boots Template Pattern                   |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   14 |   34530 | Chainmail Bracer Template Pattern                  |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   15 |   34525 | Chainmail Chestguard Template Pattern              |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   17 |   34527 | Chainmail Cloak Template Pattern                   |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   19 |   34522 | Chainmail Coif Template Pattern                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   20 |   34524 | Chainmail Collar Template Pattern                  |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   21 |   34523 | Chainmail Faceguard Template Pattern               |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   23 |   34531 | Chainmail Gloves Template Pattern                  |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   24 |   34532 | Chainmail Legplates Template Pattern               |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   30 |   34526 | Chainmail Spaulders Template Pattern               |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   33 |   34467 | Crude Coal                                         |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   34 |   34474 | Dark Brown Coal                                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   35 |   34472 | Dull Black Coal                                    |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   38 |   34476 | Lustrous Black Coal                                |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   39 |   34546 | Metal Tempering Chemicals                          |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   40 |   34468 | Natural Coal                                       |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   41 |   34471 | Nitrous Coal                                       |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   42 |   34540 | Plate Belt Template Mold                           |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   43 |   34545 | Plate Boot Template Mold                           |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   44 |   34542 | Plate Bracer Template Mold                         |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   45 |   34539 | Plate Cloak Template Mold                          |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   46 |   34543 | Plate Gauntlet Template Mold                       |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   47 |   34536 | Plate Gorget Template Mold                         |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   48 |   34544 | Plate Greaves Template Mold                        |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   49 |   34534 | Plate Helm Template Mold                           |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   50 |   34538 | Plate Pauldron Template Mold                       |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   51 |   34541 | Plate Vambrace Template Mold                       |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   52 |   34535 | Plate Visor Template Mold                          |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   56 |   34469 | Sulfurous Coal                                     |            70 |            -1 |              0 |            65535 |
+|      61033 | Tanalin_Silverkale   |   57 |   34477 | Toluene Coal                                       |            70 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |    1 |   37799 | Bracelet Mold                                      |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |    3 |   37958 | Delicate Gem Glue Solvent                          |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |    4 |   35960 | Dragon Rune Sketch                                 |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |    5 |   37800 | Earring Mold                                       |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |    7 |   35957 | Embossing Sketch                                   |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |    9 |   95836 | Fine Sand                                          |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   12 |   35958 | Gold Embossing                                     |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   15 |   95837 | Grinding Powder                                    |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   16 |   95815 | Half-Moon Cut Earring Jewelry Mold                 |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   17 |   95822 | Half-Moon Cut Pendant Jewelry Mold                 |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   18 |   95808 | Half-Moon Cut Ring Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   22 |   37957 | Large Gem Glue Solvent                             |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   24 |   95818 | Marquise Cut Earring Jewelry Mold                  |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   25 |   95825 | Marquise Cut Pendant Jewelry Mold                  |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   26 |   95811 | Marquise Cut Ring Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   27 |   95814 | Oval Cut Earring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   28 |   95821 | Oval Cut Pendant Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   29 |   95807 | Oval Cut Ring Jewelry Mold                         |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   30 |   95817 | Pear Cut Earring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   31 |   95824 | Pear Cut Pendant Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   32 |   95810 | Pear Cut Ring Jewelry Mold                         |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   34 |   37801 | Pendant Mold                                       |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   36 |   35959 | Platinum Embossing                                 |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   37 |   37798 | Ring Mold                                          |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   38 |   95813 | Round Cut Earring Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   39 |   95820 | Round Cut Pendant Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   40 |   95806 | Round Cut Ring Jewelry Mold                        |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   47 |   37956 | Small Gem Glue Solvent                             |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   48 |   37803 | Solo Setting Tool                                  |            14 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   49 |   95812 | Square Cut Earring Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   50 |   95819 | Square Cut Pendant Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   51 |   95805 | Square Cut Ring Jewelry Mold                       |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   52 |   95826 | Square Cut Tool                                    |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   55 |   95816 | Trilion Cut Earring Jewelry Mold                   |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   56 |   95823 | Trilion Cut Pendant Jewelry Mold                   |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   57 |   95809 | Trilion Cut Ring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61043 | Merchant_Silspin     |   58 |   37802 | Veil Mold                                          |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |    3 |   37799 | Bracelet Mold                                      |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |    6 |   37958 | Delicate Gem Glue Solvent                          |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |    7 |   35960 | Dragon Rune Sketch                                 |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |    8 |   37800 | Earring Mold                                       |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |    9 |   35957 | Embossing Sketch                                   |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   11 |   95836 | Fine Sand                                          |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   12 |   35958 | Gold Embossing                                     |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   13 |   95837 | Grinding Powder                                    |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   14 |   95815 | Half-Moon Cut Earring Jewelry Mold                 |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   15 |   95822 | Half-Moon Cut Pendant Jewelry Mold                 |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   16 |   95808 | Half-Moon Cut Ring Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   21 |   52948 | Koada`Dal Silk                                     |             8 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   23 |   37957 | Large Gem Glue Solvent                             |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   25 |   95818 | Marquise Cut Earring Jewelry Mold                  |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   26 |   95825 | Marquise Cut Pendant Jewelry Mold                  |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   27 |   95811 | Marquise Cut Ring Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   30 |   95814 | Oval Cut Earring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   31 |   95821 | Oval Cut Pendant Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   32 |   95807 | Oval Cut Ring Jewelry Mold                         |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   33 |   95817 | Pear Cut Earring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   34 |   95824 | Pear Cut Pendant Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   35 |   95810 | Pear Cut Ring Jewelry Mold                         |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   37 |   37801 | Pendant Mold                                       |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   39 |   35959 | Platinum Embossing                                 |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   40 |   37798 | Ring Mold                                          |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   41 |   95813 | Round Cut Earring Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   42 |   95820 | Round Cut Pendant Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   43 |   95806 | Round Cut Ring Jewelry Mold                        |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   45 |   37956 | Small Gem Glue Solvent                             |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   46 |   37803 | Solo Setting Tool                                  |            14 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   47 |   95812 | Square Cut Earring Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   48 |   95819 | Square Cut Pendant Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   49 |   95805 | Square Cut Ring Jewelry Mold                       |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   50 |   95826 | Square Cut Tool                                    |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   54 |   95816 | Trilion Cut Earring Jewelry Mold                   |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   55 |   95823 | Trilion Cut Pendant Jewelry Mold                   |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   56 |   95809 | Trilion Cut Ring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      61044 | Merchant_Tyslin      |   58 |   37802 | Veil Mold                                          |            14 |            -1 |              0 |            65535 |
+|      61045 | Merchant_Issynal     |    3 |   28880 | Black Ceremonial Coffin                            |             5 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |    4 |   34358 | Crude Koada`Dal Mithril                            |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |    7 |   34406 | Ductile Koada`Dal Mithril                          |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |    8 |   34374 | Fair Koada`Dal Mithril                             |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   12 |   38340 | Huge Block of Clay                                 |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   13 |   38342 | Huge Block of Good Quality Red Clay                |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   14 |   38343 | Huge Block of High Quality Red Clay                |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   15 |   38341 | Huge Block of Red Clay                             |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   16 |   38344 | Huge Block of Superb Red Clay                      |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   17 |   34438 | Indurate Koada`Dal Mithril                         |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   22 |   34390 | Malleable Koada`Dal Mithril                        |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   24 |   34422 | Ossified Koada`Dal Mithril                         |            70 |            -1 |              0 |            65535 |
+|      61048 | Opal_Leganyn         |   26 |   34454 | Refractory Koada`Dal Mithril                       |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |    3 |   34486 | Cord Filament                                      |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |    4 |   34482 | Crude Filament                                     |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |    5 |   34487 | Fiber Filament                                     |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |    6 |   34491 | Fine Filament                                      |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   11 |   34516 | Leather Belt Template Pattern                      |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   12 |   34521 | Leather Boots Template Pattern                     |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   14 |   34515 | Leather Cloak Template Pattern                     |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   16 |   34519 | Leather Gloves Template Pattern                    |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   18 |   34512 | Leather Gorget Template Pattern                    |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   20 |   34520 | Leather Leggings Template Pattern                  |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   22 |   34511 | Leather Mask Template Pattern                      |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   24 |   34514 | Leather Shoulderpads Template Pattern              |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   26 |   34510 | Leather Skullcap Template Pattern                  |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   28 |   34517 | Leather Sleeves Template Pattern                   |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   30 |   34513 | Leather Tunic Template Pattern                     |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   32 |   34518 | Leather Wristbands Template Pattern                |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   33 |   34494 | Mythical Filament                                  |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   35 |   34483 | Plain Filament                                     |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   36 |   34504 | Silk Belt Template Pattern                         |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   37 |   34509 | Silk Boot Template Pattern                         |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   38 |   34497 | Silk Cap Template Pattern                          |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   39 |   34503 | Silk Cloak Template Pattern                        |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   40 |   34548 | Silk Curing Chemicals                              |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   41 |   34492 | Silk Filament                                      |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   42 |   34507 | Silk Glove Template Pattern                        |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   43 |   34499 | Silk Gorget Template Pattern                       |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   44 |   34498 | Silk Mask Template Pattern                         |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   45 |   34508 | Silk Pant Template Pattern                         |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   46 |   34501 | Silk Robe Template Pattern                         |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   47 |   34502 | Silk Shoulderpad Template Pattern                  |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   48 |   34505 | Silk Sleeve Template Pattern                       |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   49 |   34500 | Silk Tunic Template Pattern                        |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   50 |   34506 | Silk Wristband Template Pattern                    |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   51 |   34914 | Simple Sewing Needle                               |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   54 |   34490 | Soft Filament                                      |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   55 |   34493 | Strand Filament                                    |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   56 |   34488 | String Filament                                    |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   57 |   34547 | Tanning Chemicals                                  |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   58 |   34485 | Thread Filament                                    |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   60 |   34484 | Twisted Filament                                   |            70 |            -1 |              0 |            65535 |
+|      61059 | Merchant_Tissan      |   61 |   34489 | Wire Filament                                      |            70 |            -1 |              0 |            65535 |
+|      62009 | Stormy               |   11 |   81837 | Water of the Skeptic                               |             9 |            -1 |              0 |            65535 |
+|      62009 | Stormy               |   12 |   81825 | Blessed Water of Tunare                            |             9 |            -1 |              0 |            65535 |
+|      62009 | Stormy               |   13 |   81831 | Blessed Water of Solusek Ro                        |             9 |            -1 |              0 |            65535 |
+|      62009 | Stormy               |   14 |   81829 | Blessed Water of Erollisi Marr                     |             9 |            -1 |              0 |            65535 |
+|      62009 | Stormy               |   15 |   81828 | Blessed Water of Mithaniel Marr                    |             9 |            -1 |              0 |            65535 |
+|      62009 | Stormy               |   16 |   81832 | Blessed Water of Karana                            |             9 |            -1 |              0 |            65535 |
+|      62013 | Elle_Leafdancer      |   15 |   13068 | Bat Wing                                           |            99 |            -1 |              0 |            65535 |
+|      62013 | Elle_Leafdancer      |   16 |   10030 | Opal                                               |            99 |            -1 |              0 |            65535 |
+|      62014 | Griff_Candleflame    |    1 |    1011 | Cloth Pants                                        |            99 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |    3 |   37799 | Bracelet Mold                                      |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |    6 |   37958 | Delicate Gem Glue Solvent                          |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |    7 |   35960 | Dragon Rune Sketch                                 |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |    8 |   37800 | Earring Mold                                       |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |    9 |   35957 | Embossing Sketch                                   |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   11 |   95836 | Fine Sand                                          |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   12 |   35958 | Gold Embossing                                     |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   13 |   95837 | Grinding Powder                                    |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   14 |   95815 | Half-Moon Cut Earring Jewelry Mold                 |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   15 |   95822 | Half-Moon Cut Pendant Jewelry Mold                 |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   16 |   95808 | Half-Moon Cut Ring Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   21 |   52948 | Koada`Dal Silk                                     |             8 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   23 |   37957 | Large Gem Glue Solvent                             |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   25 |   95818 | Marquise Cut Earring Jewelry Mold                  |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   26 |   95825 | Marquise Cut Pendant Jewelry Mold                  |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   27 |   95811 | Marquise Cut Ring Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   30 |   95814 | Oval Cut Earring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   31 |   95821 | Oval Cut Pendant Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   32 |   95807 | Oval Cut Ring Jewelry Mold                         |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   33 |   95817 | Pear Cut Earring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   34 |   95824 | Pear Cut Pendant Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   35 |   95810 | Pear Cut Ring Jewelry Mold                         |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   37 |   37801 | Pendant Mold                                       |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   39 |   35959 | Platinum Embossing                                 |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   40 |   37798 | Ring Mold                                          |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   41 |   95813 | Round Cut Earring Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   42 |   95820 | Round Cut Pendant Jewelry Mold                     |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   43 |   95806 | Round Cut Ring Jewelry Mold                        |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   45 |   37956 | Small Gem Glue Solvent                             |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   46 |   37803 | Solo Setting Tool                                  |            14 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   47 |   95812 | Square Cut Earring Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   48 |   95819 | Square Cut Pendant Jewelry Mold                    |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   49 |   95805 | Square Cut Ring Jewelry Mold                       |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   50 |   95826 | Square Cut Tool                                    |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   54 |   95816 | Trilion Cut Earring Jewelry Mold                   |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   55 |   95823 | Trilion Cut Pendant Jewelry Mold                   |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   56 |   95809 | Trilion Cut Ring Jewelry Mold                      |            11 |            -1 |              0 |            65535 |
+|      62026 | Merchant_Tyslin      |   58 |   37802 | Veil Mold                                          |            14 |            -1 |              0 |            65535 |
+|      62028 | Merchant_Yisasan     |    1 |   93172 | Arnworth                                           |             3 |            -1 |              0 |            65535 |
+|      62028 | Merchant_Yisasan     |    3 |   93170 | Cententialspore                                    |             3 |            -1 |              0 |            65535 |
+|      62028 | Merchant_Yisasan     |   10 |   93169 | Gerti Blossom                                      |             3 |            -1 |              0 |            65535 |
+|      62028 | Merchant_Yisasan     |   12 |   93171 | Katuka Bark                                        |             3 |            -1 |              0 |            65535 |
+|      62028 | Merchant_Yisasan     |   18 |   93167 | Small Vial                                         |             3 |            -1 |              0 |            65535 |
+|      62028 | Merchant_Yisasan     |   20 |   93168 | Tregrum                                            |             3 |            -1 |              0 |            65535 |
+|     202155 | Tana_Clawguard       |    5 |   41299 | Skill: Empathic Fury                               |            18 |            -1 |              0 |            65535 |
+|     202155 | Tana_Clawguard       |    6 |   78017 | Tome of Rake                                       |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |    1 |   59973 | Tome of Throw Stone                                |             7 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |    2 |   17709 | Tome of Elbow Strike                               |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |    3 |   66412 | Tome of Focused Will Discipline                    |             7 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |    4 |   66390 | Tome of Sneak Attack                               |             7 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |    7 |   66391 | Tome of Thief's Vengeance                          |             7 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   11 |   78020 | Tome of Poison Spurs                               |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   15 |   76050 | Tome of Rogue's Ploy                               |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   17 |   66392 | Tome of Assassin's Strike                          |             7 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   18 |   66410 | Tome of Healing Will Discipline                    |             7 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   19 |   66338 | Tome of Twisted Chance Discipline                  |             6 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   20 |   59910 | Tome of Kyv Strike                                 |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   21 |   77294 | Tome of Imperceptible Discipline                   |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   22 |   77292 | Tome of Deadly Aim Discipline                      |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   23 |   41269 | Tome of Thief's Eyes                               |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   24 |   77284 | Tome of Daggerfall                                 |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   25 |   76033 | Tome of Assassin's Feint                           |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   26 |   77293 | Tome of Frenzied Stabbing Discipline               |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   27 |   43564 | Skill: Poison Spikes Trap                          |            18 |            -1 |              0 |            65535 |
+|     202156 | Blane_Darkblade      |   28 |   77982 | Skill: Razorarc                                    |            18 |            -1 |              0 |            65535 |
+|     202157 | Larquin_Julinok      |    5 |   41288 | Skill: Dance of a Thousand Blades                  |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |    1 |   59973 | Tome of Throw Stone                                |             7 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |    2 |   17709 | Tome of Elbow Strike                               |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |    3 |   66412 | Tome of Focused Will Discipline                    |             8 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |    5 |   66320 | Tome of Phantom Zephyr                             |             7 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |    7 |   66321 | Tome of Phantom Wind                               |             7 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   12 |   78021 | Tome of Disciples Aura                             |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   15 |   66322 | Tome of Phantom Echo                               |             7 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   18 |   66268 | Tome of Planeswalk Discipline                      |             6 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   19 |   76051 | Tome of Leopard Claw                               |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   20 |   66269 | Tome of Speed Focus Discipline                     |             6 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   21 |   66410 | Tome of Healing Will Discipline                    |             8 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   23 |   66270 | Tome of Earthwalk Discipline                       |             6 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   24 |   59912 | Tome of Phantom Shadow                             |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   25 |   77289 | Tome of Dreamwalk Discipline                       |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   26 |   77291 | Tome of Counterforce Discipline                    |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   27 |   41270 | Skill: Fists of Wu                                 |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   28 |   77285 | Tome of Phantom Cry                                |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   29 |   76034 | Tome of Dragon Fang                                |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   30 |   77290 | Tome of Rapid Kick Discipline                      |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   31 |   77984 | Skill: Heel of Kanji                               |            18 |            -1 |              0 |            65535 |
+|     202158 | Beorobin_Amondson    |   32 |   43565 | Skill: Master's Aura                               |            18 |            -1 |              0 |            65535 |
+|     202159 | Mystic_Abomin        |   20 |   77866 | Spell: Spirit of the Puma                          |             9 |            17 |              0 |            65535 |
+|     202159 | Mystic_Abomin        |   21 |   66281 | Spell: Incarnate Anew                              |            15 |            17 |              0 |            65535 |
+|     202161 | Ulin_Velnik          |    2 |   76037 | Tome of Guard of Humility                          |            18 |            -1 |              0 |            65535 |
+|     202161 | Ulin_Velnik          |    3 |   76021 | Tome of Guard of Righteousness                     |            18 |            -1 |              0 |            65535 |
+|     202161 | Ulin_Velnik          |    7 |   77856 | Tome of Guard of Piety                             |            18 |            -1 |              0 |            65535 |
+|     202161 | Ulin_Velnik          |    8 |   66434 | Tome of Deflection Discipline                      |            16 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |    1 |   79218 | Spell: Blightfire Moors Portal                     |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |    2 |   79217 | Spell: Translocate: Blightfire Moors               |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |    4 |   15544 | Spell: Common Gate                                 |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |    7 |   15545 | Spell: Nek Gate                                    |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |    8 |   15547 | Spell: Ro Gate                                     |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |    9 |   27971 | Spell: Twilight Gate                               |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   12 |   15546 | Spell: Cazic Gate                                  |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   13 |   15548 | Spell: West Gate                                   |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   14 |   59658 | Spell: Xalirilan's Appraisal                       |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   18 |   19471 | Spell: Combine Gate                                |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   19 |   36380 | Spell: Focus Mass Makeshift Spellcaster's Essence  |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   20 |   59670 | Spell: Xalirilan's Discombobulation                |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   21 |   59682 | Spell: Xalirilan's Extrication                     |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   23 |   15562 | Spell: North Portal                                |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   24 |    7653 | Spell: Minor Familiar                              |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   27 |   36365 | Spell: Focus Rudimentary Spellcaster's Essence     |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   28 |   36366 | Spell: Focus Crude Spellcaster's Essence           |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   54 |    7651 | Spell: O`Keil's Embers                             |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   61 |   59657 | Spell: Xalirilan's Lesser Appraisal                |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   64 |   59669 | Spell: Xalirilan's Lesser Discombobulation         |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   65 |   59681 | Spell: Xalirilan's Lesser Extrication              |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   73 |   36364 | Spell: Focus Primitive Spellcaster's Essence       |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   75 |   19541 | Spell: Nexus Gate                                  |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   77 |   15542 | Spell: North Gate                                  |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   79 |    7652 | Spell: Garrisons Mighty Mana Shock                 |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   81 |   15541 | Spell: Tox Gate                                    |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   84 |   15543 | Spell: Fay Gate                                    |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   85 |   36367 | Spell: Focus Makeshift Spellcaster's Essence       |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   86 |   36377 | Spell: Focus Mass Primitive Spellcaster's Essence  |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   87 |   36378 | Spell: Focus Mass Rudimentary Spellcaster's Ess.   |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   88 |   36379 | Spell: Focus Mass Crude Spellcaster's Essence      |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   89 |   27966 | Spell: Grimling Gate                               |            18 |            -1 |              0 |            65535 |
+|     202174 | Channeler_Olaemos    |   90 |   79219 | Spell: Blightfire Moors Gate                       |            18 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |    1 |   59844 | Spell: White Fire                                  |            13 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   44 |   79457 | Spell: Katta Castrum Portal                        |            14 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   55 |   79213 | Spell: Icefall Glacier Gate                        |            13 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   56 |   79212 | Spell: Icefall Glacier Portal                      |            13 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   57 |   79211 | Spell: Translocate: Icefall Glacier                |            13 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   63 |   79458 | Spell: Katta Castrum Gate                          |            14 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   69 |   59843 | Spell: Black Ice                                   |            13 |            -1 |              0 |            65535 |
+|     202176 | Channeler_Alyrianne  |   70 |   59845 | Spell: Telaka                                      |            13 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   16 |   79216 | Spell: Sunderock Springs Gate                      |            13 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   17 |   79215 | Spell: Sunderock Springs Portal                    |            13 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   18 |   79214 | Spell: Translocate: Sunderock Springs              |            13 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   20 |   77931 | Spell: Undershore Gate                             |            11 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   21 |   77929 | Spell: Undershore Portal                           |            11 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   22 |   78035 | Spell: Arcstone Gate                               |            12 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   23 |   78033 | Spell: Arcstone Portal                             |            12 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   56 |   77932 | Spell: Translocate: Undershore                     |            11 |            -1 |              0 |            65535 |
+|     202177 | Channeler_Cerakoth   |   58 |   78036 | Spell: Translocate: Arcstone                       |            12 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |    2 |   19486 | Spell: Translocate: Common                         |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |    3 |   36369 | Spell: Focus Modest Spellcaster's Essence          |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |    4 |   59020 | Spell: Vision Shift                                |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |    7 |   19485 | Spell: Translocate: Nek                            |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |    8 |   27974 | Spell: Translocate:Twilight                        |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   10 |   15605 | Spell: Evacuate: Nek                               |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   11 |   19488 | Spell: Translocate: West                           |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   12 |   30399 | Spell: Wakening Lands Portal                       |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   13 |   15073 | Spell: Gravity Flux                                |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   15 |   19487 | Spell: Translocate: Ro                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   16 |   30425 | Spell: Cobalt Scar Portal                          |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   18 |   19489 | Spell: Translocate: Cazic                          |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   19 |   36382 | Spell: Focus Mass Modest Spellcaster's Essence     |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   21 |   59630 | Spell: Bounce                                      |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   22 |   15733 | Spell: Supernova                                   |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   23 |   19509 | Spell: Translocate: Iceclad                        |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   24 |    7655 | Spell: Lesser Familiar                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   28 |   19510 | Spell: Translocate: Great Divide                   |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   29 |   15606 | Spell: Evacuate: West                              |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   32 |   19511 | Spell: Translocate: Wakening Lands                 |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   35 |   19512 | Spell: Translocate: Cobalt Scar                    |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   36 |   15732 | Spell: Ice Comet                                   |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   37 |   27979 | Spell: Translocate: Dawnshroud                     |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   38 |   59625 | Spell: Ward of Calrena                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   39 |   36370 | Spell: Focus Simple Spellcaster's Essence          |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   40 |   30422 | Spell: Translocate                                 |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   41 |   19534 | Spell: Levitation                                  |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   43 |   19475 | Spell: Translocate: Fay                            |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   44 |   30423 | Spell: Great Divide Portal                         |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   45 |   19539 | Spell: Translocate: Nexus                          |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   47 |   15568 | Spell: West Portal                                 |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   50 |   15602 | Spell: Evacuate: North                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   52 |   15563 | Spell: Fay Portal                                  |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   58 |   15561 | Spell: Tox Portal                                  |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   61 |   19540 | Spell: Nexus Portal                                |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   62 |   27968 | Spell: Grimling Portal                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   63 |   27976 | Spell: Dawnshroud Gate                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   66 |   36368 | Spell: Focus Elementary Spellcaster's Essence      |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   70 |   15564 | Spell: Nek Portal                                  |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   71 |   15603 | Spell: Evacuate: Fay                               |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   72 |   19434 | Spell: Harvest                                     |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   73 |   30417 | Spell: Iceclad Gate                                |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   75 |   15565 | Spell: Cazic Portal                                |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   76 |   30418 | Spell: Iceclad Portal                              |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   77 |   27973 | Spell: Twilight Portal                             |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   78 |   59659 | Spell: Xalirilan's Greater Appraisal               |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   81 |   15861 | Spell: Combine Portal                              |            18 |            -1 |              0 |            65535 |
+|     202178 | Channeler_Lariland   |   82 |   36381 | Spell: Focus Mass Elementary Spellcaster's Essence |            18 |            -1 |              0 |            65535 |
++------------+----------------------+------+---------+----------------------------------------------------+---------------+---------------+----------------+------------------+

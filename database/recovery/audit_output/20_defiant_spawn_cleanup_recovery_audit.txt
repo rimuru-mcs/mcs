@@ -1,0 +1,119 @@
++---------+-----------------------------------+---------------------+
+| section | audit_name                        | audited_at          |
++---------+-----------------------------------+---------------------+
+| audit   | 20_defiant_spawn_cleanup_recovery | 2026-05-24 15:33:54 |
++---------+-----------------------------------+---------------------+
++-------------------------------+-------------------+-----------------------------+------------------------------------+--------------------------------+-----------------------+
+| section                       | defiant_item_rows | defiant_lootdrop_rows_total | defiant_lootdrop_rows_still_active | defiant_lootdrop_rows_disabled | defiant_merchant_rows |
++-------------------------------+-------------------+-----------------------------+------------------------------------+--------------------------------+-----------------------+
+| defiant_spawn_cleanup_summary |               417 |                         372 |                                  0 |                            372 |                     0 |
++-------------------------------+-------------------+-----------------------------+------------------------------------+--------------------------------+-----------------------+
++---------------------------------------+-------------+---------+----------------------------------+--------+-----------------+
+| section                               | lootdrop_id | item_id | Name                             | chance | disabled_chance |
++---------------------------------------+-------------+---------+----------------------------------+--------+-----------------+
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50005 | Crude Defiant Plate Bracer       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50006 | Crude Defiant Plate Gauntlets    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50007 | Crude Defiant Plate Boots        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50008 | Crude Defiant Plate Helm         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50009 | Crude Defiant Plate Vambraces    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50010 | Crude Defiant Plate Greaves      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50011 | Crude Defiant Breastplate        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50012 | Crude Defiant Chain Bracer       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50013 | Crude Defiant Chain Gauntlets    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50014 | Crude Defiant Chain Boots        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50015 | Crude Defiant Chain Coif         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50016 | Crude Defiant Chain Sleeves      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50017 | Crude Defiant Chain Leggings     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50018 | Crude Defiant Chain Tunic        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50019 | Crude Defiant Leather Bracer     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50020 | Crude Defiant Leather Gloves     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50021 | Crude Defiant Leather Boots      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50022 | Crude Defiant Leather Cap        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50023 | Crude Defiant Leather Sleeves    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50024 | Crude Defiant Leather Trousers   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50025 | Crude Defiant Leather Tunic      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50026 | Crude Defiant Cloth Wristwrap    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50027 | Crude Defiant Cloth Gloves       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50028 | Crude Defiant Cloth Sandals      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50029 | Crude Defiant Cloth Cap          |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50030 | Crude Defiant Cloth Sleeves      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50031 | Crude Defiant Cloth Pantaloons   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50032 | Crude Defiant Cloth Robe         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50500 | Crude Defiant Amethyst           |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50501 | Crude Defiant Emerald            |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50502 | Crude Defiant Ruby Shard         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50503 | Crude Defiant Granite Pebble     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50504 | Crude Defiant Stone Fragment     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50505 | Crude Defiant Turquoise          |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50506 | Crude Defiant Mace               |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50507 | Crude Defiant Club               |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50508 | Crude Defiant Shortsword         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50509 | Crude Defiant Axe                |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50510 | Crude Defiant Dagger             |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50511 | Crude Defiant Spear              |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50512 | Crude Defiant Fists              |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50513 | Crude Defiant Quarterstaff       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50514 | Crude Defiant Greatspear         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50515 | Crude Defiant Greatsword         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50516 | Crude Defiant Bow                |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50517 | Crude Defiant Spiked Shield      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176432 |   50518 | Crude Defiant Buckler            |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50033 | Simple Defiant Plate Bracer      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50034 | Simple Defiant Plate Gauntlets   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50035 | Simple Defiant Plate Boots       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50036 | Simple Defiant Plate Helm        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50037 | Simple Defiant Plate Vambraces   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50038 | Simple Defiant Plate Greaves     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50039 | Simple Defiant Breastplate       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50040 | Simple Defiant Chain Bracer      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50041 | Simple Defiant Chain Gauntlets   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50042 | Simple Defiant Chain Boots       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50043 | Simple Defiant Chain Coif        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50044 | Simple Defiant Chain Sleeves     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50045 | Simple Defiant Chain Leggings    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50046 | Simple Defiant Chain Tunic       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50047 | Simple Defiant Leather Bracer    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50048 | Simple Defiant Leather Gloves    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50049 | Simple Defiant Leather Boots     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50050 | Simple Defiant Leather Cap       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50051 | Simple Defiant Leather Sleeves   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50052 | Simple Defiant Leather Trousers  |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50053 | Simple Defiant Leather Tunic     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50054 | Simple Defiant Cloth Wristwrap   |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50055 | Simple Defiant Cloth Gloves      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50056 | Simple Defiant Cloth Sandals     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50057 | Simple Defiant Cloth Cap         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50058 | Simple Defiant Cloth Sleeves     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50059 | Simple Defiant Cloth Pantaloons  |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50060 | Simple Defiant Cloth Robe        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50519 | Simple Defiant Alexandrite Shard |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50520 | Simple Defiant Bluestone         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50521 | Simple Defiant Jasper            |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50522 | Simple Defiant Garnet            |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50523 | Simple Defiant Hammer            |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50524 | Simple Defiant Wand              |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50525 | Simple Defiant Shortsword        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50526 | Simple Defiant Bastard Sword     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50527 | Simple Defiant Claw-dagger       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50528 | Simple Defiant Dagger            |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50529 | Simple Defiant Ulak              |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50530 | Simple Defiant Twisted Staff     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50531 | Simple Defiant Spear             |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50532 | Simple Defiant Greataxe          |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50533 | Simple Defiant Bow               |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50534 | Simple Defiant Kite Shield       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176433 |   50535 | Simple Defiant Wooden Shield     |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50061 | Rough Defiant Plate Bracer       |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50062 | Rough Defiant Plate Gauntlets    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50063 | Rough Defiant Plate Boots        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50064 | Rough Defiant Plate Helm         |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50065 | Rough Defiant Plate Vambraces    |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50066 | Rough Defiant Plate Greaves      |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50067 | Rough Defiant Breastplate        |      0 |               1 |
+| defiant_disabled_lootdrop_rows_sample |      176434 |   50068 | Rough Defiant Chain Bracer       |      0 |               1 |
++---------------------------------------+-------------+---------+----------------------------------+--------+-----------------+
++-------------------------------+----+------------------------------------------------+---------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| section                       | id | migration_name                                 | applied_at          | applied_by            | notes                                                                                                                                                                                                                                       |
++-------------------------------+----+------------------------------------------------+---------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| defiant_cleanup_migration_log | 52 | 080_disable_defiant_lootdrop_spawn_sources.sql | 2026-05-24 10:11:26 | msr_migrate@localhost | Disabled active Defiant lootdrop spawn source row(s). Before active lootdrop rows=372, linked loottable rows=372, merchant rows=0, changed=372. Item rows and loottable links were preserved; chance moved to disabled_chance where needed. |
++-------------------------------+----+------------------------------------------------+---------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,55 @@
++---------+--------------------+--------------------+---------------------+
+| section | audit_name         | database_name      | audited_at          |
++---------+--------------------+--------------------+---------------------+
+| audit   | 00_schema_presence | msr_world_recovery | 2026-05-24 15:33:01 |
++---------+--------------------+--------------------+---------------------+
++-------------------+------------+--------+-------------------+
+| table_name        | table_rows | engine | table_collation   |
++-------------------+------------+--------+-------------------+
+| doors             |      19096 | InnoDB | latin1_swedish_ci |
+| items             |     110514 | InnoDB | latin1_swedish_ci |
+| lootdrop_entries  |     481176 | InnoDB | latin1_swedish_ci |
+| loottable_entries |      55266 | InnoDB | latin1_swedish_ci |
+| merchantlist      |      64092 | InnoDB | latin1_swedish_ci |
+| npc_types         |      65518 | InnoDB | latin1_swedish_ci |
+| rule_values       |        869 | InnoDB | latin1_swedish_ci |
+| spells_new        |      38062 | InnoDB | latin1_swedish_ci |
+| variables         |          6 | InnoDB | latin1_swedish_ci |
+| zone              |        615 | InnoDB | latin1_swedish_ci |
+| zone_points       |       1831 | InnoDB | latin1_swedish_ci |
++-------------------+------------+--------+-------------------+
++-------------+-------------+---------------------+-------------+----------------+
+| table_name  | column_name | column_type         | is_nullable | column_default |
++-------------+-------------+---------------------+-------------+----------------+
+| rule_values | ruleset_id  | tinyint(3) unsigned | NO          | 0              |
+| rule_values | rule_name   | varchar(64)         | NO          | ''             |
+| rule_values | rule_value  | varchar(30)         | NO          | ''             |
+| rule_values | notes       | text                | YES         | NULL           |
++-------------+-------------+---------------------+-------------+----------------+
++------------+--------------+---------------------+
+| table_name | column_name  | column_type         |
++------------+--------------+---------------------+
+| items      | id           | int(11)             |
+| items      | minstatus    | smallint(5)         |
+| items      | Name         | varchar(64)         |
+| items      | artifactflag | tinyint(3) unsigned |
+| items      | bagslots     | int(11)             |
+| items      | bagtype      | int(11)             |
+| items      | bagwr        | int(11)             |
+| items      | classes      | int(11)             |
+| items      | price        | int(11)             |
+| items      | focuseffect  | int(11)             |
+| items      | loregroup    | int(11)             |
+| items      | nodrop       | int(11)             |
+| items      | slots        | int(11)             |
+| items      | attuneable   | int(11)             |
+| items      | proceffect   | int(11)             |
+| items      | proctype     | int(11)             |
+| items      | proclevel2   | int(11)             |
+| items      | proclevel    | int(11)             |
+| items      | worneffect   | int(11)             |
+| items      | wornlevel2   | int(11)             |
+| items      | wornlevel    | int(11)             |
+| items      | focuslevel2  | int(11)             |
+| items      | focuslevel   | int(11)             |
++------------+--------------+---------------------+

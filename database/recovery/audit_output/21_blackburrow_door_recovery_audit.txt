@@ -1,0 +1,36 @@
++---------+------------------------------+---------------------+
+| section | audit_name                   | audited_at          |
++---------+------------------------------+---------------------+
+| audit   | 21_blackburrow_door_recovery | 2026-05-24 15:34:07 |
++---------+------------------------------+---------------------+
++-----------------------------------+----------------------------+----------------------------------------------+-----------------------------------------+
+| section                           | blackburrow_version0_doors | blackburrow_doors_still_targeting_jaggedpine | blackburrow_version0_open_or_none_doors |
++-----------------------------------+----------------------------+----------------------------------------------+-----------------------------------------+
+| blackburrow_door_recovery_summary |                         12 |                                            0 |                                      12 |
++-----------------------------------+----------------------------+----------------------------------------------+-----------------------------------------+
++-----------------------------------+-----+--------+-------------+---------+-------------+----------+---------+----------+-----------+--------+--------+--------+---------------+---------------+---------------+------------------------+
+| section                           | id  | doorid | zone        | version | name        | opentype | keyitem | lockpick | dest_zone | dest_x | dest_y | dest_z | min_expansion | max_expansion | content_flags | content_flags_disabled |
++-----------------------------------+-----+--------+-------------+---------+-------------+----------+---------+----------+-----------+--------+--------+--------+---------------+---------------+---------------+------------------------+
+| blackburrow_recovered_door_sample | 154 |      4 | blackburrow |       0 | BBDOOR2     |        0 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 153 |     10 | blackburrow |       0 | BBDOOR2     |        5 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 152 |     14 | blackburrow |       0 | PAWPORTC    |        5 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 151 |     16 | blackburrow |       0 | PAWPORTC    |       65 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 150 |     20 | blackburrow |       0 | DOOR620X20  |        0 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 149 |     24 | blackburrow |       0 | PAWPORTC    |        0 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 148 |     29 | blackburrow |       0 | DOOR620X20  |        0 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 147 |     30 | blackburrow |       0 | DOOR620X20  |        5 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 146 |     31 | blackburrow |       0 | DOOR620X20  |        0 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 145 |     33 | blackburrow |       0 | DOOR620X20  |        0 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 144 |     34 | blackburrow |       0 | COMTORCH304 |       58 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
+| blackburrow_recovered_door_sample | 143 |     35 | blackburrow |       0 | ACRUBY301   |       58 |       0 |        0 | NONE      |      0 |      0 |      0 |            -1 |            -1 | NULL          | NULL                   |
++-----------------------------------+-----+--------+-------------+---------+-------------+----------+---------+----------+-----------+--------+--------+--------+---------------+---------------+---------------+------------------------+
++---------------------------------+-------------+
+| section                         | backup_rows |
++---------------------------------+-------------+
+| blackburrow_door_backup_summary |          12 |
++---------------------------------+-------------+
++--------------------------------+----+-------------------------------------------------+---------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| section                        | id | migration_name                                  | applied_at          | applied_by            | notes                                                                                                                                                           |
++--------------------------------+----+-------------------------------------------------+---------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| blackburrow_door_migration_log | 61 | 090_fix_blackburrow_jaggedpine_door_targets.sql | 2026-05-24 10:16:51 | msr_migrate@localhost | Cleared accidental Blackburrow door teleport target(s) to Jaggedpine. Before=12, changed=12, backup rows=12. Affected doors were backed up before modification. |
++--------------------------------+----+-------------------------------------------------+---------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
